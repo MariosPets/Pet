@@ -79,5 +79,12 @@ namespace MariosPet.Telas
             anamnese.ShowDialog();
             Close();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmReceituario receituario = new FrmReceituario();
+            receituario.ShowDialog();
+            Close();
+        }
     }
 }
