@@ -744,6 +744,7 @@
             this.consultasEPesquisasToolStripMenuItem6.Name = "consultasEPesquisasToolStripMenuItem6";
             this.consultasEPesquisasToolStripMenuItem6.Size = new System.Drawing.Size(233, 24);
             this.consultasEPesquisasToolStripMenuItem6.Text = "Consultas e Pesquisas";
+            this.consultasEPesquisasToolStripMenuItem6.Click += new System.EventHandler(this.consultasEPesquisasToolStripMenuItem6_Click);
             // 
             // FrmMenu
             // 

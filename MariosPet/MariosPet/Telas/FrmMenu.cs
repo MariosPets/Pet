@@ -107,5 +107,12 @@ namespace MariosPet.Telas
             agenda.ShowDialog();
             Close();
         }
+
+        private void consultasEPesquisasToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            FrmPesquisas pesquisas = new FrmPesquisas();
+            pesquisas.ShowDialog();
+            Close();
+        }
     }
 }
