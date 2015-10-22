@@ -93,5 +93,12 @@ namespace MariosPet.Telas
             remedio.ShowDialog();
             Close();
         }
+
+        private void cadastroDeFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFuncionario funcionario = new FrmFuncionario();
+            funcionario.ShowDialog();
+            Close();
+        }
     }
 }

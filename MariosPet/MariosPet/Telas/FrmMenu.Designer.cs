@@ -279,6 +279,7 @@
             this.cadastroDeFuncionáriosToolStripMenuItem.Size = new System.Drawing.Size(287, 26);
             this.cadastroDeFuncionáriosToolStripMenuItem.Text = "Cadastro de Funcionários";
             this.cadastroDeFuncionáriosToolStripMenuItem.ToolTipText = "Cadastro de Funcionários";
+            this.cadastroDeFuncionáriosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeFuncionáriosToolStripMenuItem_Click);
             // 
             // malaDiretaToolStripMenuItem
             // 
