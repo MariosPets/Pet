@@ -73,20 +73,6 @@ namespace MariosPet.Telas
             classeCli.telefone3 = txtTelefone3Cliente.Text;
         }
 
-        private void btmSalvar_Click(object sender, EventArgs e)
-        {
-            CopiarParaClasseCliente();
-
-            CrudCliente CrudCli = new CrudCliente();
-            CrudEndereco CrudEnd = new CrudEndereco();
-
-            CrudEnd.inserirEndereco(classeEnd);
-
-            classeCli.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
-
-            CrudCli.inserirCliente(classeCli);
-        }
-
         private void btmSalvar_Click_1(object sender, EventArgs e)
         {
             CopiarParaClasseCliente();
