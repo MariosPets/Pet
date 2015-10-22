@@ -477,6 +477,7 @@
             this.anamneseToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.anamneseToolStripMenuItem.Text = "Anamnese";
             this.anamneseToolStripMenuItem.ToolTipText = "Anamnese";
+            this.anamneseToolStripMenuItem.Click += new System.EventHandler(this.anamneseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -556,7 +557,7 @@
             this.cadastroToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem2.Image")));
             this.cadastroToolStripMenuItem2.Name = "cadastroToolStripMenuItem2";
-            this.cadastroToolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
+            this.cadastroToolStripMenuItem2.Size = new System.Drawing.Size(220, 26);
             this.cadastroToolStripMenuItem2.Text = "Cadastro";
             this.cadastroToolStripMenuItem2.ToolTipText = "Cadastro de Produtos e Serviços";
             // 
@@ -589,7 +590,7 @@
             this.tabelasDePreçoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.tabelasDePreçoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tabelasDePreçoToolStripMenuItem.Image")));
             this.tabelasDePreçoToolStripMenuItem.Name = "tabelasDePreçoToolStripMenuItem";
-            this.tabelasDePreçoToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.tabelasDePreçoToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.tabelasDePreçoToolStripMenuItem.Text = "Tabelas de Preço";
             this.tabelasDePreçoToolStripMenuItem.ToolTipText = "Tabelas de preços";
             // 
@@ -600,7 +601,7 @@
             this.relatóriosToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem2.Image")));
             this.relatóriosToolStripMenuItem2.Name = "relatóriosToolStripMenuItem2";
-            this.relatóriosToolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
+            this.relatóriosToolStripMenuItem2.Size = new System.Drawing.Size(220, 26);
             this.relatóriosToolStripMenuItem2.Text = "Relatórios";
             this.relatóriosToolStripMenuItem2.ToolTipText = "Relatórios";
             // 

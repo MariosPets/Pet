@@ -72,5 +72,12 @@ namespace MariosPet.Telas
             agenda.Show();
             Close();
         }
+
+        private void anamneseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAnamnese anamnese = new FrmAnamnese();
+            anamnese.ShowDialog();
+            Close();
+        }
     }
 }
