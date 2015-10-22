@@ -7,9 +7,8 @@
         <Value>receituario</Value>
         <Sizing>FitProportional</Sizing>
         <Top>0.46567cm</Top>
-        <Left>1.905cm</Left>
-        <Height>29cm</Height>
-        <Width>21cm</Width>
+        <Height>19.3015cm</Height>
+        <Width>14.31233cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -36,10 +35,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>NomeVeterinario</rd:DefaultName>
-        <Top>4.73287cm</Top>
-        <Left>8.0772cm</Left>
-        <Height>1.1715cm</Height>
-        <Width>9.9295cm</Width>
+        <Top>3.10303cm</Top>
+        <Left>3.54753cm</Left>
+        <Height>0.9175cm</Height>
+        <Width>9.08283cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -71,10 +70,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Prescricao</rd:DefaultName>
-        <Top>9.83403cm</Top>
-        <Left>2.59503cm</Left>
-        <Height>9.00317cm</Height>
-        <Width>19.391cm</Width>
+        <Top>8.41587cm</Top>
+        <Left>0.30903cm</Left>
+        <Height>7.69083cm</Height>
+        <Width>12.80817cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -87,10 +86,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>116.92913in</Height>
+    <Height>7.87363in</Height>
     <Style />
   </Body>
-  <Width>11.96791in</Width>
+  <Width>5.80471in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
