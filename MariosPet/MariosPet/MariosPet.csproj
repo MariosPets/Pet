@@ -311,6 +311,9 @@
     <EmbeddedResource Include="Telas\FrmRemedio.resx">
       <DependentUpon>FrmRemedio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmServico.resx">
+      <DependentUpon>FrmServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmVacina.resx">
       <DependentUpon>frmVacina.cs</DependentUpon>
     </EmbeddedResource>
