@@ -101,11 +101,12 @@
             this.roundButton1.FlatAppearance.BorderSize = 0;
             this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundButton1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton1.Image = global::MariosPet.Properties.Resources.vermifugoMarrom;
             this.roundButton1.Location = new System.Drawing.Point(530, 343);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(45, 45);
             this.roundButton1.TabIndex = 41;
-            this.roundButton1.Text = "Vermifugo";
+            this.toolTipFichaClinica.SetToolTip(this.roundButton1, "Vermifugo");
             this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // roundButtonVacina
