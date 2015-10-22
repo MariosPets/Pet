@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.toolTipPesquisas = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBoxPesquisas = new System.Windows.Forms.GroupBox();
-            this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonExcluir = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.lblConsulta = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBoxPesqPor = new System.Windows.Forms.ComboBox();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.dataGridViewPesquisas = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.groupBoxPesquisas = new System.Windows.Forms.GroupBox();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.groupBoxPesquisas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).BeginInit();
+            this.groupBoxPesquisas.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolTipPesquisas
@@ -52,54 +52,6 @@
             this.toolTipPesquisas.AutomaticDelay = 100;
             this.toolTipPesquisas.IsBalloon = true;
             this.toolTipPesquisas.StripAmpersands = true;
-            // 
-            // groupBoxPesquisas
-            // 
-            this.groupBoxPesquisas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBoxPesquisas.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeMarromGrande;
-            this.groupBoxPesquisas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisas.Controls.Add(this.buttonEditar);
-            this.groupBoxPesquisas.Controls.Add(this.buttonExcluir);
-            this.groupBoxPesquisas.Controls.Add(this.btnLimpar);
-            this.groupBoxPesquisas.Controls.Add(this.btnVoltar);
-            this.groupBoxPesquisas.Controls.Add(this.lblConsulta);
-            this.groupBoxPesquisas.Controls.Add(this.label1);
-            this.groupBoxPesquisas.Controls.Add(this.comboBoxPesqPor);
-            this.groupBoxPesquisas.Controls.Add(this.comboBoxTipo);
-            this.groupBoxPesquisas.Controls.Add(this.dataGridViewPesquisas);
-            this.groupBoxPesquisas.Controls.Add(this.btnConsultar);
-            this.groupBoxPesquisas.Controls.Add(this.txtPesquisa);
-            this.groupBoxPesquisas.Controls.Add(this.lblTipo);
-            this.groupBoxPesquisas.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
-            this.groupBoxPesquisas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxPesquisas.Location = new System.Drawing.Point(38, 12);
-            this.groupBoxPesquisas.Name = "groupBoxPesquisas";
-            this.groupBoxPesquisas.Size = new System.Drawing.Size(752, 549);
-            this.groupBoxPesquisas.TabIndex = 3;
-            this.groupBoxPesquisas.TabStop = false;
-            this.groupBoxPesquisas.Text = "   Pesquisa";
-            // 
-            // buttonEditar
-            // 
-            this.buttonEditar.FlatAppearance.BorderSize = 0;
-            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditar.Image = global::MariosPet.Properties.Resources.botaoEditarLaranja;
-            this.buttonEditar.Location = new System.Drawing.Point(403, 484);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(115, 44);
-            this.buttonEditar.TabIndex = 22;
-            this.buttonEditar.UseVisualStyleBackColor = true;
-            // 
-            // buttonExcluir
-            // 
-            this.buttonExcluir.FlatAppearance.BorderSize = 0;
-            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirVerde;
-            this.buttonExcluir.Location = new System.Drawing.Point(198, 484);
-            this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
-            this.buttonExcluir.TabIndex = 21;
-            this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // btnLimpar
             // 
@@ -130,26 +82,6 @@
             this.toolTipPesquisas.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // lblConsulta
-            // 
-            this.lblConsulta.AutoSize = true;
-            this.lblConsulta.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConsulta.Location = new System.Drawing.Point(23, 118);
-            this.lblConsulta.Name = "lblConsulta";
-            this.lblConsulta.Size = new System.Drawing.Size(102, 23);
-            this.lblConsulta.TabIndex = 20;
-            this.lblConsulta.Text = "Consulta:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(377, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 23);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Pesquisa por:";
             // 
             // comboBoxPesqPor
             // 
@@ -210,6 +142,7 @@
             this.btnConsultar.TabIndex = 3;
             this.toolTipPesquisas.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtPesquisa
             // 
@@ -221,6 +154,74 @@
             this.txtPesquisa.Size = new System.Drawing.Size(439, 27);
             this.txtPesquisa.TabIndex = 2;
             this.toolTipPesquisas.SetToolTip(this.txtPesquisa, "Insira a informação a ser pesquisada");
+            // 
+            // groupBoxPesquisas
+            // 
+            this.groupBoxPesquisas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBoxPesquisas.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeMarromGrande;
+            this.groupBoxPesquisas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBoxPesquisas.Controls.Add(this.buttonEditar);
+            this.groupBoxPesquisas.Controls.Add(this.buttonExcluir);
+            this.groupBoxPesquisas.Controls.Add(this.btnLimpar);
+            this.groupBoxPesquisas.Controls.Add(this.btnVoltar);
+            this.groupBoxPesquisas.Controls.Add(this.lblConsulta);
+            this.groupBoxPesquisas.Controls.Add(this.label1);
+            this.groupBoxPesquisas.Controls.Add(this.comboBoxPesqPor);
+            this.groupBoxPesquisas.Controls.Add(this.comboBoxTipo);
+            this.groupBoxPesquisas.Controls.Add(this.dataGridViewPesquisas);
+            this.groupBoxPesquisas.Controls.Add(this.btnConsultar);
+            this.groupBoxPesquisas.Controls.Add(this.txtPesquisa);
+            this.groupBoxPesquisas.Controls.Add(this.lblTipo);
+            this.groupBoxPesquisas.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
+            this.groupBoxPesquisas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBoxPesquisas.Location = new System.Drawing.Point(38, 12);
+            this.groupBoxPesquisas.Name = "groupBoxPesquisas";
+            this.groupBoxPesquisas.Size = new System.Drawing.Size(752, 549);
+            this.groupBoxPesquisas.TabIndex = 3;
+            this.groupBoxPesquisas.TabStop = false;
+            this.groupBoxPesquisas.Text = "   Pesquisa";
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.FlatAppearance.BorderSize = 0;
+            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEditar.Image = global::MariosPet.Properties.Resources.botaoEditarLaranja;
+            this.buttonEditar.Location = new System.Drawing.Point(403, 484);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(115, 44);
+            this.buttonEditar.TabIndex = 22;
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcluir
+            // 
+            this.buttonExcluir.FlatAppearance.BorderSize = 0;
+            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirVerde;
+            this.buttonExcluir.Location = new System.Drawing.Point(198, 484);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
+            this.buttonExcluir.TabIndex = 21;
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsulta.Location = new System.Drawing.Point(23, 118);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(102, 23);
+            this.lblConsulta.TabIndex = 20;
+            this.lblConsulta.Text = "Consulta:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(377, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Pesquisa por:";
             // 
             // lblTipo
             // 
@@ -242,9 +243,9 @@
             this.Name = "FrmPesquisas";
             this.Text = "Pesquisas e Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).EndInit();
             this.groupBoxPesquisas.ResumeLayout(false);
             this.groupBoxPesquisas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).EndInit();
             this.ResumeLayout(false);
 
         }
