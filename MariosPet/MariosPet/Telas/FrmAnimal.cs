@@ -16,6 +16,7 @@ namespace MariosPet.Telas
     public partial class FrmAnimal : Form
     {
         Animal classeAni = new Animal();
+        Cliente classeCli = new Cliente();
 
         CrudCliente CrudCli = new CrudCliente();
         public FrmAnimal()
@@ -41,6 +42,7 @@ namespace MariosPet.Telas
 
         public void CopiarParaClasseAnimal()
         {
+            classeCli.nome = txtPesquisaCliente.Text;
             //Animal
             classeAni.nome = txtNomeAnimal.Text;
             classeAni.racaPorte = txtRacaPorte.Text;
@@ -56,6 +58,11 @@ namespace MariosPet.Telas
             CrudAnimal CrudAni = new CrudAnimal();
 
             CrudAni.inserirAnimal(classeAni);
+            CrudCli.inserirCliente(classeCli);
+
+            classeAni.id = Convert.ToInt32(CrudAni.consultaAnimal("Select top 1 ID_ANIMAL from ANIMAL order by ID_ANIMAL desc").Rows[0][0].ToString());
+
+            /*TB_Consulta_Mercadoria = crud_merc.Consulta("SELECT * FROM TB_Mercadorias WHERE Cod_Mercadoria = " + Estatica.codigo);*/
         }
 
         private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
