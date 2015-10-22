@@ -65,7 +65,7 @@ namespace MariosPet.Telas
         {
             //Pessoa
             classePes.nome = txtNomeFuncionario.Text;
-            classePes.nascimento = DateTime.Parse(mstNascimentoFuncionario.Text);
+            classePes.nascimento = mstNascimentoFuncionario.Text;
             classePes.cpf = mstCPFFuncionario.Text;
             classePes.rg = mstRGFuncionario.Text;
             classePes.email = txtEmailFuncionario.Text;

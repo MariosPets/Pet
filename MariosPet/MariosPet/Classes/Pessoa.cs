@@ -14,7 +14,7 @@ namespace MariosPet.Classes
         public string nome { get; set; }
         public string cpf { get; set; }
         public string rg { get; set; }
-        public DateTime nascimento { get; set; }
+        public string nascimento { get; set; }
         public int idEndereco { get; set; }
         public string email { get; set; }
         public string telefone1 { get; set; }

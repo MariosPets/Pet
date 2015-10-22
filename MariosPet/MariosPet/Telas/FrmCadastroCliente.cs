@@ -64,7 +64,7 @@ namespace MariosPet.Telas
 
             //Dados Pessoais
             classeCli.nome = txtNomeCliente.Text;
-            classeCli.nascimento = DateTime.Parse(mskNascimentoCliente.Text);
+            classeCli.nascimento = mskNascimentoCliente.Text;
             classeCli.cpf = mstCPF.Text;
             classeCli.rg = mstRG.Text;
             classeCli.email = txtEmailCliente.Text;
