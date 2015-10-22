@@ -43,7 +43,6 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.buttonEntrar = new System.Windows.Forms.Button();
             this.groupBoxPesquisas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +58,6 @@
             this.groupBoxPesquisas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxPesquisas.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeMarromGrande;
             this.groupBoxPesquisas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisas.Controls.Add(this.buttonEntrar);
             this.groupBoxPesquisas.Controls.Add(this.buttonEditar);
             this.groupBoxPesquisas.Controls.Add(this.buttonExcluir);
             this.groupBoxPesquisas.Controls.Add(this.btnLimpar);
@@ -86,7 +84,7 @@
             this.buttonEditar.FlatAppearance.BorderSize = 0;
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Image = global::MariosPet.Properties.Resources.botaoEditarLaranja;
-            this.buttonEditar.Location = new System.Drawing.Point(306, 484);
+            this.buttonEditar.Location = new System.Drawing.Point(403, 484);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(115, 44);
             this.buttonEditar.TabIndex = 22;
@@ -97,7 +95,7 @@
             this.buttonExcluir.FlatAppearance.BorderSize = 0;
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirVerde;
-            this.buttonExcluir.Location = new System.Drawing.Point(160, 484);
+            this.buttonExcluir.Location = new System.Drawing.Point(198, 484);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
             this.buttonExcluir.TabIndex = 21;
@@ -106,7 +104,7 @@
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.btnLimpar.BackgroundImage = global::MariosPet.Properties.Resources.botaoLimparLaranja;
+            this.btnLimpar.BackgroundImage = global::MariosPet.Properties.Resources.botaoLimparVerde;
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -234,17 +232,6 @@
             this.lblTipo.TabIndex = 16;
             this.lblTipo.Text = "Tipo:";
             // 
-            // buttonEntrar
-            // 
-            this.buttonEntrar.FlatAppearance.BorderSize = 0;
-            this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEntrar.Image = global::MariosPet.Properties.Resources.botaoEntrarVerde;
-            this.buttonEntrar.Location = new System.Drawing.Point(443, 484);
-            this.buttonEntrar.Name = "buttonEntrar";
-            this.buttonEntrar.Size = new System.Drawing.Size(115, 44);
-            this.buttonEntrar.TabIndex = 23;
-            this.buttonEntrar.UseVisualStyleBackColor = true;
-            // 
             // FrmPesquisas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +265,5 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonExcluir;
-        private System.Windows.Forms.Button buttonEntrar;
     }
 }
