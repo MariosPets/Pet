@@ -39,7 +39,7 @@ namespace MariosPet
 
         private void btmSair_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
 
     }
