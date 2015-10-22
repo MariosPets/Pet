@@ -139,6 +139,7 @@
             this.btmConsultar.Size = new System.Drawing.Size(114, 32);
             this.btmConsultar.TabIndex = 1;
             this.btmConsultar.UseVisualStyleBackColor = false;
+            this.btmConsultar.Click += new System.EventHandler(this.btmConsultar_Click);
             // 
             // txtVermifugo
             // 
@@ -156,7 +157,7 @@
             this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
             this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
-            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
+            this.labelBuscaVermifugo.Size = new System.Drawing.Size(180, 23);
             this.labelBuscaVermifugo.TabIndex = 16;
             this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
             // 
