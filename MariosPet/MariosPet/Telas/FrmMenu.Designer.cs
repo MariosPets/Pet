@@ -513,6 +513,7 @@
             this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.medicamentosToolStripMenuItem.Text = "Cadastrar Medicamentos";
             this.medicamentosToolStripMenuItem.ToolTipText = "Medicamentos";
+            this.medicamentosToolStripMenuItem.Click += new System.EventHandler(this.medicamentosToolStripMenuItem_Click);
             // 
             // prontuárioToolStripMenuItem
             // 

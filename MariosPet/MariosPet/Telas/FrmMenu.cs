@@ -86,5 +86,12 @@ namespace MariosPet.Telas
             receituario.ShowDialog();
             Close();
         }
+
+        private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRemedio remedio = new FrmRemedio();
+            remedio.ShowDialog();
+            Close();
+        }
     }
 }
