@@ -184,6 +184,7 @@
             this.btmSalvar.TabIndex = 7;
             this.toolTipAnimal.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
+            this.btmSalvar.Click += new System.EventHandler(this.btmSalvar_Click_1);
             // 
             // lblNascimentoAnimal
             // 
