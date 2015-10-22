@@ -1,0 +1,209 @@
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Tsunemoto\Desktop\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+E:\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+E:\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+E:\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+E:\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+D:\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+D:\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+D:\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Leonardo\Source\Repos\MarioPet3\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Leonardo\Source\Repos\MarioPet3\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo\Source\Repos\MarioPet3\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Tsunemoto\Source\Repos\MarioPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Tsunemoto\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Tsunemoto\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Jéssica Kelly\Desktop\Marios_Pets\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Olivia S\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+C:\Users\Leonardo\Source\Repos\MarioPet5\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Leonardo\Source\Repos\MarioPet5\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo\Source\Repos\MarioPet5\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Leonardo\Source\Repos\MarioPet6\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Leonardo\Source\Repos\MarioPet6\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo\Source\Repos\MarioPet6\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Olivia S\Source\Repos\MarioPet6\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Olivia S\Source\Repos\MarioPet6\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Olivia S\Source\Repos\MarioPet6\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Tsunemoto\Source\Repos\MarioPet4\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Tsunemoto\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Tsunemoto\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+G:\Documentos\FATEC\2015\Laboratório de Engenharia de Software\Projeto\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+G:\Documentos\FATEC\2015\Laboratório de Engenharia de Software\Projeto\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+G:\Documentos\FATEC\2015\Laboratório de Engenharia de Software\Projeto\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet2\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet4\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet4\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Olivia S\Source\Repos\MarioPet13\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Olivia S\Source\Repos\MarioPet13\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Olivia S\Source\Repos\MarioPet13\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Tsunemoto\Source\Repos\MarioPet2\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Tsunemoto\Source\Repos\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Tsunemoto\Source\Repos\MarioPet2\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+G:\Workspace\MariosPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAgenda.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnimal.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFichaClinica.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFornecedor.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFuncionario.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmLaboratorio.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmProduto.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmRemedio.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+G:\Workspace\MariosPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+G:\Workspace\MariosPet\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Taise\Source\Repos\MarioPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Taise\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Taise\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAgenda.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnamnese.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnimal.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFichaClinica.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFornecedor.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFuncionario.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmLaboratorio.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmProduto.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmRemedio.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.frmVacina.resources
+C:\Users\Jéssica Kelly\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnamnese.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.frmVacina.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaCliente.resources
+G:\Workspace\MariosPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaFuncionario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaCliente.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaFuncionario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAgenda.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnamnese.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnimal.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFichaClinica.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFornecedor.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFuncionario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmLaboratorio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmProduto.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmRemedio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.frmVacina.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet8\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaCliente.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaFuncionario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAgenda.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnamnese.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnimal.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmBuscaVacina.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmBuscaVermifugo.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCateirinha.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmExame.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFichaClinica.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFornecedor.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFuncionario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmLaboratorio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmProduto.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmReceituario.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmRemedio.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.frmVacina.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmVermifugo.resources
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+C:\Users\Leonardo Fernando\Source\Repos\MarioPet10\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\bin\Debug\MariosPet.exe
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.csprojResolveAssemblyReference.cache
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaCliente.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.BuscaFuncionario.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAgenda.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnamnese.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmAnimal.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmBuscaVacina.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmBuscaVermifugo.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCadastroCliente.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCateirinha.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmExame.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFichaClinica.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFornecedor.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFuncionario.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.FrmInicio.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmLaboratorio.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.FrmLogin.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Properties.Resources.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmMenu.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmProduto.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmReceituario.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmRemedio.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.frmVacina.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmVermifugo.resources
+C:\Users\Plínio\Source\Repos\MarioPet\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache

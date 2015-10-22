@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67B86253-9CAC-4F6E-82C6-9E6324DAA00D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MariosPet</RootNamespace>
+    <AssemblyName>MariosPet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Agendamento.cs" />
+    <Compile Include="Classes\Anamnese.cs" />
+    <Compile Include="Classes\Animal.cs" />
+    <Compile Include="Classes\Autorizacao.cs" />
+    <Compile Include="Classes\Cliente.cs" />
+    <Compile Include="Classes\ConexaoPadrao.cs" />
+    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Estatica.cs" />
+    <Compile Include="Classes\Exame.cs" />
+    <Compile Include="Classes\FichaClinica.cs" />
+    <Compile Include="Classes\Fornecedor.cs" />
+    <Compile Include="Classes\Foto.cs" />
+    <Compile Include="Classes\Funcionario.cs" />
+    <Compile Include="Classes\Laboratorio.cs" />
+    <Compile Include="Classes\Medicamento.cs" />
+    <Compile Include="Classes\MedicamentoFichaClinica.cs" />
+    <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Classes\PessoaJuridica.cs" />
+    <Compile Include="Classes\Produto.cs" />
+    <Compile Include="Classes\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Servico.cs" />
+    <Compile Include="Classes\Vacina.cs" />
+    <Compile Include="Classes\Validacao.cs" />
+    <Compile Include="Classes\Vermifugo.cs" />
+    <Compile Include="Classes\Veterinario.cs" />
+    <Compile Include="Crud\CrudAgendamento.cs" />
+    <Compile Include="Crud\CrudAnamnese.cs" />
+    <Compile Include="Crud\CrudAnimal.cs" />
+    <Compile Include="Crud\CrudAutorizacao.cs" />
+    <Compile Include="Crud\CrudCliente.cs" />
+    <Compile Include="Crud\CrudEndereco.cs" />
+    <Compile Include="Crud\CrudExame.cs" />
+    <Compile Include="Crud\CrudFichaClinica.cs" />
+    <Compile Include="Crud\CrudFornecedor.cs" />
+    <Compile Include="Crud\CrudFoto.cs" />
+    <Compile Include="Crud\CrudFuncionario.cs" />
+    <Compile Include="Crud\CrudLaboratorio.cs" />
+    <Compile Include="Crud\CrudMedicamento.cs" />
+    <Compile Include="Crud\CrudMedicamentoFichaClinica.cs" />
+    <Compile Include="Crud\CrudPessoa.cs" />
+    <Compile Include="Crud\CrudPessoaJuridica.cs" />
+    <Compile Include="Crud\CrudProduto.cs" />
+    <Compile Include="Crud\CrudServico.cs" />
+    <Compile Include="Crud\CrudVacina.cs" />
+    <Compile Include="Crud\CrudVermifugo.cs" />
+    <Compile Include="Crud\CrudVeterinario.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaCliente.Designer.cs">
+      <DependentUpon>BuscaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaFuncionario.Designer.cs">
+      <DependentUpon>BuscaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmAgenda.Designer.cs">
+      <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmAnamnese.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmAnamnese.Designer.cs">
+      <DependentUpon>FrmAnamnese.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmAnimal.Designer.cs">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmBuscaVacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmBuscaVacina.Designer.cs">
+      <DependentUpon>FrmBuscaVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmBuscaVermifugo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmBuscaVermifugo.Designer.cs">
+      <DependentUpon>FrmBuscaVermifugo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmCadastroCliente.Designer.cs">
+      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmCateirinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmCateirinha.Designer.cs">
+      <DependentUpon>FrmCateirinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmExame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmExame.Designer.cs">
+      <DependentUpon>FrmExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmFichaClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmFichaClinica.Designer.cs">
+      <DependentUpon>FrmFichaClinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmFornecedor.Designer.cs">
+      <DependentUpon>FrmFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmFuncionario.Designer.cs">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmLaboratorio.Designer.cs">
+      <DependentUpon>FrmLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Telas\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmPesquisas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmPesquisas.Designer.cs">
+      <DependentUpon>FrmPesquisas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmProduto.Designer.cs">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmReceituario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmReceituario.Designer.cs">
+      <DependentUpon>FrmReceituario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmRemedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmRemedio.Designer.cs">
+      <DependentUpon>FrmRemedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmServico.Designer.cs">
+      <DependentUpon>FrmServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\frmVacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frmVacina.Designer.cs">
+      <DependentUpon>frmVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmVermifugo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmVermifugo.Designer.cs">
+      <DependentUpon>FrmVermifugo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Telas\BuscaCliente.resx">
+      <DependentUpon>BuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaFuncionario.resx">
+      <DependentUpon>BuscaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmAgenda.resx">
+      <DependentUpon>FrmAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmAnamnese.resx">
+      <DependentUpon>FrmAnamnese.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmAnimal.resx">
+      <DependentUpon>FrmAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmBuscaVacina.resx">
+      <DependentUpon>FrmBuscaVacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmBuscaVermifugo.resx">
+      <DependentUpon>FrmBuscaVermifugo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmCadastroCliente.resx">
+      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmCateirinha.resx">
+      <DependentUpon>FrmCateirinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmExame.resx">
+      <DependentUpon>FrmExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmFichaClinica.resx">
+      <DependentUpon>FrmFichaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmFornecedor.resx">
+      <DependentUpon>FrmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmFuncionario.resx">
+      <DependentUpon>FrmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmLaboratorio.resx">
+      <DependentUpon>FrmLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmProduto.resx">
+      <DependentUpon>FrmProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmReceituario.resx">
+      <DependentUpon>FrmReceituario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmRemedio.resx">
+      <DependentUpon>FrmRemedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frmVacina.resx">
+      <DependentUpon>frmVacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmVermifugo.resx">
+      <DependentUpon>FrmVermifugo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoAbrirLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoAdicionarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoCalcularLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoCancelarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoConsultarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoEditarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoEntrarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoEnviarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoExcluirLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoFecharLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoImprimirLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoLimparLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoMenuLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoNovoLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoPesquisarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoSairLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoSalvarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Laranjas\botaoVoltarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataAmareloMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataAmareloMarromGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataAmareloVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataAmareloVerdeGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataMarromAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataMarromAmareloGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataMarromVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataMarromVerdeGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataPretoAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataPretoAmareloGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataPretoVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataPretoVerdeGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataVerdeAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataVerdeAmareloGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataVerdeMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Patas\pataVerdeMarromGrande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoAbrirVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoAdicionarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoCalcularVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoCancelarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoConsultarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoEditarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoEntrarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoEnviarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoExcluirVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoFecharVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoImprimirVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoLimparVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoMaisVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoMenuVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoNovoVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoPesquisarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoSairVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoSalvarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Verdes\botaoVoltarVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\receituario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\logoBranco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\logoRosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\carteirinhaFrente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\addPhotoAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\addPhotoLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\addPhotoMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\addPhotoVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\helpAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\helpLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\helpMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\helpVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\plusAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\plusLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\plusMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\plusVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\searchAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\searchLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\searchMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\searchVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vaccineAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vaccineLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vaccineMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vaccineVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\carteirinhaVerso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagens\receituario1038X574.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\botaoSelecionarLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vermifugoAmarelo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vermifugoLaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vermifugoMarrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botoes\Icones\vermifugoVerde.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
