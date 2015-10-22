@@ -28,7 +28,7 @@ namespace MariosPet.Telas
         {
             FrmAnimal animal = new FrmAnimal();
             animal.ShowDialog();
-            
+            Close();
         }
 
         private void cadastroToolStripMenuItem3_Click(object sender, EventArgs e)
