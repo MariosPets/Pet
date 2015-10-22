@@ -6,5 +6,6 @@
         static Cliente cliente;
         static Funcionario funcionario;
         static Animal animal;
+        static bool novo;
     }
 }
