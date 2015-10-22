@@ -40,5 +40,12 @@ namespace MariosPet.Telas
 
             CrudServ.inserirServico(classeServ);
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Telas.FrmMenu frmmenu = new FrmMenu();
+            frmmenu.Show();
+            Close();
+        }
     }
 }

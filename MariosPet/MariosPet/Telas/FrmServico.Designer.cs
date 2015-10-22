@@ -115,6 +115,7 @@
             this.btnVoltar.TabIndex = 2;
             this.toolTipServicos.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // groupBoxServico
             // 
