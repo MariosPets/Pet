@@ -509,7 +509,6 @@
             this.lblTelefone1.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone1.TabIndex = 5;
             this.lblTelefone1.Text = "Telefone:";
-            this.lblTelefone1.Click += new System.EventHandler(this.lblTelefone_Click);
             // 
             // lblEmail
             // 
