@@ -735,6 +735,7 @@
             this.toolStripMenuItem60.Size = new System.Drawing.Size(107, 24);
             this.toolStripMenuItem60.Text = "Agenda";
             this.toolStripMenuItem60.ToolTipText = "Agenda";
+            this.toolStripMenuItem60.Click += new System.EventHandler(this.toolStripMenuItem60_Click);
             // 
             // consultasEPesquisasToolStripMenuItem6
             // 

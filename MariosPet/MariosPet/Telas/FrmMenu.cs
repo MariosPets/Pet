@@ -100,5 +100,12 @@ namespace MariosPet.Telas
             funcionario.ShowDialog();
             Close();
         }
+
+        private void toolStripMenuItem60_Click(object sender, EventArgs e)
+        {
+            FrmAgenda agenda = new FrmAgenda();
+            agenda.ShowDialog();
+            Close();
+        }
     }
 }
