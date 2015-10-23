@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFuncionario));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.mstCepFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.cmbUFFuncionario = new System.Windows.Forms.ComboBox();
@@ -689,6 +690,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFuncionario";
             this.Text = "Cadastrar Funcionário";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
