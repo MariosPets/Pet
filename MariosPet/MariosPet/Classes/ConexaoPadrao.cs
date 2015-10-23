@@ -13,7 +13,7 @@ namespace MariosPet.Classes
             //string server = @".\.";        
             //string server = @".\SQLSERVER";
 
-            string server = @"LOCALHOST\SQL";
+            string server = @".\";
             string driver = @"SQL Server";            
             string dataBase = @"MARIOS_PET";
 
