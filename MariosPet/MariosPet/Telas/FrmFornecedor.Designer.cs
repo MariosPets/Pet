@@ -72,6 +72,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.textBoxNomeContato);
             this.groupBox1.Controls.Add(this.labelNomeContato);
@@ -106,7 +107,7 @@
             this.textBoxNomeContato.MaxLength = 50;
             this.textBoxNomeContato.Name = "textBoxNomeContato";
             this.textBoxNomeContato.Size = new System.Drawing.Size(469, 27);
-            this.textBoxNomeContato.TabIndex = 32;
+            this.textBoxNomeContato.TabIndex = 7;
             this.toolTipFornecedor.SetToolTip(this.textBoxNomeContato, "Insira o nome para Contato");
             // 
             // labelNomeContato
@@ -127,7 +128,7 @@
             this.textBoxEmail2.MaxLength = 50;
             this.textBoxEmail2.Name = "textBoxEmail2";
             this.textBoxEmail2.Size = new System.Drawing.Size(469, 27);
-            this.textBoxEmail2.TabIndex = 30;
+            this.textBoxEmail2.TabIndex = 6;
             this.toolTipFornecedor.SetToolTip(this.textBoxEmail2, "Insira o e-mail para Contato");
             // 
             // labelEmail2
@@ -148,8 +149,8 @@
             this.textBoxEmail1.MaxLength = 50;
             this.textBoxEmail1.Name = "textBoxEmail1";
             this.textBoxEmail1.Size = new System.Drawing.Size(469, 27);
-            this.textBoxEmail1.TabIndex = 28;
-            this.toolTipFornecedor.SetToolTip(this.textBoxEmail1, "Insira o email para Contato");
+            this.textBoxEmail1.TabIndex = 5;
+            this.toolTipFornecedor.SetToolTip(this.textBoxEmail1, "Insira o e-mail para Contato");
             // 
             // labelEmail1
             // 
@@ -178,7 +179,7 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(412, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 23);
+            this.label1.Size = new System.Drawing.Size(99, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "Telefone:";
             // 
@@ -232,7 +233,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(111, 166);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
             this.lblTelefone.TabIndex = 20;
             this.lblTelefone.Text = "Telefone:";
             // 
@@ -398,7 +399,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(44, 23);
+            this.lblUF.Size = new System.Drawing.Size(43, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
