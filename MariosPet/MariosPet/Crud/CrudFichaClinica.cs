@@ -15,19 +15,18 @@ namespace MariosPet.Crud
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "insert into FICHA_CLINICA (ID_FICHA_CLINICA, ID_ANIMAL, ID_VETERINARIO, DATA, HISTORICO_CLINICO, QUEIXA_PRINCIPAL, SUSPEITA, PRESCRICAO, SINTOMAS, EXAMES_COMPLEMENTARES, OBSERVACAO) values(?,?,?,?,?,?,?,?,?,?,?)";
+                string sql = "insert into FICHA_CLINICA (ID_ANIMAL, ID_VETERINARIO, DATA, QUEIXA_PRINCIPAL, HISTORICO_CLINICO, SUSPEITA, SINTOMAS, EXAMES_COMPLEMENTARES,PRESCRICAO, OBSERVACAO) values(?,?,?,?,?,?,?,?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_FICHA_CLINICA", fichaclinica.id);
                 command.Parameters.AddWithValue("@ID_ANIMAL", fichaclinica.idAnimal);
                 command.Parameters.AddWithValue("@ID_VETERINARIO", fichaclinica.idVeterinario);
-                command.Parameters.AddWithValue("@DATA", fichaclinica.data);
-                command.Parameters.AddWithValue("@HISTORICO_CLINICO", fichaclinica.historicoClinico);
+                command.Parameters.AddWithValue("@DATA", fichaclinica.data);                
                 command.Parameters.AddWithValue("@QUEIXA_PRINCIPAL", fichaclinica.queixaPrincipal);
-                command.Parameters.AddWithValue("@SUSPEITA", fichaclinica.suspeita);
-                command.Parameters.AddWithValue("@PRESCRICAO", fichaclinica.prescricao);
+                command.Parameters.AddWithValue("@HISTORICO_CLINICO", fichaclinica.historicoClinico);
+                command.Parameters.AddWithValue("@SUSPEITA", fichaclinica.suspeita);                
                 command.Parameters.AddWithValue("@SINTOMAS", fichaclinica.sintomas);
                 command.Parameters.AddWithValue("@EXAMES_COMPLEMENTARES", fichaclinica.examesComplementares);
+                command.Parameters.AddWithValue("@PRESCRICAO", fichaclinica.prescricao);
                 command.Parameters.AddWithValue("@OBSERVACAO", fichaclinica.observacao);
 
                 conexao.Open();
