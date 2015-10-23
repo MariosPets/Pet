@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxBuscaVermifugo = new System.Windows.Forms.GroupBox();
             this.btmLimpar = new System.Windows.Forms.Button();
             this.btmVoltar = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.btmConsultar = new System.Windows.Forms.Button();
             this.txtVermifugo = new System.Windows.Forms.TextBox();
             this.labelBuscaVermifugo = new System.Windows.Forms.Label();
+            this.toolTipVermifugos = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxBuscaVermifugo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVermifugo)).BeginInit();
             this.SuspendLayout();
@@ -71,10 +73,11 @@
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmLimpar.Location = new System.Drawing.Point(468, 220);
+            this.btmLimpar.Location = new System.Drawing.Point(450, 220);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(110, 40);
-            this.btmLimpar.TabIndex = 7;
+            this.btmLimpar.TabIndex = 5;
+            this.toolTipVermifugos.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
             // 
             // btmVoltar
@@ -85,10 +88,11 @@
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmVoltar.Location = new System.Drawing.Point(332, 220);
+            this.btmVoltar.Location = new System.Drawing.Point(328, 220);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 49);
-            this.btmVoltar.TabIndex = 6;
+            this.btmVoltar.TabIndex = 4;
+            this.toolTipVermifugos.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
             // 
             // btmSalvar
@@ -99,10 +103,11 @@
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmSalvar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmSalvar.Location = new System.Drawing.Point(599, 220);
+            this.btmSalvar.Location = new System.Drawing.Point(566, 220);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(118, 43);
-            this.btmSalvar.TabIndex = 8;
+            this.btmSalvar.TabIndex = 6;
+            this.toolTipVermifugos.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
             // 
             // btmNovo
@@ -112,10 +117,11 @@
             this.btmNovo.FlatAppearance.BorderSize = 0;
             this.btmNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmNovo.Location = new System.Drawing.Point(6, 220);
+            this.btmNovo.Location = new System.Drawing.Point(6, 226);
             this.btmNovo.Name = "btmNovo";
             this.btmNovo.Size = new System.Drawing.Size(115, 43);
             this.btmNovo.TabIndex = 3;
+            this.toolTipVermifugos.SetToolTip(this.btmNovo, "Adicionar novo Vermífugo");
             this.btmNovo.UseVisualStyleBackColor = false;
             // 
             // dtgVermifugo
@@ -126,6 +132,7 @@
             this.dtgVermifugo.Name = "dtgVermifugo";
             this.dtgVermifugo.Size = new System.Drawing.Size(674, 97);
             this.dtgVermifugo.TabIndex = 2;
+            this.toolTipVermifugos.SetToolTip(this.dtgVermifugo, "Resultado da Pesquisa");
             // 
             // btmConsultar
             // 
@@ -138,6 +145,7 @@
             this.btmConsultar.Name = "btmConsultar";
             this.btmConsultar.Size = new System.Drawing.Size(114, 32);
             this.btmConsultar.TabIndex = 1;
+            this.toolTipVermifugos.SetToolTip(this.btmConsultar, "Consultar");
             this.btmConsultar.UseVisualStyleBackColor = false;
             this.btmConsultar.Click += new System.EventHandler(this.btmConsultar_Click);
             // 
@@ -150,6 +158,7 @@
             this.txtVermifugo.Name = "txtVermifugo";
             this.txtVermifugo.Size = new System.Drawing.Size(369, 27);
             this.txtVermifugo.TabIndex = 0;
+            this.toolTipVermifugos.SetToolTip(this.txtVermifugo, "Insira o nome do Vermífugo que deseja pesquisar");
             // 
             // labelBuscaVermifugo
             // 
@@ -157,9 +166,15 @@
             this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
             this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
-            this.labelBuscaVermifugo.Size = new System.Drawing.Size(180, 23);
+            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
             this.labelBuscaVermifugo.TabIndex = 16;
             this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
+            // 
+            // toolTipVermifugos
+            // 
+            this.toolTipVermifugos.AutomaticDelay = 100;
+            this.toolTipVermifugos.IsBalloon = true;
+            this.toolTipVermifugos.StripAmpersands = true;
             // 
             // FrmBuscaVermifugo
             // 
@@ -188,6 +203,7 @@
         private System.Windows.Forms.Button btmConsultar;
         private System.Windows.Forms.TextBox txtVermifugo;
         private System.Windows.Forms.Label labelBuscaVermifugo;
+        private System.Windows.Forms.ToolTip toolTipVermifugos;
 
     }
 }
