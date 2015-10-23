@@ -128,5 +128,12 @@ namespace MariosPet.Telas
                 command.ExecuteNonQuery();
             }
         }
+
+        private void carteirinhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCateirinha carteirinha = new FrmCateirinha();
+            carteirinha.Show();
+            Close();
+        }
     }
 }
