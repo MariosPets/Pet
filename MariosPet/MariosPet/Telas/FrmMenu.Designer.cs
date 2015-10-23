@@ -390,7 +390,7 @@
             this.cadastroToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.ToolTipText = "Cadastro de Clientes";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -402,7 +402,7 @@
             this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.ToolTipText = "Relatórios";
             // 
@@ -538,6 +538,7 @@
             this.carteirinhaToolStripMenuItem.Name = "carteirinhaToolStripMenuItem";
             this.carteirinhaToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.carteirinhaToolStripMenuItem.Text = "Carteirinha";
+            this.carteirinhaToolStripMenuItem.Click += new System.EventHandler(this.carteirinhaToolStripMenuItem_Click);
             // 
             // produtosEServiçosToolStripMenuItem
             // 
@@ -573,7 +574,7 @@
             this.serviçosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.serviçosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviçosToolStripMenuItem.Image")));
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.serviçosToolStripMenuItem.Text = "Serviços";
             this.serviçosToolStripMenuItem.ToolTipText = "Cadastro de Serviços";
             this.serviçosToolStripMenuItem.Click += new System.EventHandler(this.serviçosToolStripMenuItem_Click);
@@ -584,7 +585,7 @@
             this.produtosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.produtosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("produtosToolStripMenuItem.Image")));
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.ToolTipText = "Cadastro de Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
@@ -630,7 +631,7 @@
             this.cadastroToolStripMenuItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem3.Image")));
             this.cadastroToolStripMenuItem3.Name = "cadastroToolStripMenuItem3";
-            this.cadastroToolStripMenuItem3.Size = new System.Drawing.Size(156, 26);
+            this.cadastroToolStripMenuItem3.Size = new System.Drawing.Size(153, 26);
             this.cadastroToolStripMenuItem3.Text = "Cadastro";
             this.cadastroToolStripMenuItem3.ToolTipText = "Cadastro de Fornecedores";
             this.cadastroToolStripMenuItem3.Click += new System.EventHandler(this.cadastroToolStripMenuItem3_Click);
