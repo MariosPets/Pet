@@ -108,9 +108,10 @@
             this.richTextBoxManejo.Location = new System.Drawing.Point(663, 366);
             this.richTextBoxManejo.MaxLength = 500;
             this.richTextBoxManejo.Name = "richTextBoxManejo";
-            this.richTextBoxManejo.Size = new System.Drawing.Size(600, 67);
-            this.richTextBoxManejo.TabIndex = 9;
+            this.richTextBoxManejo.Size = new System.Drawing.Size(590, 67);
+            this.richTextBoxManejo.TabIndex = 12;
             this.richTextBoxManejo.Text = "";
+            this.toolTipAnamnese.SetToolTip(this.richTextBoxManejo, "Digite informações sobre o manejo.");
             // 
             // btmVoltar
             // 
@@ -120,10 +121,11 @@
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmVoltar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmVoltar.Image = global::MariosPet.Properties.Resources.botaoVoltarLaranja;
-            this.btmVoltar.Location = new System.Drawing.Point(410, 441);
+            this.btmVoltar.Location = new System.Drawing.Point(401, 441);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
-            this.btmVoltar.TabIndex = 12;
+            this.btmVoltar.TabIndex = 13;
+            this.toolTipAnamnese.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
             this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
             // 
@@ -135,10 +137,11 @@
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmSalvar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarLaranja;
-            this.btmSalvar.Location = new System.Drawing.Point(719, 441);
+            this.btmSalvar.Location = new System.Drawing.Point(742, 441);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(127, 44);
-            this.btmSalvar.TabIndex = 10;
+            this.btmSalvar.TabIndex = 15;
+            this.toolTipAnamnese.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
             this.btmSalvar.Click += new System.EventHandler(this.btmSalvar_Click);
             // 
@@ -153,7 +156,8 @@
             this.btmLimpar.Location = new System.Drawing.Point(575, 441);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(117, 44);
-            this.btmLimpar.TabIndex = 11;
+            this.btmLimpar.TabIndex = 14;
+            this.toolTipAnamnese.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
             this.btmLimpar.Click += new System.EventHandler(this.btmLimpar_Click);
             // 
@@ -175,9 +179,9 @@
             this.richTextBoxPelesAnexos.MaxLength = 500;
             this.richTextBoxPelesAnexos.Name = "richTextBoxPelesAnexos";
             this.richTextBoxPelesAnexos.Size = new System.Drawing.Size(600, 67);
-            this.richTextBoxPelesAnexos.TabIndex = 5;
+            this.richTextBoxPelesAnexos.TabIndex = 11;
             this.richTextBoxPelesAnexos.Text = "";
-            this.toolTipAnamnese.SetToolTip(this.richTextBoxPelesAnexos, "Digite informações sobre a pele e anexos do animal, como: ");
+            this.toolTipAnamnese.SetToolTip(this.richTextBoxPelesAnexos, "Digite informações sobre a pele e anexos do animal.");
             // 
             // labelPelesAnexos
             // 
@@ -197,7 +201,7 @@
             this.richTextBoxNervosoLocomotor.MaxLength = 500;
             this.richTextBoxNervosoLocomotor.Name = "richTextBoxNervosoLocomotor";
             this.richTextBoxNervosoLocomotor.Size = new System.Drawing.Size(590, 67);
-            this.richTextBoxNervosoLocomotor.TabIndex = 8;
+            this.richTextBoxNervosoLocomotor.TabIndex = 10;
             this.richTextBoxNervosoLocomotor.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxNervosoLocomotor, "Digite informações do sistema nervoso-locomotor, como: convulsões, postura, march" +
         "a ou doenças acometidas.");
@@ -210,7 +214,7 @@
             this.richTextBoxCardioRespiratorio.MaxLength = 500;
             this.richTextBoxCardioRespiratorio.Name = "richTextBoxCardioRespiratorio";
             this.richTextBoxCardioRespiratorio.Size = new System.Drawing.Size(588, 67);
-            this.richTextBoxCardioRespiratorio.TabIndex = 7;
+            this.richTextBoxCardioRespiratorio.TabIndex = 8;
             this.richTextBoxCardioRespiratorio.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxCardioRespiratorio, "Digite informações do sistema Cardio-Respiratório, como: respiração, secreção, to" +
         "sse ou doenças acometidas.");
@@ -223,10 +227,9 @@
             this.richTextBoxGenitoUrinario.MaxLength = 500;
             this.richTextBoxGenitoUrinario.Name = "richTextBoxGenitoUrinario";
             this.richTextBoxGenitoUrinario.Size = new System.Drawing.Size(600, 67);
-            this.richTextBoxGenitoUrinario.TabIndex = 4;
+            this.richTextBoxGenitoUrinario.TabIndex = 7;
             this.richTextBoxGenitoUrinario.Text = "";
-            this.toolTipAnamnese.SetToolTip(this.richTextBoxGenitoUrinario, "Digite informações do sistema genito-urinário, como: micção, castração ou doenças" +
-        " acometidas.");
+            this.toolTipAnamnese.SetToolTip(this.richTextBoxGenitoUrinario, "Digite informações do sistema Digestório.");
             // 
             // richTextBoxDigestorio
             // 
@@ -236,7 +239,7 @@
             this.richTextBoxDigestorio.MaxLength = 500;
             this.richTextBoxDigestorio.Name = "richTextBoxDigestorio";
             this.richTextBoxDigestorio.Size = new System.Drawing.Size(600, 67);
-            this.richTextBoxDigestorio.TabIndex = 3;
+            this.richTextBoxDigestorio.TabIndex = 9;
             this.richTextBoxDigestorio.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxDigestorio, "Digite informações do sistema digestivo, como: apetite, ingestão de agua ou doenç" +
         "as acometidas.");
@@ -249,7 +252,7 @@
             this.richTextBoxTratamento.MaxLength = 150;
             this.richTextBoxTratamento.Name = "richTextBoxTratamento";
             this.richTextBoxTratamento.Size = new System.Drawing.Size(590, 75);
-            this.richTextBoxTratamento.TabIndex = 6;
+            this.richTextBoxTratamento.TabIndex = 4;
             this.richTextBoxTratamento.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxTratamento, "Descreva por quais tratamentos o animal já passou.");
             // 
@@ -299,7 +302,7 @@
             this.labelTratamento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTratamento.Location = new System.Drawing.Point(662, 68);
             this.labelTratamento.Name = "labelTratamento";
-            this.labelTratamento.Size = new System.Drawing.Size(209, 18);
+            this.labelTratamento.Size = new System.Drawing.Size(207, 18);
             this.labelTratamento.TabIndex = 11;
             this.labelTratamento.Text = "Tratamentos realizados:";
             // 
@@ -311,7 +314,7 @@
             this.richTextBoxDoenca.MaxLength = 200;
             this.richTextBoxDoenca.Name = "richTextBoxDoenca";
             this.richTextBoxDoenca.Size = new System.Drawing.Size(600, 75);
-            this.richTextBoxDoenca.TabIndex = 2;
+            this.richTextBoxDoenca.TabIndex = 3;
             this.richTextBoxDoenca.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxDoenca, "Descreva as doenças que o anima já teve.");
             // 
@@ -322,10 +325,11 @@
             this.radioButtonNao.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonNao.Location = new System.Drawing.Point(292, 43);
             this.radioButtonNao.Name = "radioButtonNao";
-            this.radioButtonNao.Size = new System.Drawing.Size(56, 22);
-            this.radioButtonNao.TabIndex = 1;
+            this.radioButtonNao.Size = new System.Drawing.Size(58, 22);
+            this.radioButtonNao.TabIndex = 2;
             this.radioButtonNao.TabStop = true;
-            this.radioButtonNao.Text = "não";
+            this.radioButtonNao.Text = "Não";
+            this.toolTipAnamnese.SetToolTip(this.radioButtonNao, "Selecionar se a Vacinação não estiver em dia.");
             this.radioButtonNao.UseVisualStyleBackColor = true;
             this.radioButtonNao.CheckedChanged += new System.EventHandler(this.radioButtonNao_CheckedChanged);
             // 
@@ -335,9 +339,10 @@
             this.radioButtonSim.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonSim.Location = new System.Drawing.Point(220, 43);
             this.radioButtonSim.Name = "radioButtonSim";
-            this.radioButtonSim.Size = new System.Drawing.Size(55, 22);
-            this.radioButtonSim.TabIndex = 0;
-            this.radioButtonSim.Text = "sim";
+            this.radioButtonSim.Size = new System.Drawing.Size(56, 22);
+            this.radioButtonSim.TabIndex = 1;
+            this.radioButtonSim.Text = "Sim";
+            this.toolTipAnamnese.SetToolTip(this.radioButtonSim, "Selecionar se a Vacinação estiver em dia.");
             this.radioButtonSim.UseVisualStyleBackColor = true;
             this.radioButtonSim.CheckedChanged += new System.EventHandler(this.radioButtonSim_CheckedChanged);
             // 
@@ -357,7 +362,7 @@
             this.lblVacinaEmDia.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVacinaEmDia.Location = new System.Drawing.Point(3, 45);
             this.lblVacinaEmDia.Name = "lblVacinaEmDia";
-            this.lblVacinaEmDia.Size = new System.Drawing.Size(203, 18);
+            this.lblVacinaEmDia.Size = new System.Drawing.Size(202, 18);
             this.lblVacinaEmDia.TabIndex = 0;
             this.lblVacinaEmDia.Text = "Vacinação está em dia?";
             // 
@@ -368,7 +373,7 @@
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(789, 142);
+            this.btnNovo.Location = new System.Drawing.Point(753, 142);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(116, 44);
             this.btnNovo.TabIndex = 3;
@@ -385,7 +390,7 @@
             this.dtgAnimal.Name = "dtgAnimal";
             this.dtgAnimal.Size = new System.Drawing.Size(726, 93);
             this.dtgAnimal.TabIndex = 2;
-            this.toolTipAnamnese.SetToolTip(this.dtgAnimal, "Exibe o nome dos animais para que você selecione o animal que está procurando.");
+            this.toolTipAnamnese.SetToolTip(this.dtgAnimal, "Resultado da Pesquisa");
             // 
             // txtPesquisaAnimal
             // 
@@ -423,10 +428,11 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btnConsultar.Location = new System.Drawing.Point(789, 41);
+            this.btnConsultar.Location = new System.Drawing.Point(753, 41);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
             this.btnConsultar.TabIndex = 1;
+            this.toolTipAnamnese.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 

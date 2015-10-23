@@ -11,6 +11,8 @@ namespace MariosPet.Classes
         #region Atributos
 
         public int id { get; set; }
+        public int idAnimal { get; set; }
+        public int idVeterinario { get; set; }
         public bool vacinado { get; set; }
         public string doencas { get; set; }
         public string tratamentos { get; set; }
@@ -20,6 +22,7 @@ namespace MariosPet.Classes
         public string sistemaNervosoLocomotor { get; set; }
         public string pelesAnexos { get; set; }
         public string manejo { get; set; }
+        public DateTime data { get; set; }
 
         #endregion
     }
