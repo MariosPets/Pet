@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgenda));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,6 +112,7 @@
             this.textBoxFuncionario = new System.Windows.Forms.TextBox();
             this.buttonFuncionario = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTipAgenda = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBoxAgendamento.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAgendados)).BeginInit();
@@ -871,7 +873,7 @@
             this.labelData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelData.Name = "labelData";
             this.labelData.Size = new System.Drawing.Size(44, 20);
-            this.labelData.TabIndex = 3;
+            this.labelData.TabIndex = 0;
             this.labelData.Text = "Data";
             // 
             // groupBoxAgendamento
@@ -887,10 +889,10 @@
             this.groupBoxAgendamento.Controls.Add(this.labelCliente);
             this.groupBoxAgendamento.Enabled = false;
             this.groupBoxAgendamento.Location = new System.Drawing.Point(110, 196);
-            this.groupBoxAgendamento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxAgendamento.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxAgendamento.Name = "groupBoxAgendamento";
-            this.groupBoxAgendamento.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBoxAgendamento.Size = new System.Drawing.Size(554, 174);
+            this.groupBoxAgendamento.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxAgendamento.Size = new System.Drawing.Size(493, 174);
             this.groupBoxAgendamento.TabIndex = 20;
             this.groupBoxAgendamento.TabStop = false;
             // 
@@ -908,33 +910,40 @@
             // 
             // buttonCliente
             // 
-            this.buttonCliente.Location = new System.Drawing.Point(373, 42);
-            this.buttonCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCliente.BackgroundImage = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
+            this.buttonCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonCliente.FlatAppearance.BorderSize = 0;
+            this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente.Location = new System.Drawing.Point(359, 36);
+            this.buttonCliente.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCliente.Name = "buttonCliente";
-            this.buttonCliente.Size = new System.Drawing.Size(82, 34);
-            this.buttonCliente.TabIndex = 28;
-            this.buttonCliente.Text = "Selecionar cliente";
+            this.buttonCliente.Size = new System.Drawing.Size(122, 46);
+            this.buttonCliente.TabIndex = 1;
+            this.toolTipAgenda.SetToolTip(this.buttonCliente, "Selecionar Cliente");
             this.buttonCliente.UseVisualStyleBackColor = true;
             // 
             // textBoxCliente
             // 
             this.textBoxCliente.Enabled = false;
+            this.textBoxCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.textBoxCliente.Location = new System.Drawing.Point(66, 50);
-            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCliente.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCliente.Name = "textBoxCliente";
             this.textBoxCliente.Size = new System.Drawing.Size(289, 20);
-            this.textBoxCliente.TabIndex = 27;
+            this.textBoxCliente.TabIndex = 0;
+            this.toolTipAgenda.SetToolTip(this.textBoxCliente, "Insira o nome do Cliente");
             // 
             // buttonExcluir
             // 
             this.buttonExcluir.FlatAppearance.BorderSize = 0;
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirLaranja;
-            this.buttonExcluir.Location = new System.Drawing.Point(305, 122);
-            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExcluir.Location = new System.Drawing.Point(232, 122);
+            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(123, 48);
-            this.buttonExcluir.TabIndex = 6;
+            this.buttonExcluir.TabIndex = 3;
+            this.toolTipAgenda.SetToolTip(this.buttonExcluir, "Excluir");
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // buttonSalvar
@@ -942,11 +951,12 @@
             this.buttonSalvar.FlatAppearance.BorderSize = 0;
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.buttonSalvar.Location = new System.Drawing.Point(427, 128);
-            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSalvar.Location = new System.Drawing.Point(359, 125);
+            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(123, 42);
-            this.buttonSalvar.TabIndex = 5;
+            this.buttonSalvar.TabIndex = 4;
+            this.toolTipAgenda.SetToolTip(this.buttonSalvar, "Salvar");
             this.buttonSalvar.UseVisualStyleBackColor = true;
             // 
             // checkBoxAtendido
@@ -954,22 +964,25 @@
             this.checkBoxAtendido.AutoSize = true;
             this.checkBoxAtendido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAtendido.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.checkBoxAtendido.Location = new System.Drawing.Point(439, 15);
-            this.checkBoxAtendido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxAtendido.Location = new System.Drawing.Point(377, 17);
+            this.checkBoxAtendido.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAtendido.Name = "checkBoxAtendido";
             this.checkBoxAtendido.Size = new System.Drawing.Size(81, 20);
             this.checkBoxAtendido.TabIndex = 4;
             this.checkBoxAtendido.Text = "Atendido";
+            this.toolTipAgenda.SetToolTip(this.checkBoxAtendido, "Selecionar se Atendido");
             this.checkBoxAtendido.UseVisualStyleBackColor = true;
             // 
             // comboBoxServico
             // 
+            this.comboBoxServico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.comboBoxServico.FormattingEnabled = true;
             this.comboBoxServico.Location = new System.Drawing.Point(66, 87);
-            this.comboBoxServico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxServico.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxServico.Name = "comboBoxServico";
             this.comboBoxServico.Size = new System.Drawing.Size(289, 21);
-            this.comboBoxServico.TabIndex = 3;
+            this.comboBoxServico.TabIndex = 2;
+            this.toolTipAgenda.SetToolTip(this.comboBoxServico, "Selecionar Serviço");
             // 
             // labelServiço
             // 
@@ -997,11 +1010,14 @@
             // 
             // dateTimePicker
             // 
+            this.dateTimePicker.CalendarForeColor = System.Drawing.Color.Black;
+            this.dateTimePicker.CalendarTitleForeColor = System.Drawing.Color.Black;
             this.dateTimePicker.Location = new System.Drawing.Point(163, 113);
-            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(283, 20);
-            this.dateTimePicker.TabIndex = 4;
+            this.dateTimePicker.Size = new System.Drawing.Size(302, 20);
+            this.dateTimePicker.TabIndex = 1;
+            this.toolTipAgenda.SetToolTip(this.dateTimePicker, "Data");
             this.dateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker_ValueChanged);
             // 
             // labelHorariosAgendados
@@ -1012,35 +1028,39 @@
             this.labelHorariosAgendados.Location = new System.Drawing.Point(114, 372);
             this.labelHorariosAgendados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHorariosAgendados.Name = "labelHorariosAgendados";
-            this.labelHorariosAgendados.Size = new System.Drawing.Size(153, 20);
-            this.labelHorariosAgendados.TabIndex = 22;
-            this.labelHorariosAgendados.Text = "Horários agendados";
+            this.labelHorariosAgendados.Size = new System.Drawing.Size(155, 20);
+            this.labelHorariosAgendados.TabIndex = 9;
+            this.labelHorariosAgendados.Text = "Horários Agendados";
             // 
             // dataGridViewAgendados
             // 
             this.dataGridViewAgendados.AllowUserToAddRows = false;
             this.dataGridViewAgendados.AllowUserToDeleteRows = false;
+            this.dataGridViewAgendados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(230)))), ((int)(((byte)(210)))));
             this.dataGridViewAgendados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAgendados.Location = new System.Drawing.Point(118, 395);
-            this.dataGridViewAgendados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewAgendados.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewAgendados.Name = "dataGridViewAgendados";
             this.dataGridViewAgendados.ReadOnly = true;
             this.dataGridViewAgendados.RowTemplate.Height = 24;
             this.dataGridViewAgendados.Size = new System.Drawing.Size(180, 122);
-            this.dataGridViewAgendados.TabIndex = 23;
+            this.dataGridViewAgendados.TabIndex = 10;
+            this.toolTipAgenda.SetToolTip(this.dataGridViewAgendados, "Horários Agendados");
             // 
             // dataGridViewLivres
             // 
             this.dataGridViewLivres.AllowUserToAddRows = false;
             this.dataGridViewLivres.AllowUserToDeleteRows = false;
+            this.dataGridViewLivres.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(230)))), ((int)(((byte)(210)))));
             this.dataGridViewLivres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLivres.Location = new System.Drawing.Point(358, 395);
-            this.dataGridViewLivres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewLivres.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewLivres.Name = "dataGridViewLivres";
             this.dataGridViewLivres.ReadOnly = true;
             this.dataGridViewLivres.RowTemplate.Height = 24;
             this.dataGridViewLivres.Size = new System.Drawing.Size(180, 122);
-            this.dataGridViewLivres.TabIndex = 25;
+            this.dataGridViewLivres.TabIndex = 11;
+            this.toolTipAgenda.SetToolTip(this.dataGridViewLivres, "Horários Livres");
             // 
             // labelHorariosLivres
             // 
@@ -1050,28 +1070,33 @@
             this.labelHorariosLivres.Location = new System.Drawing.Point(357, 372);
             this.labelHorariosLivres.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHorariosLivres.Name = "labelHorariosLivres";
-            this.labelHorariosLivres.Size = new System.Drawing.Size(108, 20);
+            this.labelHorariosLivres.Size = new System.Drawing.Size(114, 20);
             this.labelHorariosLivres.TabIndex = 24;
-            this.labelHorariosLivres.Text = "Horários livres";
+            this.labelHorariosLivres.Text = "Horários Livres";
             // 
             // textBoxFuncionario
             // 
             this.textBoxFuncionario.Enabled = false;
+            this.textBoxFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.textBoxFuncionario.Location = new System.Drawing.Point(202, 160);
-            this.textBoxFuncionario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFuncionario.Name = "textBoxFuncionario";
-            this.textBoxFuncionario.Size = new System.Drawing.Size(244, 20);
-            this.textBoxFuncionario.TabIndex = 1;
+            this.textBoxFuncionario.Size = new System.Drawing.Size(263, 20);
+            this.textBoxFuncionario.TabIndex = 2;
+            this.toolTipAgenda.SetToolTip(this.textBoxFuncionario, "Insira o nome do Funcionário");
             this.textBoxFuncionario.TextChanged += new System.EventHandler(this.textBoxFuncionario_TextChanged);
             // 
             // buttonFuncionario
             // 
-            this.buttonFuncionario.Location = new System.Drawing.Point(493, 148);
-            this.buttonFuncionario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonFuncionario.BackgroundImage = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
+            this.buttonFuncionario.FlatAppearance.BorderSize = 0;
+            this.buttonFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFuncionario.Location = new System.Drawing.Point(469, 148);
+            this.buttonFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.buttonFuncionario.Name = "buttonFuncionario";
-            this.buttonFuncionario.Size = new System.Drawing.Size(88, 42);
-            this.buttonFuncionario.TabIndex = 2;
-            this.buttonFuncionario.Text = "Selecionar funcionário";
+            this.buttonFuncionario.Size = new System.Drawing.Size(118, 42);
+            this.buttonFuncionario.TabIndex = 3;
+            this.toolTipAgenda.SetToolTip(this.buttonFuncionario, "Selecionar Funcionário");
             this.buttonFuncionario.UseVisualStyleBackColor = true;
             this.buttonFuncionario.Click += new System.EventHandler(this.buttonFuncionario_Click);
             // 
@@ -1106,7 +1131,7 @@
             this.Controls.Add(this.labelFuncionario);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1205,5 +1230,6 @@
         private System.Windows.Forms.TextBox textBoxFuncionario;
         private System.Windows.Forms.Button buttonFuncionario;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTipAgenda;
     }
 }
