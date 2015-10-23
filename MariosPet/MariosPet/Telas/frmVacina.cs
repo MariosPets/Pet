@@ -16,5 +16,12 @@ namespace MariosPet.Telas
             fichaclinica.Show();
             Close();
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            FrmAnimal animal = new FrmAnimal();
+            animal.ShowDialog();
+
+        }
     }
 }

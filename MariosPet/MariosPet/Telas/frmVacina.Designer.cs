@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxVacina = new System.Windows.Forms.GroupBox();
+            this.labelNomeAnimal = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.dtgVacina = new System.Windows.Forms.DataGridView();
-            this.labelNomeAnimal = new System.Windows.Forms.Label();
             this.groupBoxVacina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacina)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +56,16 @@
             this.groupBoxVacina.TabIndex = 6;
             this.groupBoxVacina.TabStop = false;
             this.groupBoxVacina.Text = "   Vacina";
+            // 
+            // labelNomeAnimal
+            // 
+            this.labelNomeAnimal.AutoSize = true;
+            this.labelNomeAnimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeAnimal.Location = new System.Drawing.Point(6, 46);
+            this.labelNomeAnimal.Name = "labelNomeAnimal";
+            this.labelNomeAnimal.Size = new System.Drawing.Size(169, 23);
+            this.labelNomeAnimal.TabIndex = 22;
+            this.labelNomeAnimal.Text = "Nome do Animal";
             // 
             // btnCancelar
             // 
@@ -80,6 +90,7 @@
             this.btnNovo.Size = new System.Drawing.Size(117, 38);
             this.btnNovo.TabIndex = 3;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dtgVacina
             // 
@@ -89,16 +100,6 @@
             this.dtgVacina.Name = "dtgVacina";
             this.dtgVacina.Size = new System.Drawing.Size(674, 97);
             this.dtgVacina.TabIndex = 2;
-            // 
-            // labelNomeAnimal
-            // 
-            this.labelNomeAnimal.AutoSize = true;
-            this.labelNomeAnimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeAnimal.Location = new System.Drawing.Point(6, 46);
-            this.labelNomeAnimal.Name = "labelNomeAnimal";
-            this.labelNomeAnimal.Size = new System.Drawing.Size(169, 23);
-            this.labelNomeAnimal.TabIndex = 22;
-            this.labelNomeAnimal.Text = "Nome do Animal";
             // 
             // frmVacina
             // 
