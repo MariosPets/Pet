@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxVermifugo = new System.Windows.Forms.GroupBox();
             this.labelNomeAnimal = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.dtgVermifugo = new System.Windows.Forms.DataGridView();
+            this.toolTipVermifugo = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxVermifugo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVermifugo)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +76,8 @@
             this.btnCancelar.Location = new System.Drawing.Point(435, 210);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(126, 31);
-            this.btnCancelar.TabIndex = 20;
+            this.btnCancelar.TabIndex = 1;
+            this.toolTipVermifugo.SetToolTip(this.btnCancelar, "Cancelar");
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnNovo
@@ -86,7 +89,8 @@
             this.btnNovo.Location = new System.Drawing.Point(567, 206);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(117, 38);
-            this.btnNovo.TabIndex = 3;
+            this.btnNovo.TabIndex = 2;
+            this.toolTipVermifugo.SetToolTip(this.btnNovo, "Adicionar novo Vermífugo");
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
@@ -97,7 +101,14 @@
             this.dtgVermifugo.Location = new System.Drawing.Point(10, 91);
             this.dtgVermifugo.Name = "dtgVermifugo";
             this.dtgVermifugo.Size = new System.Drawing.Size(674, 97);
-            this.dtgVermifugo.TabIndex = 2;
+            this.dtgVermifugo.TabIndex = 0;
+            this.toolTipVermifugo.SetToolTip(this.dtgVermifugo, "Vermífugos que o Animal já tomou.");
+            // 
+            // toolTipVermifugo
+            // 
+            this.toolTipVermifugo.AutomaticDelay = 100;
+            this.toolTipVermifugo.IsBalloon = true;
+            this.toolTipVermifugo.StripAmpersands = true;
             // 
             // FrmVermifugo
             // 
@@ -122,6 +133,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.DataGridView dtgVermifugo;
+        private System.Windows.Forms.ToolTip toolTipVermifugo;
 
     }
 }
