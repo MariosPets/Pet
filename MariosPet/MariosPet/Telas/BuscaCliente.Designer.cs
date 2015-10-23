@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonCancela = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
@@ -38,8 +39,10 @@
             this.labelPesquisa = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBoxCliente.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCancela
@@ -47,7 +50,7 @@
             this.buttonCancela.FlatAppearance.BorderSize = 0;
             this.buttonCancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancela.Image = global::MariosPet.Properties.Resources.botaoCancelarVerde;
-            this.buttonCancela.Location = new System.Drawing.Point(535, 324);
+            this.buttonCancela.Location = new System.Drawing.Point(535, 235);
             this.buttonCancela.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancela.Name = "buttonCancela";
             this.buttonCancela.Size = new System.Drawing.Size(117, 50);
@@ -62,7 +65,7 @@
             this.buttonSelecionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonSelecionar.FlatAppearance.BorderSize = 0;
             this.buttonSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSelecionar.Location = new System.Drawing.Point(668, 324);
+            this.buttonSelecionar.Location = new System.Drawing.Point(668, 235);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(120, 39);
@@ -75,9 +78,14 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(20, 93);
+            this.dataGridView.Location = new System.Drawing.Point(20, 18);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
@@ -146,29 +154,41 @@
             this.groupBoxCliente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxCliente.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBoxCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxCliente.Controls.Add(this.buttonSelecionar);
-            this.groupBoxCliente.Controls.Add(this.buttonCancela);
             this.groupBoxCliente.Controls.Add(this.buttonPesquisa);
             this.groupBoxCliente.Controls.Add(this.comboBoxPesquisa);
-            this.groupBoxCliente.Controls.Add(this.dataGridView);
             this.groupBoxCliente.Controls.Add(this.textBoxPesquisa);
             this.groupBoxCliente.Controls.Add(this.labelPesquisa);
             this.groupBoxCliente.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBoxCliente.Location = new System.Drawing.Point(12, 12);
             this.groupBoxCliente.Name = "groupBoxCliente";
-            this.groupBoxCliente.Size = new System.Drawing.Size(812, 388);
-            this.groupBoxCliente.TabIndex = 8;
+            this.groupBoxCliente.Size = new System.Drawing.Size(812, 91);
+            this.groupBoxCliente.TabIndex = 0;
             this.groupBoxCliente.TabStop = false;
             this.groupBoxCliente.Text = "   Pesquisar Cliente";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.buttonSelecionar);
+            this.groupBox1.Controls.Add(this.buttonCancela);
+            this.groupBox1.Controls.Add(this.dataGridView);
+            this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBox1.Location = new System.Drawing.Point(12, 109);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(812, 305);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
             // 
             // BuscaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(901, 429);
+            this.ClientSize = new System.Drawing.Size(901, 591);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCliente);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BuscaCliente";
@@ -177,6 +197,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.groupBoxCliente.ResumeLayout(false);
             this.groupBoxCliente.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -192,5 +213,6 @@
         private System.Windows.Forms.Label labelPesquisa;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.GroupBox groupBoxCliente;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

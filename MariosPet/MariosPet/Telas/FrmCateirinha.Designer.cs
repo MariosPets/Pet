@@ -41,6 +41,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtProprietario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtRegistro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -144,7 +146,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F);
-            this.label5.Location = new System.Drawing.Point(57, 182);
+            this.label5.Location = new System.Drawing.Point(57, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 23);
             this.label5.TabIndex = 11;
@@ -153,7 +155,7 @@
             // txtProprietario
             // 
             this.txtProprietario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtProprietario.Location = new System.Drawing.Point(213, 185);
+            this.txtProprietario.Location = new System.Drawing.Point(213, 220);
             this.txtProprietario.Name = "txtProprietario";
             this.txtProprietario.Size = new System.Drawing.Size(175, 20);
             this.txtProprietario.TabIndex = 10;
@@ -161,6 +163,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtRegistro);
             this.groupBox1.Controls.Add(this.txtCor);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnSalvar);
@@ -178,6 +182,24 @@
             this.groupBox1.Size = new System.Drawing.Size(426, 355);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 14.25F);
+            this.label6.Location = new System.Drawing.Point(90, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 23);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Registro:";
+            // 
+            // txtRegistro
+            // 
+            this.txtRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtRegistro.Location = new System.Drawing.Point(213, 182);
+            this.txtRegistro.Name = "txtRegistro";
+            this.txtRegistro.Size = new System.Drawing.Size(175, 20);
+            this.txtRegistro.TabIndex = 12;
             // 
             // FrmCateirinha
             // 
@@ -212,5 +234,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtProprietario;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtRegistro;
     }
 }
