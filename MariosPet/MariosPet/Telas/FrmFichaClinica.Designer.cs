@@ -121,6 +121,7 @@
             this.roundButtonVacina.Size = new System.Drawing.Size(45, 45);
             this.roundButtonVacina.TabIndex = 40;
             this.roundButtonVacina.UseVisualStyleBackColor = false;
+            this.roundButtonVacina.Click += new System.EventHandler(this.roundButtonVacina_Click);
             // 
             // txtObservacao
             // 

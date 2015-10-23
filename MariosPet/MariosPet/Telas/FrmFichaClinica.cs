@@ -96,5 +96,12 @@ namespace MariosPet.Telas
 
             dtgAnimal.DataSource = CrudAni.consultaAnimal("Select * from ANIMAL where NOME like '%" + txtPesquisaAnimal.Text + "%'");
         }
+
+        private void roundButtonVacina_Click(object sender, EventArgs e)
+        {
+            frmVacina vacina = new frmVacina();
+            vacina.ShowDialog();
+
+        }
     }
 }
