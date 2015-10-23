@@ -51,20 +51,6 @@ namespace MariosPet.Telas
             classeAni.sexo = radioButtonFemea.Checked;
         }
 
-        private void btmSalvar_Click(object sender, EventArgs e)
-        {
-            /*CopiarParaClasseAnimal();
-
-            CrudAnimal CrudAni = new CrudAnimal();
-
-            CrudAni.inserirAnimal(classeAni);*/
-            //CrudCli.inserirCliente(classeCli);
-
-
-            //classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
-
-        }
-
         private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButtonFemea.Checked == true)
