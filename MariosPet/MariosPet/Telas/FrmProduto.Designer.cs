@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmProduto));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxFornecedor = new System.Windows.Forms.TextBox();
             this.btmLimpar = new System.Windows.Forms.Button();
@@ -467,6 +468,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(921, 573);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmProduto";
             this.Text = "Cadastrar Produto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
