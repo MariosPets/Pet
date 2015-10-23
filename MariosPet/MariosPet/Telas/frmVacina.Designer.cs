@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipVacina = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxVacina = new System.Windows.Forms.GroupBox();
             this.labelNomeAnimal = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -38,6 +38,11 @@
             this.groupBoxVacina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacina)).BeginInit();
             this.SuspendLayout();
+            // 
+            // toolTipVacina
+            // 
+            this.toolTipVacina.AutomaticDelay = 100;
+            this.toolTipVacina.IsBalloon = true;
             // 
             // groupBoxVacina
             // 
@@ -76,7 +81,8 @@
             this.btnCancelar.Location = new System.Drawing.Point(435, 210);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(126, 31);
-            this.btnCancelar.TabIndex = 20;
+            this.btnCancelar.TabIndex = 1;
+            this.toolTipVacina.SetToolTip(this.btnCancelar, "Cancelar");
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnNovo
@@ -88,7 +94,8 @@
             this.btnNovo.Location = new System.Drawing.Point(567, 206);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(117, 38);
-            this.btnNovo.TabIndex = 3;
+            this.btnNovo.TabIndex = 2;
+            this.toolTipVacina.SetToolTip(this.btnNovo, "Adicionar nova Vacina");
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
@@ -99,7 +106,8 @@
             this.dtgVacina.Location = new System.Drawing.Point(10, 91);
             this.dtgVacina.Name = "dtgVacina";
             this.dtgVacina.Size = new System.Drawing.Size(674, 97);
-            this.dtgVacina.TabIndex = 2;
+            this.dtgVacina.TabIndex = 0;
+            this.toolTipVacina.SetToolTip(this.dtgVacina, "Vacinas que o Animal já tomou.");
             // 
             // frmVacina
             // 
@@ -120,7 +128,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTipVacina;
         private System.Windows.Forms.GroupBox groupBoxVacina;
         private System.Windows.Forms.Label labelNomeAnimal;
         private System.Windows.Forms.Button btnCancelar;
