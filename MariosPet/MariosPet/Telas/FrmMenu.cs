@@ -1,7 +1,9 @@
-﻿using System;
+﻿using MariosPet.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -113,6 +115,18 @@ namespace MariosPet.Telas
             FrmPesquisas pesquisas = new FrmPesquisas();
             pesquisas.ShowDialog();
             Close();
+        }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OdbcConnection conexao = ConexaoPadrao.createConnection())
+            {
+                string sql = "backup database MARIOS_PET to disk = 'D:\' with copy_only";
+                OdbcCommand command = new OdbcCommand(sql, conexao);
+
+                conexao.Open();
+                command.ExecuteNonQuery();
+            }
         }
     }
 }

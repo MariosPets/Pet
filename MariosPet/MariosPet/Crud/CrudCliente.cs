@@ -41,7 +41,7 @@ namespace MariosPet.Crud
             }
         }
 
-        public void alteraVeterinario(Cliente cliente)
+        public void alteraCliente(Cliente cliente)
         {
             alteraPessoa(cliente);
 

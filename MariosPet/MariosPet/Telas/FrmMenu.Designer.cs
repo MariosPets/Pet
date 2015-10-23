@@ -775,8 +775,9 @@
             // 
             this.backupToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.backupToolStripMenuItem.Text = "Fazer Backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
