@@ -23,7 +23,7 @@ namespace MariosPet.Classes
         /// </summary>
         public bool sexo { get; set; }
         public string pelagemCor { get; set; }
-        public DateTime nascimento { get; set; }
+        public string nascimento { get; set; }
         public int idVeterinario { get; set; }
 
         #endregion
