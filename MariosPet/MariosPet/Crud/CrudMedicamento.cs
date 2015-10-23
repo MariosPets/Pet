@@ -15,10 +15,9 @@ namespace MariosPet.Crud
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "insert into MEDICAMENTO (ID_MEDICAMENTO, DESCRICAO, QUANTIDADE, MINIMO_EM_ESTOQUE, MAXIMO_EM_ESTOQUE) values(?,?,?,?,?)";
+                string sql = "insert into MEDICAMENTO (DESCRICAO, QUANTIDADE, MINIMO_EM_ESTOQUE, MAXIMO_EM_ESTOQUE) values(?,?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_MEDICAMENTO", medicamento.id);
                 command.Parameters.AddWithValue("@DESCRICAO", medicamento.descricao);            
                 command.Parameters.AddWithValue("@QUANTIDADE", medicamento.quantidade); 
                 command.Parameters.AddWithValue("@MINIMO_EM_ESTOQUE", medicamento.minimoEmEstoque); 
