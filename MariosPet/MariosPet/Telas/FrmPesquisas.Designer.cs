@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolTipPesquisas = new System.Windows.Forms.ToolTip(this.components);
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -38,14 +39,16 @@
             this.dataGridViewPesquisas = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
-            this.groupBoxPesquisas = new System.Windows.Forms.GroupBox();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
+            this.groupBoxPesquisas = new System.Windows.Forms.GroupBox();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).BeginInit();
             this.groupBoxPesquisas.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolTipPesquisas
@@ -61,7 +64,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(594, 484);
+            this.btnLimpar.Location = new System.Drawing.Point(594, 343);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(116, 44);
             this.btnLimpar.TabIndex = 8;
@@ -76,7 +79,7 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(27, 484);
+            this.btnVoltar.Location = new System.Drawing.Point(27, 343);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(116, 44);
             this.btnVoltar.TabIndex = 5;
@@ -122,17 +125,22 @@
             // 
             // dataGridViewPesquisas
             // 
-            this.dataGridViewPesquisas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
-            this.dataGridViewPesquisas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewPesquisas.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewPesquisas.Location = new System.Drawing.Point(27, 169);
+            this.dataGridViewPesquisas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewPesquisas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.dataGridViewPesquisas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPesquisas.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewPesquisas.Location = new System.Drawing.Point(27, 28);
             this.dataGridViewPesquisas.Name = "dataGridViewPesquisas";
             this.dataGridViewPesquisas.Size = new System.Drawing.Size(683, 288);
             this.dataGridViewPesquisas.TabIndex = 4;
@@ -164,38 +172,12 @@
             this.txtPesquisa.TabIndex = 2;
             this.toolTipPesquisas.SetToolTip(this.txtPesquisa, "Insira a informação a ser pesquisada");
             // 
-            // groupBoxPesquisas
-            // 
-            this.groupBoxPesquisas.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBoxPesquisas.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeMarromGrande;
-            this.groupBoxPesquisas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisas.Controls.Add(this.buttonEditar);
-            this.groupBoxPesquisas.Controls.Add(this.buttonExcluir);
-            this.groupBoxPesquisas.Controls.Add(this.btnLimpar);
-            this.groupBoxPesquisas.Controls.Add(this.btnVoltar);
-            this.groupBoxPesquisas.Controls.Add(this.lblConsulta);
-            this.groupBoxPesquisas.Controls.Add(this.label1);
-            this.groupBoxPesquisas.Controls.Add(this.comboBoxPesqPor);
-            this.groupBoxPesquisas.Controls.Add(this.comboBoxTipo);
-            this.groupBoxPesquisas.Controls.Add(this.dataGridViewPesquisas);
-            this.groupBoxPesquisas.Controls.Add(this.btnConsultar);
-            this.groupBoxPesquisas.Controls.Add(this.txtPesquisa);
-            this.groupBoxPesquisas.Controls.Add(this.lblTipo);
-            this.groupBoxPesquisas.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
-            this.groupBoxPesquisas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxPesquisas.Location = new System.Drawing.Point(38, 12);
-            this.groupBoxPesquisas.Name = "groupBoxPesquisas";
-            this.groupBoxPesquisas.Size = new System.Drawing.Size(752, 549);
-            this.groupBoxPesquisas.TabIndex = 3;
-            this.groupBoxPesquisas.TabStop = false;
-            this.groupBoxPesquisas.Text = "   Pesquisa";
-            // 
             // buttonEditar
             // 
             this.buttonEditar.FlatAppearance.BorderSize = 0;
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Image = global::MariosPet.Properties.Resources.botaoEditarLaranja;
-            this.buttonEditar.Location = new System.Drawing.Point(403, 484);
+            this.buttonEditar.Location = new System.Drawing.Point(403, 343);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(115, 44);
             this.buttonEditar.TabIndex = 7;
@@ -207,12 +189,33 @@
             this.buttonExcluir.FlatAppearance.BorderSize = 0;
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirVerde;
-            this.buttonExcluir.Location = new System.Drawing.Point(198, 484);
+            this.buttonExcluir.Location = new System.Drawing.Point(198, 343);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
             this.buttonExcluir.TabIndex = 6;
             this.toolTipPesquisas.SetToolTip(this.buttonExcluir, "Excluir Informação selecionada");
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxPesquisas
+            // 
+            this.groupBoxPesquisas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBoxPesquisas.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeMarromGrande;
+            this.groupBoxPesquisas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBoxPesquisas.Controls.Add(this.lblConsulta);
+            this.groupBoxPesquisas.Controls.Add(this.label1);
+            this.groupBoxPesquisas.Controls.Add(this.comboBoxPesqPor);
+            this.groupBoxPesquisas.Controls.Add(this.comboBoxTipo);
+            this.groupBoxPesquisas.Controls.Add(this.btnConsultar);
+            this.groupBoxPesquisas.Controls.Add(this.txtPesquisa);
+            this.groupBoxPesquisas.Controls.Add(this.lblTipo);
+            this.groupBoxPesquisas.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
+            this.groupBoxPesquisas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBoxPesquisas.Location = new System.Drawing.Point(38, 12);
+            this.groupBoxPesquisas.Name = "groupBoxPesquisas";
+            this.groupBoxPesquisas.Size = new System.Drawing.Size(752, 157);
+            this.groupBoxPesquisas.TabIndex = 3;
+            this.groupBoxPesquisas.TabStop = false;
+            this.groupBoxPesquisas.Text = "   Pesquisa";
             // 
             // lblConsulta
             // 
@@ -244,12 +247,30 @@
             this.lblTipo.TabIndex = 16;
             this.lblTipo.Text = "Tipo:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.buttonEditar);
+            this.groupBox1.Controls.Add(this.btnLimpar);
+            this.groupBox1.Controls.Add(this.buttonExcluir);
+            this.groupBox1.Controls.Add(this.dataGridViewPesquisas);
+            this.groupBox1.Controls.Add(this.btnVoltar);
+            this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBox1.Location = new System.Drawing.Point(38, 175);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(752, 395);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // FrmPesquisas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(851, 635);
+            this.ClientSize = new System.Drawing.Size(851, 733);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxPesquisas);
             this.Name = "FrmPesquisas";
             this.Text = "Pesquisas e Consultas";
@@ -257,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).EndInit();
             this.groupBoxPesquisas.ResumeLayout(false);
             this.groupBoxPesquisas.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -277,5 +299,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonExcluir;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
