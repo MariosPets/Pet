@@ -332,3 +332,4 @@ C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\Mario
 C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmPesquisas.resources

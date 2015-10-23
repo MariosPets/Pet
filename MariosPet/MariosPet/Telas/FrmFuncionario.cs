@@ -15,7 +15,6 @@ namespace MariosPet.Telas
     public partial class FrmFuncionario : Form
     {
         Funcionario classeFunc = new Funcionario();
-        Pessoa classePes = new Pessoa();
         Endereco classeEnd = new Endereco();
         public FrmFuncionario()
         {
@@ -64,14 +63,14 @@ namespace MariosPet.Telas
         public void CopiarParaClasseFuncionario()
         {
             //Pessoa
-            classePes.nome = txtNomeFuncionario.Text;
-            classePes.nascimento = mstNascimentoFuncionario.Text;
-            classePes.cpf = mstCPFFuncionario.Text;
-            classePes.rg = mstRGFuncionario.Text;
-            classePes.email = txtEmailFuncionario.Text;
-            classePes.telefone1 = txtTelefoneFuncionario.Text;
-            classePes.telefone2 = txtTelefone2Funcionario.Text;
-            classePes.telefone3 = txtTelefone3Funcionario.Text;
+            classeFunc.nome = txtNomeFuncionario.Text;
+            classeFunc.nascimento = mstNascimentoFuncionario.Text;
+            classeFunc.cpf = mstCPFFuncionario.Text;
+            classeFunc.rg = mstRGFuncionario.Text;
+            classeFunc.email = txtEmailFuncionario.Text;
+            classeFunc.telefone1 = txtTelefoneFuncionario.Text;
+            classeFunc.telefone2 = txtTelefone2Funcionario.Text;
+            classeFunc.telefone3 = txtTelefone3Funcionario.Text;
 
             //Endereço
             classeEnd.rua = txtRuaFuncionario.Text;
@@ -88,20 +87,18 @@ namespace MariosPet.Telas
             classeFunc.senha = txtSenha.Text;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             CopiarParaClasseFuncionario();
 
-            CrudPessoa CrudPes = new CrudPessoa();
             CrudEndereco CrudEnd = new CrudEndereco();
-            CrudFuncionario CrudFun = new CrudFuncionario();
+            CrudFuncionario CrudFunc = new CrudFuncionario();
 
             CrudEnd.inserirEndereco(classeEnd);
 
-            classePes.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+            classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
-            CrudPes.inserirPessoa(classePes);
-            CrudFun.inserirFuncionario(classeFunc);
+            CrudFunc.inserirFuncionario(classeFunc);
         }
     }
 }

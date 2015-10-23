@@ -346,6 +346,11 @@
             this.cmbTipoFuncionario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTipoFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cmbTipoFuncionario.FormattingEnabled = true;
+            this.cmbTipoFuncionario.Items.AddRange(new object[] {
+            "Atendente",
+            "Veterinário(a)",
+            "Vendedor(a)",
+            "Gerente"});
             this.cmbTipoFuncionario.Location = new System.Drawing.Point(222, 36);
             this.cmbTipoFuncionario.Name = "cmbTipoFuncionario";
             this.cmbTipoFuncionario.Size = new System.Drawing.Size(171, 26);
@@ -412,6 +417,7 @@
             this.btnSalvar.TabIndex = 0;
             this.toolTipFuncionario.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // txtTelefone3Funcionario
             // 
