@@ -63,7 +63,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(594, 484);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(116, 44);
-            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.TabIndex = 8;
             this.toolTipPesquisas.SetToolTip(this.btnLimpar, "Limpar os Campos");
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -78,7 +78,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(27, 484);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(116, 44);
-            this.btnVoltar.TabIndex = 4;
+            this.btnVoltar.TabIndex = 5;
             this.toolTipPesquisas.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -126,7 +126,7 @@
             this.dataGridViewPesquisas.Location = new System.Drawing.Point(27, 169);
             this.dataGridViewPesquisas.Name = "dataGridViewPesquisas";
             this.dataGridViewPesquisas.Size = new System.Drawing.Size(683, 288);
-            this.dataGridViewPesquisas.TabIndex = 2;
+            this.dataGridViewPesquisas.TabIndex = 4;
             this.toolTipPesquisas.SetToolTip(this.dataGridViewPesquisas, "Resultado da Pesquisa");
             // 
             // btnConsultar
@@ -189,7 +189,8 @@
             this.buttonEditar.Location = new System.Drawing.Point(403, 484);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(115, 44);
-            this.buttonEditar.TabIndex = 22;
+            this.buttonEditar.TabIndex = 7;
+            this.toolTipPesquisas.SetToolTip(this.buttonEditar, "Editar Informação selecionada");
             this.buttonEditar.UseVisualStyleBackColor = true;
             // 
             // buttonExcluir
@@ -200,7 +201,8 @@
             this.buttonExcluir.Location = new System.Drawing.Point(198, 484);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
-            this.buttonExcluir.TabIndex = 21;
+            this.buttonExcluir.TabIndex = 6;
+            this.toolTipPesquisas.SetToolTip(this.buttonExcluir, "Excluir Informação selecionada");
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
             // lblConsulta
