@@ -47,7 +47,7 @@ namespace MariosPet.Telas
             classeAni.nome = txtNomeAnimal.Text;
             classeAni.racaPorte = txtRacaPorte.Text;
             classeAni.pelagemCor = txtPelagemCor.Text;
-            classeAni.nascimento = DateTime.Parse(maskedTxtNascimentoAnimal.Text);
+            classeAni.nascimento = maskedTxtNascimentoAnimal.Text;
             classeAni.sexo = radioButtonFemea.Checked;
         }
 
