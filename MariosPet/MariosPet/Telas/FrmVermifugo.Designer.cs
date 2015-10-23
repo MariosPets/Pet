@@ -88,6 +88,7 @@
             this.btnNovo.Size = new System.Drawing.Size(117, 38);
             this.btnNovo.TabIndex = 3;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dtgVermifugo
             // 
