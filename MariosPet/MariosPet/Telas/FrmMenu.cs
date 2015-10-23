@@ -121,7 +121,7 @@ namespace MariosPet.Telas
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "backup database MARIOS_PET to disk = 'D:\' with copy_only";
+                string sql = "BACKUP DATABASE MARIOS_PET TO DISK = 'D:\\MARIOS_PET_" + DateTime.Now.Day + DateTime.Now.Month + DateTime.Now.Year + "_" + DateTime.Now.Second + ".Bak' WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups', NAME = 'Full Backup of MARIOS_PET'";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 conexao.Open();
