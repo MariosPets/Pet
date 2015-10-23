@@ -77,5 +77,10 @@ namespace MariosPet.Telas
 
             CrudLab.inserirLaboratorio(classeLab);
         }
+
+        private void txtCidade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
