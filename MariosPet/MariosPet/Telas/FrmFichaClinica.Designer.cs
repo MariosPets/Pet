@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFichaClinica));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.roundButton1 = new MariosPet.Classes.RoundButton();
             this.roundButtonVacina = new MariosPet.Classes.RoundButton();
@@ -426,6 +427,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxPesquisaAnimal);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFichaClinica";
             this.Text = "Ficha Clinica";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

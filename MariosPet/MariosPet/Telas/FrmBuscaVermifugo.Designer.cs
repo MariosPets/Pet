@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscaVermifugo));
             this.groupBoxBuscaVermifugo = new System.Windows.Forms.GroupBox();
+            this.btmConsultar = new System.Windows.Forms.Button();
+            this.txtVermifugo = new System.Windows.Forms.TextBox();
+            this.labelBuscaVermifugo = new System.Windows.Forms.Label();
             this.btmLimpar = new System.Windows.Forms.Button();
             this.btmVoltar = new System.Windows.Forms.Button();
             this.btmSalvar = new System.Windows.Forms.Button();
             this.btmNovo = new System.Windows.Forms.Button();
             this.dtgVermifugo = new System.Windows.Forms.DataGridView();
-            this.btmConsultar = new System.Windows.Forms.Button();
-            this.txtVermifugo = new System.Windows.Forms.TextBox();
-            this.labelBuscaVermifugo = new System.Windows.Forms.Label();
             this.toolTipVermifugos = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxBuscaVermifugo.SuspendLayout();
@@ -62,6 +63,42 @@
             this.groupBoxBuscaVermifugo.TabIndex = 6;
             this.groupBoxBuscaVermifugo.TabStop = false;
             this.groupBoxBuscaVermifugo.Text = "   Busca Vermífugo";
+            // 
+            // btmConsultar
+            // 
+            this.btmConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.btmConsultar.FlatAppearance.BorderSize = 0;
+            this.btmConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btmConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btmConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
+            this.btmConsultar.Location = new System.Drawing.Point(566, 46);
+            this.btmConsultar.Name = "btmConsultar";
+            this.btmConsultar.Size = new System.Drawing.Size(114, 32);
+            this.btmConsultar.TabIndex = 1;
+            this.toolTipVermifugos.SetToolTip(this.btmConsultar, "Consultar");
+            this.btmConsultar.UseVisualStyleBackColor = false;
+            this.btmConsultar.Click += new System.EventHandler(this.btmConsultar_Click);
+            // 
+            // txtVermifugo
+            // 
+            this.txtVermifugo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVermifugo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtVermifugo.Location = new System.Drawing.Point(191, 51);
+            this.txtVermifugo.MaxLength = 50;
+            this.txtVermifugo.Name = "txtVermifugo";
+            this.txtVermifugo.Size = new System.Drawing.Size(369, 27);
+            this.txtVermifugo.TabIndex = 0;
+            this.toolTipVermifugos.SetToolTip(this.txtVermifugo, "Insira o nome do Vermífugo que deseja pesquisar");
+            // 
+            // labelBuscaVermifugo
+            // 
+            this.labelBuscaVermifugo.AutoSize = true;
+            this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
+            this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
+            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
+            this.labelBuscaVermifugo.TabIndex = 16;
+            this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
             // 
             // btmLimpar
             // 
@@ -137,42 +174,6 @@
             this.dtgVermifugo.TabIndex = 2;
             this.toolTipVermifugos.SetToolTip(this.dtgVermifugo, "Resultado da Pesquisa");
             // 
-            // btmConsultar
-            // 
-            this.btmConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.btmConsultar.FlatAppearance.BorderSize = 0;
-            this.btmConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btmConsultar.Location = new System.Drawing.Point(566, 46);
-            this.btmConsultar.Name = "btmConsultar";
-            this.btmConsultar.Size = new System.Drawing.Size(114, 32);
-            this.btmConsultar.TabIndex = 1;
-            this.toolTipVermifugos.SetToolTip(this.btmConsultar, "Consultar");
-            this.btmConsultar.UseVisualStyleBackColor = false;
-            this.btmConsultar.Click += new System.EventHandler(this.btmConsultar_Click);
-            // 
-            // txtVermifugo
-            // 
-            this.txtVermifugo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVermifugo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtVermifugo.Location = new System.Drawing.Point(191, 51);
-            this.txtVermifugo.MaxLength = 50;
-            this.txtVermifugo.Name = "txtVermifugo";
-            this.txtVermifugo.Size = new System.Drawing.Size(369, 27);
-            this.txtVermifugo.TabIndex = 0;
-            this.toolTipVermifugos.SetToolTip(this.txtVermifugo, "Insira o nome do Vermífugo que deseja pesquisar");
-            // 
-            // labelBuscaVermifugo
-            // 
-            this.labelBuscaVermifugo.AutoSize = true;
-            this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
-            this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
-            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
-            this.labelBuscaVermifugo.TabIndex = 16;
-            this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
-            // 
             // toolTipVermifugos
             // 
             this.toolTipVermifugos.AutomaticDelay = 100;
@@ -203,6 +204,7 @@
             this.ClientSize = new System.Drawing.Size(800, 559);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxBuscaVermifugo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmBuscaVermifugo";
             this.Text = "Busca Vermifugo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

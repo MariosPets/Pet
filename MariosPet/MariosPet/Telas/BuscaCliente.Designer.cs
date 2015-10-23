@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscaCliente));
             this.buttonCancela = new System.Windows.Forms.Button();
             this.buttonSelecionar = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
@@ -107,6 +108,7 @@
             this.buttonPesquisa.TabIndex = 2;
             this.toolTip1.SetToolTip(this.buttonPesquisa, "Pesquisar");
             this.buttonPesquisa.UseVisualStyleBackColor = true;
+            this.buttonPesquisa.Click += new System.EventHandler(this.buttonPesquisa_Click);
             // 
             // comboBoxPesquisa
             // 
@@ -190,6 +192,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BuscaCliente";
             this.Text = "Busca Cliente";

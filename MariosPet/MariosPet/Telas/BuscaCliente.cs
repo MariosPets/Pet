@@ -19,5 +19,10 @@ namespace MariosPet.Telas
         {
             Close();
         }
+
+        private void buttonPesquisa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
