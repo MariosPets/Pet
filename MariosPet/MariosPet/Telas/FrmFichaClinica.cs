@@ -114,7 +114,7 @@ namespace MariosPet.Telas
         {
             FrmAnimal animal = new FrmAnimal();
             animal.ShowDialog();
-            Close();
+           
         }
     }
 }
