@@ -30,15 +30,16 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBuscaVacina));
             this.groupBoxBuscaVacina = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.txtPesquisaVacina = new System.Windows.Forms.TextBox();
+            this.lblNomeVacina = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.dtgBuscaVacina = new System.Windows.Forms.DataGridView();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.txtPesquisaVacina = new System.Windows.Forms.TextBox();
-            this.lblNomeVacina = new System.Windows.Forms.Label();
             this.toolTipBuscaVacina = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxBuscaVacina.SuspendLayout();
@@ -62,6 +63,42 @@
             this.groupBoxBuscaVacina.TabIndex = 5;
             this.groupBoxBuscaVacina.TabStop = false;
             this.groupBoxBuscaVacina.Text = "   Busca Vacina";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.btnConsultar.BackgroundImage = global::MariosPet.Properties.Resources.botaoConsultarVerde;
+            this.btnConsultar.FlatAppearance.BorderSize = 0;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Location = new System.Drawing.Point(567, 42);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(117, 40);
+            this.btnConsultar.TabIndex = 1;
+            this.toolTipBuscaVacina.SetToolTip(this.btnConsultar, "Consultar");
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // txtPesquisaVacina
+            // 
+            this.txtPesquisaVacina.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisaVacina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtPesquisaVacina.Location = new System.Drawing.Point(159, 50);
+            this.txtPesquisaVacina.MaxLength = 50;
+            this.txtPesquisaVacina.Name = "txtPesquisaVacina";
+            this.txtPesquisaVacina.Size = new System.Drawing.Size(390, 27);
+            this.txtPesquisaVacina.TabIndex = 0;
+            this.toolTipBuscaVacina.SetToolTip(this.txtPesquisaVacina, "Insira o nome da Vacina que deseja pesquisar.");
+            // 
+            // lblNomeVacina
+            // 
+            this.lblNomeVacina.AutoSize = true;
+            this.lblNomeVacina.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeVacina.Location = new System.Drawing.Point(6, 50);
+            this.lblNomeVacina.Name = "lblNomeVacina";
+            this.lblNomeVacina.Size = new System.Drawing.Size(143, 23);
+            this.lblNomeVacina.TabIndex = 16;
+            this.lblNomeVacina.Text = "Nome Vacina:";
             // 
             // btnSalvar
             // 
@@ -130,42 +167,6 @@
             this.dtgBuscaVacina.TabIndex = 2;
             this.toolTipBuscaVacina.SetToolTip(this.dtgBuscaVacina, "Resultado da Pesquisa");
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.btnConsultar.BackgroundImage = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btnConsultar.FlatAppearance.BorderSize = 0;
-            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.Location = new System.Drawing.Point(567, 42);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(117, 40);
-            this.btnConsultar.TabIndex = 1;
-            this.toolTipBuscaVacina.SetToolTip(this.btnConsultar, "Consultar");
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
-            // txtPesquisaVacina
-            // 
-            this.txtPesquisaVacina.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisaVacina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtPesquisaVacina.Location = new System.Drawing.Point(159, 50);
-            this.txtPesquisaVacina.MaxLength = 50;
-            this.txtPesquisaVacina.Name = "txtPesquisaVacina";
-            this.txtPesquisaVacina.Size = new System.Drawing.Size(390, 27);
-            this.txtPesquisaVacina.TabIndex = 0;
-            this.toolTipBuscaVacina.SetToolTip(this.txtPesquisaVacina, "Insira o nome da Vacina que deseja pesquisar.");
-            // 
-            // lblNomeVacina
-            // 
-            this.lblNomeVacina.AutoSize = true;
-            this.lblNomeVacina.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeVacina.Location = new System.Drawing.Point(6, 50);
-            this.lblNomeVacina.Name = "lblNomeVacina";
-            this.lblNomeVacina.Size = new System.Drawing.Size(143, 23);
-            this.lblNomeVacina.TabIndex = 16;
-            this.lblNomeVacina.Text = "Nome Vacina:";
-            // 
             // toolTipBuscaVacina
             // 
             this.toolTipBuscaVacina.AutomaticDelay = 100;
@@ -196,6 +197,7 @@
             this.ClientSize = new System.Drawing.Size(824, 589);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxBuscaVacina);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmBuscaVacina";
             this.Text = "Busca Vacina";
             this.groupBoxBuscaVacina.ResumeLayout(false);
