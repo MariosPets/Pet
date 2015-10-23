@@ -79,6 +79,7 @@ namespace MariosPet.Telas
             classeFichaCli.sintomas = txtSintomas.Text;
             classeFichaCli.examesComplementares = txtExames.Text;
             classeFichaCli.observacao = txtObservacao.Text;
+            classeFichaCli.data = DateTime.Now;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
