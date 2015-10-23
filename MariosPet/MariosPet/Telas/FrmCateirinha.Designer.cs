@@ -212,6 +212,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmCateirinha";
             this.Text = "Carteirinha";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

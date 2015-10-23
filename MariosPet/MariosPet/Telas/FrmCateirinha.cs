@@ -26,7 +26,7 @@ namespace MariosPet.Telas
             ReportViewer report = new ReportViewer();
             report.ProcessingMode = ProcessingMode.Local;
 
-            report.LocalReport.ReportEmbeddedResource = "MariosPet.Report1.rdlc";
+            report.LocalReport.ReportEmbeddedResource = "MariosPet.Report2.rdlc";
 
             //criar listas
             List<ReportParameter> lista = new List<ReportParameter>();
