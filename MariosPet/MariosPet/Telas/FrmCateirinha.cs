@@ -10,18 +10,36 @@ using System.Windows.Forms;
 using Microsoft.Reporting.WebForms;
 using System.IO;
 using System.Diagnostics;
+using MariosPet.Classes;
+using System.Web.UI.WebControls;
+using MariosPet.Crud;
 
 namespace MariosPet.Telas
 {
     public partial class FrmCateirinha : Form
     {
+
+        Cliente classeCli = new Cliente();
+        CrudCliente CrudCli = new CrudCliente();
+        DataTable tabelaCli = new DataTable();
+
         public FrmCateirinha()
         {
             InitializeComponent();
+
+            tabelaCli = CrudCli.consultaCliente("select NOME from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where CLIENTE.ID_PESSOA=1");
+            PreencheCampos();
+        }
+
+        public void PreencheCampos()
+        {
+            //Dados Pessoais
+            txtNome.Text = tabelaCli.Rows[0][0].ToString();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+
             //local
             ReportViewer report = new ReportViewer();
             report.ProcessingMode = ProcessingMode.Local;
