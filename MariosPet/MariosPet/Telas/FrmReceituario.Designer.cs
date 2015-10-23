@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReceituario));
             this.btnSalvar = new System.Windows.Forms.Button();
             this.txtNomeVeterinario = new System.Windows.Forms.TextBox();
             this.txtPrescricao = new System.Windows.Forms.RichTextBox();
@@ -88,6 +89,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "FrmReceituario";
             this.Text = "FrmReceituario";

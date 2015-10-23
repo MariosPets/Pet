@@ -6,8 +6,8 @@
         <Source>Embedded</Source>
         <Value>carteirinhaFrente</Value>
         <Sizing>FitProportional</Sizing>
-        <Height>9.57792cm</Height>
-        <Width>13.59146cm</Width>
+        <Height>14.12875cm</Height>
+        <Width>19.88854cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -203,10 +203,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.77083in</Height>
+    <Height>5.64583in</Height>
     <Style />
   </Body>
-  <Width>7.03509in</Width>
+  <Width>8.11842in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
