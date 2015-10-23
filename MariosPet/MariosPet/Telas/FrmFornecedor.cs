@@ -15,9 +15,9 @@ namespace MariosPet.Telas
     public partial class FrmFornecedor : Form
     {
         Endereco classeEnd = new Endereco();
-        PessoaJuridica classePessoaJur = new PessoaJuridica();
         Fornecedor classeForn = new Fornecedor();
-        public FrmFornecedor()
+        PessoaJuridica classePessoaJur = new PessoaJuridica();
+         public FrmFornecedor()
         {
             InitializeComponent();
         }
@@ -62,7 +62,7 @@ namespace MariosPet.Telas
             classeEnd.numero = txtNumero.Text;
             classeEnd.complemento = txtComplemento.Text;
             classeEnd.bairro = txtBairro.Text;
-            classeEnd.cep = mstCNPJ.Text;
+            classeEnd.cep = maskedTextBoxCep.Text;
             classeEnd.cidade = txtCidade.Text;
             classeEnd.uf = cmbUF.Text;
         }
@@ -71,16 +71,17 @@ namespace MariosPet.Telas
         {
             CopiarParaClasseFornecedor();
 
-            CrudEndereco CrudEnd = new CrudEndereco();
-            CrudFornecedor CrudForn = new CrudFornecedor();
             CrudPessoaJuridica CrudPessoaJur = new CrudPessoaJuridica();
-
+            CrudFornecedor CrudForn = new CrudFornecedor();
+            CrudEndereco CrudEnd = new CrudEndereco();
+            
             CrudEnd.inserirEndereco(classeEnd);
 
-            classePessoaJur.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+            classeForn.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
-            CrudForn.inserirFornecedor(classeForn);
             CrudPessoaJur.inserirPessoaJuridica(classePessoaJur);
+            CrudForn.inserirFornecedor(classeForn);
+            
         }
     }
 }
