@@ -108,6 +108,7 @@
             this.buttonPesquisa.TabIndex = 2;
             this.toolTip1.SetToolTip(this.buttonPesquisa, "Pesquisar");
             this.buttonPesquisa.UseVisualStyleBackColor = true;
+            this.buttonPesquisa.Click += new System.EventHandler(this.buttonPesquisa_Click);
             // 
             // comboBoxPesquisa
             // 
