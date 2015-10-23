@@ -390,7 +390,7 @@
             this.cadastroToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.ToolTipText = "Cadastro de Clientes";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -402,7 +402,7 @@
             this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.ToolTipText = "Relatórios";
             // 
@@ -757,8 +757,9 @@
             this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bancoDeDadosToolStripMenuItem});
             this.configuraçõesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.configuraçõesToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataMarromAmareloGrande;
             this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.configuraçõesToolStripMenuItem.Text = "Configurações";
             // 
             // bancoDeDadosToolStripMenuItem
@@ -768,15 +769,17 @@
             this.backupToolStripMenuItem});
             this.bancoDeDadosToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F);
             this.bancoDeDadosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.bancoDeDadosToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataAmareloMarromGrande;
             this.bancoDeDadosToolStripMenuItem.Name = "bancoDeDadosToolStripMenuItem";
-            this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.bancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
             // 
             // backupToolStripMenuItem
             // 
             this.backupToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.backupToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataAmareloMarromGrande;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.backupToolStripMenuItem.Text = "Fazer Backup";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
