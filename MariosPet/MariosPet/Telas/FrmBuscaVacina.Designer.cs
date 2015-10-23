@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBoxBuscaVacina = new System.Windows.Forms.GroupBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisaVacina = new System.Windows.Forms.TextBox();
             this.lblNomeVacina = new System.Windows.Forms.Label();
+            this.toolTipBuscaVacina = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxBuscaVacina.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgBuscaVacina)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +74,8 @@
             this.btnSalvar.Location = new System.Drawing.Point(568, 213);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(117, 31);
-            this.btnSalvar.TabIndex = 21;
+            this.btnSalvar.TabIndex = 6;
+            this.toolTipBuscaVacina.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // btnLimpar
@@ -84,7 +87,8 @@
             this.btnLimpar.Location = new System.Drawing.Point(454, 213);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(108, 31);
-            this.btnLimpar.TabIndex = 19;
+            this.btnLimpar.TabIndex = 5;
+            this.toolTipBuscaVacina.SetToolTip(this.btnLimpar, "Limpar os Campos");
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
             // btnVoltar
@@ -96,7 +100,8 @@
             this.btnVoltar.Location = new System.Drawing.Point(300, 213);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(126, 31);
-            this.btnVoltar.TabIndex = 20;
+            this.btnVoltar.TabIndex = 4;
+            this.toolTipBuscaVacina.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
             // btnNovo
@@ -109,6 +114,7 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(117, 38);
             this.btnNovo.TabIndex = 3;
+            this.toolTipBuscaVacina.SetToolTip(this.btnNovo, "Adicionar nova Vacina");
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
             // dtgBuscaVacina
@@ -119,6 +125,7 @@
             this.dtgBuscaVacina.Name = "dtgBuscaVacina";
             this.dtgBuscaVacina.Size = new System.Drawing.Size(674, 97);
             this.dtgBuscaVacina.TabIndex = 2;
+            this.toolTipBuscaVacina.SetToolTip(this.dtgBuscaVacina, "Resultado da Pesquisa");
             // 
             // btnConsultar
             // 
@@ -131,6 +138,7 @@
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(117, 40);
             this.btnConsultar.TabIndex = 1;
+            this.toolTipBuscaVacina.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
@@ -143,6 +151,7 @@
             this.txtPesquisaVacina.Name = "txtPesquisaVacina";
             this.txtPesquisaVacina.Size = new System.Drawing.Size(390, 27);
             this.txtPesquisaVacina.TabIndex = 0;
+            this.toolTipBuscaVacina.SetToolTip(this.txtPesquisaVacina, "Insira o nome da Vacina que deseja pesquisar.");
             // 
             // lblNomeVacina
             // 
@@ -150,9 +159,15 @@
             this.lblNomeVacina.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeVacina.Location = new System.Drawing.Point(6, 50);
             this.lblNomeVacina.Name = "lblNomeVacina";
-            this.lblNomeVacina.Size = new System.Drawing.Size(144, 23);
+            this.lblNomeVacina.Size = new System.Drawing.Size(143, 23);
             this.lblNomeVacina.TabIndex = 16;
             this.lblNomeVacina.Text = "Nome Vacina:";
+            // 
+            // toolTipBuscaVacina
+            // 
+            this.toolTipBuscaVacina.AutomaticDelay = 100;
+            this.toolTipBuscaVacina.IsBalloon = true;
+            this.toolTipBuscaVacina.StripAmpersands = true;
             // 
             // FrmBuscaVacina
             // 
@@ -181,6 +196,7 @@
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtPesquisaVacina;
         private System.Windows.Forms.Label lblNomeVacina;
+        private System.Windows.Forms.ToolTip toolTipBuscaVacina;
 
     }
 }
