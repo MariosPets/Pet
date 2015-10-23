@@ -749,6 +749,7 @@
             this.consultasEPesquisasToolStripMenuItem6.Name = "consultasEPesquisasToolStripMenuItem6";
             this.consultasEPesquisasToolStripMenuItem6.Size = new System.Drawing.Size(233, 24);
             this.consultasEPesquisasToolStripMenuItem6.Text = "Consultas e Pesquisas";
+            this.consultasEPesquisasToolStripMenuItem6.ToolTipText = "Consultas e Pesquisas";
             this.consultasEPesquisasToolStripMenuItem6.Click += new System.EventHandler(this.consultasEPesquisasToolStripMenuItem6_Click);
             // 
             // configuraçõesToolStripMenuItem
@@ -761,6 +762,7 @@
             this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
             this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(166, 24);
             this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            this.configuraçõesToolStripMenuItem.ToolTipText = "Configurações";
             // 
             // bancoDeDadosToolStripMenuItem
             // 
@@ -773,14 +775,17 @@
             this.bancoDeDadosToolStripMenuItem.Name = "bancoDeDadosToolStripMenuItem";
             this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.bancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
+            this.bancoDeDadosToolStripMenuItem.ToolTipText = "Banco de Dados";
             // 
             // backupToolStripMenuItem
             // 
             this.backupToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.backupToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.backupToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataAmareloMarromGrande;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
             this.backupToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.backupToolStripMenuItem.Text = "Fazer Backup";
+            this.backupToolStripMenuItem.ToolTipText = "Fazer Backup do Banco de Dados";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // FrmMenu
