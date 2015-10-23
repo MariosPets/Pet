@@ -46,7 +46,7 @@ namespace MariosPet.Telas
             classeMed.maximoEmEstoque = Convert.ToInt32(nudMaximo.Text);
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             CopiarParaClasseMedicamento();
 

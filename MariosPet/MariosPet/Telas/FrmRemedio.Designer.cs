@@ -117,6 +117,7 @@
             this.btnSalvar.TabIndex = 6;
             this.toolTipRemedio.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // nudMaximo
             // 
