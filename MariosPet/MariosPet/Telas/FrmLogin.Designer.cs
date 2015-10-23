@@ -55,7 +55,7 @@
             this.grpLogin.Location = new System.Drawing.Point(301, 107);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(382, 199);
-            this.grpLogin.TabIndex = 1;
+            this.grpLogin.TabIndex = 0;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "   Login";
             // 
@@ -68,7 +68,7 @@
             this.textSenha.Name = "textSenha";
             this.textSenha.PasswordChar = '•';
             this.textSenha.Size = new System.Drawing.Size(186, 31);
-            this.textSenha.TabIndex = 1;
+            this.textSenha.TabIndex = 2;
             this.toolTipLogin.SetToolTip(this.textSenha, "Insira a Senha");
             // 
             // labelSenha
@@ -99,7 +99,7 @@
             this.textUsuario.MaxLength = 20;
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(186, 31);
-            this.textUsuario.TabIndex = 0;
+            this.textUsuario.TabIndex = 1;
             this.toolTipLogin.SetToolTip(this.textUsuario, "Insira o Login");
             // 
             // toolTipLogin
