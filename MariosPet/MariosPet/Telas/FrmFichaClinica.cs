@@ -109,5 +109,12 @@ namespace MariosPet.Telas
             FrmVermifugo vermifugo = new FrmVermifugo();
             vermifugo.ShowDialog();
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            FrmAnimal animal = new FrmAnimal();
+            animal.ShowDialog();
+            Close();
+        }
     }
 }

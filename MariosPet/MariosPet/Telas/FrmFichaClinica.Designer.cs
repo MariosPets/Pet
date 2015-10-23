@@ -301,6 +301,7 @@
             this.btnNovo.TabIndex = 3;
             this.toolTipFichaClinica.SetToolTip(this.btnNovo, "Adicionar Novo");
             this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // dtgAnimal
             // 
