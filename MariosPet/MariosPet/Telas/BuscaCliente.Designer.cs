@@ -52,11 +52,13 @@
             this.buttonCancela.Name = "buttonCancela";
             this.buttonCancela.Size = new System.Drawing.Size(117, 50);
             this.buttonCancela.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.buttonCancela, "Cancelar");
             this.buttonCancela.UseVisualStyleBackColor = true;
             this.buttonCancela.Click += new System.EventHandler(this.buttonCancela_Click);
             // 
             // buttonSelecionar
             // 
+            this.buttonSelecionar.BackgroundImage = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
             this.buttonSelecionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonSelecionar.FlatAppearance.BorderSize = 0;
             this.buttonSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -64,8 +66,8 @@
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(120, 39);
-            this.buttonSelecionar.TabIndex = 3;
-            this.buttonSelecionar.Text = "Selecionar";
+            this.buttonSelecionar.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.buttonSelecionar, "Selecionar");
             this.buttonSelecionar.UseVisualStyleBackColor = true;
             this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
@@ -81,7 +83,7 @@
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(768, 213);
-            this.dataGridView.TabIndex = 4;
+            this.dataGridView.TabIndex = 3;
             this.toolTip1.SetToolTip(this.dataGridView, "Resultados da Pesquisa");
             // 
             // buttonPesquisa
