@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.roundButton1 = new MariosPet.Classes.RoundButton();
             this.roundButtonVacina = new MariosPet.Classes.RoundButton();
@@ -56,9 +57,11 @@
             this.txtPesquisaAnimal = new System.Windows.Forms.TextBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAnimal)).BeginInit();
             this.groupBoxPesquisaAnimal.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -87,9 +90,9 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox2.Location = new System.Drawing.Point(12, 241);
+            this.groupBox2.Location = new System.Drawing.Point(12, 281);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(968, 480);
+            this.groupBox2.Size = new System.Drawing.Size(968, 440);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Ficha Clínica";
@@ -162,7 +165,7 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.btnSalvar.Location = new System.Drawing.Point(838, 338);
+            this.btnSalvar.Location = new System.Drawing.Point(837, 341);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(124, 50);
             this.btnSalvar.TabIndex = 11;
@@ -187,7 +190,7 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Image = global::MariosPet.Properties.Resources.botaoLimparLaranja;
-            this.btnLimpar.Location = new System.Drawing.Point(722, 340);
+            this.btnLimpar.Location = new System.Drawing.Point(721, 343);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(114, 50);
             this.btnLimpar.TabIndex = 10;
@@ -212,7 +215,7 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(601, 343);
+            this.btnVoltar.Location = new System.Drawing.Point(600, 346);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(115, 38);
             this.btnVoltar.TabIndex = 9;
@@ -325,7 +328,7 @@
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(789, 142);
+            this.btnNovo.Location = new System.Drawing.Point(789, 81);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(116, 44);
             this.btnNovo.TabIndex = 3;
@@ -335,9 +338,14 @@
             // 
             // dtgAnimal
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.dtgAnimal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtgAnimal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
             this.dtgAnimal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgAnimal.Location = new System.Drawing.Point(10, 93);
+            this.dtgAnimal.Location = new System.Drawing.Point(10, 32);
             this.dtgAnimal.Name = "dtgAnimal";
             this.dtgAnimal.Size = new System.Drawing.Size(726, 93);
             this.dtgAnimal.TabIndex = 2;
@@ -374,8 +382,6 @@
             this.groupBoxPesquisaAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxPesquisaAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBoxPesquisaAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisaAnimal.Controls.Add(this.btnNovo);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.dtgAnimal);
             this.groupBoxPesquisaAnimal.Controls.Add(this.btnConsultar);
             this.groupBoxPesquisaAnimal.Controls.Add(this.txtPesquisaAnimal);
             this.groupBoxPesquisaAnimal.Controls.Add(this.lblNome);
@@ -383,7 +389,7 @@
             this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(12, 22);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
-            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(951, 204);
+            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(961, 95);
             this.groupBoxPesquisaAnimal.TabIndex = 30;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
@@ -398,12 +404,25 @@
             this.lblNome.TabIndex = 16;
             this.lblNome.Text = "Nome Animal:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnNovo);
+            this.groupBox1.Controls.Add(this.dtgAnimal);
+            this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBox1.Location = new System.Drawing.Point(12, 135);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(961, 140);
+            this.groupBox1.TabIndex = 40;
+            this.groupBox1.TabStop = false;
+            // 
             // FrmFichaClinica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1330, 733);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxPesquisaAnimal);
             this.Controls.Add(this.groupBox2);
             this.Name = "FrmFichaClinica";
@@ -414,6 +433,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgAnimal)).EndInit();
             this.groupBoxPesquisaAnimal.ResumeLayout(false);
             this.groupBoxPesquisaAnimal.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -447,5 +467,6 @@
         private System.Windows.Forms.Label lblNome;
         private Classes.RoundButton roundButtonVacina;
         private Classes.RoundButton roundButton1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
