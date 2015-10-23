@@ -53,16 +53,16 @@ namespace MariosPet.Telas
 
         private void btmSalvar_Click(object sender, EventArgs e)
         {
-            CopiarParaClasseAnimal();
+            /*CopiarParaClasseAnimal();
 
             CrudAnimal CrudAni = new CrudAnimal();
 
-            CrudAni.inserirAnimal(classeAni);
-            CrudCli.inserirCliente(classeCli);
+            CrudAni.inserirAnimal(classeAni);*/
+            //CrudCli.inserirCliente(classeCli);
 
-            classeAni.id = Convert.ToInt32(CrudAni.consultaAnimal("Select top 1 ID_ANIMAL from ANIMAL order by ID_ANIMAL desc").Rows[0][0].ToString());
 
-            /*TB_Consulta_Mercadoria = crud_merc.Consulta("SELECT * FROM TB_Mercadorias WHERE Cod_Mercadoria = " + Estatica.codigo);*/
+            //classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
+
         }
 
         private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
@@ -101,7 +101,23 @@ namespace MariosPet.Telas
 
         private void btmSalvar_Click_1(object sender, EventArgs e)
         {
+            CopiarParaClasseAnimal();
 
+            CrudAnimal CrudAni = new CrudAnimal();
+
+            CrudAni.inserirAnimal(classeAni);
+            //CrudCli.inserirCliente(classeCli);
+
+
+            //classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
+        }
+
+        private void dtgCliente_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgCliente.Rows.Count > 0)
+            {
+                classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
+            }
         }
     }
 }

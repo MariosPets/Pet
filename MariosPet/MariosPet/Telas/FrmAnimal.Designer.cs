@@ -47,16 +47,16 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNomeAnimal = new System.Windows.Forms.Label();
             this.toolTipAnimal = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.btnNovo = new System.Windows.Forms.Button();
             this.dtgCliente = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisaCliente = new System.Windows.Forms.TextBox();
+            this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).BeginInit();
             this.groupBoxAnimal.SuspendLayout();
-            this.groupBoxPesquisaAnimal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).BeginInit();
+            this.groupBoxPesquisaAnimal.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxAnimal
@@ -290,25 +290,6 @@
             this.toolTipAnimal.IsBalloon = true;
             this.toolTipAnimal.StripAmpersands = true;
             // 
-            // groupBoxPesquisaAnimal
-            // 
-            this.groupBoxPesquisaAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBoxPesquisaAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
-            this.groupBoxPesquisaAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisaAnimal.Controls.Add(this.btnNovo);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.dtgCliente);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.btnConsultar);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.txtPesquisaCliente);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.lblNome);
-            this.groupBoxPesquisaAnimal.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
-            this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(33, 24);
-            this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
-            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 204);
-            this.groupBoxPesquisaAnimal.TabIndex = 31;
-            this.groupBoxPesquisaAnimal.TabStop = false;
-            this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
-            // 
             // btnNovo
             // 
             this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
@@ -332,6 +313,7 @@
             this.dtgCliente.Size = new System.Drawing.Size(634, 93);
             this.dtgCliente.TabIndex = 2;
             this.toolTipAnimal.SetToolTip(this.dtgCliente, "Resultado da Pesquisa");
+            this.dtgCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_SelectionChanged);
             // 
             // btnConsultar
             // 
@@ -359,6 +341,25 @@
             this.txtPesquisaCliente.TabIndex = 0;
             this.toolTipAnimal.SetToolTip(this.txtPesquisaCliente, "Insira o nome do Cliente que deseja pesquisar.");
             // 
+            // groupBoxPesquisaAnimal
+            // 
+            this.groupBoxPesquisaAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBoxPesquisaAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
+            this.groupBoxPesquisaAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBoxPesquisaAnimal.Controls.Add(this.btnNovo);
+            this.groupBoxPesquisaAnimal.Controls.Add(this.dtgCliente);
+            this.groupBoxPesquisaAnimal.Controls.Add(this.btnConsultar);
+            this.groupBoxPesquisaAnimal.Controls.Add(this.txtPesquisaCliente);
+            this.groupBoxPesquisaAnimal.Controls.Add(this.lblNome);
+            this.groupBoxPesquisaAnimal.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
+            this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(33, 24);
+            this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
+            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 204);
+            this.groupBoxPesquisaAnimal.TabIndex = 31;
+            this.groupBoxPesquisaAnimal.TabStop = false;
+            this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
+            // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
@@ -384,9 +385,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).EndInit();
             this.groupBoxAnimal.ResumeLayout(false);
             this.groupBoxAnimal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.groupBoxPesquisaAnimal.ResumeLayout(false);
             this.groupBoxPesquisaAnimal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
