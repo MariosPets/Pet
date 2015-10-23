@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.grpLogin = new System.Windows.Forms.GroupBox();
             this.textSenha = new System.Windows.Forms.TextBox();
             this.labelSenha = new System.Windows.Forms.Label();
@@ -160,6 +161,7 @@
             this.Controls.Add(this.btmSair);
             this.Controls.Add(this.grpLogin);
             this.Controls.Add(this.pictureBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.grpLogin.ResumeLayout(false);

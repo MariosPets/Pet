@@ -34,7 +34,7 @@ namespace MariosPet.Telas
         public void PreencheCampos()
         {
             //Dados Pessoais
-            txtNome.Text = tabelaCli.Rows[0][0].ToString();
+            txtProprietario.Text = tabelaCli.Rows[0][0].ToString();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

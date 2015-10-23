@@ -390,7 +390,7 @@
             this.cadastroToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.ToolTipText = "Cadastro de Clientes";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -402,9 +402,10 @@
             this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.ToolTipText = "Relatórios";
+            this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click);
             // 
             // animaisToolStripMenuItem
             // 
@@ -440,6 +441,7 @@
             this.relatóriosToolStripMenuItem1.Size = new System.Drawing.Size(163, 26);
             this.relatóriosToolStripMenuItem1.Text = "Relatórios";
             this.relatóriosToolStripMenuItem1.ToolTipText = "Relatórios";
+            this.relatóriosToolStripMenuItem1.Click += new System.EventHandler(this.relatóriosToolStripMenuItem1_Click);
             // 
             // clínicaToolStripMenuItem
             // 
@@ -528,6 +530,7 @@
             this.prontuárioToolStripMenuItem.Name = "prontuárioToolStripMenuItem";
             this.prontuárioToolStripMenuItem.Size = new System.Drawing.Size(282, 26);
             this.prontuárioToolStripMenuItem.Text = "Prontuário";
+            this.prontuárioToolStripMenuItem.Click += new System.EventHandler(this.prontuárioToolStripMenuItem_Click);
             // 
             // carteirinhaToolStripMenuItem
             // 
@@ -566,6 +569,7 @@
             this.cadastroToolStripMenuItem2.Size = new System.Drawing.Size(163, 26);
             this.cadastroToolStripMenuItem2.Text = "Cadastro";
             this.cadastroToolStripMenuItem2.ToolTipText = "Cadastro de Produtos e Serviços";
+            this.cadastroToolStripMenuItem2.Click += new System.EventHandler(this.cadastroToolStripMenuItem2_Click);
             // 
             // serviçosToolStripMenuItem
             // 
@@ -599,6 +603,7 @@
             this.relatóriosToolStripMenuItem2.Size = new System.Drawing.Size(163, 26);
             this.relatóriosToolStripMenuItem2.Text = "Relatórios";
             this.relatóriosToolStripMenuItem2.ToolTipText = "Relatórios";
+            this.relatóriosToolStripMenuItem2.Click += new System.EventHandler(this.relatóriosToolStripMenuItem2_Click);
             // 
             // fornecedoresToolStripMenuItem
             // 
@@ -623,6 +628,7 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(163, 26);
             this.toolStripMenuItem1.Text = "Cadastro";
             this.toolStripMenuItem1.ToolTipText = "Cadastro de Fornecedores";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // cadastroToolStripMenuItem3
             // 
@@ -662,6 +668,7 @@
             this.pagamentosToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.pagamentosToolStripMenuItem.Text = "Pagamentos";
             this.pagamentosToolStripMenuItem.ToolTipText = "Formas de Pagamento";
+            this.pagamentosToolStripMenuItem.Click += new System.EventHandler(this.pagamentosToolStripMenuItem_Click);
             // 
             // aVistaToolStripMenuItem
             // 
@@ -669,9 +676,10 @@
             this.aVistaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.aVistaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aVistaToolStripMenuItem.Image")));
             this.aVistaToolStripMenuItem.Name = "aVistaToolStripMenuItem";
-            this.aVistaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.aVistaToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.aVistaToolStripMenuItem.Text = "A Vista";
             this.aVistaToolStripMenuItem.ToolTipText = "Pagamento a vista";
+            this.aVistaToolStripMenuItem.Click += new System.EventHandler(this.aVistaToolStripMenuItem_Click);
             // 
             // parceladoToolStripMenuItem
             // 
@@ -679,9 +687,10 @@
             this.parceladoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.parceladoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("parceladoToolStripMenuItem.Image")));
             this.parceladoToolStripMenuItem.Name = "parceladoToolStripMenuItem";
-            this.parceladoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.parceladoToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
             this.parceladoToolStripMenuItem.Text = "Parcelado";
             this.parceladoToolStripMenuItem.ToolTipText = "Pagamento parcelado";
+            this.parceladoToolStripMenuItem.Click += new System.EventHandler(this.parceladoToolStripMenuItem_Click);
             // 
             // agendamentosToolStripMenuItem
             // 

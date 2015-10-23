@@ -29,7 +29,7 @@ namespace MariosPet.Telas
         private void cadastroToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmAnimal animal = new FrmAnimal();
-            animal.ShowDialog();
+            animal.Show();
             Close();
         }
 
@@ -43,28 +43,28 @@ namespace MariosPet.Telas
         private void serviçosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Telas.FrmServico servico = new FrmServico();
-            servico.ShowDialog();
+            servico.Show();
             Close();            
         }
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Telas.FrmProduto produto = new FrmProduto();
-            produto.ShowDialog();
+            produto.Show();
             Close();
         }
 
         private void laboratóriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Telas.FrmLaboratorio laboratorio = new FrmLaboratorio();
-            laboratorio.ShowDialog();
+            laboratorio.Show();
             Close();
         }
 
         private void fichaClínicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Telas.FrmFichaClinica fichaClinica = new FrmFichaClinica();
-            fichaClinica.ShowDialog();
+            fichaClinica.Show();
             Close();
         }
 
@@ -78,28 +78,28 @@ namespace MariosPet.Telas
         private void anamneseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmAnamnese anamnese = new FrmAnamnese();
-            anamnese.ShowDialog();
+            anamnese.Show();
             Close();
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             FrmReceituario receituario = new FrmReceituario();
-            receituario.ShowDialog();
+            receituario.Show();
             Close();
         }
 
         private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmRemedio remedio = new FrmRemedio();
-            remedio.ShowDialog();
+            remedio.Show();
             Close();
         }
 
         private void cadastroDeFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmFuncionario funcionario = new FrmFuncionario();
-            funcionario.ShowDialog();
+            funcionario.Show();
             Close();
         }
 
@@ -113,7 +113,7 @@ namespace MariosPet.Telas
         private void consultasEPesquisasToolStripMenuItem6_Click(object sender, EventArgs e)
         {
             FrmPesquisas pesquisas = new FrmPesquisas();
-            pesquisas.ShowDialog();
+            pesquisas.Show();
             Close();
         }
 
@@ -134,6 +134,51 @@ namespace MariosPet.Telas
             FrmCateirinha carteirinha = new FrmCateirinha();
             carteirinha.Show();
             Close();
+        }
+
+        private void relatóriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relatóriosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prontuárioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastroToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void relatóriosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pagamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aVistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void parceladoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

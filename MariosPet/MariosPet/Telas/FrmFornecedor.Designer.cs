@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFornecedor));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxNomeContato = new System.Windows.Forms.TextBox();
             this.labelNomeContato = new System.Windows.Forms.Label();
@@ -532,6 +533,7 @@
             this.ClientSize = new System.Drawing.Size(1261, 733);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFornecedor";
             this.Text = "Cadastrar Fornecedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
