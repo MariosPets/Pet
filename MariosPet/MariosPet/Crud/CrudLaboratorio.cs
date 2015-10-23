@@ -18,7 +18,13 @@ namespace MariosPet.Crud
 
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
+                string sql = "insert into LABORATORIO (ID_PESSOA_JURIDICA) values(?)";
+                OdbcCommand command = new OdbcCommand(sql, conexao);
 
+                command.Parameters.AddWithValue("@ID_PESSOA_JURIDICA", laboratorio.id);
+
+                conexao.Open();
+                command.ExecuteNonQuery();
             }
         }
 

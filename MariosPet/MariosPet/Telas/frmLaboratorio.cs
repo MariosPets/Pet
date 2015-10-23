@@ -64,7 +64,7 @@ namespace MariosPet.Telas
             classeLab.email2 = txtEmail2.Text;
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             CopiarParaClasseLaboratorio();
 
@@ -73,7 +73,7 @@ namespace MariosPet.Telas
 
             CrudEnd.inserirEndereco(classeEnd);
 
-            classeLab.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select to 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+            classeLab.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
             CrudLab.inserirLaboratorio(classeLab);
         }

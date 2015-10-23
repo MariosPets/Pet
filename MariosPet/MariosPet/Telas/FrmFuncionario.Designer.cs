@@ -65,7 +65,9 @@
             this.txtTelefoneFuncionario = new System.Windows.Forms.TextBox();
             this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
             this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
+            this.txtCrmv = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCrmv = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,8 +76,6 @@
             this.lblRG = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblCrmv = new System.Windows.Forms.Label();
-            this.txtCrmv = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -315,6 +315,7 @@
             this.txtConfirmacaoSenha.Location = new System.Drawing.Point(223, 134);
             this.txtConfirmacaoSenha.MaxLength = 20;
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
+            this.txtConfirmacaoSenha.PasswordChar = '*';
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(170, 27);
             this.txtConfirmacaoSenha.TabIndex = 3;
             this.toolTipFuncionario.SetToolTip(this.txtConfirmacaoSenha, "Insira a Senha novamente");
@@ -336,6 +337,7 @@
             this.txtSenha.Location = new System.Drawing.Point(223, 101);
             this.txtSenha.MaxLength = 20;
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(170, 27);
             this.txtSenha.TabIndex = 2;
             this.toolTipFuncionario.SetToolTip(this.txtSenha, "Insira a Senha");
@@ -539,6 +541,18 @@
             this.txtNomeFuncionario.TabIndex = 0;
             this.toolTipFuncionario.SetToolTip(this.txtNomeFuncionario, "Insira o Nome do Funcionário");
             // 
+            // txtCrmv
+            // 
+            this.txtCrmv.Enabled = false;
+            this.txtCrmv.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCrmv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtCrmv.Location = new System.Drawing.Point(156, 297);
+            this.txtCrmv.MaxLength = 15;
+            this.txtCrmv.Name = "txtCrmv";
+            this.txtCrmv.Size = new System.Drawing.Size(170, 27);
+            this.txtCrmv.TabIndex = 33;
+            this.toolTipFuncionario.SetToolTip(this.txtCrmv, "Insira o CRMV do veterinario");
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -569,6 +583,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados Pessoais";
+            // 
+            // lblCrmv
+            // 
+            this.lblCrmv.AutoSize = true;
+            this.lblCrmv.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCrmv.Location = new System.Drawing.Point(6, 296);
+            this.lblCrmv.Name = "lblCrmv";
+            this.lblCrmv.Size = new System.Drawing.Size(73, 23);
+            this.lblCrmv.TabIndex = 32;
+            this.lblCrmv.Text = "CRMV:";
             // 
             // label6
             // 
@@ -649,28 +673,6 @@
             this.lblNome.Size = new System.Drawing.Size(74, 23);
             this.lblNome.TabIndex = 16;
             this.lblNome.Text = "Nome:";
-            // 
-            // lblCrmv
-            // 
-            this.lblCrmv.AutoSize = true;
-            this.lblCrmv.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrmv.Location = new System.Drawing.Point(6, 296);
-            this.lblCrmv.Name = "lblCrmv";
-            this.lblCrmv.Size = new System.Drawing.Size(73, 23);
-            this.lblCrmv.TabIndex = 32;
-            this.lblCrmv.Text = "CRMV:";
-            // 
-            // txtCrmv
-            // 
-            this.txtCrmv.Enabled = false;
-            this.txtCrmv.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCrmv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtCrmv.Location = new System.Drawing.Point(156, 297);
-            this.txtCrmv.MaxLength = 15;
-            this.txtCrmv.Name = "txtCrmv";
-            this.txtCrmv.Size = new System.Drawing.Size(170, 27);
-            this.txtCrmv.TabIndex = 33;
-            this.toolTipFuncionario.SetToolTip(this.txtCrmv, "Insira o CRMV do veterinario");
             // 
             // FrmFuncionario
             // 
