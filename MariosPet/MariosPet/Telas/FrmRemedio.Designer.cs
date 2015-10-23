@@ -177,7 +177,7 @@
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(202, 23);
             this.lblTelefone.TabIndex = 20;
-            this.lblTelefone.Text = "Minimo no estoque:";
+            this.lblTelefone.Text = "Mínimo no estoque:";
             // 
             // lblCpf
             // 
