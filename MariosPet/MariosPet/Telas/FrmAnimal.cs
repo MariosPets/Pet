@@ -116,7 +116,7 @@ namespace MariosPet.Telas
         {
             if (dtgCliente.Rows.Count > 0)
             {
-                classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_CLIENTE"].Value.ToString());
+                classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
             }
         }
     }
