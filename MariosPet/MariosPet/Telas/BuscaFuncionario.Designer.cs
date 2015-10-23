@@ -109,9 +109,11 @@
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(801, 231);
             this.dataGridView.TabIndex = 3;
+            this.toolTipPesquisaFuncionario.SetToolTip(this.dataGridView, "Resultado da Pesquisa");
             // 
             // buttonSelecionar
             // 
+            this.buttonSelecionar.BackgroundImage = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
             this.buttonSelecionar.FlatAppearance.BorderSize = 0;
             this.buttonSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSelecionar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
@@ -119,15 +121,14 @@
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(111, 42);
-            this.buttonSelecionar.TabIndex = 4;
-            this.buttonSelecionar.Text = "Selecionar";
+            this.buttonSelecionar.TabIndex = 5;
             this.toolTipPesquisaFuncionario.SetToolTip(this.buttonSelecionar, "Selecionar");
             this.buttonSelecionar.UseVisualStyleBackColor = true;
             this.buttonSelecionar.Click += new System.EventHandler(this.buttonSelecionar_Click);
             // 
             // buttonCancela
             // 
-            this.buttonCancela.BackgroundImage = global::MariosPet.Properties.Resources.botaoCancelarLaranja;
+            this.buttonCancela.BackgroundImage = global::MariosPet.Properties.Resources.botaoCancelarVerde;
             this.buttonCancela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonCancela.FlatAppearance.BorderSize = 0;
             this.buttonCancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -135,7 +136,7 @@
             this.buttonCancela.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancela.Name = "buttonCancela";
             this.buttonCancela.Size = new System.Drawing.Size(116, 45);
-            this.buttonCancela.TabIndex = 5;
+            this.buttonCancela.TabIndex = 4;
             this.toolTipPesquisaFuncionario.SetToolTip(this.buttonCancela, "Cancelar");
             this.buttonCancela.UseVisualStyleBackColor = true;
             this.buttonCancela.Click += new System.EventHandler(this.buttonCancela_Click);
