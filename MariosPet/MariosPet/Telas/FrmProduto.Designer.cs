@@ -119,7 +119,7 @@
             this.textBoxFornecedor.MaxLength = 40;
             this.textBoxFornecedor.Name = "textBoxFornecedor";
             this.textBoxFornecedor.Size = new System.Drawing.Size(510, 27);
-            this.textBoxFornecedor.TabIndex = 32;
+            this.textBoxFornecedor.TabIndex = 13;
             this.toolTipProduto.SetToolTip(this.textBoxFornecedor, "Insira o Nome do Fabricante");
             // 
             // btmLimpar
