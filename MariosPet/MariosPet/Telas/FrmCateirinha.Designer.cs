@@ -56,6 +56,7 @@
             this.btnSalvar.Size = new System.Drawing.Size(129, 40);
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // pictureBox1
             // 
