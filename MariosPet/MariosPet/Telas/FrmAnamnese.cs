@@ -62,6 +62,7 @@ namespace MariosPet.Telas
             classeAnam.sistemaNervosoLocomotor = richTextBoxNervosoLocomotor.Text;
             classeAnam.pelesAnexos = richTextBoxPelesAnexos.Text;
             classeAnam.manejo = richTextBoxManejo.Text;
+            classeAnam.data = DateTime.Now;
         }
 
         private void btmSalvar_Click(object sender, EventArgs e)
