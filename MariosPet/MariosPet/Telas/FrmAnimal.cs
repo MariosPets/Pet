@@ -106,10 +106,10 @@ namespace MariosPet.Telas
             CrudAnimal CrudAni = new CrudAnimal();
 
             CrudAni.inserirAnimal(classeAni);
-            //CrudCli.inserirCliente(classeCli);
+            CrudCli.inserirCliente(classeCli);
 
 
-            //classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
+            classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
         }
 
         private void dtgCliente_SelectionChanged(object sender, EventArgs e)
