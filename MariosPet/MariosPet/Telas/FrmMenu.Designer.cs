@@ -85,6 +85,9 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem60 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasEPesquisasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bancoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -387,7 +390,7 @@
             this.cadastroToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.ToolTipText = "Cadastro de Clientes";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -399,7 +402,7 @@
             this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.ToolTipText = "Relatórios";
             // 
@@ -560,7 +563,7 @@
             this.cadastroToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem2.Image")));
             this.cadastroToolStripMenuItem2.Name = "cadastroToolStripMenuItem2";
-            this.cadastroToolStripMenuItem2.Size = new System.Drawing.Size(220, 26);
+            this.cadastroToolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
             this.cadastroToolStripMenuItem2.Text = "Cadastro";
             this.cadastroToolStripMenuItem2.ToolTipText = "Cadastro de Produtos e Serviços";
             // 
@@ -570,7 +573,7 @@
             this.serviçosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.serviçosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("serviçosToolStripMenuItem.Image")));
             this.serviçosToolStripMenuItem.Name = "serviçosToolStripMenuItem";
-            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.serviçosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.serviçosToolStripMenuItem.Text = "Serviços";
             this.serviçosToolStripMenuItem.ToolTipText = "Cadastro de Serviços";
             this.serviçosToolStripMenuItem.Click += new System.EventHandler(this.serviçosToolStripMenuItem_Click);
@@ -581,7 +584,7 @@
             this.produtosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.produtosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("produtosToolStripMenuItem.Image")));
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.ToolTipText = "Cadastro de Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
@@ -593,7 +596,7 @@
             this.tabelasDePreçoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.tabelasDePreçoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tabelasDePreçoToolStripMenuItem.Image")));
             this.tabelasDePreçoToolStripMenuItem.Name = "tabelasDePreçoToolStripMenuItem";
-            this.tabelasDePreçoToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.tabelasDePreçoToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.tabelasDePreçoToolStripMenuItem.Text = "Tabelas de Preço";
             this.tabelasDePreçoToolStripMenuItem.ToolTipText = "Tabelas de preços";
             // 
@@ -604,7 +607,7 @@
             this.relatóriosToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem2.Image")));
             this.relatóriosToolStripMenuItem2.Name = "relatóriosToolStripMenuItem2";
-            this.relatóriosToolStripMenuItem2.Size = new System.Drawing.Size(220, 26);
+            this.relatóriosToolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
             this.relatóriosToolStripMenuItem2.Text = "Relatórios";
             this.relatóriosToolStripMenuItem2.ToolTipText = "Relatórios";
             // 
@@ -627,7 +630,7 @@
             this.cadastroToolStripMenuItem3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem3.Image")));
             this.cadastroToolStripMenuItem3.Name = "cadastroToolStripMenuItem3";
-            this.cadastroToolStripMenuItem3.Size = new System.Drawing.Size(153, 26);
+            this.cadastroToolStripMenuItem3.Size = new System.Drawing.Size(156, 26);
             this.cadastroToolStripMenuItem3.Text = "Cadastro";
             this.cadastroToolStripMenuItem3.ToolTipText = "Cadastro de Fornecedores";
             this.cadastroToolStripMenuItem3.Click += new System.EventHandler(this.cadastroToolStripMenuItem3_Click);
@@ -718,7 +721,8 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem60,
-            this.consultasEPesquisasToolStripMenuItem6});
+            this.consultasEPesquisasToolStripMenuItem6,
+            this.configuraçõesToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 28);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.ShowItemToolTips = true;
@@ -745,6 +749,34 @@
             this.consultasEPesquisasToolStripMenuItem6.Size = new System.Drawing.Size(233, 24);
             this.consultasEPesquisasToolStripMenuItem6.Text = "Consultas e Pesquisas";
             this.consultasEPesquisasToolStripMenuItem6.Click += new System.EventHandler(this.consultasEPesquisasToolStripMenuItem6_Click);
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            this.configuraçõesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bancoDeDadosToolStripMenuItem});
+            this.configuraçõesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            // 
+            // bancoDeDadosToolStripMenuItem
+            // 
+            this.bancoDeDadosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.bancoDeDadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backupToolStripMenuItem});
+            this.bancoDeDadosToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F);
+            this.bancoDeDadosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.bancoDeDadosToolStripMenuItem.Name = "bancoDeDadosToolStripMenuItem";
+            this.bancoDeDadosToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.bancoDeDadosToolStripMenuItem.Text = "Banco de Dados";
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.backupToolStripMenuItem.Text = "Backup";
             // 
             // FrmMenu
             // 
@@ -828,5 +860,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem60;
         private System.Windows.Forms.ToolStripMenuItem carteirinhaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultasEPesquisasToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bancoDeDadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
     }
 }
