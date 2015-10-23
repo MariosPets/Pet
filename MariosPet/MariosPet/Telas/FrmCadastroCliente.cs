@@ -80,7 +80,7 @@ namespace MariosPet.Telas
             classeCli.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
             CrudCli.inserirCliente(classeCli);
-            Close();
+            
         }
     }
 }
