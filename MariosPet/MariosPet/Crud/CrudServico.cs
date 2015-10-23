@@ -17,8 +17,7 @@ namespace MariosPet.Crud
             {
                 string sql = "insert into SERVICO (ID_SERVICO, DESCRICAO, PRECO) values(?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
-
-                command.Parameters.AddWithValue("@ID_SERVICO", servico.id);
+                                
                 command.Parameters.AddWithValue("@DESCRICAO", servico.descricao);
                 command.Parameters.AddWithValue("@PRECO", servico.preco);
 
