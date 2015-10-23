@@ -15,6 +15,7 @@ namespace MariosPet.Telas
     public partial class FrmFuncionario : Form
     {
         Funcionario classeFunc = new Funcionario();
+        Veterinario classeVete = new Veterinario();
         Endereco classeEnd = new Endereco();
         public FrmFuncionario()
         {
@@ -62,15 +63,43 @@ namespace MariosPet.Telas
 
         public void CopiarParaClasseFuncionario()
         {
-            //Pessoa
-            classeFunc.nome = txtNomeFuncionario.Text;
-            classeFunc.nascimento = mstNascimentoFuncionario.Text;
-            classeFunc.cpf = mstCPFFuncionario.Text;
-            classeFunc.rg = mstRGFuncionario.Text;
-            classeFunc.email = txtEmailFuncionario.Text;
-            classeFunc.telefone1 = txtTelefoneFuncionario.Text;
-            classeFunc.telefone2 = txtTelefone2Funcionario.Text;
-            classeFunc.telefone3 = txtTelefone3Funcionario.Text;
+            if (!txtCrmv.Enabled)
+            {
+                //Pessoa
+                classeFunc.nome = txtNomeFuncionario.Text;
+                classeFunc.nascimento = mstNascimentoFuncionario.Text;
+                classeFunc.cpf = mstCPFFuncionario.Text;
+                classeFunc.rg = mstRGFuncionario.Text;
+                classeFunc.email = txtEmailFuncionario.Text;
+                classeFunc.telefone1 = txtTelefoneFuncionario.Text;
+                classeFunc.telefone2 = txtTelefone2Funcionario.Text;
+                classeFunc.telefone3 = txtTelefone3Funcionario.Text;
+
+                //Funcionario
+                classeFunc.tipo = cmbTipoFuncionario.Text;
+                classeFunc.apelido = txtLogin.Text;
+                classeFunc.senha = txtSenha.Text;
+            }
+            else {
+                classeVete.nome = txtNomeFuncionario.Text;
+                classeVete.nascimento = mstNascimentoFuncionario.Text;
+                classeVete.cpf = mstCPFFuncionario.Text;
+                classeVete.rg = mstRGFuncionario.Text;
+                classeVete.email = txtEmailFuncionario.Text;
+                classeVete.telefone1 = txtTelefoneFuncionario.Text;
+                classeVete.telefone2 = txtTelefone2Funcionario.Text;
+                classeVete.telefone3 = txtTelefone3Funcionario.Text;
+                classeVete.crmv = Convert.ToInt32(txtCrmv.Text);
+
+                //Veterinario
+                classeVete.tipo = cmbTipoFuncionario.Text;
+                classeVete.apelido = txtLogin.Text;
+                classeVete.senha = txtSenha.Text;
+            }
+            
+
+            
+                
 
             //Endereço
             classeEnd.rua = txtRuaFuncionario.Text;
@@ -81,10 +110,7 @@ namespace MariosPet.Telas
             classeEnd.cidade = txtCidadeFuncionario.Text;
             classeEnd.uf = cmbUFFuncionario.Text;
 
-            //Funcionario
-            classeFunc.tipo = cmbTipoFuncionario.Text;
-            classeFunc.apelido = txtLogin.Text;
-            classeFunc.senha = txtSenha.Text;
+            
         }
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
@@ -93,12 +119,32 @@ namespace MariosPet.Telas
 
             CrudEndereco CrudEnd = new CrudEndereco();
             CrudFuncionario CrudFunc = new CrudFuncionario();
+            CrudVeterinario CrudVete = new CrudVeterinario();
 
             CrudEnd.inserirEndereco(classeEnd);
 
-            classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+            if (!txtCrmv.Enabled) {
+                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+                CrudFunc.inserirFuncionario(classeFunc);
+            }
+            else
+            {
+                classeVete.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+                CrudVete.inserirVeterinario(classeVete);
+            }
+        }
 
-            CrudFunc.inserirFuncionario(classeFunc);
+        private void cmbTipoFuncionario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbTipoFuncionario.Text.Equals("Veterinário(a)"))
+            {
+                txtCrmv.Enabled = true;
+                lblCrmv.Enabled = true;
+            }
+            else {
+                txtCrmv.Enabled = false;
+                lblCrmv.Enabled = false;
+            }
         }
     }
 }

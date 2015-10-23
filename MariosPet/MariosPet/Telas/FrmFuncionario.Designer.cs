@@ -74,6 +74,8 @@
             this.lblRG = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.lblCrmv = new System.Windows.Forms.Label();
+            this.txtCrmv = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -100,7 +102,7 @@
             this.groupBox2.Controls.Add(this.lblRua);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox2.Location = new System.Drawing.Point(44, 313);
+            this.groupBox2.Location = new System.Drawing.Point(44, 368);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(717, 255);
             this.groupBox2.TabIndex = 7;
@@ -385,6 +387,7 @@
             this.cmbTipoFuncionario.TabIndex = 20;
             this.cmbTipoFuncionario.Text = "---Selecione---";
             this.toolTipFuncionario.SetToolTip(this.cmbTipoFuncionario, "Selecione o Tipo de Funcionário");
+            this.cmbTipoFuncionario.SelectedIndexChanged += new System.EventHandler(this.cmbTipoFuncionario_SelectedIndexChanged);
             // 
             // lblTipoFuncionario
             // 
@@ -409,7 +412,7 @@
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Location = new System.Drawing.Point(898, 533);
+            this.btnLimpar.Location = new System.Drawing.Point(898, 588);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(113, 47);
             this.btnLimpar.TabIndex = 1;
@@ -424,7 +427,7 @@
             this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(779, 533);
+            this.btnVoltar.Location = new System.Drawing.Point(779, 588);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(113, 46);
             this.btnVoltar.TabIndex = 2;
@@ -439,7 +442,7 @@
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Location = new System.Drawing.Point(1017, 533);
+            this.btnSalvar.Location = new System.Drawing.Point(1017, 588);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 48);
             this.btnSalvar.TabIndex = 0;
@@ -540,6 +543,8 @@
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox1.Controls.Add(this.txtCrmv);
+            this.groupBox1.Controls.Add(this.lblCrmv);
             this.groupBox1.Controls.Add(this.txtTelefone3Funcionario);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtTelefone2Funcionario);
@@ -560,7 +565,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBox1.Location = new System.Drawing.Point(44, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(717, 281);
+            this.groupBox1.Size = new System.Drawing.Size(717, 350);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados Pessoais";
@@ -645,6 +650,28 @@
             this.lblNome.TabIndex = 16;
             this.lblNome.Text = "Nome:";
             // 
+            // lblCrmv
+            // 
+            this.lblCrmv.AutoSize = true;
+            this.lblCrmv.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCrmv.Location = new System.Drawing.Point(6, 296);
+            this.lblCrmv.Name = "lblCrmv";
+            this.lblCrmv.Size = new System.Drawing.Size(73, 23);
+            this.lblCrmv.TabIndex = 32;
+            this.lblCrmv.Text = "CRMV:";
+            // 
+            // txtCrmv
+            // 
+            this.txtCrmv.Enabled = false;
+            this.txtCrmv.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCrmv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtCrmv.Location = new System.Drawing.Point(156, 297);
+            this.txtCrmv.MaxLength = 15;
+            this.txtCrmv.Name = "txtCrmv";
+            this.txtCrmv.Size = new System.Drawing.Size(170, 27);
+            this.txtCrmv.TabIndex = 33;
+            this.toolTipFuncionario.SetToolTip(this.txtCrmv, "Insira o CRMV do veterinario");
+            // 
             // FrmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -717,5 +744,7 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.TextBox txtCrmv;
+        private System.Windows.Forms.Label lblCrmv;
     }
 }
