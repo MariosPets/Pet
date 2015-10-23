@@ -109,7 +109,8 @@
             this.roundButton1.Location = new System.Drawing.Point(56, 224);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(42, 40);
-            this.roundButton1.TabIndex = 21;
+            this.roundButton1.TabIndex = 6;
+            this.toolTipAnimal.SetToolTip(this.roundButton1, "Adicionar uma foto do Animal");
             this.roundButton1.UseVisualStyleBackColor = false;
             // 
             // radioButtonMacho
@@ -119,8 +120,9 @@
             this.radioButtonMacho.Location = new System.Drawing.Point(637, 224);
             this.radioButtonMacho.Name = "radioButtonMacho";
             this.radioButtonMacho.Size = new System.Drawing.Size(77, 22);
-            this.radioButtonMacho.TabIndex = 20;
+            this.radioButtonMacho.TabIndex = 5;
             this.radioButtonMacho.Text = "Macho";
+            this.toolTipAnimal.SetToolTip(this.radioButtonMacho, "Selecione se o animal for Macho");
             this.radioButtonMacho.UseVisualStyleBackColor = true;
             this.radioButtonMacho.CheckedChanged += new System.EventHandler(this.radioButtonMasc_CheckedChanged);
             // 
@@ -132,9 +134,10 @@
             this.radioButtonFemea.Location = new System.Drawing.Point(637, 196);
             this.radioButtonFemea.Name = "radioButtonFemea";
             this.radioButtonFemea.Size = new System.Drawing.Size(80, 22);
-            this.radioButtonFemea.TabIndex = 19;
+            this.radioButtonFemea.TabIndex = 4;
             this.radioButtonFemea.TabStop = true;
             this.radioButtonFemea.Text = "Fêmea";
+            this.toolTipAnimal.SetToolTip(this.radioButtonFemea, "Selecione se o animal for Fêmea");
             this.radioButtonFemea.UseVisualStyleBackColor = true;
             this.radioButtonFemea.CheckedChanged += new System.EventHandler(this.radioButtonFem_CheckedChanged);
             // 
@@ -149,7 +152,7 @@
             this.btmLimpar.Location = new System.Drawing.Point(472, 315);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(117, 44);
-            this.btmLimpar.TabIndex = 6;
+            this.btmLimpar.TabIndex = 8;
             this.toolTipAnimal.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
             this.btmLimpar.Click += new System.EventHandler(this.btmLimpar_Click);
@@ -165,7 +168,7 @@
             this.btmVoltar.Location = new System.Drawing.Point(338, 313);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
-            this.btmVoltar.TabIndex = 5;
+            this.btmVoltar.TabIndex = 7;
             this.toolTipAnimal.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
             this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
@@ -181,7 +184,7 @@
             this.btmSalvar.Location = new System.Drawing.Point(616, 315);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(117, 42);
-            this.btmSalvar.TabIndex = 7;
+            this.btmSalvar.TabIndex = 9;
             this.toolTipAnimal.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
             this.btmSalvar.Click += new System.EventHandler(this.btmSalvar_Click_1);
@@ -317,6 +320,7 @@
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(116, 44);
             this.btnNovo.TabIndex = 3;
+            this.toolTipAnimal.SetToolTip(this.btnNovo, "Adicionar novo Cliente");
             this.btnNovo.UseVisualStyleBackColor = false;
             // 
             // dtgCliente
@@ -327,6 +331,7 @@
             this.dtgCliente.Name = "dtgCliente";
             this.dtgCliente.Size = new System.Drawing.Size(634, 93);
             this.dtgCliente.TabIndex = 2;
+            this.toolTipAnimal.SetToolTip(this.dtgCliente, "Resultado da Pesquisa");
             // 
             // btnConsultar
             // 
@@ -339,6 +344,7 @@
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
             this.btnConsultar.TabIndex = 1;
+            this.toolTipAnimal.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
@@ -351,6 +357,7 @@
             this.txtPesquisaCliente.Name = "txtPesquisaCliente";
             this.txtPesquisaCliente.Size = new System.Drawing.Size(555, 27);
             this.txtPesquisaCliente.TabIndex = 0;
+            this.toolTipAnimal.SetToolTip(this.txtPesquisaCliente, "Insira o nome do Cliente que deseja pesquisar.");
             // 
             // lblNome
             // 
