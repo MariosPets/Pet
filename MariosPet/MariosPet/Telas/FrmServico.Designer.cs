@@ -86,6 +86,7 @@
             this.btnSalvar.TabIndex = 4;
             this.toolTipServicos.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // btnLimpar
             // 

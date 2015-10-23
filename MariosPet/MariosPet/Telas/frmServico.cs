@@ -47,5 +47,14 @@ namespace MariosPet.Telas
             frmmenu.Show();
             Close();
         }
+
+        private void btnSalvar_Click_1(object sender, EventArgs e)
+        {
+            CopiarParaClasseServico();
+
+            CrudServico CrudServ = new CrudServico();
+
+            CrudServ.inserirServico(classeServ);
+        }
     }
 }
