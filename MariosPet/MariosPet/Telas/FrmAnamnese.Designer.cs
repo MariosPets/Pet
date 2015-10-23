@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnamnese));
             this.groupBoxAnamnese = new System.Windows.Forms.GroupBox();
             this.richTextBoxManejo = new System.Windows.Forms.RichTextBox();
             this.btmVoltar = new System.Windows.Forms.Button();
@@ -475,6 +476,7 @@
             this.Controls.Add(this.groupBoxPesquisaAnimal);
             this.Controls.Add(this.groupBoxAnamnese);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAnamnese";
             this.Text = "Anamnese";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
