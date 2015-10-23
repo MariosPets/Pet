@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.roundButton1 = new MariosPet.Classes.RoundButton();
-            this.roundButtonVacina = new MariosPet.Classes.RoundButton();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtExames = new System.Windows.Forms.TextBox();
@@ -56,6 +54,8 @@
             this.txtPesquisaAnimal = new System.Windows.Forms.TextBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.roundButton1 = new MariosPet.Classes.RoundButton();
+            this.roundButtonVacina = new MariosPet.Classes.RoundButton();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAnimal)).BeginInit();
             this.groupBoxPesquisaAnimal.SuspendLayout();
@@ -94,34 +94,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Ficha Clínica";
             this.toolTipFichaClinica.SetToolTip(this.groupBox2, "Vacinas");
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(144)))), ((int)(((byte)(35)))));
-            this.roundButton1.FlatAppearance.BorderSize = 0;
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.Image = global::MariosPet.Properties.Resources.vermifugoMarrom;
-            this.roundButton1.Location = new System.Drawing.Point(530, 343);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(45, 45);
-            this.roundButton1.TabIndex = 41;
-            this.toolTipFichaClinica.SetToolTip(this.roundButton1, "Vermifugo");
-            this.roundButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundButtonVacina
-            // 
-            this.roundButtonVacina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(190)))), ((int)(((byte)(142)))));
-            this.roundButtonVacina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.roundButtonVacina.FlatAppearance.BorderSize = 0;
-            this.roundButtonVacina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButtonVacina.Image = global::MariosPet.Properties.Resources.vaccineMarrom;
-            this.roundButtonVacina.Location = new System.Drawing.Point(476, 343);
-            this.roundButtonVacina.Name = "roundButtonVacina";
-            this.roundButtonVacina.Size = new System.Drawing.Size(45, 45);
-            this.roundButtonVacina.TabIndex = 40;
-            this.roundButtonVacina.UseVisualStyleBackColor = false;
-            this.roundButtonVacina.Click += new System.EventHandler(this.roundButtonVacina_Click);
             // 
             // txtObservacao
             // 
@@ -394,6 +366,35 @@
             this.lblNome.Size = new System.Drawing.Size(147, 23);
             this.lblNome.TabIndex = 16;
             this.lblNome.Text = "Nome Animal:";
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(144)))), ((int)(((byte)(35)))));
+            this.roundButton1.FlatAppearance.BorderSize = 0;
+            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButton1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton1.Image = global::MariosPet.Properties.Resources.vermifugoMarrom;
+            this.roundButton1.Location = new System.Drawing.Point(530, 343);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(45, 45);
+            this.roundButton1.TabIndex = 41;
+            this.toolTipFichaClinica.SetToolTip(this.roundButton1, "Vermifugo");
+            this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
+            // 
+            // roundButtonVacina
+            // 
+            this.roundButtonVacina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(190)))), ((int)(((byte)(142)))));
+            this.roundButtonVacina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.roundButtonVacina.FlatAppearance.BorderSize = 0;
+            this.roundButtonVacina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundButtonVacina.Image = global::MariosPet.Properties.Resources.vaccineMarrom;
+            this.roundButtonVacina.Location = new System.Drawing.Point(476, 343);
+            this.roundButtonVacina.Name = "roundButtonVacina";
+            this.roundButtonVacina.Size = new System.Drawing.Size(45, 45);
+            this.roundButtonVacina.TabIndex = 40;
+            this.roundButtonVacina.UseVisualStyleBackColor = false;
+            this.roundButtonVacina.Click += new System.EventHandler(this.roundButtonVacina_Click);
             // 
             // FrmFichaClinica
             // 

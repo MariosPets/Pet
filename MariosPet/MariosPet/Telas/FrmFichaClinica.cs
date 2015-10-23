@@ -103,5 +103,11 @@ namespace MariosPet.Telas
             vacina.ShowDialog();
 
         }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            FrmVermifugo vermifugo = new FrmVermifugo();
+            vermifugo.ShowDialog();
+        }
     }
 }
