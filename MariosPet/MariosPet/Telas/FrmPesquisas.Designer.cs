@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPesquisas));
             this.toolTipPesquisas = new System.Windows.Forms.ToolTip(this.components);
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -262,7 +263,6 @@
             this.groupBox1.Size = new System.Drawing.Size(752, 395);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // FrmPesquisas
             // 
@@ -272,6 +272,7 @@
             this.ClientSize = new System.Drawing.Size(851, 733);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxPesquisas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPesquisas";
             this.Text = "Pesquisas e Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
