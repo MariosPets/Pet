@@ -35,6 +35,7 @@ namespace MariosPet.Telas
             lista.Add(new ReportParameter("Cor", txtCor.Text));
             lista.Add(new ReportParameter("Sexo", txtSexo.Text));
             lista.Add(new ReportParameter("Raca", txtRaca.Text));
+            lista.Add(new ReportParameter("Registro", txtRegistro.Text));
             lista.Add(new ReportParameter("Proprietario", txtProprietario.Text));
 
             report.LocalReport.SetParameters(lista);
