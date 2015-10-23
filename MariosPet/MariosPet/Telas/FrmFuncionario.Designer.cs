@@ -85,6 +85,7 @@
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.groupBox2.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox2.Controls.Add(this.mstCepFuncionario);
             this.groupBox2.Controls.Add(this.cmbUFFuncionario);
@@ -185,7 +186,7 @@
             // 
             this.txtCidadeFuncionario.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidadeFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtCidadeFuncionario.Location = new System.Drawing.Point(156, 185);
+            this.txtCidadeFuncionario.Location = new System.Drawing.Point(156, 181);
             this.txtCidadeFuncionario.MaxLength = 30;
             this.txtCidadeFuncionario.Name = "txtCidadeFuncionario";
             this.txtCidadeFuncionario.Size = new System.Drawing.Size(195, 27);
@@ -289,6 +290,7 @@
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox3.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox3.Controls.Add(this.txtConfirmacaoSenha);
             this.groupBox3.Controls.Add(this.label4);
@@ -360,7 +362,7 @@
             this.txtLogin.Location = new System.Drawing.Point(222, 68);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(170, 27);
-            this.txtLogin.TabIndex = 20;
+            this.txtLogin.TabIndex = 1;
             this.toolTipFuncionario.SetToolTip(this.txtLogin, "Insira o Login");
             // 
             // label2
@@ -386,7 +388,7 @@
             this.cmbTipoFuncionario.Location = new System.Drawing.Point(222, 36);
             this.cmbTipoFuncionario.Name = "cmbTipoFuncionario";
             this.cmbTipoFuncionario.Size = new System.Drawing.Size(171, 26);
-            this.cmbTipoFuncionario.TabIndex = 20;
+            this.cmbTipoFuncionario.TabIndex = 0;
             this.cmbTipoFuncionario.Text = "---Selecione---";
             this.toolTipFuncionario.SetToolTip(this.cmbTipoFuncionario, "Selecione o Tipo de Funcionário");
             this.cmbTipoFuncionario.SelectedIndexChanged += new System.EventHandler(this.cmbTipoFuncionario_SelectedIndexChanged);
@@ -432,7 +434,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(779, 588);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(113, 46);
-            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.TabIndex = 0;
             this.toolTipFuncionario.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -447,7 +449,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(1017, 588);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 48);
-            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.TabIndex = 2;
             this.toolTipFuncionario.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
@@ -550,12 +552,13 @@
             this.txtCrmv.MaxLength = 15;
             this.txtCrmv.Name = "txtCrmv";
             this.txtCrmv.Size = new System.Drawing.Size(170, 27);
-            this.txtCrmv.TabIndex = 33;
+            this.txtCrmv.TabIndex = 8;
             this.toolTipFuncionario.SetToolTip(this.txtCrmv, "Insira o CRMV do veterinario");
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromAmareloGrande;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.groupBox1.Controls.Add(this.txtCrmv);
             this.groupBox1.Controls.Add(this.lblCrmv);
