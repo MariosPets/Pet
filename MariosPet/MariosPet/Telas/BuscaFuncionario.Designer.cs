@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelPesquisa = new System.Windows.Forms.Label();
             this.textBoxPesquisa = new System.Windows.Forms.TextBox();
             this.comboBoxPesquisa = new System.Windows.Forms.ComboBox();
@@ -38,8 +39,10 @@
             this.buttonCancela = new System.Windows.Forms.Button();
             this.toolTipPesquisaFuncionario = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelPesquisa
@@ -100,14 +103,19 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 10F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(23, 95);
+            this.dataGridView.Location = new System.Drawing.Point(14, 18);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(801, 231);
+            this.dataGridView.Size = new System.Drawing.Size(801, 233);
             this.dataGridView.TabIndex = 3;
             this.toolTipPesquisaFuncionario.SetToolTip(this.dataGridView, "Resultado da Pesquisa");
             // 
@@ -117,7 +125,7 @@
             this.buttonSelecionar.FlatAppearance.BorderSize = 0;
             this.buttonSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSelecionar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            this.buttonSelecionar.Location = new System.Drawing.Point(713, 347);
+            this.buttonSelecionar.Location = new System.Drawing.Point(704, 273);
             this.buttonSelecionar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelecionar.Name = "buttonSelecionar";
             this.buttonSelecionar.Size = new System.Drawing.Size(111, 42);
@@ -132,7 +140,7 @@
             this.buttonCancela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonCancela.FlatAppearance.BorderSize = 0;
             this.buttonCancela.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancela.Location = new System.Drawing.Point(585, 344);
+            this.buttonCancela.Location = new System.Drawing.Point(576, 270);
             this.buttonCancela.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancela.Name = "buttonCancela";
             this.buttonCancela.Size = new System.Drawing.Size(116, 45);
@@ -143,29 +151,42 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.textBoxPesquisa);
             this.groupBox1.Controls.Add(this.labelPesquisa);
-            this.groupBox1.Controls.Add(this.buttonSelecionar);
-            this.groupBox1.Controls.Add(this.buttonCancela);
             this.groupBox1.Controls.Add(this.comboBoxPesquisa);
             this.groupBox1.Controls.Add(this.buttonPesquisa);
-            this.groupBox1.Controls.Add(this.dataGridView);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBox1.Location = new System.Drawing.Point(27, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(842, 407);
+            this.groupBox1.Size = new System.Drawing.Size(856, 91);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Pesquisar Funcionário";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox2.Controls.Add(this.dataGridView);
+            this.groupBox2.Controls.Add(this.buttonCancela);
+            this.groupBox2.Controls.Add(this.buttonSelecionar);
+            this.groupBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.groupBox2.Location = new System.Drawing.Point(27, 139);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(856, 336);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
             // 
             // BuscaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(895, 461);
+            this.ClientSize = new System.Drawing.Size(895, 733);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BuscaFuncionario";
@@ -176,6 +197,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -191,5 +213,6 @@
         private System.Windows.Forms.Button buttonCancela;
         private System.Windows.Forms.ToolTip toolTipPesquisaFuncionario;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
