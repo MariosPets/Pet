@@ -19,9 +19,9 @@ namespace MariosPet.Telas
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            FrmAnimal animal = new FrmAnimal();
-            animal.ShowDialog();
-            
+            FrmBuscaVermifugo buscaVermifugo = new FrmBuscaVermifugo();
+            buscaVermifugo.ShowDialog();
+            Close();
         }
     }
 }
