@@ -32,5 +32,12 @@ namespace MariosPet.Telas
 
             dtgBuscaVacina.DataSource = CrudVac.consultaVacina("Select * from VACINA inner join MEDICAMENTO on MEDICAMENTO.ID_MEDICAMENTO = VACINA.ID_MEDICAMENTO where DESCRICAO like '%" + txtPesquisaVacina.Text + "%'"); 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmVacina vacina = new frmVacina();
+            vacina.ShowDialog();
+            Close();
+        }
     }
 }

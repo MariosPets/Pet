@@ -96,7 +96,7 @@
             this.lblNomeVacina.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeVacina.Location = new System.Drawing.Point(6, 50);
             this.lblNomeVacina.Name = "lblNomeVacina";
-            this.lblNomeVacina.Size = new System.Drawing.Size(143, 23);
+            this.lblNomeVacina.Size = new System.Drawing.Size(144, 23);
             this.lblNomeVacina.TabIndex = 16;
             this.lblNomeVacina.Text = "Nome Vacina:";
             // 
@@ -138,6 +138,7 @@
             this.btnVoltar.TabIndex = 4;
             this.toolTipBuscaVacina.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnNovo
             // 
