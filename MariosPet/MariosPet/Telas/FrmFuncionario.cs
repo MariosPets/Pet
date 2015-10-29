@@ -51,7 +51,7 @@ namespace MariosPet.Telas
             mstCPFFuncionario.Clear();
             mstNascimentoFuncionario.Clear();
             mstRGFuncionario.Clear();
-            
+            txtCrmv.Clear();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
