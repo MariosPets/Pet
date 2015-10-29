@@ -33,5 +33,12 @@ namespace MariosPet.Telas
 
             dtgVermifugo.DataSource = CrudVerm.consultaVermifugo("Select * from VERMIFUGO inner join MEDICAMENTO on MEDICAMENTO.ID_MEDICAMENTO = VERMIFUGO.ID_MEDICAMENTO where DESCRICAO like '%" + txtVermifugo.Text + "%'");
         }
+
+        private void btmVoltar_Click(object sender, EventArgs e)
+        {
+            FrmVermifugo vermifugo = new FrmVermifugo();
+            vermifugo.ShowDialog();
+            Close();
+        }
     }
 }

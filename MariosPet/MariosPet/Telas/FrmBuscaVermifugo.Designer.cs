@@ -96,7 +96,7 @@
             this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
             this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
-            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
+            this.labelBuscaVermifugo.Size = new System.Drawing.Size(180, 23);
             this.labelBuscaVermifugo.TabIndex = 16;
             this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
             // 
@@ -129,6 +129,7 @@
             this.btmVoltar.TabIndex = 4;
             this.toolTipVermifugos.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
+            this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
             // 
             // btmSalvar
             // 
