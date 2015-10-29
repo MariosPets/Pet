@@ -163,7 +163,9 @@ namespace MariosPet.Telas
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            FrmFornecedor fornecedor = new FrmFornecedor();
+            fornecedor.ShowDialog();
+            Close();
         }
 
         private void pagamentosToolStripMenuItem_Click(object sender, EventArgs e)
