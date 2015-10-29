@@ -86,7 +86,7 @@ namespace MariosPet.Telas
         {
             FrmReceituario receituario = new FrmReceituario();
             receituario.Show();
-            Close();
+            
         }
 
         private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
