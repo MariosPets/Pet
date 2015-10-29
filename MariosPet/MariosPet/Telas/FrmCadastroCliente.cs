@@ -37,6 +37,8 @@ namespace MariosPet.Telas
             mskNascimentoCliente.Clear();
             mstCPF.Clear();
             mstRG.Clear();
+            
+
         }
 
         private void btmVoltar_Click(object sender, EventArgs e)
