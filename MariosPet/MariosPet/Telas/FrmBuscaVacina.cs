@@ -14,6 +14,7 @@ namespace MariosPet.Telas
 {
     public partial class FrmBuscaVacina : Form
     {
+        Vacina classeVacina = new Vacina();
         Medicamento classeMed = new Medicamento();
         CrudVacina CrudVac = new CrudVacina();
         public FrmBuscaVacina()
@@ -38,6 +39,15 @@ namespace MariosPet.Telas
             frmVacina vacina = new frmVacina();
             vacina.ShowDialog();
             Close();
+        }
+
+        private void dtgBuscaVacina_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgBuscaVacina.Rows.Count > 0)
+            {
+                //Não sei se está certo
+                classeVacina.id = Convert.ToInt32(dtgBuscaVacina.CurrentRow.Cells["ID_VACINA"].Value.ToString());
+            }
         }
     }
 }
