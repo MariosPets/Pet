@@ -107,7 +107,7 @@ namespace MariosPet.Telas
         {
             FrmAgenda agenda = new FrmAgenda();
             agenda.ShowDialog();
-            Close();
+            
         }
 
         private void consultasEPesquisasToolStripMenuItem6_Click(object sender, EventArgs e)
