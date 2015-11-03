@@ -16,6 +16,7 @@ namespace MariosPet.Telas
     public partial class FrmAnimal : Form
     {
         Animal classeAni = new Animal();
+        Foto classeFot = new Foto();
         Cliente classeCli = new Cliente();
 
         CrudCliente CrudCli = new CrudCliente();
@@ -90,12 +91,15 @@ namespace MariosPet.Telas
             CopiarParaClasseAnimal();
 
             CrudAnimal CrudAni = new CrudAnimal();
+            CrudFoto CrudFoto = new Crud.CrudFoto();
 
             CrudAni.inserirAnimal(classeAni);
             CrudCli.inserirCliente(classeCli);
 
+            classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_ANIMAL from ANIMAL order by ID_ANIMAL desc").Rows[0][0].ToString());
 
-            classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_CLIENTE from CLIENTE order by ID_CLIENTE desc").Rows[0][0].ToString());
+            classeFot.idAnimal = classeAni.id;
+            CrudFoto.inserirFoto(classeFot);
         }
 
         private void dtgCliente_SelectionChanged(object sender, EventArgs e)
@@ -104,6 +108,17 @@ namespace MariosPet.Telas
             {
                 classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
             }
+        }
+
+        private void btnBuscaFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Images only. |*.jpg; *.jpeg; *.png; *.gif;";
+
+            DialogResult dialogResult = openFileDialog.ShowDialog();
+
+            pictureBoxAnimal.Image = Image.FromFile(openFileDialog.FileName);
+
         }
     }
 }

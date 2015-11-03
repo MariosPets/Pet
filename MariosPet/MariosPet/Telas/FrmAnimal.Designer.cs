@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBoxAnimal = new System.Windows.Forms.PictureBox();
             this.groupBoxAnimal = new System.Windows.Forms.GroupBox();
-            this.roundButton1 = new MariosPet.Classes.RoundButton();
+            this.btnBuscaFoto = new MariosPet.Classes.RoundButton();
             this.radioButtonMacho = new System.Windows.Forms.RadioButton();
             this.radioButtonFemea = new System.Windows.Forms.RadioButton();
             this.btmLimpar = new System.Windows.Forms.Button();
@@ -66,6 +66,7 @@
             this.pictureBoxAnimal.Location = new System.Drawing.Point(56, 51);
             this.pictureBoxAnimal.Name = "pictureBoxAnimal";
             this.pictureBoxAnimal.Size = new System.Drawing.Size(170, 167);
+            this.pictureBoxAnimal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAnimal.TabIndex = 1;
             this.pictureBoxAnimal.TabStop = false;
             // 
@@ -75,7 +76,7 @@
             this.groupBoxAnimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.groupBoxAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeAmareloGrande;
             this.groupBoxAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxAnimal.Controls.Add(this.roundButton1);
+            this.groupBoxAnimal.Controls.Add(this.btnBuscaFoto);
             this.groupBoxAnimal.Controls.Add(this.radioButtonMacho);
             this.groupBoxAnimal.Controls.Add(this.radioButtonFemea);
             this.groupBoxAnimal.Controls.Add(this.btmLimpar);
@@ -101,17 +102,18 @@
             this.groupBoxAnimal.TabStop = false;
             this.groupBoxAnimal.Text = "   Dados do Animal";
             // 
-            // roundButton1
+            // btnBuscaFoto
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(190)))), ((int)(((byte)(142)))));
-            this.roundButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundButton1.Image = global::MariosPet.Properties.Resources.addPhotoMarrom;
-            this.roundButton1.Location = new System.Drawing.Point(56, 224);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(42, 40);
-            this.roundButton1.TabIndex = 6;
-            this.toolTipAnimal.SetToolTip(this.roundButton1, "Adicionar uma foto do Animal");
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.btnBuscaFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(190)))), ((int)(((byte)(142)))));
+            this.btnBuscaFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscaFoto.Image = global::MariosPet.Properties.Resources.addPhotoMarrom;
+            this.btnBuscaFoto.Location = new System.Drawing.Point(56, 224);
+            this.btnBuscaFoto.Name = "btnBuscaFoto";
+            this.btnBuscaFoto.Size = new System.Drawing.Size(42, 40);
+            this.btnBuscaFoto.TabIndex = 6;
+            this.toolTipAnimal.SetToolTip(this.btnBuscaFoto, "Adicionar uma foto do Animal");
+            this.btnBuscaFoto.UseVisualStyleBackColor = false;
+            this.btnBuscaFoto.Click += new System.EventHandler(this.btnBuscaFoto_Click);
             // 
             // radioButtonMacho
             // 
@@ -411,7 +413,7 @@
         private System.Windows.Forms.ToolTip toolTipAnimal;
         private System.Windows.Forms.RadioButton radioButtonMacho;
         private System.Windows.Forms.RadioButton radioButtonFemea;
-        private Classes.RoundButton roundButton1;
+        private Classes.RoundButton btnBuscaFoto;
         private System.Windows.Forms.GroupBox groupBoxPesquisaAnimal;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.DataGridView dtgCliente;
