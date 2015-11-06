@@ -316,6 +316,7 @@
             this.dtgCliente.TabIndex = 2;
             this.toolTipAnimal.SetToolTip(this.dtgCliente, "Resultado da Pesquisa");
             this.dtgCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_SelectionChanged);
+            this.dtgCliente.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_CellContentDoubleClick);
             // 
             // btnConsultar
             // 

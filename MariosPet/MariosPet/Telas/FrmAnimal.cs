@@ -120,5 +120,13 @@ namespace MariosPet.Telas
             pictureBoxAnimal.Image = Image.FromFile(openFileDialog.FileName);
 
         }
+
+        private void dtgCliente_CellContentDoubleClick(object sender, EventArgs e)
+        {
+            if (dtgCliente.Rows.Count > 0)
+            {
+                classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
+            }
+        }
     }
 }
