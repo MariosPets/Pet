@@ -16,10 +16,9 @@ namespace MariosPet.Crud
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
 
-                string sql = "insert into FOTO (ID_FOTO, ID_ANIMAL, FOTO) values(?,?,?)";
+                string sql = "insert into FOTO (ID_ANIMAL, FOTO) values(?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_FOTO", foto.id);
                 command.Parameters.AddWithValue("@ID_ANIMAL", foto.idAnimal);
                 command.Parameters.AddWithValue("@FOTO", foto.foto);
 

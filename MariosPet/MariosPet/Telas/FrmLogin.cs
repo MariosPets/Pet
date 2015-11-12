@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MariosPet.Classes;
+using MariosPet.Crud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,10 +33,24 @@ namespace MariosPet
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu menu = new Telas.FrmMenu();
-            this.Visible = false;
-            menu.Show();
             
+            CrudFuncionario CrudFunc = new CrudFuncionario();
+            
+            DataTable tabela = CrudFunc.consultaFuncionario("select * from funcionario where apelido = '"+textUsuario.Text+"' and senha = '"+textSenha.Text+"'");
+            
+            if (tabela.Rows.Count>0)
+            {
+
+
+                Telas.FrmMenu menu = new Telas.FrmMenu();
+                this.Visible = false;
+                menu.Show();
+            }
+            else {
+                textUsuario.Text = "Errado";
+            }
+
+
         }
 
         private void btmSair_Click(object sender, EventArgs e)

@@ -13,7 +13,7 @@ namespace MariosPet.Classes
 
         public int id { get; set; }
         public int idAnimal { get; set; }
-        public Image foto { get; set; }
+        public Byte[] foto { get; set; }
 
         #endregion
     }
