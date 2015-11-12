@@ -573,6 +573,16 @@ namespace MariosPet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap orcamento {
+            get {
+                object obj = ResourceManager.GetObject("orcamento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pataAmareloMarromGrande {
             get {
                 object obj = ResourceManager.GetObject("pataAmareloMarromGrande", resourceCulture);
