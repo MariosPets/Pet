@@ -39,8 +39,6 @@
             this.btmEntrar = new System.Windows.Forms.Button();
             this.btmSair = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -49,8 +47,6 @@
             // 
             this.grpLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grpLogin.Controls.Add(this.textBox2);
-            this.grpLogin.Controls.Add(this.textBox1);
             this.grpLogin.Controls.Add(this.textSenha);
             this.grpLogin.Controls.Add(this.labelSenha);
             this.grpLogin.Controls.Add(this.labelUsuario);
@@ -156,29 +152,6 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.textBox1.Location = new System.Drawing.Point(142, 161);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '•';
-            this.textBox1.Size = new System.Drawing.Size(186, 31);
-            this.textBox1.TabIndex = 5;
-            this.toolTipLogin.SetToolTip(this.textBox1, "Insira a Senha");
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.textBox2.Location = new System.Drawing.Point(142, 95);
-            this.textBox2.MaxLength = 20;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 31);
-            this.textBox2.TabIndex = 6;
-            this.toolTipLogin.SetToolTip(this.textBox2, "Insira o Login");
-            // 
             // FrmLogin
             // 
             this.AutoSize = true;
@@ -217,7 +190,5 @@
         private System.Windows.Forms.Button btmSair;
         private System.Windows.Forms.Button btmEntrar;
         private System.Windows.Forms.ToolTip toolTipLogin;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }
