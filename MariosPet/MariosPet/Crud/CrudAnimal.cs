@@ -15,7 +15,7 @@ namespace MariosPet.Crud
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "insert into ANIMAL (CARTEIRINHA, NOME, ID_CLIENTE, RACA_PORTE, SEXO, PELAGEM_COR, NASCIMENTO, ID_VETERINARIO ) values(?,?,?,?,?,?,?,?)";
+                string sql = "insert into ANIMAL (CARTEIRINHA, NOME, ID_CLIENTE, RACA_PORTE, SEXO, PELAGEM_COR, NASCIMENTO ) values(?,?,?,?,?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 command.Parameters.AddWithValue("@CARTEIRINHA", animal.carteirinha);
@@ -25,7 +25,6 @@ namespace MariosPet.Crud
                 command.Parameters.AddWithValue("@SEXO", animal.sexo);
                 command.Parameters.AddWithValue("@PELAGEM_COR", animal.pelagemCor);
                 command.Parameters.AddWithValue("@NASCIMENTO", animal.nascimento);
-                command.Parameters.AddWithValue("@ID_VETERINARIO", animal.idVeterinario);
 
                 conexao.Open();
                 command.ExecuteNonQuery();
@@ -49,7 +48,7 @@ namespace MariosPet.Crud
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "update ANIMAL set NOME = ?, CARTEIRINHA = ?, ID_CLIENTE = ?, RACA_PORTE = ?, SEXO = ?, PELAGEM_COR = ?, NASCIMENTO = ?, ID_VETERINARIO = ?,  where ID_ANIMAL = ?";
+                string sql = "update ANIMAL set NOME = ?, CARTEIRINHA = ?, ID_CLIENTE = ?, RACA_PORTE = ?, SEXO = ?, PELAGEM_COR = ?, NASCIMENTO = ?  where ID_ANIMAL = ?";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 command.Parameters.AddWithValue("@NOME", animal.nome);
@@ -59,7 +58,6 @@ namespace MariosPet.Crud
                 command.Parameters.AddWithValue("@SEXO", animal.sexo);
                 command.Parameters.AddWithValue("@PELAGEM_COR", animal.pelagemCor);
                 command.Parameters.AddWithValue("@NASCIMENTO", animal.nascimento);
-                command.Parameters.AddWithValue("@ID_VETERINARIO", animal.idVeterinario);
                 command.Parameters.AddWithValue("@ID_ANIMAL", animal.id);
 
                 conexao.Open();

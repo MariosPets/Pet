@@ -24,7 +24,7 @@ namespace MariosPet.Classes
         public bool sexo { get; set; }
         public string pelagemCor { get; set; }
         public string nascimento { get; set; }
-        public int idVeterinario { get; set; }
+        
 
         #endregion
     }
