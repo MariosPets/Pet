@@ -52,7 +52,6 @@ namespace MariosPet.Telas
             classeAni.pelagemCor = txtPelagemCor.Text;
             classeAni.nascimento = maskedTxtNascimentoAnimal.Text;
             classeAni.sexo = radioButtonFemea.Checked;
-            classeAni.idVeterinario = 1;
 
             MemoryStream imagem = new MemoryStream();
             pictureBoxAnimal.Image.Save(imagem, ImageFormat.Jpeg);
