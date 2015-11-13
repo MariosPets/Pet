@@ -146,7 +146,6 @@
             this.mstPreco.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.mstPreco.Location = new System.Drawing.Point(262, 79);
-            this.mstPreco.Mask = "000,00";
             this.mstPreco.Name = "mstPreco";
             this.mstPreco.Size = new System.Drawing.Size(107, 27);
             this.mstPreco.TabIndex = 1;
@@ -168,6 +167,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmServico";
             this.Text = "Cadastrar Serviço";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBoxServico.ResumeLayout(false);
             this.groupBoxServico.PerformLayout();
             this.ResumeLayout(false);
