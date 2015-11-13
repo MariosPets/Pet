@@ -210,6 +210,12 @@
     <Compile Include="Telas\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\FrmOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmOrcamento.Designer.cs">
+      <DependentUpon>FrmOrcamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\FrmPesquisas.cs">
       <SubType>Form</SubType>
     </Compile>

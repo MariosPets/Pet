@@ -409,3 +409,6 @@ C:\Users\Leonardo Fernando\Source\Repos\Pet6\MariosPet\MariosPet\obj\Debug\Mario
 C:\Users\Leonardo Fernando\Source\Repos\Pet6\MariosPet\MariosPet\obj\Debug\MariosPet.csproj.GenerateResource.Cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet6\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet6\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled
+C:\Users\Jéssica Kelly\Source\Repos\Pet4\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Jéssica Kelly\Source\Repos\Pet4\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Jéssica Kelly\Source\Repos\Pet4\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
