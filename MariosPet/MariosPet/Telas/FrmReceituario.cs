@@ -48,5 +48,12 @@ namespace MariosPet.Telas
             file.Close();
             Process.Start(nomeArquivo);
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Telas.FrmMenu menu = new FrmMenu();
+            menu.Show();
+            Close();
+        }
     }
 }

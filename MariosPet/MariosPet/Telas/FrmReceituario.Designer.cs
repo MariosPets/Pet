@@ -34,6 +34,7 @@
             this.txtNomeVeterinario = new System.Windows.Forms.TextBox();
             this.txtPrescricao = new System.Windows.Forms.RichTextBox();
             this.toolTipReceituario = new System.Windows.Forms.ToolTip(this.components);
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -75,6 +76,20 @@
             this.toolTipReceituario.IsBalloon = true;
             this.toolTipReceituario.StripAmpersands = true;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.btnVoltar.BackgroundImage = global::MariosPet.Properties.Resources.botaoVoltarLaranja;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(633, 68);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(116, 44);
+            this.btnVoltar.TabIndex = 8;
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // FrmReceituario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 18F);
@@ -83,6 +98,7 @@
             this.BackgroundImage = global::MariosPet.Properties.Resources.receituario1038X574;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(993, 733);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtPrescricao);
             this.Controls.Add(this.txtNomeVeterinario);
             this.Controls.Add(this.btnSalvar);
@@ -93,6 +109,7 @@
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "FrmReceituario";
             this.Text = "FrmReceituario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +121,6 @@
         private System.Windows.Forms.TextBox txtNomeVeterinario;
         private System.Windows.Forms.RichTextBox txtPrescricao;
         private System.Windows.Forms.ToolTip toolTipReceituario;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
