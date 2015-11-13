@@ -12,13 +12,22 @@ using System.Windows.Forms;
 
 namespace MariosPet.Telas
 {
+
     public partial class FrmCadastroCliente : Form
     {
+
         Endereco classeEnd = new Endereco();
         Cliente classeCli = new Cliente();
         public FrmCadastroCliente()
         {
             InitializeComponent();
+
+            if (Estatica.id != 0)
+            {
+                lblNome.Text = "ok";
+                CopiarParaFormulario();
+
+            }
         }
 
         private void btmLimpar_Click(object sender, EventArgs e)
@@ -37,7 +46,7 @@ namespace MariosPet.Telas
             mskNascimentoCliente.Clear();
             mstCPF.Clear();
             mstRG.Clear();
-            
+
 
         }
 
@@ -70,6 +79,39 @@ namespace MariosPet.Telas
             classeCli.telefone3 = txtTelefone3Cliente.Text;
         }
 
+        private void CopiarParaFormulario()
+        {
+            CrudCliente CrudCli = new CrudCliente();
+            CrudEndereco CrudEnd = new CrudEndereco();
+
+            string sql = "select * from pessoa inner join cliente on pessoa.id_pessoa = cliente.id_pessoa where pessoa.id_pessoa = " + Estatica.id.ToString();
+            DataTable cliente = CrudCli.consultaCliente(sql);
+
+            //Dados Pessoais
+            classeCli.id = Convert.ToInt32(cliente.Rows[0][0].ToString());
+            txtNomeCliente.Text = cliente.Rows[0][1].ToString();
+            mstCPF.Text = cliente.Rows[0][2].ToString();
+            mstRG.Text = cliente.Rows[0][3].ToString();
+            mskNascimentoCliente.Text = cliente.Rows[0][4].ToString();
+            classeCli.idEndereco = Convert.ToInt32(cliente.Rows[0][5].ToString());
+            classeEnd.id = Convert.ToInt32(cliente.Rows[0][5].ToString());
+            txtEmailCliente.Text = cliente.Rows[0][6].ToString();
+            txtTelefoneCliente.Text = cliente.Rows[0][7].ToString();
+            txtTelefone2Cliente.Text = cliente.Rows[0][8].ToString();
+            txtTelefone3Cliente.Text = cliente.Rows[0][9].ToString();
+
+            sql = "select * from endereco where id_endereco = " + cliente.Rows[0][5].ToString();
+            DataTable endereco = CrudEnd.consultaEndereco(sql);
+
+            txtRuaCliente.Text = endereco.Rows[0][1].ToString();
+            txtNumeroCliente.Text = endereco.Rows[0][2].ToString();
+            txtComplementoCliente.Text = endereco.Rows[0][3].ToString();
+            txtBairroCliente.Text = endereco.Rows[0][4].ToString();
+            txtCidadeCliente.Text = endereco.Rows[0][5].ToString();
+            cmbUFCliente.Text = endereco.Rows[0][6].ToString();
+            mskCepCliente.Text = endereco.Rows[0][7].ToString();
+        }
+
         private void btmSalvar_Click_1(object sender, EventArgs e)
         {
             CopiarParaClasseCliente();
@@ -77,11 +119,23 @@ namespace MariosPet.Telas
             CrudCliente CrudCli = new CrudCliente();
             CrudEndereco CrudEnd = new CrudEndereco();
 
-            CrudEnd.inserirEndereco(classeEnd);
+            if (Estatica.id != 0)
+            {
+                CrudEnd.alteraEndereco(classeEnd);
+                CrudCli.alteraCliente(classeCli);
+            }
+            else
+            {
+                CrudEnd.inserirEndereco(classeEnd);
 
-            classeCli.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+                classeCli.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
-            CrudCli.inserirCliente(classeCli);
+                CrudCli.inserirCliente(classeCli);
+            }
+        }
+
+        private void FrmCadastroCliente_Load(object sender, EventArgs e)
+        {
             
         }
     }

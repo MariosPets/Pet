@@ -351,10 +351,8 @@ namespace MariosPet.Telas
 
         private void dataGridViewPesquisas_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridViewPesquisas.Rows.Count > 0)
-            {
-                Estatica.id = Convert.ToInt32(dataGridViewPesquisas.CurrentRow.Cells[0].Value.ToString());
-            }
+            lblConsulta.Text = dataGridViewPesquisas.CurrentRow.Cells[0].Value.ToString();
+            Estatica.id = Convert.ToInt32(dataGridViewPesquisas.CurrentRow.Cells[0].Value.ToString());
         }
 
 
