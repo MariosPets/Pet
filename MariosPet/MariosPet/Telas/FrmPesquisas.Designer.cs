@@ -99,6 +99,7 @@
             this.comboBoxPesqPor.TabIndex = 1;
             this.comboBoxPesqPor.Text = "    ---Selecionar---";
             this.toolTipPesquisas.SetToolTip(this.comboBoxPesqPor, "Selecionar informação a ser pesquisada");
+            this.comboBoxPesqPor.SelectedIndexChanged += new System.EventHandler(this.comboBoxPesqPor_SelectedIndexChanged);
             // 
             // comboBoxTipo
             // 
@@ -112,9 +113,9 @@
             "Medicamentos",
             "Solicitação de Exames",
             "Prontuário",
-            "Produtos e Serviços",
-            "Fornecedores",
             "Produtos",
+            "Serviços",
+            "Fornecedores",
             "Vendas",
             "Funcionários"});
             this.comboBoxTipo.Location = new System.Drawing.Point(90, 47);
@@ -123,6 +124,7 @@
             this.comboBoxTipo.TabIndex = 0;
             this.comboBoxTipo.Text = "         ---Selecionar---";
             this.toolTipPesquisas.SetToolTip(this.comboBoxTipo, "Selecionar o Tipo de Pesquisa");
+            this.comboBoxTipo.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipo_SelectedIndexChanged);
             // 
             // dataGridViewPesquisas
             // 
