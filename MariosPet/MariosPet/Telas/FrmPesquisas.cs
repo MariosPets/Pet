@@ -311,12 +311,13 @@ namespace MariosPet.Telas
 
                     break;
                 case 2:
-                    tabela = "select * from laboratorio inner join pessoa_juridica on pessoa_juridica.id_pessoa_juridica = laboratorio.id_pessoa_juridica ";
-
+                    FrmLaboratorio laboratorio = new FrmLaboratorio();
+                    laboratorio.ShowDialog();
                     break;
                 case 3:
-                    tabela = "select * from medicamento ";
-
+                    
+                    FrmRemedio remedio = new FrmRemedio();
+                    remedio.ShowDialog();
                     break;
                 case 4:
 
@@ -325,23 +326,25 @@ namespace MariosPet.Telas
 
                     break;
                 case 6:
-                    tabela = "select * from produto ";
-
+                    FrmProduto produto = new FrmProduto();
+                    produto.ShowDialog();
                     break;
                 case 7:
-                    tabela = "select * from servico ";
-
+                    FrmServico servico = new FrmServico();
+                    servico.ShowDialog();
                     break;
                 case 8:
-                    tabela = "select * from fornecedor inner join pessoa_juridica on pessoa_juridica.id_pessoa_juridica = fornecedor.id_pessoa_juridica ";
-
+                    
+                    FrmFornecedor fornecedor = new FrmFornecedor();
+                    fornecedor.ShowDialog();
                     break;
                 case 9:
 
                     break;
                 case 10:
-                    tabela = "select * from funcionario inner join pessoa on pessoa.id_pessoa = funcionario.id_pessoa ";
-
+                    
+                    FrmFuncionario funcionario = new FrmFuncionario();
+                    funcionario.ShowDialog();
                     break;
             }
         }
