@@ -41,6 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtProprietario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtRegistro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,7 +57,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(291, 309);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(129, 40);
-            this.btnSalvar.TabIndex = 0;
+            this.btnSalvar.TabIndex = 6;
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -76,7 +77,7 @@
             this.txtNome.Location = new System.Drawing.Point(213, 32);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(175, 20);
-            this.txtNome.TabIndex = 2;
+            this.txtNome.TabIndex = 0;
             // 
             // label1
             // 
@@ -104,7 +105,7 @@
             this.txtCor.Location = new System.Drawing.Point(213, 72);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(175, 20);
-            this.txtCor.TabIndex = 4;
+            this.txtCor.TabIndex = 1;
             // 
             // label3
             // 
@@ -122,7 +123,7 @@
             this.txtSexo.Location = new System.Drawing.Point(213, 112);
             this.txtSexo.Name = "txtSexo";
             this.txtSexo.Size = new System.Drawing.Size(175, 20);
-            this.txtSexo.TabIndex = 6;
+            this.txtSexo.TabIndex = 2;
             // 
             // label4
             // 
@@ -140,7 +141,7 @@
             this.txtRaca.Location = new System.Drawing.Point(213, 148);
             this.txtRaca.Name = "txtRaca";
             this.txtRaca.Size = new System.Drawing.Size(175, 20);
-            this.txtRaca.TabIndex = 8;
+            this.txtRaca.TabIndex = 3;
             // 
             // label5
             // 
@@ -158,11 +159,12 @@
             this.txtProprietario.Location = new System.Drawing.Point(213, 220);
             this.txtProprietario.Name = "txtProprietario";
             this.txtProprietario.Size = new System.Drawing.Size(175, 20);
-            this.txtProprietario.TabIndex = 10;
+            this.txtProprietario.TabIndex = 5;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.groupBox1.Controls.Add(this.btnVoltar);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txtRegistro);
             this.groupBox1.Controls.Add(this.txtCor);
@@ -183,6 +185,20 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
+            this.btnVoltar.BackgroundImage = global::MariosPet.Properties.Resources.botaoVoltarLaranja;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(169, 309);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(116, 44);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -199,7 +215,7 @@
             this.txtRegistro.Location = new System.Drawing.Point(213, 182);
             this.txtRegistro.Name = "txtRegistro";
             this.txtRegistro.Size = new System.Drawing.Size(175, 20);
-            this.txtRegistro.TabIndex = 12;
+            this.txtRegistro.TabIndex = 4;
             // 
             // FrmCateirinha
             // 
@@ -237,5 +253,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtRegistro;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

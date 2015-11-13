@@ -27,14 +27,14 @@ namespace MariosPet.Telas
         {
             InitializeComponent();
 
-            tabelaCli = CrudCli.consultaCliente("select NOME from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where CLIENTE.ID_PESSOA=1");
-            PreencheCampos();
+           // tabelaCli = CrudCli.consultaCliente("select NOME from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where CLIENTE.ID_PESSOA=1");
+           // PreencheCampos();
         }
 
         public void PreencheCampos()
         {
             //Dados Pessoais
-            txtProprietario.Text = tabelaCli.Rows[0][0].ToString();
+            //txtProprietario.Text = tabelaCli.Rows[0][0].ToString();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -75,6 +75,13 @@ namespace MariosPet.Telas
             file.Write(bytePdf, 0, bytePdf.Length);
             file.Close();
             Process.Start(nomeArquivo);
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Telas.FrmMenu menu = new FrmMenu();
+            menu.Show();
+            Close();
         }
     }
 }
