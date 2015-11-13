@@ -53,6 +53,8 @@ namespace MariosPet.Telas
             classeAni.nascimento = maskedTxtNascimentoAnimal.Text;
             classeAni.sexo = radioButtonFemea.Checked;
 
+            classeAni.carteirinha = Convert.ToInt32(DateTime.Now.DayOfYear.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Millisecond.ToString());
+
             MemoryStream imagem = new MemoryStream();
             pictureBoxAnimal.Image.Save(imagem, ImageFormat.Jpeg);
 
