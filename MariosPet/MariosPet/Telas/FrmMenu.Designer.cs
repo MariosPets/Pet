@@ -88,6 +88,7 @@
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bancoDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -390,7 +391,7 @@
             this.cadastroToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.cadastroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cadastroToolStripMenuItem.Image")));
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
             this.cadastroToolStripMenuItem.ToolTipText = "Cadastro de Clientes";
             this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
@@ -402,7 +403,7 @@
             this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.relatóriosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("relatóriosToolStripMenuItem.Image")));
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.ToolTipText = "Relatórios";
             this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click);
@@ -676,7 +677,7 @@
             this.aVistaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.aVistaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aVistaToolStripMenuItem.Image")));
             this.aVistaToolStripMenuItem.Name = "aVistaToolStripMenuItem";
-            this.aVistaToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.aVistaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.aVistaToolStripMenuItem.Text = "A Vista";
             this.aVistaToolStripMenuItem.ToolTipText = "Pagamento a vista";
             this.aVistaToolStripMenuItem.Click += new System.EventHandler(this.aVistaToolStripMenuItem_Click);
@@ -687,7 +688,7 @@
             this.parceladoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.parceladoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("parceladoToolStripMenuItem.Image")));
             this.parceladoToolStripMenuItem.Name = "parceladoToolStripMenuItem";
-            this.parceladoToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.parceladoToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.parceladoToolStripMenuItem.Text = "Parcelado";
             this.parceladoToolStripMenuItem.ToolTipText = "Pagamento parcelado";
             this.parceladoToolStripMenuItem.Click += new System.EventHandler(this.parceladoToolStripMenuItem_Click);
@@ -765,7 +766,8 @@
             // 
             this.configuraçõesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.configuraçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bancoDeDadosToolStripMenuItem});
+            this.bancoDeDadosToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.configuraçõesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
             this.configuraçõesToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataMarromAmareloGrande;
             this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
@@ -792,10 +794,20 @@
             this.backupToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.backupToolStripMenuItem.Image = global::MariosPet.Properties.Resources.pataAmareloMarromGrande;
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
-            this.backupToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.backupToolStripMenuItem.Text = "Fazer Backup";
             this.backupToolStripMenuItem.ToolTipText = "Fazer Backup do Banco de Dados";
             this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.sairToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F);
+            this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
@@ -882,5 +894,6 @@
         private System.Windows.Forms.ToolStripMenuItem bancoDeDadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
     }
 }
