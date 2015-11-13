@@ -181,6 +181,14 @@ namespace MariosPet.Telas
         private void parceladoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            login.Show();
+            Close();
         }
     }
 }
