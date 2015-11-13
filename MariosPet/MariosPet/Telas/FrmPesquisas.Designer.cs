@@ -278,6 +278,7 @@
             this.Name = "FrmPesquisas";
             this.Text = "Pesquisas e Consultas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPesquisas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).EndInit();
             this.groupBoxPesquisas.ResumeLayout(false);
             this.groupBoxPesquisas.PerformLayout();

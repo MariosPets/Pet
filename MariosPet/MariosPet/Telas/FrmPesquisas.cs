@@ -289,6 +289,11 @@ namespace MariosPet.Telas
             }
         }
 
+        private void FrmPesquisas_Load(object sender, EventArgs e)
+        {
+            comboBoxTipo.SelectedIndex = 0;
+        }
+
 
     }
 }
