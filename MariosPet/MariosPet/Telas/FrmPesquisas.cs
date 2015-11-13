@@ -1,4 +1,5 @@
-﻿using MariosPet.Crud;
+﻿using MariosPet.Classes;
+using MariosPet.Crud;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -292,6 +293,65 @@ namespace MariosPet.Telas
         private void FrmPesquisas_Load(object sender, EventArgs e)
         {
             comboBoxTipo.SelectedIndex = 0;
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            switch (comboBoxTipo.SelectedIndex)
+            {
+                case 0:
+                    FrmCadastroCliente cliente = new FrmCadastroCliente();
+                    cliente.ShowDialog();
+
+                    break;
+                case 1:
+                    
+                    FrmAnimal animal = new FrmAnimal();
+                    animal.ShowDialog();
+
+                    break;
+                case 2:
+                    tabela = "select * from laboratorio inner join pessoa_juridica on pessoa_juridica.id_pessoa_juridica = laboratorio.id_pessoa_juridica ";
+
+                    break;
+                case 3:
+                    tabela = "select * from medicamento ";
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+                case 6:
+                    tabela = "select * from produto ";
+
+                    break;
+                case 7:
+                    tabela = "select * from servico ";
+
+                    break;
+                case 8:
+                    tabela = "select * from fornecedor inner join pessoa_juridica on pessoa_juridica.id_pessoa_juridica = fornecedor.id_pessoa_juridica ";
+
+                    break;
+                case 9:
+
+                    break;
+                case 10:
+                    tabela = "select * from funcionario inner join pessoa on pessoa.id_pessoa = funcionario.id_pessoa ";
+
+                    break;
+            }
+        }
+
+        private void dataGridViewPesquisas_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridViewPesquisas.Rows.Count > 0)
+            {
+                Estatica.id = Convert.ToInt32(dataGridViewPesquisas.CurrentRow.Cells[0].Value.ToString());
+            }
         }
 
 

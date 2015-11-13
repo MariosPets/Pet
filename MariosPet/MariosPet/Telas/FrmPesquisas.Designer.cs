@@ -148,6 +148,7 @@
             this.dataGridViewPesquisas.Size = new System.Drawing.Size(683, 288);
             this.dataGridViewPesquisas.TabIndex = 4;
             this.toolTipPesquisas.SetToolTip(this.dataGridViewPesquisas, "Resultado da Pesquisa");
+            this.dataGridViewPesquisas.SelectionChanged += new System.EventHandler(this.dataGridViewPesquisas_SelectionChanged);
             // 
             // btnConsultar
             // 
@@ -186,6 +187,7 @@
             this.buttonEditar.TabIndex = 7;
             this.toolTipPesquisas.SetToolTip(this.buttonEditar, "Editar Informação selecionada");
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonExcluir
             // 
