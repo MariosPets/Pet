@@ -24,8 +24,9 @@ namespace MariosPet.Telas
 
             if (Estatica.id != 0)
             {
-                lblNome.Text = "ok";
+                
                 CopiarParaFormulario();
+                lblNome.Text = "ok";
 
             }
         }
