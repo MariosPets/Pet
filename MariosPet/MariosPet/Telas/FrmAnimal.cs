@@ -25,6 +25,11 @@ namespace MariosPet.Telas
         public FrmAnimal()
         {
             InitializeComponent();
+
+            if (Estatica.id != 0)
+            {
+                CopiarParaFormulario();
+            }
         }
 
         private void btmVoltar_Click(object sender, EventArgs e)
@@ -52,7 +57,8 @@ namespace MariosPet.Telas
             classeAni.pelagemCor = txtPelagemCor.Text;
             classeAni.nascimento = maskedTxtNascimentoAnimal.Text;
             classeAni.sexo = radioButtonFemea.Checked;
-            classeAni.carteirinha = Convert.ToInt32(DateTime.Now.DayOfYear.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Millisecond.ToString());
+            if (Estatica.id == 0)
+                classeAni.carteirinha = Convert.ToInt32(DateTime.Now.DayOfYear.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Millisecond.ToString());
 
             MemoryStream imagem = new MemoryStream();
             pictureBoxAnimal.Image.Save(imagem, ImageFormat.Jpeg);
@@ -62,6 +68,25 @@ namespace MariosPet.Telas
             imagem.Read(arquivoFoto, 0, Convert.ToInt32(imagem.Length));
 
             classeFot.foto = arquivoFoto;
+        }
+
+        public void CopiarParaFormulario()
+        {
+            CrudAnimal CrudAni = new CrudAnimal();
+
+            string sql = "select * from animal where id_animal = " + Estatica.id.ToString();
+            DataTable animal = CrudAni.consultaAnimal(sql);
+
+            //Dados Animal
+            classeAni.id = Convert.ToInt32(animal.Rows[0][0].ToString());
+            classeAni.carteirinha = Convert.ToInt32(animal.Rows[0][1].ToString());
+            txtNomeAnimal.Text = animal.Rows[0][2].ToString();
+            classeAni.idCliente = Convert.ToInt32(animal.Rows[0][3].ToString());
+            txtRacaPorte.Text = animal.Rows[0][4].ToString();
+            radioButtonFemea.Text = animal.Rows[0][5].ToString();
+            radioButtonMacho.Text = animal.Rows[0][5].ToString();
+            txtPelagemCor.Text = animal.Rows[0][6].ToString();
+            maskedTxtNascimentoAnimal.Text = animal.Rows[0][7].ToString();
         }
 
         private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
@@ -100,12 +125,21 @@ namespace MariosPet.Telas
             CrudAnimal CrudAni = new CrudAnimal();
             CrudFoto CrudFoto = new Crud.CrudFoto();
 
-            CrudAni.inserirAnimal(classeAni);
+            if (Estatica.id != 0)
+            {
+                CrudAni.alteraAnimal(classeAni);
 
-            classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_ANIMAL from ANIMAL order by ID_ANIMAL desc").Rows[0][0].ToString());
+                Estatica.id = 0;
+            }
+            else
+            {
+                CrudAni.inserirAnimal(classeAni);
 
-            classeFot.idAnimal = classeAni.id;
-            CrudFoto.inserirFoto(classeFot);
+                classeAni.id = Convert.ToInt32(CrudCli.consultaCliente("Select top 1 ID_ANIMAL from ANIMAL order by ID_ANIMAL desc").Rows[0][0].ToString());
+
+                classeFot.idAnimal = classeAni.id;
+                CrudFoto.inserirFoto(classeFot);
+            }
         }
 
         private void dtgCliente_SelectionChanged(object sender, EventArgs e)
@@ -123,7 +157,7 @@ namespace MariosPet.Telas
 
         }
 
-        
+
 
         private void dtgCliente_SelectionChanged_1(object sender, EventArgs e)
         {
