@@ -24,10 +24,7 @@ namespace MariosPet.Telas
 
             if (Estatica.id != 0)
             {
-                
                 CopiarParaFormulario();
-                lblNome.Text = "ok";
-
             }
         }
 
@@ -124,6 +121,7 @@ namespace MariosPet.Telas
             {
                 CrudEnd.alteraEndereco(classeEnd);
                 CrudCli.alteraCliente(classeCli);
+                Estatica.id = 0;
             }
             else
             {
