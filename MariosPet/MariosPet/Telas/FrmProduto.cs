@@ -17,9 +17,17 @@ namespace MariosPet.Telas
         Produto classeProd = new Produto();
         Fornecedor classeForn = new Fornecedor();
         PessoaJuridica classePessoaJur = new PessoaJuridica();
+
+        CrudProduto CrudProd = new CrudProduto();
+        CrudFornecedor CrudForn = new CrudFornecedor();
         public FrmProduto()
         {
             InitializeComponent();
+
+            if (Estatica.id != 0)
+            {
+                CopiarParaFormulario();
+            }
         }
 
         private void lblRG_Click(object sender, EventArgs e)
@@ -76,15 +84,57 @@ namespace MariosPet.Telas
             classePessoaJur.razaoSocial = textBoxFornecedor.Text;
         }
 
+        public void CopiarParaFormulario()
+        {
+            string sql = "select * from produto where id_produto = " + Estatica.id.ToString();
+            DataTable produto = CrudProd.consultaProduto(sql);
+
+            //Dados Produto
+            classeProd.id = Convert.ToInt32(produto.Rows[0][0].ToString());
+            txtNomeProduto.Text = produto.Rows[0][1].ToString();
+            cmbSetor.Text = produto.Rows[0][2].ToString();
+            classeProd.idFornecedor = Convert.ToInt32(produto.Rows[0][3].ToString());
+            txtFabricante.Text = produto.Rows[0][4].ToString();
+            mstVencimento.Text = produto.Rows[0][5].ToString();
+            txtQuantidade.Text = produto.Rows[0][6].ToString();
+            txtUnidade.Text = produto.Rows[0][7].ToString();
+            txtValorCusto.Text = produto.Rows[0][8].ToString();
+            txtValorVenda.Text = produto.Rows[0][9].ToString();
+            txtMargemLucro.Text = produto.Rows[0][10].ToString();
+            txtTributacao.Text = produto.Rows[0][11].ToString();
+            txtMinEstoque.Text = produto.Rows[0][12].ToString();
+            txtMaxEstoque.Text = produto.Rows[0][13].ToString();
+            txtCodBarras.Text = produto.Rows[0][14].ToString();
+                        
+            sql = "select * from pessoa_juridica inner join fornecedor on pessoa_juridica.id_pessoa_juridica = fornecedor.id_pessoa_juridica where pessoa_juridica.id_pessoa_juridica = " + Estatica.id.ToString();
+            DataTable fornecedor = CrudForn.consultaFornecedor(sql);
+
+            //Fornecedor
+            textBoxFornecedor.Text = produto.Rows[0][1].ToString();
+
+        }
+
         private void btmSalvar_Click(object sender, EventArgs e)
         {
             CopiarParaClasseProduto();
 
             CrudProduto CrudProd = new CrudProduto();
-            CrudPessoaJuridica CrudPessoaJur = new CrudPessoaJuridica();
+            CrudFornecedor CrudForn = new CrudFornecedor();
 
-            CrudProd.inserirProduto(classeProd);
-            CrudPessoaJur.inserirPessoaJuridica(classePessoaJur);
+            if (Estatica.id != 0)
+            {
+                CrudProd.alteraProduto(classeProd);
+                CrudForn.alteraFornecedor(classeForn);
+                Estatica.id = 0;
+            }
+            else
+            {
+                CrudProd.inserirProduto(classeProd);                               
+
+                classeForn.id = Convert.ToInt32(CrudForn.consultaFornecedor("Select top 1 ID_FORNECEDOR from FORNECEDOR order by ID_FORNECEDOR desc").Rows[0][0].ToString());
+
+                CrudForn.inserirFornecedor(classeForn); 
+            }
         }
     }
 }
