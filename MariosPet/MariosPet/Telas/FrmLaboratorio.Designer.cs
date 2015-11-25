@@ -116,7 +116,7 @@
             this.btnSalvar.TabIndex = 9;
             this.toolTipLaboratorio.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // mstCep
             // 
@@ -180,7 +180,6 @@
             this.txtCidade.Size = new System.Drawing.Size(195, 27);
             this.txtCidade.TabIndex = 5;
             this.toolTipLaboratorio.SetToolTip(this.txtCidade, "Insira a Cidade");
-            this.txtCidade.TextChanged += new System.EventHandler(this.txtCidade_TextChanged);
             // 
             // txtBairro
             // 
@@ -330,7 +329,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(43, 23);
+            this.lblUF.Size = new System.Drawing.Size(44, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -447,7 +446,7 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(412, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.Size = new System.Drawing.Size(101, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "Telefone:";
             // 
@@ -457,7 +456,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(121, 122);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone.TabIndex = 20;
             this.lblTelefone.Text = "Telefone:";
             // 
