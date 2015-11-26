@@ -20,6 +20,11 @@ namespace MariosPet.Telas
         public FrmFuncionario()
         {
             InitializeComponent();
+
+            if (Estatica.id != 0)
+            {
+                CopiarParaFormulario();
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -95,11 +100,7 @@ namespace MariosPet.Telas
                 classeVete.tipo = cmbTipoFuncionario.Text;
                 classeVete.apelido = txtLogin.Text;
                 classeVete.senha = txtSenha.Text;
-            }
-            
-
-            
-                
+            }                      
 
             //Endereço
             classeEnd.rua = txtRuaFuncionario.Text;
@@ -108,9 +109,55 @@ namespace MariosPet.Telas
             classeEnd.bairro = txtBairroFuncionario.Text;
             classeEnd.cep = mstCepFuncionario.Text;
             classeEnd.cidade = txtCidadeFuncionario.Text;
-            classeEnd.uf = cmbUFFuncionario.Text;
+            classeEnd.uf = cmbUFFuncionario.Text;            
+        }
 
-            
+        public void CopiarParaFormulario()
+        {
+            CrudFuncionario CrudFunc = new CrudFuncionario();
+            CrudVeterinario CrudVet = new CrudVeterinario();
+            CrudEndereco CrudEnd = new CrudEndereco();
+
+            string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where pessoa.id_pessoa = " + Estatica.id.ToString();
+            DataTable funcionario = CrudFunc.consultaFuncionario(sql);
+            sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
+            DataTable endereco = CrudEnd.consultaEndereco(sql);
+
+            if (!txtCrmv.Enabled)
+            {              
+                //Dados Pessoais
+                classeFunc.id = Convert.ToInt32(funcionario.Rows[0][0].ToString());
+                txtNomeFuncionario.Text = funcionario.Rows[0][1].ToString();
+                mstCPFFuncionario.Text = funcionario.Rows[0][2].ToString();
+                mstRGFuncionario.Text = funcionario.Rows[0][3].ToString();
+                mstNascimentoFuncionario.Text = funcionario.Rows[0][4].ToString();
+                classeFunc.idEndereco = Convert.ToInt32(funcionario.Rows[0][5].ToString());
+                classeEnd.id = Convert.ToInt32(funcionario.Rows[0][5].ToString());
+                txtEmailFuncionario.Text = funcionario.Rows[0][6].ToString();
+                txtTelefoneFuncionario.Text = funcionario.Rows[0][7].ToString();
+                txtTelefone2Funcionario.Text = funcionario.Rows[0][8].ToString();
+                txtTelefone3Funcionario.Text = funcionario.Rows[0][9].ToString();
+
+                sql = "select * from funcionario where id_funcionario = " + Estatica.id.ToString();
+                //Dados Funcionário
+                classeFunc.id = Convert.ToInt32(funcionario.Rows[0][0].ToString());
+                cmbTipoFuncionario.Text = funcionario.Rows[0][1].ToString();
+                txtLogin.Text = funcionario.Rows[0][2].ToString();
+                txtSenha.Text = funcionario.Rows[0][3].ToString();
+                txtConfirmacaoSenha.Text = funcionario.Rows[0][4].ToString();
+            }
+                
+            else
+            {
+                //Endereço                
+                txtRuaFuncionario.Text = endereco.Rows[0][1].ToString();
+                txtNumeroFuncionario.Text = endereco.Rows[0][2].ToString();
+                txtComplementoFuncionario.Text = endereco.Rows[0][3].ToString();
+                txtBairroFuncionario.Text = endereco.Rows[0][4].ToString();
+                txtCidadeFuncionario.Text = endereco.Rows[0][5].ToString();
+                cmbUFFuncionario.Text = endereco.Rows[0][6].ToString();
+                mstCepFuncionario.Text = endereco.Rows[0][7].ToString();
+            }
         }
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
@@ -123,7 +170,18 @@ namespace MariosPet.Telas
 
             CrudEnd.inserirEndereco(classeEnd);
 
-            if (!txtCrmv.Enabled) {
+            /*if (!txtCrmv.Enabled) {
+                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+                CrudFunc.inserirFuncionario(classeFunc);
+            }
+            else
+            {
+                classeVete.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+                CrudVete.inserirVeterinario(classeVete);
+            }*/
+
+            if (!txtCrmv.Enabled && Estatica.id!=0)
+            {
                 classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
                 CrudFunc.inserirFuncionario(classeFunc);
             }
