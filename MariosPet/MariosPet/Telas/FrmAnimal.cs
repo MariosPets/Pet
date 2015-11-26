@@ -36,7 +36,7 @@ namespace MariosPet.Telas
         {
             Telas.FrmMenu frmmenu = new FrmMenu();
             frmmenu.Show();
-            Close();
+            Close();            
         }
 
         private void btmLimpar_Click(object sender, EventArgs e)
