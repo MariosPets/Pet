@@ -60,9 +60,9 @@ namespace MariosPet.Telas
             //Dados Medicamento
             classeMed.id = Convert.ToInt32(medicamento.Rows[0][0].ToString());
             txtMedicamento.Text = medicamento.Rows[0][1].ToString();
-            nudQuantidade.Text = Convert.ToString(medicamento.Rows[0][2].ToString());
-            nudMinimo.Text = Convert.ToString(medicamento.Rows[0][3].ToString());
-            nudMaximo.Text = Convert.ToString(medicamento.Rows[0][4].ToString());
+            nudQuantidade.Text = medicamento.Rows[0][2].ToString();
+            nudMinimo.Text = medicamento.Rows[0][3].ToString();
+            nudMaximo.Text = medicamento.Rows[0][4].ToString();
         }
         private void btnSalvar_Click_1(object sender, EventArgs e)
         {
