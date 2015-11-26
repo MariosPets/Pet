@@ -22,6 +22,11 @@ namespace MariosPet.Telas
         public FrmFichaClinica()
         {
             InitializeComponent();
+
+            if (Estatica.id != 0)
+            {
+                CopiarParaFormulario();
+            }
         }
 
         private void txtHistoricoClinico_TextChanged(object sender, EventArgs e)
@@ -82,13 +87,46 @@ namespace MariosPet.Telas
             classeFichaCli.data = DateTime.Now;
         }
 
+        public void CopiarParaFormulario()
+        {
+            CrudFichaClinica CrudFichaCli = new CrudFichaClinica();
+
+            string sql = "select * from ficha_clinica where id_ficha_clinica = " + Estatica.id.ToString();
+            DataTable fichaclinica = CrudFichaCli.consultaFichaClinica(sql);
+
+            //Dados Ficha Clinica
+            classeFichaCli.id = Convert.ToInt32(fichaclinica.Rows[0][0].ToString());
+            classeFichaCli.idAnimal = Convert.ToInt32(fichaclinica.Rows[0][1].ToString());
+            classeFichaCli.idVeterinario = Convert.ToInt32(fichaclinica.Rows[0][2].ToString());
+            classeFichaCli.data = Convert.ToDateTime(fichaclinica.Rows[0][3].ToString());
+            txtQueixa.Text = fichaclinica.Rows[0][4].ToString();
+            txtHistoricoClinico.Text = fichaclinica.Rows[0][5].ToString();
+            txtSuspeita.Text = fichaclinica.Rows[0][6].ToString();
+            txtSintomas.Text = fichaclinica.Rows[0][7].ToString();
+            txtExames.Text = fichaclinica.Rows[0][8].ToString();
+            txtPrescricao.Text = fichaclinica.Rows[0][9].ToString();
+            txtObservacao.Text = fichaclinica.Rows[0][10].ToString();
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             CopiarParaClasseFichaClinica();
+
             CrudFichaClinica CrudFichaCli = new CrudFichaClinica();
+
+            if (Estatica.id != 0)
+            {
+                CrudFichaCli.alteraFichaClinica(classeFichaCli);
+
+                Estatica.id = 0;
+            }
+            else
+            {
+                CrudFichaCli.inserirFichaClinica(classeFichaCli);
+
+                classeFichaCli.id = Convert.ToInt32(CrudFichaCli.consultaFichaClinica("Select top 1 ID_FICHA_CLINICA from FICHA_CLINICA order by ID_FICHA_CLINICA desc").Rows[0][0].ToString());
+            }
             
-            CrudFichaCli.inserirFichaClinica(classeFichaCli);
-            CrudAni.inserirAnimal(classeAni);
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
