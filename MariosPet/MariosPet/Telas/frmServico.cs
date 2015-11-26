@@ -47,7 +47,7 @@ namespace MariosPet.Telas
             //Dados Serviço
             classeServ.id = Convert.ToInt32(servico.Rows[0][0].ToString());
             txtServico.Text = servico.Rows[0][1].ToString();
-            mstPreco.Text = Convert.ToString(servico.Rows[0][2].ToString());
+            mstPreco.Text = servico.Rows[0][2].ToString();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
