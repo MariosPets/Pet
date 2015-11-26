@@ -97,7 +97,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(6, 252);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(65, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(67, 23);
             this.lblTelefone.TabIndex = 18;
             this.lblTelefone.Text = "Total:";
             // 
@@ -167,7 +167,7 @@
             this.lblNome.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(6, 48);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(405, 23);
+            this.lblNome.Size = new System.Drawing.Size(406, 23);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Identificação do Veterinário/Funcionario:";
             // 
@@ -196,6 +196,7 @@
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
             this.btmVoltar.TabIndex = 5;
             this.btmVoltar.UseVisualStyleBackColor = false;
+            this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
             // 
             // btmSalvar
             // 
