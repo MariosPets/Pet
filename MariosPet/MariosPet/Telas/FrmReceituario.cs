@@ -51,8 +51,6 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu menu = new FrmMenu();
-            menu.Show();
             Close();
         }
     }

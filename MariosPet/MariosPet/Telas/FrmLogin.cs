@@ -1,13 +1,6 @@
-﻿using MariosPet.Classes;
-using MariosPet.Crud;
+﻿using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -40,11 +33,18 @@ namespace MariosPet
             
             if (tabela.Rows.Count>0)
             {
-
-
                 Telas.FrmMenu menu = new Telas.FrmMenu();
-                this.Visible = false;
-                menu.Show();
+                Visible = false;
+                menu.ShowDialog();
+                if (false)
+                {
+                    Visible = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+                
             }
             else {
                 textUsuario.Text = "Errado";

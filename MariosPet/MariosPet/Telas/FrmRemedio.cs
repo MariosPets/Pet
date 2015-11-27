@@ -1,13 +1,7 @@
 ﻿using MariosPet.Classes;
 using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MariosPet.Telas
@@ -26,11 +20,6 @@ namespace MariosPet.Telas
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtMedicamento.Clear();
@@ -38,8 +27,6 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu menu = new FrmMenu();
-            menu.Show();
             Close();
         }
 

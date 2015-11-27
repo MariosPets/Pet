@@ -105,9 +105,11 @@
             this.groupBox1.Controls.Add(this.lblNomeProduto);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(17, 50);
+            this.groupBox1.Location = new System.Drawing.Point(23, 62);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(784, 560);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1045, 689);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados do Produto";
@@ -116,10 +118,11 @@
             // 
             this.textBoxFornecedor.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFornecedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.textBoxFornecedor.Location = new System.Drawing.Point(220, 452);
+            this.textBoxFornecedor.Location = new System.Drawing.Point(293, 556);
+            this.textBoxFornecedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFornecedor.MaxLength = 40;
             this.textBoxFornecedor.Name = "textBoxFornecedor";
-            this.textBoxFornecedor.Size = new System.Drawing.Size(510, 27);
+            this.textBoxFornecedor.Size = new System.Drawing.Size(679, 32);
             this.textBoxFornecedor.TabIndex = 13;
             this.toolTipProduto.SetToolTip(this.textBoxFornecedor, "Insira o Nome do Fabricante");
             // 
@@ -130,9 +133,10 @@
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmLimpar.Image = global::MariosPet.Properties.Resources.botaoLimparLaranja;
-            this.btmLimpar.Location = new System.Drawing.Point(344, 494);
+            this.btmLimpar.Location = new System.Drawing.Point(459, 608);
+            this.btmLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btmLimpar.Name = "btmLimpar";
-            this.btmLimpar.Size = new System.Drawing.Size(131, 44);
+            this.btmLimpar.Size = new System.Drawing.Size(175, 54);
             this.btmLimpar.TabIndex = 15;
             this.toolTipProduto.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
@@ -145,9 +149,10 @@
             this.btmVoltar.BackgroundImage = global::MariosPet.Properties.Resources.botaoVoltarVerde;
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmVoltar.Location = new System.Drawing.Point(146, 495);
+            this.btmVoltar.Location = new System.Drawing.Point(195, 609);
+            this.btmVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btmVoltar.Name = "btmVoltar";
-            this.btmVoltar.Size = new System.Drawing.Size(116, 44);
+            this.btmVoltar.Size = new System.Drawing.Size(118, 37);
             this.btmVoltar.TabIndex = 14;
             this.toolTipProduto.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
@@ -160,9 +165,10 @@
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.btmSalvar.Location = new System.Drawing.Point(540, 495);
+            this.btmSalvar.Location = new System.Drawing.Point(720, 609);
+            this.btmSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btmSalvar.Name = "btmSalvar";
-            this.btmSalvar.Size = new System.Drawing.Size(133, 42);
+            this.btmSalvar.Size = new System.Drawing.Size(177, 52);
             this.btmSalvar.TabIndex = 16;
             this.toolTipProduto.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
@@ -172,10 +178,11 @@
             // 
             this.txtFabricante.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFabricante.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtFabricante.Location = new System.Drawing.Point(220, 409);
+            this.txtFabricante.Location = new System.Drawing.Point(293, 503);
+            this.txtFabricante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFabricante.MaxLength = 50;
             this.txtFabricante.Name = "txtFabricante";
-            this.txtFabricante.Size = new System.Drawing.Size(510, 27);
+            this.txtFabricante.Size = new System.Drawing.Size(679, 32);
             this.txtFabricante.TabIndex = 12;
             this.toolTipProduto.SetToolTip(this.txtFabricante, "Insira o Nome do Fabricante");
             // 
@@ -183,9 +190,10 @@
             // 
             this.lblFabricante.AutoSize = true;
             this.lblFabricante.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFabricante.Location = new System.Drawing.Point(6, 413);
+            this.lblFabricante.Location = new System.Drawing.Point(8, 508);
+            this.lblFabricante.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFabricante.Name = "lblFabricante";
-            this.lblFabricante.Size = new System.Drawing.Size(118, 23);
+            this.lblFabricante.Size = new System.Drawing.Size(148, 29);
             this.lblFabricante.TabIndex = 31;
             this.lblFabricante.Text = "Fabricante:";
             // 
@@ -193,9 +201,10 @@
             // 
             this.lblFornecedor.AutoSize = true;
             this.lblFornecedor.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFornecedor.Location = new System.Drawing.Point(6, 456);
+            this.lblFornecedor.Location = new System.Drawing.Point(8, 561);
+            this.lblFornecedor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFornecedor.Name = "lblFornecedor";
-            this.lblFornecedor.Size = new System.Drawing.Size(126, 23);
+            this.lblFornecedor.Size = new System.Drawing.Size(159, 29);
             this.lblFornecedor.TabIndex = 29;
             this.lblFornecedor.Text = "Fornecedor:";
             // 
@@ -203,10 +212,11 @@
             // 
             this.txtCodBarras.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodBarras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtCodBarras.Location = new System.Drawing.Point(220, 366);
+            this.txtCodBarras.Location = new System.Drawing.Point(293, 450);
+            this.txtCodBarras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodBarras.MaxLength = 50;
             this.txtCodBarras.Name = "txtCodBarras";
-            this.txtCodBarras.Size = new System.Drawing.Size(231, 27);
+            this.txtCodBarras.Size = new System.Drawing.Size(307, 32);
             this.txtCodBarras.TabIndex = 11;
             this.toolTipProduto.SetToolTip(this.txtCodBarras, "Insira o Código de Barras");
             // 
@@ -214,9 +224,10 @@
             // 
             this.lblCodBarras.AutoSize = true;
             this.lblCodBarras.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodBarras.Location = new System.Drawing.Point(6, 370);
+            this.lblCodBarras.Location = new System.Drawing.Point(8, 455);
+            this.lblCodBarras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodBarras.Name = "lblCodBarras";
-            this.lblCodBarras.Size = new System.Drawing.Size(184, 23);
+            this.lblCodBarras.Size = new System.Drawing.Size(229, 29);
             this.lblCodBarras.TabIndex = 27;
             this.lblCodBarras.Text = "Código de Barras:";
             // 
@@ -224,9 +235,10 @@
             // 
             this.txtMaxEstoque.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaxEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtMaxEstoque.Location = new System.Drawing.Point(586, 284);
+            this.txtMaxEstoque.Location = new System.Drawing.Point(781, 350);
+            this.txtMaxEstoque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaxEstoque.Name = "txtMaxEstoque";
-            this.txtMaxEstoque.Size = new System.Drawing.Size(144, 27);
+            this.txtMaxEstoque.Size = new System.Drawing.Size(191, 32);
             this.txtMaxEstoque.TabIndex = 9;
             this.toolTipProduto.SetToolTip(this.txtMaxEstoque, "Insira a quantidade Máxima em Estoque");
             // 
@@ -234,9 +246,10 @@
             // 
             this.lblMaxEstoque.AutoSize = true;
             this.lblMaxEstoque.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaxEstoque.Location = new System.Drawing.Point(368, 284);
+            this.lblMaxEstoque.Location = new System.Drawing.Point(491, 350);
+            this.lblMaxEstoque.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaxEstoque.Name = "lblMaxEstoque";
-            this.lblMaxEstoque.Size = new System.Drawing.Size(212, 23);
+            this.lblMaxEstoque.Size = new System.Drawing.Size(265, 29);
             this.lblMaxEstoque.TabIndex = 25;
             this.lblMaxEstoque.Text = "Máximo em Estoque:";
             // 
@@ -244,9 +257,10 @@
             // 
             this.lblTributacao.AutoSize = true;
             this.lblTributacao.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTributacao.Location = new System.Drawing.Point(6, 327);
+            this.lblTributacao.Location = new System.Drawing.Point(8, 402);
+            this.lblTributacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTributacao.Name = "lblTributacao";
-            this.lblTributacao.Size = new System.Drawing.Size(199, 23);
+            this.lblTributacao.Size = new System.Drawing.Size(246, 29);
             this.lblTributacao.TabIndex = 21;
             this.lblTributacao.Text = "Tipo de Tributação:";
             // 
@@ -254,9 +268,10 @@
             // 
             this.lblMinEstoque.AutoSize = true;
             this.lblMinEstoque.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinEstoque.Location = new System.Drawing.Point(6, 284);
+            this.lblMinEstoque.Location = new System.Drawing.Point(8, 350);
+            this.lblMinEstoque.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinEstoque.Name = "lblMinEstoque";
-            this.lblMinEstoque.Size = new System.Drawing.Size(208, 23);
+            this.lblMinEstoque.Size = new System.Drawing.Size(258, 29);
             this.lblMinEstoque.TabIndex = 23;
             this.lblMinEstoque.Text = "Mínimo em Estoque:";
             // 
@@ -264,9 +279,10 @@
             // 
             this.txtQuantidade.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtQuantidade.Location = new System.Drawing.Point(586, 109);
+            this.txtQuantidade.Location = new System.Drawing.Point(781, 134);
+            this.txtQuantidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(144, 27);
+            this.txtQuantidade.Size = new System.Drawing.Size(191, 32);
             this.txtQuantidade.TabIndex = 3;
             this.toolTipProduto.SetToolTip(this.txtQuantidade, "Insira a Quantidade");
             // 
@@ -274,9 +290,10 @@
             // 
             this.txtMinEstoque.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMinEstoque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtMinEstoque.Location = new System.Drawing.Point(220, 280);
+            this.txtMinEstoque.Location = new System.Drawing.Point(293, 345);
+            this.txtMinEstoque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMinEstoque.Name = "txtMinEstoque";
-            this.txtMinEstoque.Size = new System.Drawing.Size(144, 27);
+            this.txtMinEstoque.Size = new System.Drawing.Size(191, 32);
             this.txtMinEstoque.TabIndex = 8;
             this.toolTipProduto.SetToolTip(this.txtMinEstoque, "Insira a quantidade Mínima em Estoque");
             // 
@@ -284,10 +301,11 @@
             // 
             this.txtUnidade.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUnidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtUnidade.Location = new System.Drawing.Point(220, 156);
+            this.txtUnidade.Location = new System.Drawing.Point(293, 192);
+            this.txtUnidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUnidade.MaxLength = 15;
             this.txtUnidade.Name = "txtUnidade";
-            this.txtUnidade.Size = new System.Drawing.Size(231, 27);
+            this.txtUnidade.Size = new System.Drawing.Size(307, 32);
             this.txtUnidade.TabIndex = 4;
             this.toolTipProduto.SetToolTip(this.txtUnidade, "Insira a Unidade");
             // 
@@ -295,9 +313,10 @@
             // 
             this.txtMargemLucro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMargemLucro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtMargemLucro.Location = new System.Drawing.Point(220, 238);
+            this.txtMargemLucro.Location = new System.Drawing.Point(293, 293);
+            this.txtMargemLucro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMargemLucro.Name = "txtMargemLucro";
-            this.txtMargemLucro.Size = new System.Drawing.Size(144, 27);
+            this.txtMargemLucro.Size = new System.Drawing.Size(191, 32);
             this.txtMargemLucro.TabIndex = 7;
             this.toolTipProduto.SetToolTip(this.txtMargemLucro, "Insira a Margem de Lucro");
             // 
@@ -305,9 +324,10 @@
             // 
             this.lblMargemLucro.AutoSize = true;
             this.lblMargemLucro.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMargemLucro.Location = new System.Drawing.Point(6, 242);
+            this.lblMargemLucro.Location = new System.Drawing.Point(8, 298);
+            this.lblMargemLucro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMargemLucro.Name = "lblMargemLucro";
-            this.lblMargemLucro.Size = new System.Drawing.Size(185, 23);
+            this.lblMargemLucro.Size = new System.Drawing.Size(231, 29);
             this.lblMargemLucro.TabIndex = 19;
             this.lblMargemLucro.Text = "Margem de Lucro:";
             // 
@@ -315,9 +335,10 @@
             // 
             this.txtValorVenda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorVenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtValorVenda.Location = new System.Drawing.Point(586, 196);
+            this.txtValorVenda.Location = new System.Drawing.Point(781, 241);
+            this.txtValorVenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtValorVenda.Name = "txtValorVenda";
-            this.txtValorVenda.Size = new System.Drawing.Size(144, 27);
+            this.txtValorVenda.Size = new System.Drawing.Size(191, 32);
             this.txtValorVenda.TabIndex = 6;
             this.toolTipProduto.SetToolTip(this.txtValorVenda, "Insira o Valor de Venda");
             // 
@@ -325,9 +346,10 @@
             // 
             this.lblValorVenda.AutoSize = true;
             this.lblValorVenda.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorVenda.Location = new System.Drawing.Point(417, 200);
+            this.lblValorVenda.Location = new System.Drawing.Point(556, 246);
+            this.lblValorVenda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorVenda.Name = "lblValorVenda";
-            this.lblValorVenda.Size = new System.Drawing.Size(165, 23);
+            this.lblValorVenda.Size = new System.Drawing.Size(204, 29);
             this.lblValorVenda.TabIndex = 17;
             this.lblValorVenda.Text = "Valor de Venda:";
             // 
@@ -335,9 +357,10 @@
             // 
             this.txtValorCusto.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorCusto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtValorCusto.Location = new System.Drawing.Point(220, 196);
+            this.txtValorCusto.Location = new System.Drawing.Point(293, 241);
+            this.txtValorCusto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtValorCusto.Name = "txtValorCusto";
-            this.txtValorCusto.Size = new System.Drawing.Size(144, 27);
+            this.txtValorCusto.Size = new System.Drawing.Size(191, 32);
             this.txtValorCusto.TabIndex = 5;
             this.toolTipProduto.SetToolTip(this.txtValorCusto, "Insira o Valor de Custo");
             // 
@@ -345,10 +368,11 @@
             // 
             this.mstVencimento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstVencimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mstVencimento.Location = new System.Drawing.Point(220, 114);
+            this.mstVencimento.Location = new System.Drawing.Point(293, 140);
+            this.mstVencimento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mstVencimento.Mask = "00/00/0000";
             this.mstVencimento.Name = "mstVencimento";
-            this.mstVencimento.Size = new System.Drawing.Size(170, 27);
+            this.mstVencimento.Size = new System.Drawing.Size(225, 32);
             this.mstVencimento.TabIndex = 2;
             this.toolTipProduto.SetToolTip(this.mstVencimento, "Insira a Data de Vencimento");
             this.mstVencimento.ValidatingType = typeof(System.DateTime);
@@ -364,10 +388,11 @@
             "Brinquedo",
             "Alimento",
             "Outros"});
-            this.cmbSetor.Location = new System.Drawing.Point(220, 77);
+            this.cmbSetor.Location = new System.Drawing.Point(293, 95);
+            this.cmbSetor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbSetor.MaxLength = 50;
             this.cmbSetor.Name = "cmbSetor";
-            this.cmbSetor.Size = new System.Drawing.Size(170, 26);
+            this.cmbSetor.Size = new System.Drawing.Size(225, 33);
             this.cmbSetor.TabIndex = 1;
             this.toolTipProduto.SetToolTip(this.cmbSetor, "Selecione o Setor");
             // 
@@ -375,9 +400,10 @@
             // 
             this.lblSetor.AutoSize = true;
             this.lblSetor.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSetor.Location = new System.Drawing.Point(6, 80);
+            this.lblSetor.Location = new System.Drawing.Point(8, 98);
+            this.lblSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSetor.Name = "lblSetor";
-            this.lblSetor.Size = new System.Drawing.Size(70, 23);
+            this.lblSetor.Size = new System.Drawing.Size(88, 29);
             this.lblSetor.TabIndex = 14;
             this.lblSetor.Text = "Setor:";
             // 
@@ -385,10 +411,11 @@
             // 
             this.txtTributacao.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTributacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTributacao.Location = new System.Drawing.Point(220, 323);
+            this.txtTributacao.Location = new System.Drawing.Point(293, 398);
+            this.txtTributacao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTributacao.MaxLength = 15;
             this.txtTributacao.Name = "txtTributacao";
-            this.txtTributacao.Size = new System.Drawing.Size(231, 27);
+            this.txtTributacao.Size = new System.Drawing.Size(307, 32);
             this.txtTributacao.TabIndex = 10;
             this.toolTipProduto.SetToolTip(this.txtTributacao, "Insira o Tipo de Tributação");
             // 
@@ -396,10 +423,11 @@
             // 
             this.txtNomeProduto.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeProduto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtNomeProduto.Location = new System.Drawing.Point(220, 35);
+            this.txtNomeProduto.Location = new System.Drawing.Point(293, 43);
+            this.txtNomeProduto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomeProduto.MaxLength = 50;
             this.txtNomeProduto.Name = "txtNomeProduto";
-            this.txtNomeProduto.Size = new System.Drawing.Size(510, 27);
+            this.txtNomeProduto.Size = new System.Drawing.Size(679, 32);
             this.txtNomeProduto.TabIndex = 0;
             this.toolTipProduto.SetToolTip(this.txtNomeProduto, "Insira o Nome do Produto");
             // 
@@ -407,9 +435,10 @@
             // 
             this.lblValorCusto.AutoSize = true;
             this.lblValorCusto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorCusto.Location = new System.Drawing.Point(6, 200);
+            this.lblValorCusto.Location = new System.Drawing.Point(8, 246);
+            this.lblValorCusto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorCusto.Name = "lblValorCusto";
-            this.lblValorCusto.Size = new System.Drawing.Size(160, 23);
+            this.lblValorCusto.Size = new System.Drawing.Size(199, 29);
             this.lblValorCusto.TabIndex = 5;
             this.lblValorCusto.Text = "Valor de Custo:";
             // 
@@ -417,9 +446,10 @@
             // 
             this.lblUnidade.AutoSize = true;
             this.lblUnidade.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnidade.Location = new System.Drawing.Point(6, 160);
+            this.lblUnidade.Location = new System.Drawing.Point(8, 197);
+            this.lblUnidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUnidade.Name = "lblUnidade";
-            this.lblUnidade.Size = new System.Drawing.Size(97, 23);
+            this.lblUnidade.Size = new System.Drawing.Size(121, 29);
             this.lblUnidade.TabIndex = 3;
             this.lblUnidade.Text = "Unidade:";
             // 
@@ -427,9 +457,10 @@
             // 
             this.lblQuantidade.AutoSize = true;
             this.lblQuantidade.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantidade.Location = new System.Drawing.Point(452, 113);
+            this.lblQuantidade.Location = new System.Drawing.Point(603, 139);
+            this.lblQuantidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(128, 23);
+            this.lblQuantidade.Size = new System.Drawing.Size(160, 29);
             this.lblQuantidade.TabIndex = 2;
             this.lblQuantidade.Text = "Quantidade:";
             this.lblQuantidade.Click += new System.EventHandler(this.lblRG_Click);
@@ -438,9 +469,10 @@
             // 
             this.lblVencimento.AutoSize = true;
             this.lblVencimento.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVencimento.Location = new System.Drawing.Point(6, 118);
+            this.lblVencimento.Location = new System.Drawing.Point(8, 145);
+            this.lblVencimento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVencimento.Name = "lblVencimento";
-            this.lblVencimento.Size = new System.Drawing.Size(131, 23);
+            this.lblVencimento.Size = new System.Drawing.Size(164, 29);
             this.lblVencimento.TabIndex = 1;
             this.lblVencimento.Text = "Vencimento:";
             // 
@@ -448,9 +480,10 @@
             // 
             this.lblNomeProduto.AutoSize = true;
             this.lblNomeProduto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeProduto.Location = new System.Drawing.Point(6, 39);
+            this.lblNomeProduto.Location = new System.Drawing.Point(8, 48);
+            this.lblNomeProduto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNomeProduto.Name = "lblNomeProduto";
-            this.lblNomeProduto.Size = new System.Drawing.Size(74, 23);
+            this.lblNomeProduto.Size = new System.Drawing.Size(94, 29);
             this.lblNomeProduto.TabIndex = 0;
             this.lblNomeProduto.Text = "Nome:";
             // 
@@ -462,13 +495,14 @@
             // 
             // FrmProduto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(930, 649);
+            this.ClientSize = new System.Drawing.Size(1240, 799);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmProduto";
             this.Text = "Cadastrar Produto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

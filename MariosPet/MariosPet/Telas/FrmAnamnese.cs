@@ -2,13 +2,7 @@
 using MariosPet.Classes;
 using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MariosPet.Telas
@@ -31,7 +25,6 @@ namespace MariosPet.Telas
         private void btmLimpar_Click(object sender, EventArgs e)
         {
             txtPesquisaAnimal.Clear();
-            //dtgAnimal.ClearSelection();
             richTextBoxDoenca.Clear();
             richTextBoxCardioRespiratorio.Clear();
             richTextBoxDigestorio.Clear();
@@ -43,9 +36,7 @@ namespace MariosPet.Telas
         }
 
         private void btmVoltar_Click(object sender, EventArgs e)
-        {
-            FrmMenu menu = new FrmMenu();
-            menu.Show();
+        {            
             Close();
         }
 
@@ -139,9 +130,10 @@ namespace MariosPet.Telas
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            CopiarParaClasseAnamnese();
-
-            //dtgAnimal.DataSource = CrudAni.consultaAnimal("Select * from ANIMAL where NOME like '%" + txtPesquisaAnimal.Text + "%'");
+            FrmPesquisas form = new FrmPesquisas();
+            Visible = false;
+            form.ShowDialog();
+            Visible = true;
         }
     }
 }

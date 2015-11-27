@@ -1,13 +1,7 @@
 ﻿using MariosPet.Classes;
 using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MariosPet.Telas
@@ -25,16 +19,6 @@ namespace MariosPet.Telas
             {
                 CopiarParaFormulario();
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -61,8 +45,6 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu frmmenu = new FrmMenu();
-            frmmenu.Show();
             Close();
         }
 

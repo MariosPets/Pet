@@ -1,13 +1,7 @@
 ﻿using MariosPet.Classes;
 using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MariosPet.Telas
@@ -46,8 +40,6 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu frmmenu = new FrmMenu();
-            frmmenu.Show();
             Close();
         }
 
@@ -98,15 +90,6 @@ namespace MariosPet.Telas
             txtCidade.Text = endereco.Rows[0][5].ToString();
             cmbUF.Text = endereco.Rows[0][6].ToString();
             mstCep.Text = endereco.Rows[0][7].ToString();            
-        }
-        private void btnSalvar_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txtCidade_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

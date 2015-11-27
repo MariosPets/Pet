@@ -35,10 +35,16 @@ namespace MariosPet.Telas
         }
 
         private void btmVoltar_Click(object sender, EventArgs e)
-        {
-            FrmVermifugo vermifugo = new FrmVermifugo();
-            vermifugo.ShowDialog();
+        {            
             Close();
+        }
+
+        private void btmNovo_Click(object sender, EventArgs e)
+        {
+            FrmRemedio form = new FrmRemedio();
+            Visible = false;
+            form.ShowDialog();
+            Visible = true;
         }
     }
 }

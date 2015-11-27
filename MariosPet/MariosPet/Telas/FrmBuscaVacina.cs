@@ -36,8 +36,6 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            frmVacina vacina = new frmVacina();
-            vacina.ShowDialog();
             Close();
         }
 
@@ -48,6 +46,14 @@ namespace MariosPet.Telas
                 //Não sei se está certo
                 classeVacina.id = Convert.ToInt32(dtgBuscaVacina.CurrentRow.Cells["ID_VACINA"].Value.ToString());
             }
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            FrmRemedio form = new FrmRemedio();
+            Visible = false;
+            form.ShowDialog();
+            Visible = true;
         }
     }
 }

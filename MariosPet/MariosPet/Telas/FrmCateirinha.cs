@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Reporting.WebForms;
 using System.IO;
 using System.Diagnostics;
 using MariosPet.Classes;
-using System.Web.UI.WebControls;
 using MariosPet.Crud;
 
 namespace MariosPet.Telas
@@ -79,9 +73,15 @@ namespace MariosPet.Telas
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Telas.FrmMenu menu = new FrmMenu();
-            menu.Show();
             Close();
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            FrmPesquisas form = new FrmPesquisas();
+            Visible = false;
+            form.ShowDialog();
+            Visible = true;
         }
     }
 }

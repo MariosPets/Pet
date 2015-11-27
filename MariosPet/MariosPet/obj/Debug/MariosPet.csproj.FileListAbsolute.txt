@@ -589,3 +589,8 @@ C:\Users\Tsunemoto\Source\Repos\Pet6\MariosPet\MariosPet\bin\Debug\MariosPet.exe
 C:\Users\Tsunemoto\Source\Repos\Pet6\MariosPet\MariosPet\bin\Debug\MariosPet.pdb
 C:\Users\Tsunemoto\Source\Repos\Pet6\MariosPet\MariosPet\bin\Debug\Microsoft.ReportViewer.WebForms.dll
 C:\Users\Tsunemoto\Source\Repos\Pet6\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Plínio\Source\Repos\Pet\MariosPet\MariosPet\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Plínio\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmOrcamento.resources
+C:\Users\Plínio\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmPesquisas.resources
+C:\Users\Plínio\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
+C:\Users\Plínio\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled

@@ -309,7 +309,6 @@
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "   Dados de Acesso";
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // txtConfirmacaoSenha
             // 
@@ -344,7 +343,6 @@
             this.txtSenha.Size = new System.Drawing.Size(170, 27);
             this.txtSenha.TabIndex = 2;
             this.toolTipFuncionario.SetToolTip(this.txtSenha, "Insira a Senha");
-            this.txtSenha.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 

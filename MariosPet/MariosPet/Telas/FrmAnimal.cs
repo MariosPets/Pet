@@ -1,15 +1,10 @@
 ﻿using MariosPet.Classes;
 using MariosPet.Crud;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -33,9 +28,7 @@ namespace MariosPet.Telas
         }
 
         private void btmVoltar_Click(object sender, EventArgs e)
-        {
-            Telas.FrmMenu frmmenu = new FrmMenu();
-            frmmenu.Show();
+        {            
             Close();            
         }
 
@@ -44,7 +37,6 @@ namespace MariosPet.Telas
             txtNomeAnimal.Clear();
             txtPelagemCor.Clear();
             txtRacaPorte.Clear();
-            //txtSexo.Clear();
             maskedTxtNascimentoAnimal.Clear();
         }
 
@@ -115,7 +107,10 @@ namespace MariosPet.Telas
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            //dtgCliente.DataSource = CrudCli.consultaCliente("Select * from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where NOME like '%" + txtPesquisaCliente.Text + "%'");
+            FrmPesquisas form = new FrmPesquisas();
+            Visible = false;
+            form.ShowDialog();
+            Visible = true;
         }
 
         private void btmSalvar_Click_1(object sender, EventArgs e)
@@ -142,10 +137,6 @@ namespace MariosPet.Telas
             }
         }
 
-        private void dtgCliente_SelectionChanged(object sender, EventArgs e)
-        {
-        }
-
         private void btnBuscaFoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -154,17 +145,6 @@ namespace MariosPet.Telas
             DialogResult dialogResult = openFileDialog.ShowDialog();
 
             pictureBoxAnimal.Image = Image.FromFile(openFileDialog.FileName);
-
-        }
-
-
-
-        private void dtgCliente_SelectionChanged_1(object sender, EventArgs e)
-        {
-            /*if (dtgCliente.Rows.Count > 0)
-            {
-                classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
-            }*/
         }
     }
 }

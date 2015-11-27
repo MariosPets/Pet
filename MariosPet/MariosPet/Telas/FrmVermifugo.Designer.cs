@@ -52,9 +52,11 @@
             this.groupBoxVermifugo.Controls.Add(this.labelNomeAnimal);
             this.groupBoxVermifugo.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
             this.groupBoxVermifugo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxVermifugo.Location = new System.Drawing.Point(40, 12);
+            this.groupBoxVermifugo.Location = new System.Drawing.Point(53, 15);
+            this.groupBoxVermifugo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBoxVermifugo.Name = "groupBoxVermifugo";
-            this.groupBoxVermifugo.Size = new System.Drawing.Size(717, 79);
+            this.groupBoxVermifugo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxVermifugo.Size = new System.Drawing.Size(956, 97);
             this.groupBoxVermifugo.TabIndex = 7;
             this.groupBoxVermifugo.TabStop = false;
             this.groupBoxVermifugo.Text = "   Vermifugo";
@@ -63,9 +65,10 @@
             // 
             this.labelNomeAnimal.AutoSize = true;
             this.labelNomeAnimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeAnimal.Location = new System.Drawing.Point(6, 46);
+            this.labelNomeAnimal.Location = new System.Drawing.Point(8, 57);
+            this.labelNomeAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNomeAnimal.Name = "labelNomeAnimal";
-            this.labelNomeAnimal.Size = new System.Drawing.Size(169, 23);
+            this.labelNomeAnimal.Size = new System.Drawing.Size(209, 29);
             this.labelNomeAnimal.TabIndex = 22;
             this.labelNomeAnimal.Text = "Nome do Animal";
             // 
@@ -75,12 +78,14 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::MariosPet.Properties.Resources.botaoCancelarVerde;
-            this.btnCancelar.Location = new System.Drawing.Point(436, 142);
+            this.btnCancelar.Location = new System.Drawing.Point(581, 175);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(126, 31);
+            this.btnCancelar.Size = new System.Drawing.Size(168, 38);
             this.btnCancelar.TabIndex = 1;
             this.toolTipVermifugo.SetToolTip(this.btnCancelar, "Cancelar");
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnNovo
             // 
@@ -88,9 +93,10 @@
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(568, 138);
+            this.btnNovo.Location = new System.Drawing.Point(757, 170);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(117, 38);
+            this.btnNovo.Size = new System.Drawing.Size(156, 47);
             this.btnNovo.TabIndex = 2;
             this.toolTipVermifugo.SetToolTip(this.btnNovo, "Adicionar novo Vermífugo");
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -113,9 +119,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgVermifugo.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgVermifugo.Location = new System.Drawing.Point(11, 23);
+            this.dtgVermifugo.Location = new System.Drawing.Point(15, 28);
+            this.dtgVermifugo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgVermifugo.Name = "dtgVermifugo";
-            this.dtgVermifugo.Size = new System.Drawing.Size(674, 97);
+            this.dtgVermifugo.Size = new System.Drawing.Size(899, 119);
             this.dtgVermifugo.TabIndex = 0;
             this.toolTipVermifugo.SetToolTip(this.dtgVermifugo, "Vermífugos que o Animal já tomou.");
             // 
@@ -133,21 +140,24 @@
             this.groupBox1.Controls.Add(this.dtgVermifugo);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(40, 97);
+            this.groupBox1.Location = new System.Drawing.Point(53, 119);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(717, 192);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(956, 236);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // FrmVermifugo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(803, 371);
+            this.ClientSize = new System.Drawing.Size(1071, 457);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxVermifugo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmVermifugo";
             this.Text = "Vermifugo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

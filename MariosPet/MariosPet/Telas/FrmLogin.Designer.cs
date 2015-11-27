@@ -68,7 +68,7 @@
             this.textSenha.MaxLength = 20;
             this.textSenha.Name = "textSenha";
             this.textSenha.PasswordChar = '•';
-            this.textSenha.Size = new System.Drawing.Size(186, 31);
+            this.textSenha.Size = new System.Drawing.Size(186, 36);
             this.textSenha.TabIndex = 2;
             this.toolTipLogin.SetToolTip(this.textSenha, "Insira a Senha");
             // 
@@ -76,9 +76,9 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.Font = new System.Drawing.Font("Verdana", 16F);
-            this.labelSenha.Location = new System.Drawing.Point(55, 129);
+            this.labelSenha.Location = new System.Drawing.Point(37, 128);
             this.labelSenha.Name = "labelSenha";
-            this.labelSenha.Size = new System.Drawing.Size(81, 26);
+            this.labelSenha.Size = new System.Drawing.Size(99, 32);
             this.labelSenha.TabIndex = 4;
             this.labelSenha.Text = "Senha";
             // 
@@ -86,9 +86,9 @@
             // 
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.Font = new System.Drawing.Font("Verdana", 16F);
-            this.labelUsuario.Location = new System.Drawing.Point(42, 63);
+            this.labelUsuario.Location = new System.Drawing.Point(19, 62);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(94, 26);
+            this.labelUsuario.Size = new System.Drawing.Size(117, 32);
             this.labelUsuario.TabIndex = 3;
             this.labelUsuario.Text = "Usuário";
             // 
@@ -99,7 +99,7 @@
             this.textUsuario.Location = new System.Drawing.Point(142, 58);
             this.textUsuario.MaxLength = 20;
             this.textUsuario.Name = "textUsuario";
-            this.textUsuario.Size = new System.Drawing.Size(186, 31);
+            this.textUsuario.Size = new System.Drawing.Size(186, 36);
             this.textUsuario.TabIndex = 1;
             this.toolTipLogin.SetToolTip(this.textUsuario, "Insira o Login");
             // 

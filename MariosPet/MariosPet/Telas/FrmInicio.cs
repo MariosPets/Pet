@@ -28,7 +28,8 @@ namespace MariosPet
                 timer1.Enabled = false;
                 FrmLogin login = new FrmLogin();                
                 this.Visible = false;
-                login.Show();                
+                login.ShowDialog();
+                Close();
             }
         }
     }
