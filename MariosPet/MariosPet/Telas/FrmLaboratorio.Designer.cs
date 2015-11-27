@@ -80,7 +80,7 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(319, 276);
+            this.btnVoltar.Location = new System.Drawing.Point(251, 257);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(114, 46);
             this.btnVoltar.TabIndex = 7;
@@ -95,7 +95,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(450, 276);
+            this.btnLimpar.Location = new System.Drawing.Point(404, 257);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(113, 46);
             this.btnLimpar.TabIndex = 8;
@@ -110,7 +110,7 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.btnSalvar.Location = new System.Drawing.Point(580, 276);
+            this.btnSalvar.Location = new System.Drawing.Point(553, 257);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(131, 46);
             this.btnSalvar.TabIndex = 9;
@@ -371,7 +371,7 @@
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(94, 23);
             this.lblNumero.TabIndex = 12;
-            this.lblNumero.Text = "Numero:";
+            this.lblNumero.Text = "Número:";
             // 
             // lblComplemento
             // 
