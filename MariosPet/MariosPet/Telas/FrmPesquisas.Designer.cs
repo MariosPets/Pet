@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesquisas)).BeginInit();
             this.groupBoxPesquisas.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,7 +66,7 @@
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(594, 343);
+            this.btnLimpar.Location = new System.Drawing.Point(630, 334);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(116, 44);
             this.btnLimpar.TabIndex = 8;
@@ -80,7 +81,7 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(27, 343);
+            this.btnVoltar.Location = new System.Drawing.Point(9, 334);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(116, 44);
             this.btnVoltar.TabIndex = 5;
@@ -139,7 +140,7 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkOrange;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewPesquisas.DefaultCellStyle = dataGridViewCellStyle2;
@@ -181,7 +182,7 @@
             this.buttonEditar.FlatAppearance.BorderSize = 0;
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Image = global::MariosPet.Properties.Resources.botaoEditarLaranja;
-            this.buttonEditar.Location = new System.Drawing.Point(403, 343);
+            this.buttonEditar.Location = new System.Drawing.Point(486, 334);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(115, 44);
             this.buttonEditar.TabIndex = 7;
@@ -194,7 +195,7 @@
             this.buttonExcluir.FlatAppearance.BorderSize = 0;
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Image = global::MariosPet.Properties.Resources.botaoExcluirVerde;
-            this.buttonExcluir.Location = new System.Drawing.Point(198, 343);
+            this.buttonExcluir.Location = new System.Drawing.Point(163, 334);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(140, 44);
             this.buttonExcluir.TabIndex = 6;
@@ -255,6 +256,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.buttonEditar);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.buttonExcluir);
@@ -267,6 +269,18 @@
             this.groupBox1.Size = new System.Drawing.Size(752, 395);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
+            this.button1.Location = new System.Drawing.Point(331, 334);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 44);
+            this.button1.TabIndex = 9;
+            this.toolTipPesquisas.SetToolTip(this.button1, "Editar Informação selecionada");
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmPesquisas
             // 
@@ -306,5 +320,6 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
