@@ -45,15 +45,12 @@
             this.txtRegistro = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.dtgCliente = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisaCliente = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxPesquisaAnimal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -177,7 +174,7 @@
             this.groupBox1.Controls.Add(this.txtSexo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(589, 244);
+            this.groupBox1.Location = new System.Drawing.Point(589, 187);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(426, 327);
             this.groupBox1.TabIndex = 12;
@@ -218,7 +215,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MariosPet.Properties.Resources.carteirinhaFrente;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 244);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 187);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(545, 384);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,8 +227,6 @@
             this.groupBoxPesquisaAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxPesquisaAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBoxPesquisaAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisaAnimal.Controls.Add(this.btnNovo);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.dtgCliente);
             this.groupBoxPesquisaAnimal.Controls.Add(this.btnConsultar);
             this.groupBoxPesquisaAnimal.Controls.Add(this.txtPesquisaCliente);
             this.groupBoxPesquisaAnimal.Controls.Add(this.lblNome);
@@ -239,32 +234,10 @@
             this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(29, 40);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
-            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 204);
+            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(986, 114);
             this.groupBoxPesquisaAnimal.TabIndex = 32;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
-            // 
-            // btnNovo
-            // 
-            this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.btnNovo.FlatAppearance.BorderSize = 0;
-            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(668, 142);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(116, 44);
-            this.btnNovo.TabIndex = 3;
-            this.btnNovo.UseVisualStyleBackColor = false;
-            // 
-            // dtgCliente
-            // 
-            this.dtgCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
-            this.dtgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCliente.Location = new System.Drawing.Point(10, 93);
-            this.dtgCliente.Name = "dtgCliente";
-            this.dtgCliente.Size = new System.Drawing.Size(634, 93);
-            this.dtgCliente.TabIndex = 2;
             // 
             // btnConsultar
             // 
@@ -273,7 +246,7 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btnConsultar.Location = new System.Drawing.Point(668, 39);
+            this.btnConsultar.Location = new System.Drawing.Point(851, 39);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
             this.btnConsultar.TabIndex = 1;
@@ -286,7 +259,7 @@
             this.txtPesquisaCliente.Location = new System.Drawing.Point(89, 50);
             this.txtPesquisaCliente.MaxLength = 80;
             this.txtPesquisaCliente.Name = "txtPesquisaCliente";
-            this.txtPesquisaCliente.Size = new System.Drawing.Size(555, 27);
+            this.txtPesquisaCliente.Size = new System.Drawing.Size(743, 27);
             this.txtPesquisaCliente.TabIndex = 0;
             // 
             // lblNome
@@ -317,7 +290,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxPesquisaAnimal.ResumeLayout(false);
             this.groupBoxPesquisaAnimal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,8 +313,6 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBoxPesquisaAnimal;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.DataGridView dtgCliente;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtPesquisaCliente;
         private System.Windows.Forms.Label lblNome;
