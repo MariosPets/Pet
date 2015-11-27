@@ -381,7 +381,7 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btnConsultar.Location = new System.Drawing.Point(620, 41);
+            this.btnConsultar.Location = new System.Drawing.Point(620, 40);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
             this.btnConsultar.TabIndex = 1;
