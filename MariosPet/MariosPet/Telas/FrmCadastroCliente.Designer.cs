@@ -77,7 +77,7 @@
             this.btmLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmLimpar.BackgroundImage")));
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmLimpar.Location = new System.Drawing.Point(538, 688);
+            this.btmLimpar.Location = new System.Drawing.Point(540, 665);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(117, 44);
             this.btmLimpar.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.btmVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmVoltar.BackgroundImage")));
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmVoltar.Location = new System.Drawing.Point(340, 689);
+            this.btmVoltar.Location = new System.Drawing.Point(341, 665);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
             this.btmVoltar.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.btmSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmSalvar.BackgroundImage")));
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmSalvar.Location = new System.Drawing.Point(736, 690);
+            this.btmSalvar.Location = new System.Drawing.Point(738, 667);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(117, 42);
             this.btmSalvar.TabIndex = 4;
