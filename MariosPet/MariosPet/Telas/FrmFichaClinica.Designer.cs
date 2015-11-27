@@ -125,6 +125,7 @@
             // 
             // txtObservacao
             // 
+            this.txtObservacao.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtObservacao.Location = new System.Drawing.Point(10, 343);
             this.txtObservacao.MaxLength = 300;
@@ -146,6 +147,7 @@
             // 
             // txtExames
             // 
+            this.txtExames.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtExames.Location = new System.Drawing.Point(474, 248);
             this.txtExames.MaxLength = 200;
@@ -197,6 +199,7 @@
             // 
             // txtSintomas
             // 
+            this.txtSintomas.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSintomas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtSintomas.Location = new System.Drawing.Point(10, 248);
             this.txtSintomas.MaxLength = 500;
@@ -233,6 +236,7 @@
             // 
             // txtPrescricao
             // 
+            this.txtPrescricao.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrescricao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtPrescricao.Location = new System.Drawing.Point(476, 153);
             this.txtPrescricao.MaxLength = 300;
@@ -254,6 +258,7 @@
             // 
             // txtSuspeita
             // 
+            this.txtSuspeita.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSuspeita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtSuspeita.Location = new System.Drawing.Point(9, 153);
             this.txtSuspeita.MaxLength = 200;
@@ -275,6 +280,7 @@
             // 
             // txtQueixa
             // 
+            this.txtQueixa.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQueixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtQueixa.Location = new System.Drawing.Point(474, 57);
             this.txtQueixa.MaxLength = 200;
@@ -297,6 +303,7 @@
             // 
             // txtHistoricoClinico
             // 
+            this.txtHistoricoClinico.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHistoricoClinico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtHistoricoClinico.Location = new System.Drawing.Point(9, 57);
             this.txtHistoricoClinico.MaxLength = 1000;
