@@ -147,7 +147,7 @@
             this.mstPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.mstPreco.Location = new System.Drawing.Point(262, 79);
             this.mstPreco.Name = "mstPreco";
-            this.mstPreco.Size = new System.Drawing.Size(107, 27);
+            this.mstPreco.Size = new System.Drawing.Size(132, 27);
             this.mstPreco.TabIndex = 1;
             this.toolTipServicos.SetToolTip(this.mstPreco, "Insira o Valor");
             // 
