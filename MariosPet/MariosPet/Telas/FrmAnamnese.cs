@@ -31,7 +31,7 @@ namespace MariosPet.Telas
         private void btmLimpar_Click(object sender, EventArgs e)
         {
             txtPesquisaAnimal.Clear();
-            dtgAnimal.ClearSelection();
+            //dtgAnimal.ClearSelection();
             richTextBoxDoenca.Clear();
             richTextBoxCardioRespiratorio.Clear();
             richTextBoxDigestorio.Clear();
@@ -141,7 +141,7 @@ namespace MariosPet.Telas
         {
             CopiarParaClasseAnamnese();
 
-            dtgAnimal.DataSource = CrudAni.consultaAnimal("Select * from ANIMAL where NOME like '%" + txtPesquisaAnimal.Text + "%'");
+            //dtgAnimal.DataSource = CrudAni.consultaAnimal("Select * from ANIMAL where NOME like '%" + txtPesquisaAnimal.Text + "%'");
         }
     }
 }

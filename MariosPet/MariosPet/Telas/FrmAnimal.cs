@@ -115,7 +115,7 @@ namespace MariosPet.Telas
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            dtgCliente.DataSource = CrudCli.consultaCliente("Select * from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where NOME like '%" + txtPesquisaCliente.Text + "%'");
+            //dtgCliente.DataSource = CrudCli.consultaCliente("Select * from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where NOME like '%" + txtPesquisaCliente.Text + "%'");
         }
 
         private void btmSalvar_Click_1(object sender, EventArgs e)
@@ -161,10 +161,10 @@ namespace MariosPet.Telas
 
         private void dtgCliente_SelectionChanged_1(object sender, EventArgs e)
         {
-            if (dtgCliente.Rows.Count > 0)
+            /*if (dtgCliente.Rows.Count > 0)
             {
                 classeAni.idCliente = Convert.ToInt32(dtgCliente.CurrentRow.Cells["ID_PESSOA"].Value.ToString());
-            }
+            }*/
         }
     }
 }
