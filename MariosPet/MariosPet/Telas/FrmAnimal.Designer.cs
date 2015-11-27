@@ -47,15 +47,12 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNomeAnimal = new System.Windows.Forms.Label();
             this.toolTipAnimal = new System.Windows.Forms.ToolTip(this.components);
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.dtgCliente = new System.Windows.Forms.DataGridView();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtPesquisaCliente = new System.Windows.Forms.TextBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).BeginInit();
             this.groupBoxAnimal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).BeginInit();
             this.groupBoxPesquisaAnimal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +92,7 @@
             this.groupBoxAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxAnimal.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxAnimal.Location = new System.Drawing.Point(33, 246);
+            this.groupBoxAnimal.Location = new System.Drawing.Point(33, 170);
             this.groupBoxAnimal.Name = "groupBoxAnimal";
             this.groupBoxAnimal.Size = new System.Drawing.Size(801, 376);
             this.groupBoxAnimal.TabIndex = 6;
@@ -292,32 +289,6 @@
             this.toolTipAnimal.IsBalloon = true;
             this.toolTipAnimal.StripAmpersands = true;
             // 
-            // btnNovo
-            // 
-            this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.btnNovo.FlatAppearance.BorderSize = 0;
-            this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(668, 142);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(116, 44);
-            this.btnNovo.TabIndex = 3;
-            this.toolTipAnimal.SetToolTip(this.btnNovo, "Adicionar novo Cliente");
-            this.btnNovo.UseVisualStyleBackColor = false;
-            // 
-            // dtgCliente
-            // 
-            this.dtgCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
-            this.dtgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCliente.Location = new System.Drawing.Point(10, 93);
-            this.dtgCliente.Name = "dtgCliente";
-            this.dtgCliente.Size = new System.Drawing.Size(634, 93);
-            this.dtgCliente.TabIndex = 2;
-            this.toolTipAnimal.SetToolTip(this.dtgCliente, "Resultado da Pesquisa");
-            this.dtgCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCliente_SelectionChanged);
-            this.dtgCliente.SelectionChanged += new System.EventHandler(this.dtgCliente_SelectionChanged_1);
-            // 
             // btnConsultar
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
@@ -349,8 +320,6 @@
             this.groupBoxPesquisaAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBoxPesquisaAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBoxPesquisaAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBoxPesquisaAnimal.Controls.Add(this.btnNovo);
-            this.groupBoxPesquisaAnimal.Controls.Add(this.dtgCliente);
             this.groupBoxPesquisaAnimal.Controls.Add(this.btnConsultar);
             this.groupBoxPesquisaAnimal.Controls.Add(this.txtPesquisaCliente);
             this.groupBoxPesquisaAnimal.Controls.Add(this.lblNome);
@@ -358,7 +327,7 @@
             this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(33, 24);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
-            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 204);
+            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 117);
             this.groupBoxPesquisaAnimal.TabIndex = 31;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
@@ -388,7 +357,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).EndInit();
             this.groupBoxAnimal.ResumeLayout(false);
             this.groupBoxAnimal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCliente)).EndInit();
             this.groupBoxPesquisaAnimal.ResumeLayout(false);
             this.groupBoxPesquisaAnimal.PerformLayout();
             this.ResumeLayout(false);
@@ -416,8 +384,6 @@
         private System.Windows.Forms.RadioButton radioButtonFemea;
         private Classes.RoundButton btnBuscaFoto;
         private System.Windows.Forms.GroupBox groupBoxPesquisaAnimal;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.DataGridView dtgCliente;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtPesquisaCliente;
         private System.Windows.Forms.Label lblNome;

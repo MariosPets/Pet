@@ -520,3 +520,6 @@ C:\Users\Leonardo Fernando\Source\Repos\Pet10\MariosPet\MariosPet\obj\Debug\RdlC
 C:\Users\Jéssica Kelly\Source\Repos\Pet7\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
 C:\Users\Jéssica Kelly\Source\Repos\Pet7\MariosPet\MariosPet\obj\Debug\MariosPet.exe
 C:\Users\Jéssica Kelly\Source\Repos\Pet7\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Taise\Source\Repos\Pet2\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Taise\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Taise\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
