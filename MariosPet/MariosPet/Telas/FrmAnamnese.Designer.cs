@@ -370,7 +370,7 @@
             this.txtPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtPesquisaAnimal.Location = new System.Drawing.Point(159, 50);
             this.txtPesquisaAnimal.Name = "txtPesquisaAnimal";
-            this.txtPesquisaAnimal.Size = new System.Drawing.Size(433, 27);
+            this.txtPesquisaAnimal.Size = new System.Drawing.Size(447, 27);
             this.txtPesquisaAnimal.TabIndex = 0;
             this.toolTipAnamnese.SetToolTip(this.txtPesquisaAnimal, "Digite o nome do animal que está procurando.");
             // 
@@ -381,7 +381,7 @@
             this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btnConsultar.Location = new System.Drawing.Point(607, 40);
+            this.btnConsultar.Location = new System.Drawing.Point(620, 41);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
             this.btnConsultar.TabIndex = 1;
