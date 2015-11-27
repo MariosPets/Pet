@@ -169,7 +169,7 @@
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(406, 23);
             this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Identificação do Veterinário/Funcionario:";
+            this.lblNome.Text = "Identificação do Veterinário/Funcionário:";
             // 
             // btmLimpar
             // 
@@ -178,7 +178,7 @@
             this.btmLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmLimpar.BackgroundImage")));
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmLimpar.Location = new System.Drawing.Point(497, 374);
+            this.btmLimpar.Location = new System.Drawing.Point(533, 363);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(117, 44);
             this.btmLimpar.TabIndex = 6;
@@ -191,7 +191,7 @@
             this.btmVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmVoltar.BackgroundImage")));
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmVoltar.Location = new System.Drawing.Point(299, 375);
+            this.btmVoltar.Location = new System.Drawing.Point(381, 364);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
             this.btmVoltar.TabIndex = 5;
@@ -205,7 +205,7 @@
             this.btmSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmSalvar.BackgroundImage")));
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmSalvar.Location = new System.Drawing.Point(695, 376);
+            this.btmSalvar.Location = new System.Drawing.Point(695, 365);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(117, 42);
             this.btmSalvar.TabIndex = 7;
