@@ -401,7 +401,7 @@
             this.groupBoxPesquisaAnimal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(40, 20);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
-            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(766, 96);
+            this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(745, 96);
             this.groupBoxPesquisaAnimal.TabIndex = 3;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
