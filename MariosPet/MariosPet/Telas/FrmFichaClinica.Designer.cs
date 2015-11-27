@@ -125,6 +125,7 @@
             // 
             // txtObservacao
             // 
+            this.txtObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtObservacao.Location = new System.Drawing.Point(10, 343);
             this.txtObservacao.MaxLength = 300;
             this.txtObservacao.Multiline = true;
@@ -145,6 +146,7 @@
             // 
             // txtExames
             // 
+            this.txtExames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtExames.Location = new System.Drawing.Point(474, 248);
             this.txtExames.MaxLength = 200;
             this.txtExames.Multiline = true;
@@ -160,7 +162,7 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.btnSalvar.Location = new System.Drawing.Point(837, 341);
+            this.btnSalvar.Location = new System.Drawing.Point(827, 343);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(124, 50);
             this.btnSalvar.TabIndex = 11;
@@ -185,7 +187,7 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Image = global::MariosPet.Properties.Resources.botaoLimparLaranja;
-            this.btnLimpar.Location = new System.Drawing.Point(721, 343);
+            this.btnLimpar.Location = new System.Drawing.Point(717, 343);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(114, 50);
             this.btnLimpar.TabIndex = 10;
@@ -195,6 +197,7 @@
             // 
             // txtSintomas
             // 
+            this.txtSintomas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtSintomas.Location = new System.Drawing.Point(10, 248);
             this.txtSintomas.MaxLength = 500;
             this.txtSintomas.Multiline = true;
@@ -230,6 +233,7 @@
             // 
             // txtPrescricao
             // 
+            this.txtPrescricao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtPrescricao.Location = new System.Drawing.Point(476, 153);
             this.txtPrescricao.MaxLength = 300;
             this.txtPrescricao.Multiline = true;
@@ -250,6 +254,7 @@
             // 
             // txtSuspeita
             // 
+            this.txtSuspeita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtSuspeita.Location = new System.Drawing.Point(9, 153);
             this.txtSuspeita.MaxLength = 200;
             this.txtSuspeita.Multiline = true;
@@ -270,6 +275,7 @@
             // 
             // txtQueixa
             // 
+            this.txtQueixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtQueixa.Location = new System.Drawing.Point(474, 57);
             this.txtQueixa.MaxLength = 200;
             this.txtQueixa.Multiline = true;
@@ -291,6 +297,7 @@
             // 
             // txtHistoricoClinico
             // 
+            this.txtHistoricoClinico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtHistoricoClinico.Location = new System.Drawing.Point(9, 57);
             this.txtHistoricoClinico.MaxLength = 1000;
             this.txtHistoricoClinico.Multiline = true;
