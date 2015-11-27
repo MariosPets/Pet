@@ -169,7 +169,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(43, 23);
+            this.lblUF.Size = new System.Drawing.Size(44, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -417,7 +417,7 @@
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Location = new System.Drawing.Point(898, 588);
+            this.btnLimpar.Location = new System.Drawing.Point(978, 229);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(113, 47);
             this.btnLimpar.TabIndex = 1;
@@ -432,7 +432,7 @@
             this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(779, 588);
+            this.btnVoltar.Location = new System.Drawing.Point(790, 229);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(113, 46);
             this.btnVoltar.TabIndex = 0;
@@ -447,7 +447,7 @@
             this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Location = new System.Drawing.Point(1017, 588);
+            this.btnSalvar.Location = new System.Drawing.Point(1152, 229);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 48);
             this.btnSalvar.TabIndex = 2;
@@ -594,7 +594,7 @@
             this.lblCrmv.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCrmv.Location = new System.Drawing.Point(6, 296);
             this.lblCrmv.Name = "lblCrmv";
-            this.lblCrmv.Size = new System.Drawing.Size(73, 23);
+            this.lblCrmv.Size = new System.Drawing.Size(74, 23);
             this.lblCrmv.TabIndex = 32;
             this.lblCrmv.Text = "CRMV:";
             // 
@@ -604,7 +604,7 @@
             this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 248);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 23);
+            this.label6.Size = new System.Drawing.Size(101, 23);
             this.label6.TabIndex = 31;
             this.label6.Text = "Telefone:";
             // 
@@ -614,7 +614,7 @@
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(356, 206);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 23);
+            this.label5.Size = new System.Drawing.Size(101, 23);
             this.label5.TabIndex = 29;
             this.label5.Text = "Telefone:";
             // 
@@ -634,7 +634,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(6, 205);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone.TabIndex = 20;
             this.lblTelefone.Text = "Telefone:";
             // 
@@ -664,7 +664,7 @@
             this.lblCpf.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.Location = new System.Drawing.Point(6, 123);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(53, 23);
+            this.lblCpf.Size = new System.Drawing.Size(54, 23);
             this.lblCpf.TabIndex = 17;
             this.lblCpf.Text = "CPF:";
             // 
