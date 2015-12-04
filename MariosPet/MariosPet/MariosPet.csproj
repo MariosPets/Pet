@@ -172,6 +172,12 @@
     <Compile Include="Telas\FrmFichaClinica.Designer.cs">
       <DependentUpon>FrmFichaClinica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\FrmFinanceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmFinanceiro.Designer.cs">
+      <DependentUpon>FrmFinanceiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\FrmFornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,12 @@
     </Compile>
     <Compile Include="Telas\frmVacina.Designer.cs">
       <DependentUpon>frmVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\FrmVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmVendas.Designer.cs">
+      <DependentUpon>FrmVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\FrmVermifugo.cs">
       <SubType>Form</SubType>
