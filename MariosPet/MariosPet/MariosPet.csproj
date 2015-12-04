@@ -118,6 +118,12 @@
     <Compile Include="Telas\BuscaFuncionario.Designer.cs">
       <DependentUpon>BuscaFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\frm.Designer.cs">
+      <DependentUpon>frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\FrmAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
