@@ -96,7 +96,7 @@
             this.groupBox1.Location = new System.Drawing.Point(150, 8);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(736, 368);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados  do Fornecedor";
             // 
@@ -108,7 +108,7 @@
             this.textBoxNomeContato.MaxLength = 50;
             this.textBoxNomeContato.Name = "textBoxNomeContato";
             this.textBoxNomeContato.Size = new System.Drawing.Size(469, 27);
-            this.textBoxNomeContato.TabIndex = 7;
+            this.textBoxNomeContato.TabIndex = 8;
             this.toolTipFornecedor.SetToolTip(this.textBoxNomeContato, "Insira o nome para Contato");
             // 
             // labelNomeContato
@@ -118,7 +118,7 @@
             this.labelNomeContato.Location = new System.Drawing.Point(6, 298);
             this.labelNomeContato.Name = "labelNomeContato";
             this.labelNomeContato.Size = new System.Drawing.Size(204, 23);
-            this.labelNomeContato.TabIndex = 31;
+            this.labelNomeContato.TabIndex = 0;
             this.labelNomeContato.Text = "Nome para Contato:";
             // 
             // textBoxEmail2
@@ -129,7 +129,7 @@
             this.textBoxEmail2.MaxLength = 50;
             this.textBoxEmail2.Name = "textBoxEmail2";
             this.textBoxEmail2.Size = new System.Drawing.Size(469, 27);
-            this.textBoxEmail2.TabIndex = 6;
+            this.textBoxEmail2.TabIndex = 7;
             this.toolTipFornecedor.SetToolTip(this.textBoxEmail2, "Insira o e-mail para Contato");
             // 
             // labelEmail2
@@ -139,7 +139,7 @@
             this.labelEmail2.Location = new System.Drawing.Point(129, 248);
             this.labelEmail2.Name = "labelEmail2";
             this.labelEmail2.Size = new System.Drawing.Size(81, 23);
-            this.labelEmail2.TabIndex = 29;
+            this.labelEmail2.TabIndex = 0;
             this.labelEmail2.Text = "E-mail:";
             // 
             // textBoxEmail1
@@ -150,7 +150,7 @@
             this.textBoxEmail1.MaxLength = 50;
             this.textBoxEmail1.Name = "textBoxEmail1";
             this.textBoxEmail1.Size = new System.Drawing.Size(469, 27);
-            this.textBoxEmail1.TabIndex = 5;
+            this.textBoxEmail1.TabIndex = 6;
             this.toolTipFornecedor.SetToolTip(this.textBoxEmail1, "Insira o e-mail para Contato");
             // 
             // labelEmail1
@@ -160,7 +160,7 @@
             this.labelEmail1.Location = new System.Drawing.Point(129, 208);
             this.labelEmail1.Name = "labelEmail1";
             this.labelEmail1.Size = new System.Drawing.Size(81, 23);
-            this.labelEmail1.TabIndex = 27;
+            this.labelEmail1.TabIndex = 0;
             this.labelEmail1.Text = "E-mail:";
             // 
             // txtTelefone2
@@ -171,7 +171,7 @@
             this.txtTelefone2.MaxLength = 15;
             this.txtTelefone2.Name = "txtTelefone2";
             this.txtTelefone2.Size = new System.Drawing.Size(170, 27);
-            this.txtTelefone2.TabIndex = 4;
+            this.txtTelefone2.TabIndex = 5;
             this.toolTipFornecedor.SetToolTip(this.txtTelefone2, "Insira o telefone para Contato");
             // 
             // label1
@@ -180,7 +180,7 @@
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(412, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 23);
+            this.label1.Size = new System.Drawing.Size(99, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "Telefone:";
             // 
@@ -192,7 +192,7 @@
             this.mstCNPJ.Mask = "000.000.000-00";
             this.mstCNPJ.Name = "mstCNPJ";
             this.mstCNPJ.Size = new System.Drawing.Size(170, 27);
-            this.mstCNPJ.TabIndex = 1;
+            this.mstCNPJ.TabIndex = 2;
             this.toolTipFornecedor.SetToolTip(this.mstCNPJ, "Insira o CNPJ do Fornecedor");
             // 
             // txtTelefone
@@ -203,7 +203,7 @@
             this.txtTelefone.MaxLength = 15;
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(170, 27);
-            this.txtTelefone.TabIndex = 3;
+            this.txtTelefone.TabIndex = 4;
             this.toolTipFornecedor.SetToolTip(this.txtTelefone, "Insira o telefone para Contato");
             // 
             // txtAtividade
@@ -214,7 +214,7 @@
             this.txtAtividade.MaxLength = 40;
             this.txtAtividade.Name = "txtAtividade";
             this.txtAtividade.Size = new System.Drawing.Size(469, 27);
-            this.txtAtividade.TabIndex = 2;
+            this.txtAtividade.TabIndex = 3;
             this.toolTipFornecedor.SetToolTip(this.txtAtividade, "Insira o Ramo da Atividade do Fornecedor");
             // 
             // txtDenominacao
@@ -225,7 +225,7 @@
             this.txtDenominacao.MaxLength = 40;
             this.txtDenominacao.Name = "txtDenominacao";
             this.txtDenominacao.Size = new System.Drawing.Size(469, 27);
-            this.txtDenominacao.TabIndex = 0;
+            this.txtDenominacao.TabIndex = 1;
             this.toolTipFornecedor.SetToolTip(this.txtDenominacao, "Insira o Nome do Fornecedor");
             // 
             // lblTelefone
@@ -234,8 +234,8 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(111, 166);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
-            this.lblTelefone.TabIndex = 20;
+            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
             // lblEmail
@@ -245,7 +245,7 @@
             this.lblEmail.Location = new System.Drawing.Point(11, 125);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(199, 23);
-            this.lblEmail.TabIndex = 19;
+            this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Ramo da Atividade:";
             // 
             // lblCpf
@@ -255,7 +255,7 @@
             this.lblCpf.Location = new System.Drawing.Point(144, 82);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(66, 23);
-            this.lblCpf.TabIndex = 17;
+            this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CNPJ:";
             // 
             // lblNome
@@ -265,7 +265,7 @@
             this.lblNome.Location = new System.Drawing.Point(6, 36);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(214, 23);
-            this.lblNome.TabIndex = 16;
+            this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Denominação Social:";
             // 
             // groupBox2
@@ -296,7 +296,7 @@
             this.groupBox2.Location = new System.Drawing.Point(160, 382);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(726, 339);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Endereço";
             // 
@@ -309,7 +309,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(156, 253);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(119, 41);
-            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.TabIndex = 8;
             this.toolTipFornecedor.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -322,7 +322,7 @@
             this.maskedTextBoxCep.Mask = "##.###-###";
             this.maskedTextBoxCep.Name = "maskedTextBoxCep";
             this.maskedTextBoxCep.Size = new System.Drawing.Size(171, 27);
-            this.maskedTextBoxCep.TabIndex = 4;
+            this.maskedTextBoxCep.TabIndex = 5;
             this.toolTipFornecedor.SetToolTip(this.maskedTextBoxCep, "Insira o CEP");
             // 
             // btnLimpar
@@ -335,7 +335,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(308, 253);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(117, 41);
-            this.btnLimpar.TabIndex = 8;
+            this.btnLimpar.TabIndex = 9;
             this.toolTipFornecedor.SetToolTip(this.btnLimpar, "Limpar Campos");
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -376,7 +376,7 @@
             this.cmbUF.Location = new System.Drawing.Point(473, 187);
             this.cmbUF.Name = "cmbUF";
             this.cmbUF.Size = new System.Drawing.Size(171, 26);
-            this.cmbUF.TabIndex = 6;
+            this.cmbUF.TabIndex = 7;
             this.cmbUF.Text = "---Selecione---";
             this.toolTipFornecedor.SetToolTip(this.cmbUF, "Selecione a UF");
             // 
@@ -389,7 +389,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(459, 253);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(118, 41);
-            this.btnSalvar.TabIndex = 9;
+            this.btnSalvar.TabIndex = 10;
             this.toolTipFornecedor.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -400,7 +400,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(44, 23);
+            this.lblUF.Size = new System.Drawing.Size(43, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -422,7 +422,7 @@
             this.txtCidade.MaxLength = 30;
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(195, 27);
-            this.txtCidade.TabIndex = 5;
+            this.txtCidade.TabIndex = 6;
             this.toolTipFornecedor.SetToolTip(this.txtCidade, "Insira a Cidade");
             // 
             // lblCidade
@@ -432,7 +432,7 @@
             this.lblCidade.Location = new System.Drawing.Point(6, 185);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(84, 23);
-            this.lblCidade.TabIndex = 16;
+            this.lblCidade.TabIndex = 0;
             this.lblCidade.Text = "Cidade:";
             // 
             // txtBairro
@@ -443,7 +443,7 @@
             this.txtBairro.MaxLength = 30;
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(195, 27);
-            this.txtBairro.TabIndex = 3;
+            this.txtBairro.TabIndex = 4;
             this.toolTipFornecedor.SetToolTip(this.txtBairro, "Insira o Bairro");
             // 
             // lblBairro
@@ -453,7 +453,7 @@
             this.lblBairro.Location = new System.Drawing.Point(6, 137);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(77, 23);
-            this.lblBairro.TabIndex = 14;
+            this.lblBairro.TabIndex = 0;
             this.lblBairro.Text = "Bairro:";
             // 
             // txtNumero
@@ -464,7 +464,7 @@
             this.txtNumero.MaxLength = 10;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(81, 27);
-            this.txtNumero.TabIndex = 1;
+            this.txtNumero.TabIndex = 2;
             this.toolTipFornecedor.SetToolTip(this.txtNumero, "Insira o Número do Estabelecimento");
             // 
             // lblNumero
@@ -474,7 +474,7 @@
             this.lblNumero.Location = new System.Drawing.Point(6, 90);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(94, 23);
-            this.lblNumero.TabIndex = 12;
+            this.lblNumero.TabIndex = 0;
             this.lblNumero.Text = "Numero:";
             // 
             // txtComplemento
@@ -485,7 +485,7 @@
             this.txtComplemento.MaxLength = 30;
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(170, 27);
-            this.txtComplemento.TabIndex = 2;
+            this.txtComplemento.TabIndex = 3;
             this.toolTipFornecedor.SetToolTip(this.txtComplemento, "Insira o Complemento");
             // 
             // lblComplemento
@@ -506,7 +506,7 @@
             this.txtRua.MaxLength = 50;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(488, 27);
-            this.txtRua.TabIndex = 0;
+            this.txtRua.TabIndex = 1;
             this.toolTipFornecedor.SetToolTip(this.txtRua, "Insira o Nome da Rua");
             // 
             // lblRua
@@ -516,7 +516,7 @@
             this.lblRua.Location = new System.Drawing.Point(6, 49);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(55, 23);
-            this.lblRua.TabIndex = 8;
+            this.lblRua.TabIndex = 0;
             this.lblRua.Text = "Rua:";
             // 
             // toolTipFornecedor
