@@ -630,3 +630,5 @@ C:\Users\Leonardo Fernando\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\Marios
 C:\Users\Leonardo Fernando\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled
 C:\Users\Leonardo Fernando\Source\Repos\Pet\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
+C:\Users\Olivia S\Source\Repos\Pet3\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
+C:\Users\Olivia S\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.exe
