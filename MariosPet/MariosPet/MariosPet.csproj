@@ -285,6 +285,9 @@
     <EmbeddedResource Include="Telas\BuscaFuncionario.resx">
       <DependentUpon>BuscaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\frm.resx">
+      <DependentUpon>frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmAgenda.resx">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
     </EmbeddedResource>
