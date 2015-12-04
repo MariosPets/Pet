@@ -42,7 +42,7 @@
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSelecinar = new System.Windows.Forms.Button();
             this.groupBoxPesquisas = new System.Windows.Forms.GroupBox();
             this.lblConsulta = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -202,17 +202,18 @@
             this.toolTipPesquisas.SetToolTip(this.buttonExcluir, "Excluir Informação selecionada");
             this.buttonExcluir.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonSelecinar
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
-            this.button1.Location = new System.Drawing.Point(331, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 44);
-            this.button1.TabIndex = 3;
-            this.toolTipPesquisas.SetToolTip(this.button1, "Editar Informação selecionada");
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSelecinar.FlatAppearance.BorderSize = 0;
+            this.buttonSelecinar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSelecinar.Image = global::MariosPet.Properties.Resources.botaoSelecionarLaranja;
+            this.buttonSelecinar.Location = new System.Drawing.Point(331, 334);
+            this.buttonSelecinar.Name = "buttonSelecinar";
+            this.buttonSelecinar.Size = new System.Drawing.Size(115, 44);
+            this.buttonSelecinar.TabIndex = 3;
+            this.toolTipPesquisas.SetToolTip(this.buttonSelecinar, "Editar Informação selecionada");
+            this.buttonSelecinar.UseVisualStyleBackColor = true;
+            this.buttonSelecinar.Click += new System.EventHandler(this.buttonSelecinar_Click);
             // 
             // groupBoxPesquisas
             // 
@@ -268,7 +269,7 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonSelecinar);
             this.groupBox1.Controls.Add(this.buttonEditar);
             this.groupBox1.Controls.Add(this.btnLimpar);
             this.groupBox1.Controls.Add(this.buttonExcluir);
@@ -320,6 +321,6 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSelecinar;
     }
 }

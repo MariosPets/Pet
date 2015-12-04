@@ -21,8 +21,8 @@ namespace MariosPet.Telas
         {
             InitializeComponent();
 
-           // tabelaCli = CrudCli.consultaCliente("select NOME from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where CLIENTE.ID_PESSOA=1");
-           // PreencheCampos();
+            // tabelaCli = CrudCli.consultaCliente("select NOME from CLIENTE inner join PESSOA on PESSOA.ID_PESSOA = CLIENTE.ID_PESSOA where CLIENTE.ID_PESSOA=1");
+            // PreencheCampos();
         }
 
         public void PreencheCampos()
@@ -82,6 +82,17 @@ namespace MariosPet.Telas
             Visible = false;
             form.ShowDialog();
             Visible = true;
+
+            if (Estatica.id != 0)
+            {
+
+                string sql = "select * from animal inner join cliente on cliente.id_pessoa = animal.id_cliente where id_animal = " + Estatica.id;
+                DataTable animal = new CrudAnimal().consultaAnimal(sql);
+
+                txtRegistro.Text = animal.Rows[0][1].ToString();
+                txtNome.Text = animal.Rows[0][2].ToString();
+
+            }
         }
     }
 }

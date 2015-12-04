@@ -356,6 +356,11 @@ namespace MariosPet.Telas
             Estatica.id = Convert.ToInt32(dataGridViewPesquisas.CurrentRow.Cells[0].Value.ToString());
         }
 
+        private void buttonSelecinar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
 
     }
 }

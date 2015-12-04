@@ -8,13 +8,13 @@ namespace MariosPet.Classes
         public static OdbcConnection createConnection()
         {
             // Mudar para o nome do seu servidor
-            // string server = @"./";
+             string server = @"./";
             // string server = @".\MSERVERSQL";
             //string server = @".\.";        
             //string server = @".\SQLSERVER";
             //string server = @"LOCALHOST\SQL";
 
-            string server = @"LOCALHOST\SQL";
+            //string server = @"LOCALHOST\SQL";
             string driver = @"SQL Server";            
             string dataBase = @"MARIOS_PET";
 
