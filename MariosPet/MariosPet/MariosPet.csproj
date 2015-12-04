@@ -118,12 +118,6 @@
     <Compile Include="Telas\BuscaFuncionario.Designer.cs">
       <DependentUpon>BuscaFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\frm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\frm.Designer.cs">
-      <DependentUpon>frm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\FrmAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,9 +279,6 @@
     <EmbeddedResource Include="Telas\BuscaFuncionario.resx">
       <DependentUpon>BuscaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\frm.resx">
-      <DependentUpon>frm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmAgenda.resx">
       <DependentUpon>FrmAgenda.cs</DependentUpon>
     </EmbeddedResource>
@@ -314,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmFichaClinica.resx">
       <DependentUpon>FrmFichaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmFinanceiro.resx">
+      <DependentUpon>FrmFinanceiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmFornecedor.resx">
       <DependentUpon>FrmFornecedor.cs</DependentUpon>
@@ -358,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\frmVacina.resx">
       <DependentUpon>frmVacina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmVendas.resx">
+      <DependentUpon>FrmVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmVermifugo.resx">
       <DependentUpon>FrmVermifugo.cs</DependentUpon>
