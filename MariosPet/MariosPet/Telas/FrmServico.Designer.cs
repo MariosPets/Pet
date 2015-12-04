@@ -49,7 +49,7 @@
             this.lblNome.Location = new System.Drawing.Point(23, 36);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(221, 23);
-            this.lblNome.TabIndex = 16;
+            this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Descrição do Serviço:";
             // 
             // lblCpf
@@ -59,7 +59,7 @@
             this.lblCpf.Location = new System.Drawing.Point(173, 78);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(71, 23);
-            this.lblCpf.TabIndex = 17;
+            this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "Preço:";
             // 
             // txtServico
@@ -70,7 +70,7 @@
             this.txtServico.MaxLength = 30;
             this.txtServico.Name = "txtServico";
             this.txtServico.Size = new System.Drawing.Size(449, 27);
-            this.txtServico.TabIndex = 0;
+            this.txtServico.TabIndex = 1;
             this.toolTipServicos.SetToolTip(this.txtServico, "Descreva o Serviço");
             // 
             // btnSalvar
@@ -83,7 +83,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(608, 128);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(118, 46);
-            this.btnSalvar.TabIndex = 4;
+            this.btnSalvar.TabIndex = 5;
             this.toolTipServicos.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
@@ -99,7 +99,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(475, 128);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(115, 46);
-            this.btnLimpar.TabIndex = 3;
+            this.btnLimpar.TabIndex = 4;
             this.toolTipServicos.SetToolTip(this.btnLimpar, "Limpar os Campos");
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -114,7 +114,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(333, 128);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(116, 46);
-            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.TabIndex = 3;
             this.toolTipServicos.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -137,7 +137,7 @@
             this.groupBoxServico.Location = new System.Drawing.Point(201, 8);
             this.groupBoxServico.Name = "groupBoxServico";
             this.groupBoxServico.Size = new System.Drawing.Size(743, 197);
-            this.groupBoxServico.TabIndex = 4;
+            this.groupBoxServico.TabIndex = 0;
             this.groupBoxServico.TabStop = false;
             this.groupBoxServico.Text = "   Dados do Serviço";
             // 
@@ -148,7 +148,7 @@
             this.mstPreco.Location = new System.Drawing.Point(262, 79);
             this.mstPreco.Name = "mstPreco";
             this.mstPreco.Size = new System.Drawing.Size(132, 27);
-            this.mstPreco.TabIndex = 1;
+            this.mstPreco.TabIndex = 2;
             this.toolTipServicos.SetToolTip(this.mstPreco, "Insira o Valor");
             // 
             // toolTipServicos

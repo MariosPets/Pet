@@ -55,10 +55,9 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = global::MariosPet.Properties.Resources.botaoCancelarVerde;
-            this.btnCancelar.Location = new System.Drawing.Point(580, 170);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Location = new System.Drawing.Point(435, 138);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(168, 38);
+            this.btnCancelar.Size = new System.Drawing.Size(126, 31);
             this.btnCancelar.TabIndex = 1;
             this.toolTipVacina.SetToolTip(this.btnCancelar, "Cancelar");
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -70,10 +69,9 @@
             this.btnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Image = global::MariosPet.Properties.Resources.botaoNovoLaranja;
-            this.btnNovo.Location = new System.Drawing.Point(756, 165);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNovo.Location = new System.Drawing.Point(567, 134);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(156, 47);
+            this.btnNovo.Size = new System.Drawing.Size(117, 38);
             this.btnNovo.TabIndex = 2;
             this.toolTipVacina.SetToolTip(this.btnNovo, "Adicionar nova Vacina");
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -96,10 +94,9 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgVacina.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgVacina.Location = new System.Drawing.Point(13, 23);
-            this.dtgVacina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgVacina.Location = new System.Drawing.Point(10, 19);
             this.dtgVacina.Name = "dtgVacina";
-            this.dtgVacina.Size = new System.Drawing.Size(899, 119);
+            this.dtgVacina.Size = new System.Drawing.Size(674, 97);
             this.dtgVacina.TabIndex = 0;
             this.toolTipVacina.SetToolTip(this.dtgVacina, "Vacinas que o Animal já tomou.");
             // 
@@ -111,12 +108,10 @@
             this.groupBoxVacina.Controls.Add(this.labelNomeAnimal);
             this.groupBoxVacina.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
             this.groupBoxVacina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxVacina.Location = new System.Drawing.Point(49, 42);
-            this.groupBoxVacina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxVacina.Location = new System.Drawing.Point(37, 34);
             this.groupBoxVacina.Name = "groupBoxVacina";
-            this.groupBoxVacina.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxVacina.Size = new System.Drawing.Size(956, 90);
-            this.groupBoxVacina.TabIndex = 6;
+            this.groupBoxVacina.Size = new System.Drawing.Size(717, 73);
+            this.groupBoxVacina.TabIndex = 0;
             this.groupBoxVacina.TabStop = false;
             this.groupBoxVacina.Text = "   Vacina";
             // 
@@ -124,11 +119,10 @@
             // 
             this.labelNomeAnimal.AutoSize = true;
             this.labelNomeAnimal.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomeAnimal.Location = new System.Drawing.Point(8, 57);
-            this.labelNomeAnimal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNomeAnimal.Location = new System.Drawing.Point(6, 46);
             this.labelNomeAnimal.Name = "labelNomeAnimal";
-            this.labelNomeAnimal.Size = new System.Drawing.Size(209, 29);
-            this.labelNomeAnimal.TabIndex = 22;
+            this.labelNomeAnimal.Size = new System.Drawing.Size(169, 23);
+            this.labelNomeAnimal.TabIndex = 0;
             this.labelNomeAnimal.Text = "Nome do Animal";
             // 
             // groupBox1
@@ -139,24 +133,21 @@
             this.groupBox1.Controls.Add(this.btnNovo);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(49, 139);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(37, 113);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(956, 241);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.Size = new System.Drawing.Size(717, 196);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // frmVacina
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1379, 902);
+            this.ClientSize = new System.Drawing.Size(1022, 602);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxVacina);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmVacina";
             this.Text = "Vacina ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
