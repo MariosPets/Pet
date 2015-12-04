@@ -166,7 +166,7 @@
             this.label2.Location = new System.Drawing.Point(662, 349);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 18);
-            this.label2.TabIndex = 34;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Manejo:";
             // 
             // richTextBoxPelesAnexos
@@ -188,7 +188,7 @@
             this.labelPelesAnexos.Location = new System.Drawing.Point(6, 349);
             this.labelPelesAnexos.Name = "labelPelesAnexos";
             this.labelPelesAnexos.Size = new System.Drawing.Size(140, 18);
-            this.labelPelesAnexos.TabIndex = 9;
+            this.labelPelesAnexos.TabIndex = 0;
             this.labelPelesAnexos.Text = "Peles e Anexos:";
             // 
             // richTextBoxNervosoLocomotor
@@ -250,7 +250,7 @@
             this.richTextBoxTratamento.MaxLength = 150;
             this.richTextBoxTratamento.Name = "richTextBoxTratamento";
             this.richTextBoxTratamento.Size = new System.Drawing.Size(590, 75);
-            this.richTextBoxTratamento.TabIndex = 4;
+            this.richTextBoxTratamento.TabIndex = 6;
             this.richTextBoxTratamento.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxTratamento, "Descreva por quais tratamentos o animal já passou.");
             // 
@@ -261,7 +261,7 @@
             this.labelNervosoLocomotor.Location = new System.Drawing.Point(660, 258);
             this.labelNervosoLocomotor.Name = "labelNervosoLocomotor";
             this.labelNervosoLocomotor.Size = new System.Drawing.Size(245, 18);
-            this.labelNervosoLocomotor.TabIndex = 21;
+            this.labelNervosoLocomotor.TabIndex = 0;
             this.labelNervosoLocomotor.Text = "Sistema Nervoso-Locomotor:";
             // 
             // label1
@@ -271,7 +271,7 @@
             this.label1.Location = new System.Drawing.Point(6, 258);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(212, 18);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Sistema Genito-Urinário:";
             // 
             // labelCardioRespiratorio
@@ -281,7 +281,7 @@
             this.labelCardioRespiratorio.Location = new System.Drawing.Point(662, 167);
             this.labelCardioRespiratorio.Name = "labelCardioRespiratorio";
             this.labelCardioRespiratorio.Size = new System.Drawing.Size(245, 18);
-            this.labelCardioRespiratorio.TabIndex = 15;
+            this.labelCardioRespiratorio.TabIndex = 0;
             this.labelCardioRespiratorio.Text = "Sistema Cardio-Respiratório:";
             // 
             // labelDigestorio
@@ -291,7 +291,7 @@
             this.labelDigestorio.Location = new System.Drawing.Point(6, 167);
             this.labelDigestorio.Name = "labelDigestorio";
             this.labelDigestorio.Size = new System.Drawing.Size(171, 18);
-            this.labelDigestorio.TabIndex = 5;
+            this.labelDigestorio.TabIndex = 0;
             this.labelDigestorio.Text = "Sistema Digestório:";
             // 
             // labelTratamento
@@ -300,8 +300,8 @@
             this.labelTratamento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTratamento.Location = new System.Drawing.Point(662, 68);
             this.labelTratamento.Name = "labelTratamento";
-            this.labelTratamento.Size = new System.Drawing.Size(209, 18);
-            this.labelTratamento.TabIndex = 11;
+            this.labelTratamento.Size = new System.Drawing.Size(207, 18);
+            this.labelTratamento.TabIndex = 0;
             this.labelTratamento.Text = "Tratamentos realizados:";
             // 
             // richTextBoxDoenca
@@ -312,7 +312,7 @@
             this.richTextBoxDoenca.MaxLength = 200;
             this.richTextBoxDoenca.Name = "richTextBoxDoenca";
             this.richTextBoxDoenca.Size = new System.Drawing.Size(600, 75);
-            this.richTextBoxDoenca.TabIndex = 3;
+            this.richTextBoxDoenca.TabIndex = 5;
             this.richTextBoxDoenca.Text = "";
             this.toolTipAnamnese.SetToolTip(this.richTextBoxDoenca, "Descreva as doenças que o anima já teve.");
             // 
@@ -324,7 +324,7 @@
             this.radioButtonNao.Location = new System.Drawing.Point(292, 43);
             this.radioButtonNao.Name = "radioButtonNao";
             this.radioButtonNao.Size = new System.Drawing.Size(58, 22);
-            this.radioButtonNao.TabIndex = 2;
+            this.radioButtonNao.TabIndex = 4;
             this.radioButtonNao.TabStop = true;
             this.radioButtonNao.Text = "Não";
             this.toolTipAnamnese.SetToolTip(this.radioButtonNao, "Selecionar se a Vacinação não estiver em dia.");
@@ -338,7 +338,7 @@
             this.radioButtonSim.Location = new System.Drawing.Point(220, 43);
             this.radioButtonSim.Name = "radioButtonSim";
             this.radioButtonSim.Size = new System.Drawing.Size(56, 22);
-            this.radioButtonSim.TabIndex = 1;
+            this.radioButtonSim.TabIndex = 3;
             this.radioButtonSim.Text = "Sim";
             this.toolTipAnamnese.SetToolTip(this.radioButtonSim, "Selecionar se a Vacinação estiver em dia.");
             this.radioButtonSim.UseVisualStyleBackColor = true;
@@ -351,7 +351,7 @@
             this.lblDoenca.Location = new System.Drawing.Point(6, 68);
             this.lblDoenca.Name = "lblDoenca";
             this.lblDoenca.Size = new System.Drawing.Size(280, 18);
-            this.lblDoenca.TabIndex = 3;
+            this.lblDoenca.TabIndex = 0;
             this.lblDoenca.Text = "Quais Doenças o animal já teve?";
             // 
             // lblVacinaEmDia
@@ -360,7 +360,7 @@
             this.lblVacinaEmDia.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVacinaEmDia.Location = new System.Drawing.Point(3, 45);
             this.lblVacinaEmDia.Name = "lblVacinaEmDia";
-            this.lblVacinaEmDia.Size = new System.Drawing.Size(203, 18);
+            this.lblVacinaEmDia.Size = new System.Drawing.Size(202, 18);
             this.lblVacinaEmDia.TabIndex = 0;
             this.lblVacinaEmDia.Text = "Vacinação está em dia?";
             // 
@@ -371,7 +371,7 @@
             this.txtPesquisaAnimal.Location = new System.Drawing.Point(159, 50);
             this.txtPesquisaAnimal.Name = "txtPesquisaAnimal";
             this.txtPesquisaAnimal.Size = new System.Drawing.Size(447, 27);
-            this.txtPesquisaAnimal.TabIndex = 0;
+            this.txtPesquisaAnimal.TabIndex = 1;
             this.toolTipAnamnese.SetToolTip(this.txtPesquisaAnimal, "Digite o nome do animal que está procurando.");
             // 
             // btnConsultar
@@ -384,7 +384,7 @@
             this.btnConsultar.Location = new System.Drawing.Point(612, 39);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
-            this.btnConsultar.TabIndex = 1;
+            this.btnConsultar.TabIndex = 2;
             this.toolTipAnamnese.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
@@ -402,7 +402,7 @@
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(40, 20);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
             this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(748, 96);
-            this.groupBoxPesquisaAnimal.TabIndex = 3;
+            this.groupBoxPesquisaAnimal.TabIndex = 0;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
             // 
@@ -413,7 +413,7 @@
             this.lblNome.Location = new System.Drawing.Point(6, 50);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(147, 23);
-            this.lblNome.TabIndex = 16;
+            this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome Animal:";
             // 
             // FrmAnamnese
