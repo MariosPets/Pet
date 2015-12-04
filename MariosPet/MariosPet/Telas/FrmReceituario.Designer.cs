@@ -86,7 +86,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(633, 68);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(116, 44);
-            this.btnVoltar.TabIndex = 8;
+            this.btnVoltar.TabIndex = 3;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
