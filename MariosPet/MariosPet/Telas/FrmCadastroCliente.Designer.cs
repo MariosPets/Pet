@@ -77,10 +77,9 @@
             this.btmLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmLimpar.BackgroundImage")));
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmLimpar.Location = new System.Drawing.Point(720, 818);
-            this.btmLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmLimpar.Location = new System.Drawing.Point(540, 665);
             this.btmLimpar.Name = "btmLimpar";
-            this.btmLimpar.Size = new System.Drawing.Size(116, 38);
+            this.btmLimpar.Size = new System.Drawing.Size(87, 31);
             this.btmLimpar.TabIndex = 3;
             this.toolTipCliente.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
@@ -93,10 +92,9 @@
             this.btmVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmVoltar.BackgroundImage")));
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmVoltar.Location = new System.Drawing.Point(455, 818);
-            this.btmVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmVoltar.Location = new System.Drawing.Point(341, 665);
             this.btmVoltar.Name = "btmVoltar";
-            this.btmVoltar.Size = new System.Drawing.Size(117, 38);
+            this.btmVoltar.Size = new System.Drawing.Size(88, 31);
             this.btmVoltar.TabIndex = 2;
             this.toolTipCliente.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
@@ -109,10 +107,9 @@
             this.btmSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmSalvar.BackgroundImage")));
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmSalvar.Location = new System.Drawing.Point(984, 821);
-            this.btmSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmSalvar.Location = new System.Drawing.Point(738, 667);
             this.btmSalvar.Name = "btmSalvar";
-            this.btmSalvar.Size = new System.Drawing.Size(115, 44);
+            this.btmSalvar.Size = new System.Drawing.Size(86, 36);
             this.btmSalvar.TabIndex = 4;
             this.toolTipCliente.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
@@ -151,11 +148,10 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.cmbUFCliente.Location = new System.Drawing.Point(631, 230);
-            this.cmbUFCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbUFCliente.Location = new System.Drawing.Point(473, 187);
             this.cmbUFCliente.Name = "cmbUFCliente";
-            this.cmbUFCliente.Size = new System.Drawing.Size(227, 33);
-            this.cmbUFCliente.TabIndex = 6;
+            this.cmbUFCliente.Size = new System.Drawing.Size(171, 26);
+            this.cmbUFCliente.TabIndex = 7;
             this.cmbUFCliente.Text = "---Selecione---";
             this.toolTipCliente.SetToolTip(this.cmbUFCliente, "Selecione o Estado");
             // 
@@ -181,11 +177,9 @@
             this.groupBox2.Controls.Add(this.lblRua);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox2.Location = new System.Drawing.Point(324, 430);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(243, 349);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(956, 382);
+            this.groupBox2.Size = new System.Drawing.Size(717, 310);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Endereço";
@@ -194,22 +188,20 @@
             // 
             this.mskCepCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskCepCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mskCepCliente.Location = new System.Drawing.Point(631, 170);
-            this.mskCepCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskCepCliente.Location = new System.Drawing.Point(473, 138);
             this.mskCepCliente.Mask = "##,###-###";
             this.mskCepCliente.Name = "mskCepCliente";
-            this.mskCepCliente.Size = new System.Drawing.Size(227, 32);
-            this.mskCepCliente.TabIndex = 4;
+            this.mskCepCliente.Size = new System.Drawing.Size(171, 27);
+            this.mskCepCliente.TabIndex = 5;
             this.toolTipCliente.SetToolTip(this.mskCepCliente, "Insira o CEP");
             // 
             // lblUF
             // 
             this.lblUF.AutoSize = true;
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUF.Location = new System.Drawing.Point(549, 234);
-            this.lblUF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(56, 29);
+            this.lblUF.Size = new System.Drawing.Size(43, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -217,10 +209,9 @@
             // 
             this.lblCEP.AutoSize = true;
             this.lblCEP.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(533, 175);
-            this.lblCEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCEP.Location = new System.Drawing.Point(400, 142);
             this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(70, 29);
+            this.lblCEP.Size = new System.Drawing.Size(55, 23);
             this.lblCEP.TabIndex = 18;
             this.lblCEP.Text = "CEP:";
             // 
@@ -228,91 +219,83 @@
             // 
             this.txtCidadeCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidadeCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtCidadeCliente.Location = new System.Drawing.Point(208, 228);
-            this.txtCidadeCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCidadeCliente.Location = new System.Drawing.Point(156, 185);
             this.txtCidadeCliente.MaxLength = 30;
             this.txtCidadeCliente.Name = "txtCidadeCliente";
-            this.txtCidadeCliente.Size = new System.Drawing.Size(259, 32);
-            this.txtCidadeCliente.TabIndex = 5;
+            this.txtCidadeCliente.Size = new System.Drawing.Size(195, 27);
+            this.txtCidadeCliente.TabIndex = 6;
             this.toolTipCliente.SetToolTip(this.txtCidadeCliente, "Insira o nome da Cidade");
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(8, 228);
-            this.lblCidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCidade.Location = new System.Drawing.Point(6, 185);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(105, 29);
-            this.lblCidade.TabIndex = 16;
+            this.lblCidade.Size = new System.Drawing.Size(84, 23);
+            this.lblCidade.TabIndex = 0;
             this.lblCidade.Text = "Cidade:";
             // 
             // txtBairroCliente
             // 
             this.txtBairroCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairroCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtBairroCliente.Location = new System.Drawing.Point(208, 169);
-            this.txtBairroCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBairroCliente.Location = new System.Drawing.Point(156, 137);
             this.txtBairroCliente.MaxLength = 30;
             this.txtBairroCliente.Name = "txtBairroCliente";
-            this.txtBairroCliente.Size = new System.Drawing.Size(259, 32);
-            this.txtBairroCliente.TabIndex = 3;
+            this.txtBairroCliente.Size = new System.Drawing.Size(195, 27);
+            this.txtBairroCliente.TabIndex = 4;
             this.toolTipCliente.SetToolTip(this.txtBairroCliente, "Insira o Nome do Bairro");
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(8, 169);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBairro.Location = new System.Drawing.Point(6, 137);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(95, 29);
-            this.lblBairro.TabIndex = 14;
+            this.lblBairro.Size = new System.Drawing.Size(77, 23);
+            this.lblBairro.TabIndex = 0;
             this.lblBairro.Text = "Bairro:";
             // 
             // txtNumeroCliente
             // 
             this.txtNumeroCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtNumeroCliente.Location = new System.Drawing.Point(208, 111);
-            this.txtNumeroCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumeroCliente.Location = new System.Drawing.Point(156, 90);
             this.txtNumeroCliente.MaxLength = 10;
             this.txtNumeroCliente.Name = "txtNumeroCliente";
-            this.txtNumeroCliente.Size = new System.Drawing.Size(107, 32);
-            this.txtNumeroCliente.TabIndex = 1;
+            this.txtNumeroCliente.Size = new System.Drawing.Size(81, 27);
+            this.txtNumeroCliente.TabIndex = 2;
             this.toolTipCliente.SetToolTip(this.txtNumeroCliente, "Insira o Número da Residência");
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(8, 111);
-            this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumero.Location = new System.Drawing.Point(6, 90);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(119, 29);
-            this.lblNumero.TabIndex = 12;
+            this.lblNumero.Size = new System.Drawing.Size(94, 23);
+            this.lblNumero.TabIndex = 0;
             this.lblNumero.Text = "Numero:";
             // 
             // txtComplementoCliente
             // 
             this.txtComplementoCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplementoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtComplementoCliente.Location = new System.Drawing.Point(631, 119);
-            this.txtComplementoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtComplementoCliente.Location = new System.Drawing.Point(473, 97);
             this.txtComplementoCliente.MaxLength = 30;
             this.txtComplementoCliente.Name = "txtComplementoCliente";
-            this.txtComplementoCliente.Size = new System.Drawing.Size(225, 32);
-            this.txtComplementoCliente.TabIndex = 2;
+            this.txtComplementoCliente.Size = new System.Drawing.Size(170, 27);
+            this.txtComplementoCliente.TabIndex = 3;
             this.toolTipCliente.SetToolTip(this.txtComplementoCliente, "Insira o Complemento");
             // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComplemento.Location = new System.Drawing.Point(405, 124);
-            this.lblComplemento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComplemento.Location = new System.Drawing.Point(304, 101);
             this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(190, 29);
+            this.lblComplemento.Size = new System.Drawing.Size(151, 23);
             this.lblComplemento.TabIndex = 10;
             this.lblComplemento.Text = "Complemento:";
             // 
@@ -320,55 +303,50 @@
             // 
             this.txtRuaCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRuaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtRuaCliente.Location = new System.Drawing.Point(208, 54);
-            this.txtRuaCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRuaCliente.Location = new System.Drawing.Point(156, 44);
             this.txtRuaCliente.MaxLength = 50;
             this.txtRuaCliente.Name = "txtRuaCliente";
-            this.txtRuaCliente.Size = new System.Drawing.Size(649, 32);
-            this.txtRuaCliente.TabIndex = 0;
+            this.txtRuaCliente.Size = new System.Drawing.Size(488, 27);
+            this.txtRuaCliente.TabIndex = 1;
             this.toolTipCliente.SetToolTip(this.txtRuaCliente, "Insira o nome da Rua");
             // 
             // lblRua
             // 
             this.lblRua.AutoSize = true;
             this.lblRua.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.Location = new System.Drawing.Point(8, 60);
-            this.lblRua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRua.Location = new System.Drawing.Point(6, 49);
             this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(70, 29);
-            this.lblRua.TabIndex = 8;
+            this.lblRua.Size = new System.Drawing.Size(55, 23);
+            this.lblRua.TabIndex = 0;
             this.lblRua.Text = "Rua:";
             // 
             // lblRG
             // 
             this.lblRG.AutoSize = true;
             this.lblRG.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(544, 155);
-            this.lblRG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRG.Location = new System.Drawing.Point(408, 126);
             this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(60, 29);
-            this.lblRG.TabIndex = 2;
+            this.lblRG.Size = new System.Drawing.Size(47, 23);
+            this.lblRG.TabIndex = 0;
             this.lblRG.Text = "RG:";
             // 
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(8, 155);
-            this.lblCpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCpf.Location = new System.Drawing.Point(6, 126);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(69, 29);
-            this.lblCpf.TabIndex = 1;
+            this.lblCpf.Size = new System.Drawing.Size(53, 23);
+            this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CPF:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(8, 48);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Location = new System.Drawing.Point(6, 39);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(94, 29);
+            this.lblNome.Size = new System.Drawing.Size(74, 23);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome:";
             // 
@@ -396,11 +374,9 @@
             this.groupBox1.Controls.Add(this.lblNome);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(324, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(243, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(956, 384);
+            this.groupBox1.Size = new System.Drawing.Size(717, 312);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados Pessoais";
@@ -409,58 +385,53 @@
             // 
             this.txtTelefone3Cliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone3Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTelefone3Cliente.Location = new System.Drawing.Point(208, 310);
-            this.txtTelefone3Cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone3Cliente.Location = new System.Drawing.Point(156, 252);
             this.txtTelefone3Cliente.MaxLength = 15;
             this.txtTelefone3Cliente.Name = "txtTelefone3Cliente";
-            this.txtTelefone3Cliente.Size = new System.Drawing.Size(225, 32);
-            this.txtTelefone3Cliente.TabIndex = 7;
+            this.txtTelefone3Cliente.Size = new System.Drawing.Size(170, 27);
+            this.txtTelefone3Cliente.TabIndex = 8;
             this.toolTipCliente.SetToolTip(this.txtTelefone3Cliente, "Insira o número do Telefone");
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(8, 310);
-            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone.Location = new System.Drawing.Point(6, 252);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(125, 29);
-            this.lblTelefone.TabIndex = 18;
+            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
             // txtTelefone2Cliente
             // 
             this.txtTelefone2Cliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone2Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTelefone2Cliente.Location = new System.Drawing.Point(631, 257);
-            this.txtTelefone2Cliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone2Cliente.Location = new System.Drawing.Point(473, 209);
             this.txtTelefone2Cliente.MaxLength = 15;
             this.txtTelefone2Cliente.Name = "txtTelefone2Cliente";
-            this.txtTelefone2Cliente.Size = new System.Drawing.Size(225, 32);
-            this.txtTelefone2Cliente.TabIndex = 6;
+            this.txtTelefone2Cliente.Size = new System.Drawing.Size(170, 27);
+            this.txtTelefone2Cliente.TabIndex = 7;
             this.toolTipCliente.SetToolTip(this.txtTelefone2Cliente, "Insira o número do Telefone");
             // 
             // lblTelefone2
             // 
             this.lblTelefone2.AutoSize = true;
             this.lblTelefone2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone2.Location = new System.Drawing.Point(475, 257);
-            this.lblTelefone2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone2.Location = new System.Drawing.Point(356, 209);
             this.lblTelefone2.Name = "lblTelefone2";
-            this.lblTelefone2.Size = new System.Drawing.Size(125, 29);
-            this.lblTelefone2.TabIndex = 16;
+            this.lblTelefone2.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone2.TabIndex = 0;
             this.lblTelefone2.Text = "Telefone:";
             // 
             // mskNascimentoCliente
             // 
             this.mskNascimentoCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskNascimentoCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mskNascimentoCliente.Location = new System.Drawing.Point(208, 100);
-            this.mskNascimentoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mskNascimentoCliente.Location = new System.Drawing.Point(156, 81);
             this.mskNascimentoCliente.Mask = "00/00/0000";
             this.mskNascimentoCliente.Name = "mskNascimentoCliente";
-            this.mskNascimentoCliente.Size = new System.Drawing.Size(225, 32);
-            this.mskNascimentoCliente.TabIndex = 1;
+            this.mskNascimentoCliente.Size = new System.Drawing.Size(170, 27);
+            this.mskNascimentoCliente.TabIndex = 2;
             this.toolTipCliente.SetToolTip(this.mskNascimentoCliente, "Insira a Data de Nascimento");
             this.mskNascimentoCliente.ValidatingType = typeof(System.DateTime);
             // 
@@ -468,93 +439,85 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 103);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(6, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 29);
-            this.label1.TabIndex = 14;
+            this.label1.Size = new System.Drawing.Size(130, 23);
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nascimento:";
             // 
             // mstRG
             // 
             this.mstRG.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstRG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mstRG.Location = new System.Drawing.Point(631, 150);
-            this.mstRG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mstRG.Location = new System.Drawing.Point(473, 122);
             this.mstRG.Mask = "00.000.000-0";
             this.mstRG.Name = "mstRG";
-            this.mstRG.Size = new System.Drawing.Size(225, 32);
-            this.mstRG.TabIndex = 3;
+            this.mstRG.Size = new System.Drawing.Size(170, 27);
+            this.mstRG.TabIndex = 4;
             this.toolTipCliente.SetToolTip(this.mstRG, "Insira o RG");
             // 
             // mstCPF
             // 
             this.mstCPF.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstCPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mstCPF.Location = new System.Drawing.Point(208, 151);
-            this.mstCPF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mstCPF.Location = new System.Drawing.Point(156, 123);
             this.mstCPF.Mask = "000.000.000-00";
             this.mstCPF.Name = "mstCPF";
-            this.mstCPF.Size = new System.Drawing.Size(225, 32);
-            this.mstCPF.TabIndex = 2;
+            this.mstCPF.Size = new System.Drawing.Size(170, 27);
+            this.mstCPF.TabIndex = 3;
             this.toolTipCliente.SetToolTip(this.mstCPF, "Insira o CPF");
             // 
             // txtTelefoneCliente
             // 
             this.txtTelefoneCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefoneCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTelefoneCliente.Location = new System.Drawing.Point(208, 257);
-            this.txtTelefoneCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefoneCliente.Location = new System.Drawing.Point(156, 209);
             this.txtTelefoneCliente.MaxLength = 15;
             this.txtTelefoneCliente.Name = "txtTelefoneCliente";
-            this.txtTelefoneCliente.Size = new System.Drawing.Size(225, 32);
-            this.txtTelefoneCliente.TabIndex = 5;
+            this.txtTelefoneCliente.Size = new System.Drawing.Size(170, 27);
+            this.txtTelefoneCliente.TabIndex = 6;
             this.toolTipCliente.SetToolTip(this.txtTelefoneCliente, "Insira o número do Telefone");
             // 
             // txtEmailCliente
             // 
             this.txtEmailCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtEmailCliente.Location = new System.Drawing.Point(208, 206);
-            this.txtEmailCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmailCliente.Location = new System.Drawing.Point(156, 167);
             this.txtEmailCliente.MaxLength = 50;
             this.txtEmailCliente.Name = "txtEmailCliente";
-            this.txtEmailCliente.Size = new System.Drawing.Size(648, 32);
-            this.txtEmailCliente.TabIndex = 4;
+            this.txtEmailCliente.Size = new System.Drawing.Size(487, 27);
+            this.txtEmailCliente.TabIndex = 1;
             this.toolTipCliente.SetToolTip(this.txtEmailCliente, "Insira o E-mail");
             // 
             // txtNomeCliente
             // 
             this.txtNomeCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtNomeCliente.Location = new System.Drawing.Point(208, 48);
-            this.txtNomeCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomeCliente.Location = new System.Drawing.Point(156, 39);
             this.txtNomeCliente.MaxLength = 80;
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(648, 32);
-            this.txtNomeCliente.TabIndex = 0;
+            this.txtNomeCliente.Size = new System.Drawing.Size(487, 27);
+            this.txtNomeCliente.TabIndex = 1;
             this.toolTipCliente.SetToolTip(this.txtNomeCliente, "Insira o nome do Cliente");
             // 
             // lblTelefone1
             // 
             this.lblTelefone1.AutoSize = true;
             this.lblTelefone1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone1.Location = new System.Drawing.Point(8, 257);
-            this.lblTelefone1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone1.Location = new System.Drawing.Point(6, 209);
             this.lblTelefone1.Name = "lblTelefone1";
-            this.lblTelefone1.Size = new System.Drawing.Size(125, 29);
-            this.lblTelefone1.TabIndex = 5;
+            this.lblTelefone1.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone1.TabIndex = 0;
             this.lblTelefone1.Text = "Telefone:";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(8, 206);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(6, 167);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(99, 29);
-            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Size = new System.Drawing.Size(81, 23);
+            this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "E-mail:";
             // 
             // toolTipCliente
@@ -565,17 +528,16 @@
             // 
             // FrmCadastroCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1485, 902);
+            this.ClientSize = new System.Drawing.Size(1022, 602);
             this.Controls.Add(this.btmLimpar);
             this.Controls.Add(this.btmVoltar);
             this.Controls.Add(this.btmSalvar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cadastro do Cliente";
