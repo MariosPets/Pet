@@ -67,7 +67,8 @@ namespace MariosPet.Telas
                 classeFunc.apelido = txtLogin.Text;
                 classeFunc.senha = txtSenha.Text;
             }
-            else {
+            else
+            {
                 classeVete.nome = txtNomeFuncionario.Text;
                 classeVete.nascimento = mstNascimentoFuncionario.Text;
                 classeVete.cpf = mstCPFFuncionario.Text;
@@ -82,7 +83,7 @@ namespace MariosPet.Telas
                 classeVete.tipo = cmbTipoFuncionario.Text;
                 classeVete.apelido = txtLogin.Text;
                 classeVete.senha = txtSenha.Text;
-            }                      
+            }
 
             //Endereço
             classeEnd.rua = txtRuaFuncionario.Text;
@@ -91,7 +92,7 @@ namespace MariosPet.Telas
             classeEnd.bairro = txtBairroFuncionario.Text;
             classeEnd.cep = mstCepFuncionario.Text;
             classeEnd.cidade = txtCidadeFuncionario.Text;
-            classeEnd.uf = cmbUFFuncionario.Text;            
+            classeEnd.uf = cmbUFFuncionario.Text;
         }
 
         public void CopiarParaFormulario()
@@ -100,7 +101,51 @@ namespace MariosPet.Telas
             CrudVeterinario CrudVet = new CrudVeterinario();
             CrudEndereco CrudEnd = new CrudEndereco();
 
-            string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where pessoa.id_pessoa = " + Estatica.id.ToString();
+            string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa inner join veterinario on veterinario.id_funcionario = funcionario.id_pessoa where veterinario.id_funcionario = " + Estatica.id.ToString();
+
+            DataTable veterinario = CrudVet.consultaVeterinario(sql);            
+
+            if (veterinario.Rows.Count > 0)
+            {
+                //Dados Veterinario
+                txtCrmv.Text = veterinario.Rows[0][15].ToString();
+
+                txtNomeFuncionario.Text = veterinario.Rows[0][1].ToString();
+                mstCPFFuncionario.Text = veterinario.Rows[0][2].ToString();
+
+                //..
+
+                sql = "select * from endereco where id_endereco = " + veterinario.Rows[0][5].ToString();
+            }
+            else {
+
+                sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where funcionario.id_pessoa = " + Estatica.id.ToString();
+
+                DataTable funcionario = CrudFunc.consultaFuncionario(sql);
+
+                //Dados Funcionário Normal
+                txtNomeFuncionario.Text = funcionario.Rows[0][1].ToString();
+                mstCPFFuncionario.Text = funcionario.Rows[0][2].ToString();
+                mstRGFuncionario.Text = funcionario.Rows[0][3].ToString();
+                mstNascimentoFuncionario.Text = funcionario.Rows[0][4].ToString();
+                txtEmailFuncionario.Text = funcionario.Rows[0][6].ToString();
+                txtTelefoneFuncionario.Text = funcionario.Rows[0][7].ToString();
+                txtTelefone2Funcionario.Text = funcionario.Rows[0][8].ToString();
+                txtTelefone3Funcionario.Text = funcionario.Rows[0][9].ToString();
+                classeVete.id = Convert.ToInt32(funcionario.Rows[0][10].ToString());
+                //..
+
+                sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
+            }
+
+            
+            DataTable endereco = CrudEnd.consultaEndereco(sql);
+
+            txtRuaFuncionario.Text = endereco.Rows[0][1].ToString();
+            //...
+
+            //so pra consulta
+            /*string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where pessoa.id_pessoa = " + Estatica.id.ToString();
             DataTable funcionario = CrudFunc.consultaFuncionario(sql);
             sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
             DataTable endereco = CrudEnd.consultaEndereco(sql);
@@ -140,6 +185,7 @@ namespace MariosPet.Telas
                 cmbUFFuncionario.Text = endereco.Rows[0][6].ToString();
                 mstCepFuncionario.Text = endereco.Rows[0][7].ToString();
             }
+             */
         }
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
@@ -150,7 +196,7 @@ namespace MariosPet.Telas
             CrudFuncionario CrudFunc = new CrudFuncionario();
             CrudVeterinario CrudVete = new CrudVeterinario();
 
-            CrudEnd.inserirEndereco(classeEnd);
+
 
             /*if (!txtCrmv.Enabled) {
                 classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
@@ -162,16 +208,38 @@ namespace MariosPet.Telas
                 CrudVete.inserirVeterinario(classeVete);
             }*/
 
-            if (!txtCrmv.Enabled && Estatica.id!=0)
+            if (Estatica.id != 0)
             {
-                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
-                CrudFunc.inserirFuncionario(classeFunc);
+                if (!txtCrmv.Enabled)
+                {
+                    CrudFunc.alteraFuncionario(classeFunc);
+                }
+                else
+                {
+                    CrudVete.alteraVeterinario(classeVete);
+                }
+
+                Estatica.id = 0;
             }
             else
             {
-                classeVete.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
-                CrudVete.inserirVeterinario(classeVete);
+
+                CrudEnd.inserirEndereco(classeEnd);
+                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+
+                if (!txtCrmv.Enabled)
+                {
+                    CrudFunc.inserirFuncionario(classeFunc);
+                }
+                else
+                {
+
+                    CrudVete.inserirVeterinario(classeVete);
+
+                }
+
             }
+
         }
 
         private void cmbTipoFuncionario_SelectedIndexChanged(object sender, EventArgs e)
@@ -181,7 +249,8 @@ namespace MariosPet.Telas
                 txtCrmv.Enabled = true;
                 lblCrmv.Enabled = true;
             }
-            else {
+            else
+            {
                 txtCrmv.Enabled = false;
                 lblCrmv.Enabled = false;
             }
