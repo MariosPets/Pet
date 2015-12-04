@@ -1,5 +1,11 @@
 ﻿namespace MariosPet.Classes
 {
+    public enum BuscaTipo{
+        cliente,
+        funcionario,
+        animal
+    }
+
     static class Estatica
     {
         public static int id = new int();
@@ -7,5 +13,6 @@
         public static Funcionario funcionario = new Funcionario();
         public static Animal animal = new Animal();
         public static bool novo;
+        public static BuscaTipo buscaTipo;
     }
 }

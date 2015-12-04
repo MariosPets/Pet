@@ -107,6 +107,8 @@ namespace MariosPet.Telas
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            Estatica.buscaTipo = BuscaTipo.cliente;
+
             FrmPesquisas form = new FrmPesquisas();
             Visible = false;
             form.ShowDialog();

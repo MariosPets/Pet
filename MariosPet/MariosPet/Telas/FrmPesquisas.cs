@@ -24,6 +24,16 @@ namespace MariosPet.Telas
         public FrmPesquisas()
         {
             InitializeComponent();
+
+            switch (Estatica.buscaTipo)
+            {
+                case BuscaTipo.cliente:
+
+                    comboBoxTipo.Text = "Clientes";
+                    comboBoxTipo.Enabled = false;
+
+                    break;
+            }
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
