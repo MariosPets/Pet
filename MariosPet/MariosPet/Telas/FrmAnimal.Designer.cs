@@ -32,8 +32,6 @@
             this.pictureBoxAnimal = new System.Windows.Forms.PictureBox();
             this.groupBoxAnimal = new System.Windows.Forms.GroupBox();
             this.btnBuscaFoto = new MariosPet.Classes.RoundButton();
-            this.radioButtonMacho = new System.Windows.Forms.RadioButton();
-            this.radioButtonFemea = new System.Windows.Forms.RadioButton();
             this.btmLimpar = new System.Windows.Forms.Button();
             this.btmVoltar = new System.Windows.Forms.Button();
             this.btmSalvar = new System.Windows.Forms.Button();
@@ -51,6 +49,7 @@
             this.txtPesquisaCliente = new System.Windows.Forms.TextBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).BeginInit();
             this.groupBoxAnimal.SuspendLayout();
             this.groupBoxPesquisaAnimal.SuspendLayout();
@@ -73,9 +72,8 @@
             this.groupBoxAnimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.groupBoxAnimal.BackgroundImage = global::MariosPet.Properties.Resources.pataVerdeAmareloGrande;
             this.groupBoxAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBoxAnimal.Controls.Add(this.comboBox1);
             this.groupBoxAnimal.Controls.Add(this.btnBuscaFoto);
-            this.groupBoxAnimal.Controls.Add(this.radioButtonMacho);
-            this.groupBoxAnimal.Controls.Add(this.radioButtonFemea);
             this.groupBoxAnimal.Controls.Add(this.btmLimpar);
             this.groupBoxAnimal.Controls.Add(this.btmVoltar);
             this.groupBoxAnimal.Controls.Add(this.btmSalvar);
@@ -111,34 +109,6 @@
             this.toolTipAnimal.SetToolTip(this.btnBuscaFoto, "Adicionar uma foto do Animal");
             this.btnBuscaFoto.UseVisualStyleBackColor = false;
             this.btnBuscaFoto.Click += new System.EventHandler(this.btnBuscaFoto_Click);
-            // 
-            // radioButtonMacho
-            // 
-            this.radioButtonMacho.AutoSize = true;
-            this.radioButtonMacho.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMacho.Location = new System.Drawing.Point(637, 224);
-            this.radioButtonMacho.Name = "radioButtonMacho";
-            this.radioButtonMacho.Size = new System.Drawing.Size(77, 22);
-            this.radioButtonMacho.TabIndex = 8;
-            this.radioButtonMacho.Text = "Macho";
-            this.toolTipAnimal.SetToolTip(this.radioButtonMacho, "Selecione se o animal for Macho");
-            this.radioButtonMacho.UseVisualStyleBackColor = true;
-            this.radioButtonMacho.CheckedChanged += new System.EventHandler(this.radioButtonMasc_CheckedChanged);
-            // 
-            // radioButtonFemea
-            // 
-            this.radioButtonFemea.AutoSize = true;
-            this.radioButtonFemea.Checked = true;
-            this.radioButtonFemea.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFemea.Location = new System.Drawing.Point(637, 196);
-            this.radioButtonFemea.Name = "radioButtonFemea";
-            this.radioButtonFemea.Size = new System.Drawing.Size(80, 22);
-            this.radioButtonFemea.TabIndex = 7;
-            this.radioButtonFemea.TabStop = true;
-            this.radioButtonFemea.Text = "Fêmea";
-            this.toolTipAnimal.SetToolTip(this.radioButtonFemea, "Selecione se o animal for Fêmea");
-            this.radioButtonFemea.UseVisualStyleBackColor = true;
-            this.radioButtonFemea.CheckedChanged += new System.EventHandler(this.radioButtonFem_CheckedChanged);
             // 
             // btmLimpar
             // 
@@ -267,7 +237,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(565, 195);
+            this.lblEmail.Location = new System.Drawing.Point(232, 246);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(66, 23);
             this.lblEmail.TabIndex = 0;
@@ -342,6 +312,21 @@
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Cliente: ";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Fêmea",
+            "Macho"});
+            this.comboBox1.Font = new System.Drawing.Font("Verdana", 13F);
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(388, 241);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.TabIndex = 13;
+            this.comboBox1.Text = "Selecionar";
+            this.toolTipAnimal.SetToolTip(this.comboBox1, "Selecione o sexo do animal");
+            // 
             // FrmAnimal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,13 +365,12 @@
         private System.Windows.Forms.Button btmVoltar;
         private System.Windows.Forms.Button btmSalvar;
         private System.Windows.Forms.ToolTip toolTipAnimal;
-        private System.Windows.Forms.RadioButton radioButtonMacho;
-        private System.Windows.Forms.RadioButton radioButtonFemea;
         private Classes.RoundButton btnBuscaFoto;
         private System.Windows.Forms.GroupBox groupBoxPesquisaAnimal;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtPesquisaCliente;
         private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.ComboBox comboBox1;
 
 
     }
