@@ -80,11 +80,10 @@
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(335, 316);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltar.Location = new System.Drawing.Point(251, 257);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(122, 38);
-            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Size = new System.Drawing.Size(92, 31);
+            this.btnVoltar.TabIndex = 8;
             this.toolTipLaboratorio.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -96,11 +95,10 @@
             this.btnLimpar.FlatAppearance.BorderSize = 0;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(539, 316);
-            this.btnLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpar.Location = new System.Drawing.Point(404, 257);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(114, 38);
-            this.btnLimpar.TabIndex = 8;
+            this.btnLimpar.Size = new System.Drawing.Size(86, 31);
+            this.btnLimpar.TabIndex = 9;
             this.toolTipLaboratorio.SetToolTip(this.btnLimpar, "Limpar os Campos");
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -112,11 +110,10 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = global::MariosPet.Properties.Resources.botaoSalvarVerde;
-            this.btnSalvar.Location = new System.Drawing.Point(737, 316);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalvar.Location = new System.Drawing.Point(553, 257);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(175, 57);
-            this.btnSalvar.TabIndex = 9;
+            this.btnSalvar.Size = new System.Drawing.Size(131, 46);
+            this.btnSalvar.TabIndex = 10;
             this.toolTipLaboratorio.SetToolTip(this.btnSalvar, "Salvar as Informações");
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -125,12 +122,11 @@
             // 
             this.mstCep.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstCep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mstCep.Location = new System.Drawing.Point(631, 170);
-            this.mstCep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mstCep.Location = new System.Drawing.Point(473, 138);
             this.mstCep.Mask = "##,###-###";
             this.mstCep.Name = "mstCep";
-            this.mstCep.Size = new System.Drawing.Size(227, 32);
-            this.mstCep.TabIndex = 4;
+            this.mstCep.Size = new System.Drawing.Size(171, 27);
+            this.mstCep.TabIndex = 5;
             this.toolTipLaboratorio.SetToolTip(this.mstCep, "Insira o CEP");
             // 
             // cmbUF
@@ -166,12 +162,11 @@
             "São Paulo (SP)",
             "Sergipe (SE)",
             "Tocantins (TO)"});
-            this.cmbUF.Location = new System.Drawing.Point(631, 228);
-            this.cmbUF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbUF.Location = new System.Drawing.Point(473, 185);
             this.cmbUF.MaxLength = 2;
             this.cmbUF.Name = "cmbUF";
-            this.cmbUF.Size = new System.Drawing.Size(227, 33);
-            this.cmbUF.TabIndex = 6;
+            this.cmbUF.Size = new System.Drawing.Size(171, 26);
+            this.cmbUF.TabIndex = 7;
             this.cmbUF.Text = "---Selecione---";
             this.toolTipLaboratorio.SetToolTip(this.cmbUF, "Insira a UF");
             // 
@@ -179,71 +174,65 @@
             // 
             this.txtCidade.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtCidade.Location = new System.Drawing.Point(208, 228);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCidade.Location = new System.Drawing.Point(156, 185);
             this.txtCidade.MaxLength = 30;
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(259, 32);
-            this.txtCidade.TabIndex = 5;
+            this.txtCidade.Size = new System.Drawing.Size(195, 27);
+            this.txtCidade.TabIndex = 6;
             this.toolTipLaboratorio.SetToolTip(this.txtCidade, "Insira a Cidade");
             // 
             // txtBairro
             // 
             this.txtBairro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtBairro.Location = new System.Drawing.Point(208, 169);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBairro.Location = new System.Drawing.Point(156, 137);
             this.txtBairro.MaxLength = 30;
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(259, 32);
-            this.txtBairro.TabIndex = 3;
+            this.txtBairro.Size = new System.Drawing.Size(195, 27);
+            this.txtBairro.TabIndex = 4;
             this.toolTipLaboratorio.SetToolTip(this.txtBairro, "Insira o Bairro");
             // 
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtNumero.Location = new System.Drawing.Point(208, 111);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumero.Location = new System.Drawing.Point(156, 90);
             this.txtNumero.MaxLength = 10;
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(107, 32);
-            this.txtNumero.TabIndex = 1;
+            this.txtNumero.Size = new System.Drawing.Size(81, 27);
+            this.txtNumero.TabIndex = 2;
             this.toolTipLaboratorio.SetToolTip(this.txtNumero, "Insira o Número do Estabelecimento");
             // 
             // txtComplemento
             // 
             this.txtComplemento.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComplemento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtComplemento.Location = new System.Drawing.Point(631, 111);
-            this.txtComplemento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtComplemento.Location = new System.Drawing.Point(473, 90);
             this.txtComplemento.MaxLength = 30;
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(225, 32);
-            this.txtComplemento.TabIndex = 2;
+            this.txtComplemento.Size = new System.Drawing.Size(170, 27);
+            this.txtComplemento.TabIndex = 3;
             this.toolTipLaboratorio.SetToolTip(this.txtComplemento, "Insira o Complemento");
             // 
             // txtRua
             // 
             this.txtRua.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtRua.Location = new System.Drawing.Point(208, 54);
-            this.txtRua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRua.Location = new System.Drawing.Point(156, 44);
             this.txtRua.MaxLength = 50;
             this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(649, 32);
-            this.txtRua.TabIndex = 0;
+            this.txtRua.Size = new System.Drawing.Size(488, 27);
+            this.txtRua.TabIndex = 1;
             this.toolTipLaboratorio.SetToolTip(this.txtRua, "Insira o Nome da Rua");
             // 
             // txtEmail2
             // 
             this.txtEmail2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtEmail2.Location = new System.Drawing.Point(301, 255);
-            this.txtEmail2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail2.Location = new System.Drawing.Point(226, 207);
             this.txtEmail2.MaxLength = 50;
             this.txtEmail2.Name = "txtEmail2";
-            this.txtEmail2.Size = new System.Drawing.Size(624, 32);
+            this.txtEmail2.Size = new System.Drawing.Size(469, 27);
             this.txtEmail2.TabIndex = 6;
             this.toolTipLaboratorio.SetToolTip(this.txtEmail2, "Insira o E-mail");
             // 
@@ -251,11 +240,10 @@
             // 
             this.txtEmail1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtEmail1.Location = new System.Drawing.Point(301, 202);
-            this.txtEmail1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail1.Location = new System.Drawing.Point(226, 164);
             this.txtEmail1.MaxLength = 50;
             this.txtEmail1.Name = "txtEmail1";
-            this.txtEmail1.Size = new System.Drawing.Size(624, 32);
+            this.txtEmail1.Size = new System.Drawing.Size(469, 27);
             this.txtEmail1.TabIndex = 5;
             this.toolTipLaboratorio.SetToolTip(this.txtEmail1, "Insira o E-mail");
             // 
@@ -263,11 +251,10 @@
             // 
             this.txtTelefone2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTelefone2.Location = new System.Drawing.Point(700, 151);
-            this.txtTelefone2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone2.Location = new System.Drawing.Point(525, 123);
             this.txtTelefone2.MaxLength = 15;
             this.txtTelefone2.Name = "txtTelefone2";
-            this.txtTelefone2.Size = new System.Drawing.Size(225, 32);
+            this.txtTelefone2.Size = new System.Drawing.Size(170, 27);
             this.txtTelefone2.TabIndex = 4;
             this.toolTipLaboratorio.SetToolTip(this.txtTelefone2, "Insira o Telefone");
             // 
@@ -275,11 +262,10 @@
             // 
             this.mstCNPJ.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mstCNPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.mstCNPJ.Location = new System.Drawing.Point(301, 96);
-            this.mstCNPJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mstCNPJ.Location = new System.Drawing.Point(226, 78);
             this.mstCNPJ.Mask = "000.000.000-00";
             this.mstCNPJ.Name = "mstCNPJ";
-            this.mstCNPJ.Size = new System.Drawing.Size(225, 32);
+            this.mstCNPJ.Size = new System.Drawing.Size(170, 27);
             this.mstCNPJ.TabIndex = 2;
             this.toolTipLaboratorio.SetToolTip(this.mstCNPJ, "Insira o CNPJ");
             // 
@@ -287,11 +273,10 @@
             // 
             this.txtTelefone1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtTelefone1.Location = new System.Drawing.Point(301, 150);
-            this.txtTelefone1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone1.Location = new System.Drawing.Point(226, 122);
             this.txtTelefone1.MaxLength = 15;
             this.txtTelefone1.Name = "txtTelefone1";
-            this.txtTelefone1.Size = new System.Drawing.Size(225, 32);
+            this.txtTelefone1.Size = new System.Drawing.Size(170, 27);
             this.txtTelefone1.TabIndex = 3;
             this.toolTipLaboratorio.SetToolTip(this.txtTelefone1, "Insira o Telefone");
             // 
@@ -299,11 +284,10 @@
             // 
             this.txtNomeLaboratorio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeLaboratorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtNomeLaboratorio.Location = new System.Drawing.Point(301, 44);
-            this.txtNomeLaboratorio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomeLaboratorio.Location = new System.Drawing.Point(226, 36);
             this.txtNomeLaboratorio.MaxLength = 50;
             this.txtNomeLaboratorio.Name = "txtNomeLaboratorio";
-            this.txtNomeLaboratorio.Size = new System.Drawing.Size(624, 32);
+            this.txtNomeLaboratorio.Size = new System.Drawing.Size(469, 27);
             this.txtNomeLaboratorio.TabIndex = 1;
             this.toolTipLaboratorio.SetToolTip(this.txtNomeLaboratorio, "Insira o Nome do Laboratório");
             // 
@@ -332,12 +316,10 @@
             this.groupBox2.Controls.Add(this.lblRua);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox2.Location = new System.Drawing.Point(237, 353);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(178, 287);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(956, 404);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.Size = new System.Drawing.Size(717, 328);
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Endereço";
             // 
@@ -345,10 +327,9 @@
             // 
             this.lblUF.AutoSize = true;
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUF.Location = new System.Drawing.Point(549, 234);
-            this.lblUF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(56, 29);
+            this.lblUF.Size = new System.Drawing.Size(43, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -356,10 +337,9 @@
             // 
             this.lblCEP.AutoSize = true;
             this.lblCEP.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(533, 175);
-            this.lblCEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCEP.Location = new System.Drawing.Point(400, 142);
             this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(70, 29);
+            this.lblCEP.Size = new System.Drawing.Size(55, 23);
             this.lblCEP.TabIndex = 18;
             this.lblCEP.Text = "CEP:";
             // 
@@ -367,43 +347,39 @@
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(8, 228);
-            this.lblCidade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCidade.Location = new System.Drawing.Point(6, 185);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(105, 29);
-            this.lblCidade.TabIndex = 16;
+            this.lblCidade.Size = new System.Drawing.Size(84, 23);
+            this.lblCidade.TabIndex = 0;
             this.lblCidade.Text = "Cidade:";
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(8, 169);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBairro.Location = new System.Drawing.Point(6, 137);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(95, 29);
-            this.lblBairro.TabIndex = 14;
+            this.lblBairro.Size = new System.Drawing.Size(77, 23);
+            this.lblBairro.TabIndex = 0;
             this.lblBairro.Text = "Bairro:";
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(8, 111);
-            this.lblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumero.Location = new System.Drawing.Point(6, 90);
             this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(119, 29);
-            this.lblNumero.TabIndex = 12;
+            this.lblNumero.Size = new System.Drawing.Size(94, 23);
+            this.lblNumero.TabIndex = 0;
             this.lblNumero.Text = "Número:";
             // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComplemento.Location = new System.Drawing.Point(405, 116);
-            this.lblComplemento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblComplemento.Location = new System.Drawing.Point(304, 94);
             this.lblComplemento.Name = "lblComplemento";
-            this.lblComplemento.Size = new System.Drawing.Size(190, 29);
+            this.lblComplemento.Size = new System.Drawing.Size(151, 23);
             this.lblComplemento.TabIndex = 10;
             this.lblComplemento.Text = "Complemento:";
             // 
@@ -411,11 +387,10 @@
             // 
             this.lblRua.AutoSize = true;
             this.lblRua.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.Location = new System.Drawing.Point(8, 60);
-            this.lblRua.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRua.Location = new System.Drawing.Point(6, 49);
             this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(70, 29);
-            this.lblRua.TabIndex = 8;
+            this.lblRua.Size = new System.Drawing.Size(55, 23);
+            this.lblRua.TabIndex = 0;
             this.lblRua.Text = "Rua:";
             // 
             // groupBox1
@@ -438,12 +413,10 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(237, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(178, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(956, 320);
-            this.groupBox1.TabIndex = 2;
+            this.groupBox1.Size = new System.Drawing.Size(717, 260);
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Dados  do Laboratório";
             // 
@@ -451,32 +424,29 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(161, 255);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(121, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 29);
-            this.label3.TabIndex = 30;
+            this.label3.Size = new System.Drawing.Size(81, 23);
+            this.label3.TabIndex = 0;
             this.label3.Text = "E-mail:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(161, 202);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(121, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 29);
-            this.label2.TabIndex = 28;
+            this.label2.Size = new System.Drawing.Size(81, 23);
+            this.label2.TabIndex = 0;
             this.label2.Text = "E-mail:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(549, 151);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(412, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 29);
+            this.label1.Size = new System.Drawing.Size(99, 23);
             this.label1.TabIndex = 26;
             this.label1.Text = "Telefone:";
             // 
@@ -484,45 +454,41 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(161, 150);
-            this.lblTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefone.Location = new System.Drawing.Point(121, 122);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(125, 29);
-            this.lblTelefone.TabIndex = 20;
+            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(205, 101);
-            this.lblCpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCpf.Location = new System.Drawing.Point(154, 82);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(84, 29);
-            this.lblCpf.TabIndex = 17;
+            this.lblCpf.Size = new System.Drawing.Size(66, 23);
+            this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CNPJ:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(8, 44);
-            this.lblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNome.Location = new System.Drawing.Point(6, 36);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(276, 29);
-            this.lblNome.TabIndex = 16;
+            this.lblNome.Size = new System.Drawing.Size(222, 23);
+            this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome do Laboratório:";
             // 
             // FrmLaboratorio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1485, 902);
+            this.ClientSize = new System.Drawing.Size(1022, 602);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmLaboratorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Laboratório";
