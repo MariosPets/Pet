@@ -112,6 +112,15 @@ namespace MariosPet.Telas
 
                 txtNomeFuncionario.Text = veterinario.Rows[0][1].ToString();
                 mstCPFFuncionario.Text = veterinario.Rows[0][2].ToString();
+                mstRGFuncionario.Text = veterinario.Rows[0][3].ToString();
+                mstNascimentoFuncionario.Text = veterinario.Rows[0][4].ToString();
+                txtEmailFuncionario.Text = veterinario.Rows[0][6].ToString();
+                txtTelefoneFuncionario.Text = veterinario.Rows[0][7].ToString();
+                txtTelefone2Funcionario.Text = veterinario.Rows[0][8].ToString();
+                txtTelefone3Funcionario.Text = veterinario.Rows[0][9].ToString();
+                cmbTipoFuncionario.Text = veterinario.Rows[0][11].ToString();
+                txtLogin.Text = veterinario.Rows[0][12].ToString();
+                txtSenha.Text = veterinario.Rows[0][13].ToString();
 
                 //..
 
@@ -132,7 +141,9 @@ namespace MariosPet.Telas
                 txtTelefoneFuncionario.Text = funcionario.Rows[0][7].ToString();
                 txtTelefone2Funcionario.Text = funcionario.Rows[0][8].ToString();
                 txtTelefone3Funcionario.Text = funcionario.Rows[0][9].ToString();
-                classeVete.id = Convert.ToInt32(funcionario.Rows[0][10].ToString());
+                cmbTipoFuncionario.Text = funcionario.Rows[0][11].ToString();
+                txtLogin.Text = funcionario.Rows[0][12].ToString();
+                txtSenha.Text = funcionario.Rows[0][13].ToString();
                 //..
 
                 sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
@@ -142,6 +153,7 @@ namespace MariosPet.Telas
             DataTable endereco = CrudEnd.consultaEndereco(sql);
 
             txtRuaFuncionario.Text = endereco.Rows[0][1].ToString();
+
             //...
 
             //so pra consulta
