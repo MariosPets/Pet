@@ -58,12 +58,10 @@
             this.groupBoxBuscaVermifugo.Controls.Add(this.labelBuscaVermifugo);
             this.groupBoxBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold);
             this.groupBoxBuscaVermifugo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBoxBuscaVermifugo.Location = new System.Drawing.Point(53, 15);
-            this.groupBoxBuscaVermifugo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxBuscaVermifugo.Location = new System.Drawing.Point(40, 12);
             this.groupBoxBuscaVermifugo.Name = "groupBoxBuscaVermifugo";
-            this.groupBoxBuscaVermifugo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxBuscaVermifugo.Size = new System.Drawing.Size(956, 121);
-            this.groupBoxBuscaVermifugo.TabIndex = 6;
+            this.groupBoxBuscaVermifugo.Size = new System.Drawing.Size(717, 98);
+            this.groupBoxBuscaVermifugo.TabIndex = 0;
             this.groupBoxBuscaVermifugo.TabStop = false;
             this.groupBoxBuscaVermifugo.Text = "   Busca Vermífugo";
             // 
@@ -74,11 +72,10 @@
             this.btmConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmConsultar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btmConsultar.Image = global::MariosPet.Properties.Resources.botaoConsultarVerde;
-            this.btmConsultar.Location = new System.Drawing.Point(755, 57);
-            this.btmConsultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmConsultar.Location = new System.Drawing.Point(566, 46);
             this.btmConsultar.Name = "btmConsultar";
-            this.btmConsultar.Size = new System.Drawing.Size(152, 39);
-            this.btmConsultar.TabIndex = 1;
+            this.btmConsultar.Size = new System.Drawing.Size(114, 32);
+            this.btmConsultar.TabIndex = 2;
             this.toolTipVermifugos.SetToolTip(this.btmConsultar, "Consultar");
             this.btmConsultar.UseVisualStyleBackColor = false;
             this.btmConsultar.Click += new System.EventHandler(this.btmConsultar_Click);
@@ -87,23 +84,21 @@
             // 
             this.txtVermifugo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVermifugo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtVermifugo.Location = new System.Drawing.Point(255, 63);
-            this.txtVermifugo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVermifugo.Location = new System.Drawing.Point(191, 51);
             this.txtVermifugo.MaxLength = 50;
             this.txtVermifugo.Name = "txtVermifugo";
-            this.txtVermifugo.Size = new System.Drawing.Size(491, 32);
-            this.txtVermifugo.TabIndex = 0;
+            this.txtVermifugo.Size = new System.Drawing.Size(369, 27);
+            this.txtVermifugo.TabIndex = 1;
             this.toolTipVermifugos.SetToolTip(this.txtVermifugo, "Insira o nome do Vermífugo que deseja pesquisar");
             // 
             // labelBuscaVermifugo
             // 
             this.labelBuscaVermifugo.AutoSize = true;
             this.labelBuscaVermifugo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscaVermifugo.Location = new System.Drawing.Point(8, 62);
-            this.labelBuscaVermifugo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBuscaVermifugo.Location = new System.Drawing.Point(6, 50);
             this.labelBuscaVermifugo.Name = "labelBuscaVermifugo";
-            this.labelBuscaVermifugo.Size = new System.Drawing.Size(224, 29);
-            this.labelBuscaVermifugo.TabIndex = 16;
+            this.labelBuscaVermifugo.Size = new System.Drawing.Size(179, 23);
+            this.labelBuscaVermifugo.TabIndex = 0;
             this.labelBuscaVermifugo.Text = "Nome Vermífugo:";
             // 
             // btmLimpar
@@ -114,11 +109,10 @@
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmLimpar.Location = new System.Drawing.Point(600, 193);
-            this.btmLimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmLimpar.Location = new System.Drawing.Point(450, 157);
             this.btmLimpar.Name = "btmLimpar";
-            this.btmLimpar.Size = new System.Drawing.Size(115, 49);
-            this.btmLimpar.TabIndex = 5;
+            this.btmLimpar.Size = new System.Drawing.Size(110, 40);
+            this.btmLimpar.TabIndex = 3;
             this.toolTipVermifugos.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
             // 
@@ -130,11 +124,10 @@
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmVoltar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmVoltar.Location = new System.Drawing.Point(437, 193);
-            this.btmVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmVoltar.Location = new System.Drawing.Point(328, 157);
             this.btmVoltar.Name = "btmVoltar";
-            this.btmVoltar.Size = new System.Drawing.Size(118, 49);
-            this.btmVoltar.TabIndex = 4;
+            this.btmVoltar.Size = new System.Drawing.Size(116, 40);
+            this.btmVoltar.TabIndex = 2;
             this.toolTipVermifugos.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
             this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
@@ -147,11 +140,10 @@
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmSalvar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmSalvar.Location = new System.Drawing.Point(755, 193);
-            this.btmSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmSalvar.Location = new System.Drawing.Point(566, 157);
             this.btmSalvar.Name = "btmSalvar";
-            this.btmSalvar.Size = new System.Drawing.Size(115, 49);
-            this.btmSalvar.TabIndex = 6;
+            this.btmSalvar.Size = new System.Drawing.Size(118, 40);
+            this.btmSalvar.TabIndex = 4;
             this.toolTipVermifugos.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
             // 
@@ -162,11 +154,10 @@
             this.btmNovo.FlatAppearance.BorderSize = 0;
             this.btmNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmNovo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmNovo.Location = new System.Drawing.Point(8, 193);
-            this.btmNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btmNovo.Location = new System.Drawing.Point(6, 157);
             this.btmNovo.Name = "btmNovo";
-            this.btmNovo.Size = new System.Drawing.Size(119, 49);
-            this.btmNovo.TabIndex = 3;
+            this.btmNovo.Size = new System.Drawing.Size(114, 40);
+            this.btmNovo.TabIndex = 1;
             this.toolTipVermifugos.SetToolTip(this.btmNovo, "Adicionar novo Vermífugo");
             this.btmNovo.UseVisualStyleBackColor = false;
             this.btmNovo.Click += new System.EventHandler(this.btmNovo_Click);
@@ -188,11 +179,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtgVermifugo.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgVermifugo.Location = new System.Drawing.Point(13, 43);
-            this.dtgVermifugo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgVermifugo.Location = new System.Drawing.Point(10, 35);
             this.dtgVermifugo.Name = "dtgVermifugo";
-            this.dtgVermifugo.Size = new System.Drawing.Size(899, 119);
-            this.dtgVermifugo.TabIndex = 2;
+            this.dtgVermifugo.Size = new System.Drawing.Size(674, 97);
+            this.dtgVermifugo.TabIndex = 0;
             this.toolTipVermifugos.SetToolTip(this.dtgVermifugo, "Resultado da Pesquisa");
             // 
             // toolTipVermifugos
@@ -211,24 +201,21 @@
             this.groupBox1.Controls.Add(this.btmSalvar);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(53, 160);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(40, 130);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(956, 267);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.Size = new System.Drawing.Size(717, 217);
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // FrmBuscaVermifugo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1067, 688);
+            this.ClientSize = new System.Drawing.Size(800, 559);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxBuscaVermifugo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmBuscaVermifugo";
             this.Text = "Busca Vermifugo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

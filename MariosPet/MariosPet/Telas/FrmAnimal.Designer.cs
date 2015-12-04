@@ -95,7 +95,7 @@
             this.groupBoxAnimal.Location = new System.Drawing.Point(33, 170);
             this.groupBoxAnimal.Name = "groupBoxAnimal";
             this.groupBoxAnimal.Size = new System.Drawing.Size(801, 376);
-            this.groupBoxAnimal.TabIndex = 6;
+            this.groupBoxAnimal.TabIndex = 0;
             this.groupBoxAnimal.TabStop = false;
             this.groupBoxAnimal.Text = "   Dados do Animal";
             // 
@@ -107,7 +107,7 @@
             this.btnBuscaFoto.Location = new System.Drawing.Point(56, 224);
             this.btnBuscaFoto.Name = "btnBuscaFoto";
             this.btnBuscaFoto.Size = new System.Drawing.Size(42, 40);
-            this.btnBuscaFoto.TabIndex = 6;
+            this.btnBuscaFoto.TabIndex = 9;
             this.toolTipAnimal.SetToolTip(this.btnBuscaFoto, "Adicionar uma foto do Animal");
             this.btnBuscaFoto.UseVisualStyleBackColor = false;
             this.btnBuscaFoto.Click += new System.EventHandler(this.btnBuscaFoto_Click);
@@ -119,7 +119,7 @@
             this.radioButtonMacho.Location = new System.Drawing.Point(637, 224);
             this.radioButtonMacho.Name = "radioButtonMacho";
             this.radioButtonMacho.Size = new System.Drawing.Size(77, 22);
-            this.radioButtonMacho.TabIndex = 5;
+            this.radioButtonMacho.TabIndex = 8;
             this.radioButtonMacho.Text = "Macho";
             this.toolTipAnimal.SetToolTip(this.radioButtonMacho, "Selecione se o animal for Macho");
             this.radioButtonMacho.UseVisualStyleBackColor = true;
@@ -133,7 +133,7 @@
             this.radioButtonFemea.Location = new System.Drawing.Point(637, 196);
             this.radioButtonFemea.Name = "radioButtonFemea";
             this.radioButtonFemea.Size = new System.Drawing.Size(80, 22);
-            this.radioButtonFemea.TabIndex = 4;
+            this.radioButtonFemea.TabIndex = 7;
             this.radioButtonFemea.TabStop = true;
             this.radioButtonFemea.Text = "Fêmea";
             this.toolTipAnimal.SetToolTip(this.radioButtonFemea, "Selecione se o animal for Fêmea");
@@ -151,7 +151,7 @@
             this.btmLimpar.Location = new System.Drawing.Point(472, 315);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(117, 44);
-            this.btmLimpar.TabIndex = 8;
+            this.btmLimpar.TabIndex = 11;
             this.toolTipAnimal.SetToolTip(this.btmLimpar, "Limpar os Campos");
             this.btmLimpar.UseVisualStyleBackColor = false;
             this.btmLimpar.Click += new System.EventHandler(this.btmLimpar_Click);
@@ -167,7 +167,7 @@
             this.btmVoltar.Location = new System.Drawing.Point(338, 313);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(116, 44);
-            this.btmVoltar.TabIndex = 7;
+            this.btmVoltar.TabIndex = 10;
             this.toolTipAnimal.SetToolTip(this.btmVoltar, "Voltar ao Menu");
             this.btmVoltar.UseVisualStyleBackColor = false;
             this.btmVoltar.Click += new System.EventHandler(this.btmVoltar_Click);
@@ -183,7 +183,7 @@
             this.btmSalvar.Location = new System.Drawing.Point(616, 315);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(117, 42);
-            this.btmSalvar.TabIndex = 9;
+            this.btmSalvar.TabIndex = 12;
             this.toolTipAnimal.SetToolTip(this.btmSalvar, "Salvar as Informações");
             this.btmSalvar.UseVisualStyleBackColor = false;
             this.btmSalvar.Click += new System.EventHandler(this.btmSalvar_Click_1);
@@ -195,7 +195,7 @@
             this.lblNascimentoAnimal.Location = new System.Drawing.Point(232, 195);
             this.lblNascimentoAnimal.Name = "lblNascimentoAnimal";
             this.lblNascimentoAnimal.Size = new System.Drawing.Size(130, 23);
-            this.lblNascimentoAnimal.TabIndex = 17;
+            this.lblNascimentoAnimal.TabIndex = 0;
             this.lblNascimentoAnimal.Text = "Nascimento:";
             // 
             // maskedTxtNascimentoAnimal
@@ -206,7 +206,7 @@
             this.maskedTxtNascimentoAnimal.Mask = "00/00/0000";
             this.maskedTxtNascimentoAnimal.Name = "maskedTxtNascimentoAnimal";
             this.maskedTxtNascimentoAnimal.Size = new System.Drawing.Size(158, 27);
-            this.maskedTxtNascimentoAnimal.TabIndex = 3;
+            this.maskedTxtNascimentoAnimal.TabIndex = 6;
             this.toolTipAnimal.SetToolTip(this.maskedTxtNascimentoAnimal, "Insira a Data de Nascimento do Animal");
             this.maskedTxtNascimentoAnimal.ValidatingType = typeof(System.DateTime);
             // 
@@ -217,7 +217,7 @@
             this.lblPelagemCor.Location = new System.Drawing.Point(232, 146);
             this.lblPelagemCor.Name = "lblPelagemCor";
             this.lblPelagemCor.Size = new System.Drawing.Size(141, 23);
-            this.lblPelagemCor.TabIndex = 14;
+            this.lblPelagemCor.TabIndex = 0;
             this.lblPelagemCor.Text = "Pelagem/Cor:";
             // 
             // txtPelagemCor
@@ -228,7 +228,7 @@
             this.txtPelagemCor.MaxLength = 20;
             this.txtPelagemCor.Name = "txtPelagemCor";
             this.txtPelagemCor.Size = new System.Drawing.Size(345, 27);
-            this.txtPelagemCor.TabIndex = 2;
+            this.txtPelagemCor.TabIndex = 5;
             this.toolTipAnimal.SetToolTip(this.txtPelagemCor, "Insira a Pelagem/Cor");
             // 
             // txtRacaPorte
@@ -239,7 +239,7 @@
             this.txtRacaPorte.MaxLength = 20;
             this.txtRacaPorte.Name = "txtRacaPorte";
             this.txtRacaPorte.Size = new System.Drawing.Size(345, 27);
-            this.txtRacaPorte.TabIndex = 1;
+            this.txtRacaPorte.TabIndex = 4;
             this.toolTipAnimal.SetToolTip(this.txtRacaPorte, "Insira a Raça e o Porte");
             // 
             // txtNomeAnimal
@@ -250,7 +250,7 @@
             this.txtNomeAnimal.MaxLength = 20;
             this.txtNomeAnimal.Name = "txtNomeAnimal";
             this.txtNomeAnimal.Size = new System.Drawing.Size(345, 27);
-            this.txtNomeAnimal.TabIndex = 0;
+            this.txtNomeAnimal.TabIndex = 3;
             this.toolTipAnimal.SetToolTip(this.txtNomeAnimal, "Insira o nome do Animal");
             // 
             // lblRacaPorte
@@ -260,7 +260,7 @@
             this.lblRacaPorte.Location = new System.Drawing.Point(232, 98);
             this.lblRacaPorte.Name = "lblRacaPorte";
             this.lblRacaPorte.Size = new System.Drawing.Size(129, 23);
-            this.lblRacaPorte.TabIndex = 5;
+            this.lblRacaPorte.TabIndex = 0;
             this.lblRacaPorte.Text = "Raça/Porte: ";
             // 
             // lblEmail
@@ -270,7 +270,7 @@
             this.lblEmail.Location = new System.Drawing.Point(565, 195);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(66, 23);
-            this.lblEmail.TabIndex = 3;
+            this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Sexo:";
             // 
             // lblNomeAnimal
@@ -299,7 +299,7 @@
             this.btnConsultar.Location = new System.Drawing.Point(668, 39);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(116, 44);
-            this.btnConsultar.TabIndex = 1;
+            this.btnConsultar.TabIndex = 2;
             this.toolTipAnimal.SetToolTip(this.btnConsultar, "Consultar");
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
@@ -312,7 +312,7 @@
             this.txtPesquisaCliente.MaxLength = 80;
             this.txtPesquisaCliente.Name = "txtPesquisaCliente";
             this.txtPesquisaCliente.Size = new System.Drawing.Size(555, 27);
-            this.txtPesquisaCliente.TabIndex = 0;
+            this.txtPesquisaCliente.TabIndex = 1;
             this.toolTipAnimal.SetToolTip(this.txtPesquisaCliente, "Insira o nome do Cliente que deseja pesquisar.");
             // 
             // groupBoxPesquisaAnimal
@@ -328,7 +328,7 @@
             this.groupBoxPesquisaAnimal.Location = new System.Drawing.Point(33, 24);
             this.groupBoxPesquisaAnimal.Name = "groupBoxPesquisaAnimal";
             this.groupBoxPesquisaAnimal.Size = new System.Drawing.Size(801, 117);
-            this.groupBoxPesquisaAnimal.TabIndex = 31;
+            this.groupBoxPesquisaAnimal.TabIndex = 0;
             this.groupBoxPesquisaAnimal.TabStop = false;
             this.groupBoxPesquisaAnimal.Text = "   Pesquisa";
             // 
@@ -339,7 +339,7 @@
             this.lblNome.Location = new System.Drawing.Point(6, 50);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(92, 23);
-            this.lblNome.TabIndex = 16;
+            this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Cliente: ";
             // 
             // FrmAnimal
