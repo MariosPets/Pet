@@ -670,3 +670,11 @@ C:\Users\Jéssica Kelly\Source\Repos\Pet12\MariosPet\MariosPet\obj\Debug\RdlComp
 C:\Users\Jéssica Kelly\Source\Repos\Pet12\MariosPet\MariosPet\obj\Debug\MariosPet.pdb
 C:\Users\Olivia S\Source\Repos\Pet4\MariosPet\MariosPet\bin\Debug\MariosPet.exe.config
 C:\Users\Olivia S\Source\Repos\Pet4\MariosPet\MariosPet\obj\Debug\MariosPet.exe
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFinanceiro.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmOrcamento.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmPesquisas.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmServico.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmVendas.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
+C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled

@@ -118,6 +118,7 @@ namespace MariosPet.Telas
 
         private void consultasEPesquisasToolStripMenuItem6_Click(object sender, EventArgs e)
         {
+            Estatica.buscaTipo = BuscaTipo.geral;
             FrmPesquisas pesquisas = new FrmPesquisas();
             Visible = false;
             pesquisas.ShowDialog();

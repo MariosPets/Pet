@@ -1,6 +1,7 @@
 ﻿namespace MariosPet.Classes
 {
     public enum BuscaTipo{
+        geral,
         cliente,
         funcionario,
         animal
