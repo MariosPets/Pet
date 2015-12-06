@@ -73,6 +73,7 @@ namespace MariosPet.Telas
             CrudEndereco CrudEnd = new CrudEndereco();
 
             string sql = "select * from pessoa_juridica inner join fornecedor on pessoa_juridica.id_pessoa_juridica = fornecedor.id_pessoa_juridica where pessoa_juridica.id_pessoa_juridica = " + Estatica.id.ToString();
+
             DataTable fornecedor = CrudForn.consultaFornecedor(sql);
 
             //Dados Fornecedor
