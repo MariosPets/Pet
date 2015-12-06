@@ -103,7 +103,7 @@ namespace MariosPet.Telas
 
             string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa inner join veterinario on veterinario.id_funcionario = funcionario.id_pessoa where veterinario.id_funcionario = " + Estatica.id.ToString();
 
-            DataTable veterinario = CrudVet.consultaVeterinario(sql);            
+            DataTable veterinario = CrudVet.consultaVeterinario(sql);
 
             if (veterinario.Rows.Count > 0)
             {
@@ -121,13 +121,12 @@ namespace MariosPet.Telas
                 cmbTipoFuncionario.Text = veterinario.Rows[0][11].ToString();
                 txtLogin.Text = veterinario.Rows[0][12].ToString();
                 txtSenha.Text = veterinario.Rows[0][13].ToString();
-
-                //..
+                txtConfirmacaoSenha.Text = veterinario.Rows[0][13].ToString();
 
                 sql = "select * from endereco where id_endereco = " + veterinario.Rows[0][5].ToString();
             }
-            else {
-
+            else
+            {
                 sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where funcionario.id_pessoa = " + Estatica.id.ToString();
 
                 DataTable funcionario = CrudFunc.consultaFuncionario(sql);
@@ -144,60 +143,20 @@ namespace MariosPet.Telas
                 cmbTipoFuncionario.Text = funcionario.Rows[0][11].ToString();
                 txtLogin.Text = funcionario.Rows[0][12].ToString();
                 txtSenha.Text = funcionario.Rows[0][13].ToString();
-                //..
+                txtConfirmacaoSenha.Text = funcionario.Rows[0][13].ToString();
 
                 sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
             }
 
-            
             DataTable endereco = CrudEnd.consultaEndereco(sql);
 
             txtRuaFuncionario.Text = endereco.Rows[0][1].ToString();
-
-            //...
-
-            //so pra consulta
-            /*string sql = "select * from pessoa inner join funcionario on pessoa.id_pessoa = funcionario.id_pessoa where pessoa.id_pessoa = " + Estatica.id.ToString();
-            DataTable funcionario = CrudFunc.consultaFuncionario(sql);
-            sql = "select * from endereco where id_endereco = " + funcionario.Rows[0][5].ToString();
-            DataTable endereco = CrudEnd.consultaEndereco(sql);
-
-            if (!txtCrmv.Enabled)
-            {              
-                //Dados Pessoais
-                classeFunc.id = Convert.ToInt32(funcionario.Rows[0][0].ToString());
-                txtNomeFuncionario.Text = funcionario.Rows[0][1].ToString();
-                mstCPFFuncionario.Text = funcionario.Rows[0][2].ToString();
-                mstRGFuncionario.Text = funcionario.Rows[0][3].ToString();
-                mstNascimentoFuncionario.Text = funcionario.Rows[0][4].ToString();
-                classeFunc.idEndereco = Convert.ToInt32(funcionario.Rows[0][5].ToString());
-                classeEnd.id = Convert.ToInt32(funcionario.Rows[0][5].ToString());
-                txtEmailFuncionario.Text = funcionario.Rows[0][6].ToString();
-                txtTelefoneFuncionario.Text = funcionario.Rows[0][7].ToString();
-                txtTelefone2Funcionario.Text = funcionario.Rows[0][8].ToString();
-                txtTelefone3Funcionario.Text = funcionario.Rows[0][9].ToString();
-
-                sql = "select * from funcionario where id_funcionario = " + Estatica.id.ToString();
-                //Dados Funcionário
-                classeFunc.id = Convert.ToInt32(funcionario.Rows[0][0].ToString());
-                cmbTipoFuncionario.Text = funcionario.Rows[0][1].ToString();
-                txtLogin.Text = funcionario.Rows[0][2].ToString();
-                txtSenha.Text = funcionario.Rows[0][3].ToString();
-                txtConfirmacaoSenha.Text = funcionario.Rows[0][4].ToString();
-            }
-                
-            else
-            {
-                //Endereço                
-                txtRuaFuncionario.Text = endereco.Rows[0][1].ToString();
-                txtNumeroFuncionario.Text = endereco.Rows[0][2].ToString();
-                txtComplementoFuncionario.Text = endereco.Rows[0][3].ToString();
-                txtBairroFuncionario.Text = endereco.Rows[0][4].ToString();
-                txtCidadeFuncionario.Text = endereco.Rows[0][5].ToString();
-                cmbUFFuncionario.Text = endereco.Rows[0][6].ToString();
-                mstCepFuncionario.Text = endereco.Rows[0][7].ToString();
-            }
-             */
+            txtNumeroFuncionario.Text = endereco.Rows[0][2].ToString();
+            txtComplementoFuncionario.Text = endereco.Rows[0][3].ToString();
+            txtBairroFuncionario.Text = endereco.Rows[0][4].ToString();
+            txtCidadeFuncionario.Text = endereco.Rows[0][5].ToString();
+            cmbUFFuncionario.Text = endereco.Rows[0][6].ToString();
+            mstCepFuncionario.Text = endereco.Rows[0][7].ToString();            
         }
 
         private void btnSalvar_Click_1(object sender, EventArgs e)
@@ -207,18 +166,6 @@ namespace MariosPet.Telas
             CrudEndereco CrudEnd = new CrudEndereco();
             CrudFuncionario CrudFunc = new CrudFuncionario();
             CrudVeterinario CrudVete = new CrudVeterinario();
-
-
-
-            /*if (!txtCrmv.Enabled) {
-                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
-                CrudFunc.inserirFuncionario(classeFunc);
-            }
-            else
-            {
-                classeVete.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
-                CrudVete.inserirVeterinario(classeVete);
-            }*/
 
             if (Estatica.id != 0)
             {
@@ -230,28 +177,28 @@ namespace MariosPet.Telas
                 {
                     CrudVete.alteraVeterinario(classeVete);
                 }
-
                 Estatica.id = 0;
+                MessageBox.Show("Funcionário Alterado com Sucesso", "Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-
                 CrudEnd.inserirEndereco(classeEnd);
-                classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
                 if (!txtCrmv.Enabled)
                 {
+                    classeFunc.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
+
                     CrudFunc.inserirFuncionario(classeFunc);
                 }
                 else
                 {
+                    classeVete.idEndereco = Convert.ToInt32(CrudEnd.consultaEndereco("select top 1 ID_ENDERECO from ENDERECO order by ID_ENDERECO desc").Rows[0][0].ToString());
 
                     CrudVete.inserirVeterinario(classeVete);
 
                 }
-
+                MessageBox.Show("Funcionário Cadastrado com Sucesso", "Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
         }
 
         private void cmbTipoFuncionario_SelectedIndexChanged(object sender, EventArgs e)
