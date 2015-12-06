@@ -48,7 +48,6 @@ namespace MariosPet.Telas
             classeAni.racaPorte = txtRacaPorte.Text;
             classeAni.pelagemCor = txtPelagemCor.Text;
             classeAni.nascimento = maskedTxtNascimentoAnimal.Text;
-            classeAni.sexo = radioButtonFemea.Checked;
             if (Estatica.id == 0)
                 classeAni.carteirinha = Convert.ToInt32(DateTime.Now.DayOfYear.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Millisecond.ToString());
 
@@ -75,34 +74,8 @@ namespace MariosPet.Telas
             txtNomeAnimal.Text = animal.Rows[0][2].ToString();
             classeAni.idCliente = Convert.ToInt32(animal.Rows[0][3].ToString());
             txtRacaPorte.Text = animal.Rows[0][4].ToString();
-            radioButtonFemea.Text = animal.Rows[0][5].ToString();
-            radioButtonMacho.Text = animal.Rows[0][5].ToString();
             txtPelagemCor.Text = animal.Rows[0][6].ToString();
             maskedTxtNascimentoAnimal.Text = animal.Rows[0][7].ToString();
-        }
-
-        private void radioButtonFem_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonFemea.Checked == true)
-            {
-                radioButtonMacho.Checked = false;
-            }
-            else
-            {
-                radioButtonMacho.Checked = true;
-            }
-        }
-
-        private void radioButtonMasc_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButtonMacho.Checked == true)
-            {
-                radioButtonFemea.Checked = false;
-            }
-            else
-            {
-                radioButtonFemea.Checked = true;
-            }
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
