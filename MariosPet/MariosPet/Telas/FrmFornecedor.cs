@@ -27,16 +27,20 @@ namespace MariosPet.Telas
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtAtividade.Clear();
-            txtBairro.Clear();
-            txtCidade.Clear();
-            txtComplemento.Clear();
             txtDenominacao.Clear();
-            txtNumero.Clear();
-            txtRua.Clear();
+            mstCNPJ.Clear();
+            txtAtividade.Clear();
             txtTelefone.Clear();
             txtTelefone2.Clear();
-
+            textBoxEmail1.Clear();
+            textBoxEmail2.Clear();
+            textBoxNomeContato.Clear();
+            txtRua.Clear();
+            txtNumero.Clear();
+            txtComplemento.Clear();
+            txtBairro.Clear();
+            maskedTextBoxCep.Clear();
+            txtCidade.Clear(); 
         }
 
         public void CopiarParaClasseFornecedor()
