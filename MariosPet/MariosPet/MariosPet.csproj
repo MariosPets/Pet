@@ -166,6 +166,12 @@
     <Compile Include="Telas\FrmCredito.Designer.cs">
       <DependentUpon>FrmCredito.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\FrmEntraProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmEntraProdutos.Designer.cs">
+      <DependentUpon>FrmEntraProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\FrmExame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmCredito.resx">
       <DependentUpon>FrmCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmEntraProdutos.resx">
+      <DependentUpon>FrmEntraProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmExame.resx">
       <DependentUpon>FrmExame.cs</DependentUpon>
