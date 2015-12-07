@@ -160,6 +160,12 @@
     <Compile Include="Telas\FrmCateirinha.Designer.cs">
       <DependentUpon>FrmCateirinha.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\FrmCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\FrmCredito.Designer.cs">
+      <DependentUpon>FrmCredito.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\FrmExame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmCateirinha.resx">
       <DependentUpon>FrmCateirinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\FrmCredito.resx">
+      <DependentUpon>FrmCredito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\FrmExame.resx">
       <DependentUpon>FrmExame.cs</DependentUpon>
