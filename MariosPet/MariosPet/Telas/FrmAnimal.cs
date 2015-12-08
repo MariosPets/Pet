@@ -100,6 +100,7 @@ namespace MariosPet.Telas
                 CrudAni.alteraAnimal(classeAni);
 
                 Estatica.id = 0;
+                MessageBox.Show("Animal Cadastrado com Sucesso", "Animal", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -109,6 +110,7 @@ namespace MariosPet.Telas
 
                 classeFot.idAnimal = classeAni.id;
                 CrudFoto.inserirFoto(classeFot);
+                MessageBox.Show("Animal Alterado com Sucesso", "Animal", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
