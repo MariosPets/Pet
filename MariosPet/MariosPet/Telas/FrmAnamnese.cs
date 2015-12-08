@@ -66,7 +66,7 @@ namespace MariosPet.Telas
         {
             CrudAnamnese CrudAnam = new CrudAnamnese();
 
-            string sql = "select * from anamnese id_anamnese = " + Estatica.id.ToString();
+            string sql = "select * from anamnese  where id_anamnese = " + Estatica.id.ToString();
             DataTable anamnese = CrudAnam.consultaAnamnese(sql);
 
             //Anamnese            
@@ -96,11 +96,14 @@ namespace MariosPet.Telas
             {
                 CrudAnam.alteraAnamnese(classeAnam);
                 Estatica.id = 0;
+                MessageBox.Show("Anamnese Salvo com Sucesso", "Anamnese", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
             }
             else
             {
                 CrudAnam.inserirAnamnese(classeAnam);
                 classeAnam.id = Convert.ToInt32(CrudAnam.consultaAnamnese("Select top 1 ID_ANAMNESE from ANAMNESE order by ID_ANAMNESE desc").Rows[0][0].ToString());
+                MessageBox.Show("Anamnese Alterado com Sucesso", "Anamnese", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
             }           
         }
 
