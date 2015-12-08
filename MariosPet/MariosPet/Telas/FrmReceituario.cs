@@ -47,6 +47,7 @@ namespace MariosPet.Telas
             file.Write(bytePdf, 0, bytePdf.Length);
             file.Close();
             Process.Start(nomeArquivo);
+            MessageBox.Show("Receituário Salvo com Sucesso", "Receituário", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
