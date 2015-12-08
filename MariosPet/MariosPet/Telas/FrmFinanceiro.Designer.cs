@@ -32,38 +32,38 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtdebitos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDebitos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxPesquisa = new System.Windows.Forms.TextBox();
-            this.labelPesquisa = new System.Windows.Forms.Label();
+            this.txtDespesas = new System.Windows.Forms.TextBox();
+            this.lblDespesas = new System.Windows.Forms.Label();
+            this.txtsaldo = new System.Windows.Forms.TextBox();
+            this.lblSaldo = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtcreditos = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewCreditos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btnvoltar = new System.Windows.Forms.Button();
             this.toolTipFinanceiro = new System.Windows.Forms.ToolTip(this.components);
             this.btnCalcular = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDebitos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCreditos)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtdebitos);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.dataGridView);
+            this.groupBox2.Controls.Add(this.dataGridViewDebitos);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBox2.Location = new System.Drawing.Point(63, 180);
@@ -72,16 +72,17 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // textBox2
+            // txtdebitos
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(78, 221);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.MaxLength = 80;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 31);
-            this.textBox2.TabIndex = 2;
-            this.toolTipFinanceiro.SetToolTip(this.textBox2, "Total de Débitos");
+            this.txtdebitos.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdebitos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtdebitos.Location = new System.Drawing.Point(78, 221);
+            this.txtdebitos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtdebitos.MaxLength = 80;
+            this.txtdebitos.Name = "txtdebitos";
+            this.txtdebitos.Size = new System.Drawing.Size(162, 31);
+            this.txtdebitos.TabIndex = 2;
+            this.toolTipFinanceiro.SetToolTip(this.txtdebitos, "Total de Débitos");
             // 
             // label4
             // 
@@ -90,9 +91,9 @@
             this.label4.Location = new System.Drawing.Point(10, 229);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 23);
+            this.label4.Size = new System.Drawing.Size(67, 23);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Total";
+            this.label4.Text = "Total:";
             // 
             // label2
             // 
@@ -105,35 +106,35 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Débitos";
             // 
-            // dataGridView
+            // dataGridViewDebitos
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
+            this.dataGridViewDebitos.AllowUserToAddRows = false;
+            this.dataGridViewDebitos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 10F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(14, 57);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
-            this.dataGridView.RowTemplate.Height = 24;
-            this.dataGridView.Size = new System.Drawing.Size(418, 160);
-            this.dataGridView.TabIndex = 1;
-            this.toolTipFinanceiro.SetToolTip(this.dataGridView, "Débitos");
+            this.dataGridViewDebitos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewDebitos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.dataGridViewDebitos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDebitos.Location = new System.Drawing.Point(14, 57);
+            this.dataGridViewDebitos.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewDebitos.Name = "dataGridViewDebitos";
+            this.dataGridViewDebitos.ReadOnly = true;
+            this.dataGridViewDebitos.RowTemplate.Height = 24;
+            this.dataGridViewDebitos.Size = new System.Drawing.Size(418, 160);
+            this.dataGridViewDebitos.TabIndex = 1;
+            this.toolTipFinanceiro.SetToolTip(this.dataGridViewDebitos, "Débitos");
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackgroundImage = global::MariosPet.Properties.Resources.pataMarromVerdeGrande;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxPesquisa);
-            this.groupBox1.Controls.Add(this.labelPesquisa);
+            this.groupBox1.Controls.Add(this.txtDespesas);
+            this.groupBox1.Controls.Add(this.lblDespesas);
+            this.groupBox1.Controls.Add(this.txtsaldo);
+            this.groupBox1.Controls.Add(this.lblSaldo);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.groupBox1.Location = new System.Drawing.Point(63, 72);
@@ -143,57 +144,59 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Financeiro";
             // 
-            // textBox1
+            // txtDespesas
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(574, 48);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.MaxLength = 80;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 31);
-            this.textBox1.TabIndex = 2;
-            this.toolTipFinanceiro.SetToolTip(this.textBox1, "Despesas");
+            this.txtDespesas.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDespesas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtDespesas.Location = new System.Drawing.Point(583, 53);
+            this.txtDespesas.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDespesas.MaxLength = 80;
+            this.txtDespesas.Name = "txtDespesas";
+            this.txtDespesas.Size = new System.Drawing.Size(162, 31);
+            this.txtDespesas.TabIndex = 2;
+            this.toolTipFinanceiro.SetToolTip(this.txtDespesas, "Despesas");
             // 
-            // label1
+            // lblDespesas
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(470, 56);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Despesas";
+            this.lblDespesas.AutoSize = true;
+            this.lblDespesas.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDespesas.Location = new System.Drawing.Point(470, 56);
+            this.lblDespesas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDespesas.Name = "lblDespesas";
+            this.lblDespesas.Size = new System.Drawing.Size(109, 23);
+            this.lblDespesas.TabIndex = 0;
+            this.lblDespesas.Text = "Despesas:";
             // 
-            // textBoxPesquisa
+            // txtsaldo
             // 
-            this.textBoxPesquisa.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPesquisa.Location = new System.Drawing.Point(78, 48);
-            this.textBoxPesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxPesquisa.MaxLength = 80;
-            this.textBoxPesquisa.Name = "textBoxPesquisa";
-            this.textBoxPesquisa.Size = new System.Drawing.Size(162, 31);
-            this.textBoxPesquisa.TabIndex = 1;
-            this.toolTipFinanceiro.SetToolTip(this.textBoxPesquisa, "Saldo ");
+            this.txtsaldo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsaldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtsaldo.Location = new System.Drawing.Point(87, 48);
+            this.txtsaldo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsaldo.MaxLength = 80;
+            this.txtsaldo.Name = "txtsaldo";
+            this.txtsaldo.Size = new System.Drawing.Size(162, 31);
+            this.txtsaldo.TabIndex = 1;
+            this.toolTipFinanceiro.SetToolTip(this.txtsaldo, "Saldo ");
             // 
-            // labelPesquisa
+            // lblSaldo
             // 
-            this.labelPesquisa.AutoSize = true;
-            this.labelPesquisa.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPesquisa.Location = new System.Drawing.Point(10, 56);
-            this.labelPesquisa.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPesquisa.Name = "labelPesquisa";
-            this.labelPesquisa.Size = new System.Drawing.Size(64, 23);
-            this.labelPesquisa.TabIndex = 0;
-            this.labelPesquisa.Text = "Saldo";
+            this.lblSaldo.AutoSize = true;
+            this.lblSaldo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaldo.Location = new System.Drawing.Point(10, 56);
+            this.lblSaldo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSaldo.Name = "lblSaldo";
+            this.lblSaldo.Size = new System.Drawing.Size(73, 23);
+            this.lblSaldo.TabIndex = 0;
+            this.lblSaldo.Text = "Saldo:";
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtcreditos);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Controls.Add(this.dataGridViewCreditos);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
@@ -203,16 +206,17 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
-            // textBox3
+            // txtcreditos
             // 
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(87, 221);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.MaxLength = 80;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 31);
-            this.textBox3.TabIndex = 2;
-            this.toolTipFinanceiro.SetToolTip(this.textBox3, "Total de Créditos");
+            this.txtcreditos.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcreditos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtcreditos.Location = new System.Drawing.Point(87, 221);
+            this.txtcreditos.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcreditos.MaxLength = 80;
+            this.txtcreditos.Name = "txtcreditos";
+            this.txtcreditos.Size = new System.Drawing.Size(162, 31);
+            this.txtcreditos.TabIndex = 2;
+            this.toolTipFinanceiro.SetToolTip(this.txtcreditos, "Total de Créditos");
             // 
             // button2
             // 
@@ -235,29 +239,29 @@
             this.label3.Location = new System.Drawing.Point(19, 229);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.Size = new System.Drawing.Size(67, 23);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Total";
+            this.label3.Text = "Total:";
             // 
-            // dataGridView2
+            // dataGridViewCreditos
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridViewCreditos.AllowUserToAddRows = false;
+            this.dataGridViewCreditos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 10F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(23, 49);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(418, 160);
-            this.dataGridView2.TabIndex = 1;
-            this.toolTipFinanceiro.SetToolTip(this.dataGridView2, "Créditos");
+            this.dataGridViewCreditos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCreditos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(235)))), ((int)(((byte)(156)))));
+            this.dataGridViewCreditos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCreditos.Location = new System.Drawing.Point(23, 49);
+            this.dataGridViewCreditos.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewCreditos.Name = "dataGridViewCreditos";
+            this.dataGridViewCreditos.ReadOnly = true;
+            this.dataGridViewCreditos.RowTemplate.Height = 24;
+            this.dataGridViewCreditos.Size = new System.Drawing.Size(418, 160);
+            this.dataGridViewCreditos.TabIndex = 1;
+            this.toolTipFinanceiro.SetToolTip(this.dataGridViewCreditos, "Créditos");
             // 
             // label6
             // 
@@ -323,12 +327,12 @@
             this.Load += new System.EventHandler(this.FrmFinanceiro_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDebitos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCreditos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -338,22 +342,22 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridView dataGridViewDebitos;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxPesquisa;
-        private System.Windows.Forms.Label labelPesquisa;
+        private System.Windows.Forms.TextBox txtDespesas;
+        private System.Windows.Forms.Label lblDespesas;
+        private System.Windows.Forms.TextBox txtsaldo;
+        private System.Windows.Forms.Label lblSaldo;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridViewCreditos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnvoltar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcreditos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolTip toolTipFinanceiro;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.TextBox txtdebitos;
 
     }
 }
