@@ -201,7 +201,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(43, 23);
+            this.lblUF.Size = new System.Drawing.Size(44, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -336,7 +336,7 @@
             this.lblCpf.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.Location = new System.Drawing.Point(6, 126);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(53, 23);
+            this.lblCpf.Size = new System.Drawing.Size(54, 23);
             this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CPF:";
             // 
@@ -398,7 +398,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(6, 252);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
@@ -419,7 +419,7 @@
             this.lblTelefone2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone2.Location = new System.Drawing.Point(356, 209);
             this.lblTelefone2.Name = "lblTelefone2";
-            this.lblTelefone2.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone2.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone2.TabIndex = 0;
             this.lblTelefone2.Text = "Telefone:";
             // 
@@ -506,7 +506,7 @@
             this.lblTelefone1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone1.Location = new System.Drawing.Point(6, 209);
             this.lblTelefone1.Name = "lblTelefone1";
-            this.lblTelefone1.Size = new System.Drawing.Size(99, 23);
+            this.lblTelefone1.Size = new System.Drawing.Size(101, 23);
             this.lblTelefone1.TabIndex = 0;
             this.lblTelefone1.Text = "Telefone:";
             // 
