@@ -56,7 +56,7 @@ namespace MariosPet.Crud
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 command.Parameters.AddWithValue("@ID_ANIMAL", anamnese.idAnimal);
-                command.Parameters.AddWithValue("@ID_AVETERINARIO", anamnese.idVeterinario);
+                command.Parameters.AddWithValue("@ID_VETERINARIO", anamnese.idVeterinario);
                 command.Parameters.AddWithValue("@VACINADO", anamnese.vacinado);
                 command.Parameters.AddWithValue("@DOENCAS", anamnese.doencas);
                 command.Parameters.AddWithValue("@TRATAMENTOS", anamnese.tratamentos);
