@@ -58,10 +58,12 @@ namespace MariosPet.Telas
             {
                 CrudServ.alteraServico(classeServ);
                 Estatica.id = 0;
+                MessageBox.Show("Serviço Alterado com Sucesso", "Serviço", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
                 CrudServ.inserirServico(classeServ);
+                MessageBox.Show("Serviços Salvo com Sucesso", "Serviços", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }            
         }
     }
