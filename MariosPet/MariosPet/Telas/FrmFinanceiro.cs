@@ -21,5 +21,10 @@ namespace MariosPet.Telas
         {
 
         }
+
+        private void FrmFinanceiro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
