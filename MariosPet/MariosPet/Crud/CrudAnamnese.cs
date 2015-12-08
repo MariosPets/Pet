@@ -52,7 +52,7 @@ namespace MariosPet.Crud
         {
             using (OdbcConnection conexao = ConexaoPadrao.createConnection())
             {
-                string sql = "update ANAMNESE set ID_ANIMAL = ?, ID_VETERINARIO = ?,VACINADO = ?, DOENCAS = ?, TRATAMENTOS = ?, SISTEMA_DIGESTORIO = ?, SISTEMA_CARDIO_RESPIRATORIO = ?, SISTEMA_GENITO_URINARIO = ?, SISTEMA_NERVOSO_LOCOMOTOR = ?, PELES_ANEXOS = ?, MANEJO = ?, DATA = ?, where ID_ANAMNESE = ?";
+                string sql = "update ANAMNESE set ID_ANIMAL = ?, ID_VETERINARIO = ?,VACINADO = ?, DOENCAS = ?, TRATAMENTOS = ?, SISTEMA_DIGESTORIO = ?, SISTEMA_CARDIO_RESPIRATORIO = ?, SISTEMA_GENITO_URINARIO = ?, SISTEMA_NERVOSO_LOCOMOTOR = ?, PELES_ANEXOS = ?, MANEJO = ?, DATA = ? where ID_ANAMNESE = ?";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 command.Parameters.AddWithValue("@ID_ANIMAL", anamnese.idAnimal);
