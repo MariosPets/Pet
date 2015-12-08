@@ -88,12 +88,14 @@ namespace MariosPet.Telas
                 CrudFichaCli.alteraFichaClinica(classeFichaCli);
 
                 Estatica.id = 0;
+                MessageBox.Show("Ficha Clinica Salvo com Sucesso", "Ficha Clinica", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
             }
             else
             {
                 CrudFichaCli.inserirFichaClinica(classeFichaCli);
 
                 classeFichaCli.id = Convert.ToInt32(CrudFichaCli.consultaFichaClinica("Select top 1 ID_FICHA_CLINICA from FICHA_CLINICA order by ID_FICHA_CLINICA desc").Rows[0][0].ToString());
+                MessageBox.Show("Ficha Clinica Alterado com Sucesso", "Ficha Clinica", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             
         }
