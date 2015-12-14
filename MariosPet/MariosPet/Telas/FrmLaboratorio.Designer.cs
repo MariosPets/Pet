@@ -82,7 +82,7 @@
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(251, 257);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(119, 37);
+            this.btnVoltar.Size = new System.Drawing.Size(125, 46);
             this.btnVoltar.TabIndex = 8;
             this.toolTipLaboratorio.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = false;
