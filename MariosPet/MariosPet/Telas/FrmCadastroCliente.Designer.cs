@@ -66,6 +66,8 @@
             this.lblTelefone1 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.toolTipCliente = new System.Windows.Forms.ToolTip(this.components);
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -77,7 +79,7 @@
             this.btmLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmLimpar.BackgroundImage")));
             this.btmLimpar.FlatAppearance.BorderSize = 0;
             this.btmLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmLimpar.Location = new System.Drawing.Point(540, 665);
+            this.btmLimpar.Location = new System.Drawing.Point(540, 691);
             this.btmLimpar.Name = "btmLimpar";
             this.btmLimpar.Size = new System.Drawing.Size(87, 31);
             this.btmLimpar.TabIndex = 3;
@@ -92,7 +94,7 @@
             this.btmVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmVoltar.BackgroundImage")));
             this.btmVoltar.FlatAppearance.BorderSize = 0;
             this.btmVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmVoltar.Location = new System.Drawing.Point(341, 665);
+            this.btmVoltar.Location = new System.Drawing.Point(341, 691);
             this.btmVoltar.Name = "btmVoltar";
             this.btmVoltar.Size = new System.Drawing.Size(88, 31);
             this.btmVoltar.TabIndex = 2;
@@ -107,7 +109,7 @@
             this.btmSalvar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btmSalvar.BackgroundImage")));
             this.btmSalvar.FlatAppearance.BorderSize = 0;
             this.btmSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btmSalvar.Location = new System.Drawing.Point(738, 667);
+            this.btmSalvar.Location = new System.Drawing.Point(738, 693);
             this.btmSalvar.Name = "btmSalvar";
             this.btmSalvar.Size = new System.Drawing.Size(86, 36);
             this.btmSalvar.TabIndex = 4;
@@ -177,9 +179,9 @@
             this.groupBox2.Controls.Add(this.lblRua);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox2.Location = new System.Drawing.Point(243, 349);
+            this.groupBox2.Location = new System.Drawing.Point(243, 330);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(717, 310);
+            this.groupBox2.Size = new System.Drawing.Size(717, 237);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "   Endereço";
@@ -201,7 +203,7 @@
             this.lblUF.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUF.Location = new System.Drawing.Point(412, 190);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(44, 23);
+            this.lblUF.Size = new System.Drawing.Size(43, 23);
             this.lblUF.TabIndex = 20;
             this.lblUF.Text = "UF:";
             // 
@@ -336,7 +338,7 @@
             this.lblCpf.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.Location = new System.Drawing.Point(6, 126);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(54, 23);
+            this.lblCpf.Size = new System.Drawing.Size(53, 23);
             this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CPF:";
             // 
@@ -374,7 +376,7 @@
             this.groupBox1.Controls.Add(this.lblNome);
             this.groupBox1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.groupBox1.Location = new System.Drawing.Point(243, 8);
+            this.groupBox1.Location = new System.Drawing.Point(243, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(717, 312);
             this.groupBox1.TabIndex = 0;
@@ -398,7 +400,7 @@
             this.lblTelefone.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(6, 252);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(101, 23);
+            this.lblTelefone.Size = new System.Drawing.Size(99, 23);
             this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
@@ -419,7 +421,7 @@
             this.lblTelefone2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone2.Location = new System.Drawing.Point(356, 209);
             this.lblTelefone2.Name = "lblTelefone2";
-            this.lblTelefone2.Size = new System.Drawing.Size(101, 23);
+            this.lblTelefone2.Size = new System.Drawing.Size(99, 23);
             this.lblTelefone2.TabIndex = 0;
             this.lblTelefone2.Text = "Telefone:";
             // 
@@ -506,7 +508,7 @@
             this.lblTelefone1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone1.Location = new System.Drawing.Point(6, 209);
             this.lblTelefone1.Name = "lblTelefone1";
-            this.lblTelefone1.Size = new System.Drawing.Size(101, 23);
+            this.lblTelefone1.Size = new System.Drawing.Size(99, 23);
             this.lblTelefone1.TabIndex = 0;
             this.lblTelefone1.Text = "Telefone:";
             // 
@@ -526,12 +528,34 @@
             this.toolTipCliente.IsBalloon = true;
             this.toolTipCliente.StripAmpersands = true;
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(885, 573);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 5;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(804, 573);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 6;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // FrmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1022, 602);
+            this.ClientSize = new System.Drawing.Size(1022, 628);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btmLimpar);
             this.Controls.Add(this.btmVoltar);
             this.Controls.Add(this.btmSalvar);
@@ -588,5 +612,7 @@
         private System.Windows.Forms.Label lblTelefone2;
         private System.Windows.Forms.TextBox txtTelefone3Cliente;
         private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

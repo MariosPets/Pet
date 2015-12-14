@@ -108,7 +108,11 @@ namespace MariosPet.Telas
             mskCepCliente.Text = endereco.Rows[0][7].ToString();
         }
 
-        private void btmSalvar_Click_1(object sender, EventArgs e)
+        private void btmSalvar_Click_1(object sender, EventArgs e){}
+
+        private void FrmCadastroCliente_Load(object sender, EventArgs e){}
+
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
             CopiarParaClasseCliente();
 
@@ -131,9 +135,9 @@ namespace MariosPet.Telas
             }
         }
 
-        private void FrmCadastroCliente_Load(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-            
+            Close();
         }
     }
 }
