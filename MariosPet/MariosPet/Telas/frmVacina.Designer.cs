@@ -151,6 +151,7 @@
             this.Name = "frmVacina";
             this.Text = "Vacina ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmVacina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgVacina)).EndInit();
             this.groupBoxVacina.ResumeLayout(false);
             this.groupBoxVacina.PerformLayout();
