@@ -108,6 +108,8 @@ namespace MariosPet.Telas
             if (veterinario.Rows.Count > 0)
             {
                 //Dados Veterinario
+                classeVete.id = Estatica.id;
+
                 txtCrmv.Text = veterinario.Rows[0][15].ToString();
 
                 txtNomeFuncionario.Text = veterinario.Rows[0][1].ToString();
@@ -134,6 +136,7 @@ namespace MariosPet.Telas
                 DataTable funcionario = CrudFunc.consultaFuncionario(sql);
 
                 //Dados Funcionário Normal
+                classeFunc.id = Estatica.id;
                 txtNomeFuncionario.Text = funcionario.Rows[0][1].ToString();
                 mstCPFFuncionario.Text = funcionario.Rows[0][2].ToString();
                 mstRGFuncionario.Text = funcionario.Rows[0][3].ToString();
