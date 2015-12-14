@@ -91,6 +91,7 @@
             // 
             // comboBoxPesqPor
             // 
+            this.comboBoxPesqPor.Enabled = false;
             this.comboBoxPesqPor.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPesqPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.comboBoxPesqPor.FormattingEnabled = true;
@@ -249,6 +250,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(377, 50);
             this.label1.Name = "label1";
