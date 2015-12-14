@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBoxAnimal = new System.Windows.Forms.PictureBox();
             this.groupBoxAnimal = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnBuscaFoto = new MariosPet.Classes.RoundButton();
             this.btmLimpar = new System.Windows.Forms.Button();
             this.btmVoltar = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.txtPesquisaCliente = new System.Windows.Forms.TextBox();
             this.groupBoxPesquisaAnimal = new System.Windows.Forms.GroupBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAnimal)).BeginInit();
             this.groupBoxAnimal.SuspendLayout();
             this.groupBoxPesquisaAnimal.SuspendLayout();
@@ -96,6 +96,21 @@
             this.groupBoxAnimal.TabIndex = 0;
             this.groupBoxAnimal.TabStop = false;
             this.groupBoxAnimal.Text = "   Dados do Animal";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Fêmea",
+            "Macho"});
+            this.comboBox1.Font = new System.Drawing.Font("Verdana", 13F);
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(388, 241);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.TabIndex = 13;
+            this.comboBox1.Text = "Selecionar";
+            this.toolTipAnimal.SetToolTip(this.comboBox1, "Selecione o sexo do animal");
             // 
             // btnBuscaFoto
             // 
@@ -276,6 +291,7 @@
             // 
             // txtPesquisaCliente
             // 
+            this.txtPesquisaCliente.Enabled = false;
             this.txtPesquisaCliente.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesquisaCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.txtPesquisaCliente.Location = new System.Drawing.Point(89, 50);
@@ -311,21 +327,6 @@
             this.lblNome.Size = new System.Drawing.Size(92, 23);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Cliente: ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
-            "Fêmea",
-            "Macho"});
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 13F);
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(388, 241);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 13;
-            this.comboBox1.Text = "Selecionar";
-            this.toolTipAnimal.SetToolTip(this.comboBox1, "Selecione o sexo do animal");
             // 
             // FrmAnimal
             // 

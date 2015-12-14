@@ -14,7 +14,7 @@ namespace MariosPet.Telas
     {
         Animal classeAni = new Animal();
         Foto classeFot = new Foto();
-        Cliente classeCli = new Cliente();
+        
 
         CrudCliente CrudCli = new CrudCliente();
         public FrmAnimal()
@@ -42,8 +42,7 @@ namespace MariosPet.Telas
 
         public void CopiarParaClasseAnimal()
         {
-            classeCli.nome = txtPesquisaCliente.Text;
-            //Animal
+            classeAni.idCliente = Estatica.id;
             classeAni.nome = txtNomeAnimal.Text;
             classeAni.racaPorte = txtRacaPorte.Text;
             classeAni.pelagemCor = txtPelagemCor.Text;
