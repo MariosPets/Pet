@@ -82,7 +82,7 @@
             this.btnVoltar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(251, 257);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(92, 31);
+            this.btnVoltar.Size = new System.Drawing.Size(125, 46);
             this.btnVoltar.TabIndex = 8;
             this.toolTipLaboratorio.SetToolTip(this.btnVoltar, "Voltar ao Menu");
             this.btnVoltar.UseVisualStyleBackColor = false;
@@ -97,7 +97,7 @@
             this.btnLimpar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Location = new System.Drawing.Point(404, 257);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(86, 31);
+            this.btnLimpar.Size = new System.Drawing.Size(117, 46);
             this.btnLimpar.TabIndex = 9;
             this.toolTipLaboratorio.SetToolTip(this.btnLimpar, "Limpar os Campos");
             this.btnLimpar.UseVisualStyleBackColor = false;
