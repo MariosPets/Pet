@@ -94,7 +94,7 @@ namespace MariosPet.Telas
             CrudAnimal CrudAni = new CrudAnimal();
             CrudFoto CrudFoto = new Crud.CrudFoto();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CrudAni.alteraAnimal(classeAni);
 
