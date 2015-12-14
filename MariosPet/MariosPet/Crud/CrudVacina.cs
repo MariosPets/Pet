@@ -18,7 +18,7 @@ namespace MariosPet.Crud
                 string sql = "insert into VACINA (ID_VACINA, ID_ANIMAL, ID_MEDICAMENTO, DATA) values(?,?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_VACINA", vacina.id);             
+                command.Parameters.AddWithValue("@ID_VACINA", vacina.idVacina);             
                 command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idAnimal);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vacina.idMedicamento);
                 command.Parameters.AddWithValue("@DATA", vacina.data);
@@ -51,7 +51,7 @@ namespace MariosPet.Crud
                 command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idAnimal);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vacina.idMedicamento);
                 command.Parameters.AddWithValue("@DATA", vacina.data);
-                command.Parameters.AddWithValue("@ID_VACINA", vacina.id);
+                command.Parameters.AddWithValue("@ID_VACINA", vacina.idVacina);
 
                 conexao.Open();
                 command.ExecuteNonQuery();
