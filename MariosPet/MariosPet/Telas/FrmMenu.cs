@@ -14,6 +14,8 @@ namespace MariosPet.Telas
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
+            
             FrmCadastroCliente cadcli = new FrmCadastroCliente();
             Visible = false;
             cadcli.ShowDialog();
@@ -22,6 +24,7 @@ namespace MariosPet.Telas
 
         private void cadastroToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmAnimal animal = new FrmAnimal();
             Visible = false;
             animal.ShowDialog();
@@ -30,6 +33,7 @@ namespace MariosPet.Telas
 
         private void cadastroToolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmFornecedor fornecedor = new FrmFornecedor();
             Visible = false;
             fornecedor.ShowDialog();
@@ -38,6 +42,7 @@ namespace MariosPet.Telas
 
         private void serviçosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmServico servico = new FrmServico();
             Visible = false;
             servico.ShowDialog();
@@ -46,6 +51,7 @@ namespace MariosPet.Telas
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmProduto produto = new FrmProduto();
             Visible = false;
             produto.ShowDialog();
@@ -54,6 +60,7 @@ namespace MariosPet.Telas
 
         private void laboratóriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmLaboratorio laboratorio = new FrmLaboratorio();
             Visible = false;
             laboratorio.ShowDialog();
@@ -62,6 +69,7 @@ namespace MariosPet.Telas
 
         private void fichaClínicaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmFichaClinica fichaClinica = new FrmFichaClinica();
             Visible = false;
             fichaClinica.ShowDialog();
@@ -78,6 +86,7 @@ namespace MariosPet.Telas
 
         private void anamneseToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmAnamnese anamnese = new FrmAnamnese();
             Visible = false;
             anamnese.ShowDialog();
@@ -94,6 +103,7 @@ namespace MariosPet.Telas
 
         private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmRemedio remedio = new FrmRemedio();
             Visible = false;
             remedio.ShowDialog();
@@ -102,6 +112,7 @@ namespace MariosPet.Telas
 
         private void cadastroDeFuncionáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmFuncionario funcionario = new FrmFuncionario();
             Visible = false;
             funcionario.ShowDialog();
@@ -147,6 +158,7 @@ namespace MariosPet.Telas
         
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.inserir;
             FrmFornecedor fornecedor = new FrmFornecedor();
             Visible = false;
             fornecedor.ShowDialog();
