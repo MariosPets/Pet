@@ -123,6 +123,8 @@ namespace MariosPet.Telas
                 txtSenha.Text = veterinario.Rows[0][13].ToString();
                 txtConfirmacaoSenha.Text = veterinario.Rows[0][13].ToString();
 
+
+
                 sql = "select * from endereco where id_endereco = " + veterinario.Rows[0][5].ToString();
             }
             else
@@ -167,7 +169,7 @@ namespace MariosPet.Telas
             CrudFuncionario CrudFunc = new CrudFuncionario();
             CrudVeterinario CrudVete = new CrudVeterinario();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 if (!txtCrmv.Enabled)
                 {
