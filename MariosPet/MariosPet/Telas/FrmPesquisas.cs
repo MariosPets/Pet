@@ -298,6 +298,8 @@ namespace MariosPet.Telas
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
+            Estatica.tipoAcao = TipoAcao.alterar;
+
             switch (comboBoxTipo.SelectedIndex)
             {
                 case 0:
