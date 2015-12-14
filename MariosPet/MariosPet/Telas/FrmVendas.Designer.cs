@@ -31,23 +31,23 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnvoltar = new System.Windows.Forms.Button();
             this.txtcliente = new System.Windows.Forms.TextBox();
             this.lblcliente = new System.Windows.Forms.Label();
-            this.btnvoltar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnremover = new System.Windows.Forms.Button();
+            this.btnadicionar = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtcomdesconto = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtsemdesconto = new System.Windows.Forms.TextBox();
+            this.btncalcular = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtdesconto = new System.Windows.Forms.TextBox();
+            this.comboBoxformapagamento = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewProdutos = new System.Windows.Forms.DataGridView();
-            this.comboBoxformapagamento = new System.Windows.Forms.ComboBox();
-            this.txtdesconto = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btncalcular = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtsemdesconto = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtcomdesconto = new System.Windows.Forms.TextBox();
-            this.btnadicionar = new System.Windows.Forms.Button();
-            this.btnremover = new System.Windows.Forms.Button();
             this.toolTipVendas = new System.Windows.Forms.ToolTip(this.components);
             this.btnfinalizar = new System.Windows.Forms.Button();
             this.btnvolta = new System.Windows.Forms.Button();
@@ -73,6 +73,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "   Financeiro";
             // 
+            // btnvoltar
+            // 
+            this.btnvoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnvoltar.BackgroundImage = global::MariosPet.Properties.Resources.botaoConsultarLaranja;
+            this.btnvoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnvoltar.FlatAppearance.BorderSize = 0;
+            this.btnvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnvoltar.Location = new System.Drawing.Point(674, 42);
+            this.btnvoltar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnvoltar.Name = "btnvoltar";
+            this.btnvoltar.Size = new System.Drawing.Size(116, 45);
+            this.btnvoltar.TabIndex = 2;
+            this.toolTipVendas.SetToolTip(this.btnvoltar, "Consultar Cliente");
+            this.btnvoltar.UseVisualStyleBackColor = true;
+            // 
             // txtcliente
             // 
             this.txtcliente.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,21 +110,6 @@
             this.lblcliente.Size = new System.Drawing.Size(85, 23);
             this.lblcliente.TabIndex = 0;
             this.lblcliente.Text = "Cliente:";
-            // 
-            // btnvoltar
-            // 
-            this.btnvoltar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnvoltar.BackgroundImage = global::MariosPet.Properties.Resources.botaoConsultarLaranja;
-            this.btnvoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnvoltar.FlatAppearance.BorderSize = 0;
-            this.btnvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnvoltar.Location = new System.Drawing.Point(674, 42);
-            this.btnvoltar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnvoltar.Name = "btnvoltar";
-            this.btnvoltar.Size = new System.Drawing.Size(116, 45);
-            this.btnvoltar.TabIndex = 2;
-            this.toolTipVendas.SetToolTip(this.btnvoltar, "Consultar Cliente");
-            this.btnvoltar.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -134,6 +134,131 @@
             this.groupBox2.Size = new System.Drawing.Size(917, 418);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
+            // 
+            // btnremover
+            // 
+            this.btnremover.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnremover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnremover.FlatAppearance.BorderSize = 0;
+            this.btnremover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnremover.Location = new System.Drawing.Point(785, 221);
+            this.btnremover.Margin = new System.Windows.Forms.Padding(2);
+            this.btnremover.Name = "btnremover";
+            this.btnremover.Size = new System.Drawing.Size(116, 45);
+            this.btnremover.TabIndex = 5;
+            this.btnremover.Text = "remover";
+            this.btnremover.UseVisualStyleBackColor = true;
+            // 
+            // btnadicionar
+            // 
+            this.btnadicionar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnadicionar.BackgroundImage = global::MariosPet.Properties.Resources.botaoMaisVerde;
+            this.btnadicionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnadicionar.FlatAppearance.BorderSize = 0;
+            this.btnadicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnadicionar.Location = new System.Drawing.Point(695, 221);
+            this.btnadicionar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnadicionar.Name = "btnadicionar";
+            this.btnadicionar.Size = new System.Drawing.Size(116, 45);
+            this.btnadicionar.TabIndex = 4;
+            this.btnadicionar.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(481, 344);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(208, 23);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Total com Desconto:";
+            // 
+            // txtcomdesconto
+            // 
+            this.txtcomdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcomdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtcomdesconto.Location = new System.Drawing.Point(695, 336);
+            this.txtcomdesconto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcomdesconto.MaxLength = 80;
+            this.txtcomdesconto.Name = "txtcomdesconto";
+            this.txtcomdesconto.Size = new System.Drawing.Size(206, 31);
+            this.txtcomdesconto.TabIndex = 10;
+            this.toolTipVendas.SetToolTip(this.txtcomdesconto, "Total com Desconto");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 344);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(207, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total sem Desconto:";
+            // 
+            // txtsemdesconto
+            // 
+            this.txtsemdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsemdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtsemdesconto.Location = new System.Drawing.Point(240, 336);
+            this.txtsemdesconto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtsemdesconto.MaxLength = 80;
+            this.txtsemdesconto.Name = "txtsemdesconto";
+            this.txtsemdesconto.Size = new System.Drawing.Size(206, 31);
+            this.txtsemdesconto.TabIndex = 9;
+            this.toolTipVendas.SetToolTip(this.txtsemdesconto, "Total sem Desconto");
+            // 
+            // btncalcular
+            // 
+            this.btncalcular.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btncalcular.BackgroundImage = global::MariosPet.Properties.Resources.botaoCalcularVerde;
+            this.btncalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btncalcular.FlatAppearance.BorderSize = 0;
+            this.btncalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncalcular.Location = new System.Drawing.Point(450, 277);
+            this.btncalcular.Margin = new System.Windows.Forms.Padding(2);
+            this.btncalcular.Name = "btncalcular";
+            this.btncalcular.Size = new System.Drawing.Size(116, 45);
+            this.btncalcular.TabIndex = 8;
+            this.toolTipVendas.SetToolTip(this.btncalcular, "Calcular desconto");
+            this.btncalcular.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(127, 291);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Desconto:";
+            // 
+            // txtdesconto
+            // 
+            this.txtdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.txtdesconto.Location = new System.Drawing.Point(240, 283);
+            this.txtdesconto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtdesconto.MaxLength = 80;
+            this.txtdesconto.Name = "txtdesconto";
+            this.txtdesconto.Size = new System.Drawing.Size(206, 31);
+            this.txtdesconto.TabIndex = 7;
+            this.toolTipVendas.SetToolTip(this.txtdesconto, "Porcentagem do Desconto");
+            // 
+            // comboBoxformapagamento
+            // 
+            this.comboBoxformapagamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
+            this.comboBoxformapagamento.FormattingEnabled = true;
+            this.comboBoxformapagamento.Items.AddRange(new object[] {
+            "Cartão",
+            "Dinheiro"});
+            this.comboBoxformapagamento.Location = new System.Drawing.Point(240, 238);
+            this.comboBoxformapagamento.Name = "comboBoxformapagamento";
+            this.comboBoxformapagamento.Size = new System.Drawing.Size(206, 26);
+            this.comboBoxformapagamento.TabIndex = 6;
+            this.toolTipVendas.SetToolTip(this.comboBoxformapagamento, "Forma de Pagamento");
             // 
             // label4
             // 
@@ -175,131 +300,6 @@
             this.dataGridViewProdutos.RowTemplate.Height = 24;
             this.dataGridViewProdutos.Size = new System.Drawing.Size(887, 160);
             this.dataGridViewProdutos.TabIndex = 3;
-            // 
-            // comboBoxformapagamento
-            // 
-            this.comboBoxformapagamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.comboBoxformapagamento.FormattingEnabled = true;
-            this.comboBoxformapagamento.Items.AddRange(new object[] {
-            "Cartão",
-            "Dinheiro"});
-            this.comboBoxformapagamento.Location = new System.Drawing.Point(240, 238);
-            this.comboBoxformapagamento.Name = "comboBoxformapagamento";
-            this.comboBoxformapagamento.Size = new System.Drawing.Size(206, 26);
-            this.comboBoxformapagamento.TabIndex = 6;
-            this.toolTipVendas.SetToolTip(this.comboBoxformapagamento, "Forma de Pagamento");
-            // 
-            // txtdesconto
-            // 
-            this.txtdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtdesconto.Location = new System.Drawing.Point(240, 283);
-            this.txtdesconto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtdesconto.MaxLength = 80;
-            this.txtdesconto.Name = "txtdesconto";
-            this.txtdesconto.Size = new System.Drawing.Size(206, 31);
-            this.txtdesconto.TabIndex = 7;
-            this.toolTipVendas.SetToolTip(this.txtdesconto, "Porcentagem do Desconto");
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 291);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Desconto:";
-            // 
-            // btncalcular
-            // 
-            this.btncalcular.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btncalcular.BackgroundImage = global::MariosPet.Properties.Resources.botaoCalcularVerde;
-            this.btncalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btncalcular.FlatAppearance.BorderSize = 0;
-            this.btncalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncalcular.Location = new System.Drawing.Point(450, 277);
-            this.btncalcular.Margin = new System.Windows.Forms.Padding(2);
-            this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(116, 45);
-            this.btncalcular.TabIndex = 8;
-            this.toolTipVendas.SetToolTip(this.btncalcular, "Calcular desconto");
-            this.btncalcular.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 344);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total sem Desconto:";
-            // 
-            // txtsemdesconto
-            // 
-            this.txtsemdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsemdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtsemdesconto.Location = new System.Drawing.Point(240, 336);
-            this.txtsemdesconto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtsemdesconto.MaxLength = 80;
-            this.txtsemdesconto.Name = "txtsemdesconto";
-            this.txtsemdesconto.Size = new System.Drawing.Size(206, 31);
-            this.txtsemdesconto.TabIndex = 9;
-            this.toolTipVendas.SetToolTip(this.txtsemdesconto, "Total sem Desconto");
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(481, 344);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 23);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Total com Desconto:";
-            // 
-            // txtcomdesconto
-            // 
-            this.txtcomdesconto.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcomdesconto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
-            this.txtcomdesconto.Location = new System.Drawing.Point(695, 336);
-            this.txtcomdesconto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcomdesconto.MaxLength = 80;
-            this.txtcomdesconto.Name = "txtcomdesconto";
-            this.txtcomdesconto.Size = new System.Drawing.Size(206, 31);
-            this.txtcomdesconto.TabIndex = 10;
-            this.toolTipVendas.SetToolTip(this.txtcomdesconto, "Total com Desconto");
-            // 
-            // btnadicionar
-            // 
-            this.btnadicionar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnadicionar.BackgroundImage = global::MariosPet.Properties.Resources.botaoMaisVerde;
-            this.btnadicionar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnadicionar.FlatAppearance.BorderSize = 0;
-            this.btnadicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnadicionar.Location = new System.Drawing.Point(695, 221);
-            this.btnadicionar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnadicionar.Name = "btnadicionar";
-            this.btnadicionar.Size = new System.Drawing.Size(116, 45);
-            this.btnadicionar.TabIndex = 4;
-            this.btnadicionar.UseVisualStyleBackColor = true;
-            // 
-            // btnremover
-            // 
-            this.btnremover.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnremover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnremover.FlatAppearance.BorderSize = 0;
-            this.btnremover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnremover.Location = new System.Drawing.Point(785, 221);
-            this.btnremover.Margin = new System.Windows.Forms.Padding(2);
-            this.btnremover.Name = "btnremover";
-            this.btnremover.Size = new System.Drawing.Size(116, 45);
-            this.btnremover.TabIndex = 5;
-            this.btnremover.Text = "remover";
-            this.btnremover.UseVisualStyleBackColor = true;
             // 
             // toolTipVendas
             // 
