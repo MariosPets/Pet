@@ -1,5 +1,10 @@
 ﻿namespace MariosPet.Classes
 {
+    public enum TipoAcao { 
+        inserir,
+        alterar
+    }
+
     public enum BuscaTipo{
         geral,
         cliente,
@@ -15,5 +20,6 @@
         public static Animal animal = new Animal();
         public static bool novo;
         public static BuscaTipo buscaTipo;
+        public static TipoAcao tipoAcao;
     }
 }
