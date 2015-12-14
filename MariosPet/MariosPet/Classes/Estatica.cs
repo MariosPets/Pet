@@ -9,7 +9,9 @@
         geral,
         cliente,
         funcionario,
-        animal
+        animal,
+        vacina,
+        vermifugo
     }
 
     static class Estatica
