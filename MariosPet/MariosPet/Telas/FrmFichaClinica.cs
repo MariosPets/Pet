@@ -83,7 +83,7 @@ namespace MariosPet.Telas
 
             CrudFichaClinica CrudFichaCli = new CrudFichaClinica();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CrudFichaCli.alteraFichaClinica(classeFichaCli);
 
@@ -106,6 +106,8 @@ namespace MariosPet.Telas
             Visible = false;
             form.ShowDialog();
             Visible = true;
+
+            txtPesquisaAnimal.Text = "conserta todos os nomes nas buscas";
         }
 
         private void roundButtonVacina_Click(object sender, EventArgs e)
