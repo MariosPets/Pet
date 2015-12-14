@@ -19,7 +19,7 @@ namespace MariosPet.Crud
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
                 command.Parameters.AddWithValue("@ID_VACINA", vacina.idVacina);             
-                command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idAnimal);
+                command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idFichaClinica);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vacina.idMedicamento);
                 command.Parameters.AddWithValue("@DATA", vacina.data);
 
@@ -48,7 +48,7 @@ namespace MariosPet.Crud
                 string sql = "update VACINA set ID_ANIMAL = ?, ID_MEDICAMENTO = ?, DATA = ?, where ID_VACINA = ?";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
                
-                command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idAnimal);
+                command.Parameters.AddWithValue("@ID_ANIMAL", vacina.idFichaClinica);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vacina.idMedicamento);
                 command.Parameters.AddWithValue("@DATA", vacina.data);
                 command.Parameters.AddWithValue("@ID_VACINA", vacina.idVacina);
