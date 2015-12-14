@@ -105,6 +105,9 @@
             this.comboBox1.Font = new System.Drawing.Font("Verdana", 13F);
             this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(70)))), ((int)(((byte)(46)))));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Feminino",
+            "Masculino"});
             this.comboBox1.Location = new System.Drawing.Point(388, 241);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
