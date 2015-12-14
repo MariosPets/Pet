@@ -9,7 +9,7 @@
 
     static class Estatica
     {
-        public static int id = new int();
+        public static int id = 0;
         public static Cliente cliente = new Cliente();
         public static Funcionario funcionario = new Funcionario();
         public static Animal animal = new Animal();
