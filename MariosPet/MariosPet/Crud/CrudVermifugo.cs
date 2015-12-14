@@ -18,8 +18,8 @@ namespace MariosPet.Crud
                 string sql = "insert into VERMIFUGO (ID_VERMIFUGO, ID_ANIMAL, ID_MEDICAMENTO, DATA_INICIO, DATA_FIM) values(?,?,?,?,?)";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_VERMIFUGO", vermifugo.id);
-                command.Parameters.AddWithValue("@ID_ANIMAL", vermifugo.idAnimal);
+                command.Parameters.AddWithValue("@ID_VERMIFUGO", vermifugo.idVermifugo);
+                command.Parameters.AddWithValue("@ID_ANIMAL", vermifugo.idFichaClinica);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vermifugo.idMedicamento);
                 command.Parameters.AddWithValue("@DATA_INICIO", vermifugo.dataInicio);
                 command.Parameters.AddWithValue("@DATA_FIM", vermifugo.dataFim);
@@ -49,11 +49,11 @@ namespace MariosPet.Crud
                 string sql = "update VERMIFUGO set ID_ANIMAL = ?, ID_MEDICAMENTO = ?, DATA_INICIO = ?, DATA_FIM = ? where ID_VERMIFUGO = ?";
                 OdbcCommand command = new OdbcCommand(sql, conexao);
 
-                command.Parameters.AddWithValue("@ID_ANIMAL", vermifugo.idAnimal);
+                command.Parameters.AddWithValue("@ID_ANIMAL", vermifugo.idFichaClinica);
                 command.Parameters.AddWithValue("@ID_MEDICAMENTO", vermifugo.idMedicamento);
                 command.Parameters.AddWithValue("@DATA_INICIO", vermifugo.dataInicio);
                 command.Parameters.AddWithValue("@DATA_FIM", vermifugo.dataFim);
-                command.Parameters.AddWithValue("@ID_VERMIFUGO", vermifugo.id);
+                command.Parameters.AddWithValue("@ID_VERMIFUGO", vermifugo.idVermifugo);
 
                 conexao.Open();
                 command.ExecuteNonQuery();
