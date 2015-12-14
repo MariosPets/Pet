@@ -44,7 +44,7 @@ namespace MariosPet.Telas
             if (dtgBuscaVacina.Rows.Count > 0)
             {
                 //Não sei se está certo
-                classeVacina.id = Convert.ToInt32(dtgBuscaVacina.CurrentRow.Cells["ID_VACINA"].Value.ToString());
+                classeVacina.idVacina = Convert.ToInt32(dtgBuscaVacina.CurrentRow.Cells["ID_VACINA"].Value.ToString());
             }
         }
 
