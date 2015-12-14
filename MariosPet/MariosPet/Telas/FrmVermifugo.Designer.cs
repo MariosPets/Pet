@@ -119,6 +119,7 @@
             this.dtgVermifugo.Size = new System.Drawing.Size(674, 97);
             this.dtgVermifugo.TabIndex = 0;
             this.toolTipVermifugo.SetToolTip(this.dtgVermifugo, "Vermífugos que o Animal já tomou.");
+            this.dtgVermifugo.SelectionChanged += new System.EventHandler(this.dtgVermifugo_SelectionChanged);
             // 
             // toolTipVermifugo
             // 
@@ -152,6 +153,7 @@
             this.Name = "FrmVermifugo";
             this.Text = "Vermifugo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmVermifugo_Load);
             this.groupBoxVermifugo.ResumeLayout(false);
             this.groupBoxVermifugo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgVermifugo)).EndInit();
