@@ -119,7 +119,7 @@ namespace MariosPet.Telas
             CrudCliente CrudCli = new CrudCliente();
             CrudEndereco CrudEnd = new CrudEndereco();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CrudEnd.alteraEndereco(classeEnd);
                 CrudCli.alteraCliente(classeCli);
