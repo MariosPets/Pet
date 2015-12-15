@@ -79,7 +79,7 @@ namespace MariosPet.Telas
             txtPelagemCor.Text = animal.Rows[0][6].ToString();
             maskedTxtNascimentoAnimal.Text = animal.Rows[0][7].ToString();
 
-            pictureBoxAnimal.Image = Image.FromFile(animal.Rows[0][10].ToString());
+            //pictureBoxAnimal.Image = Image.FromFile(animal.Rows[0][10].ToString());
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

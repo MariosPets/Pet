@@ -30,5 +30,29 @@ namespace MariosPet.Classes
 
             return new OdbcConnection(stringConnection.ToString());
         }
+
+        public static OdbcConnection createConnectionStart()
+        {
+            // Mudar para o nome do seu servidor
+            string server = @"./";
+            // string server = @".\MSERVERSQL";
+            //string server = @".\.";        
+            //string server = @".\SQLSERVER";
+            //string server = @"LOCALHOST\SQL";
+
+            //string server = @"LOCALHOST\SQL";
+            string driver = @"SQL Server";
+            string dataBase = @"MARIOS_PET";
+
+            StringBuilder stringConnection = new StringBuilder();
+
+            stringConnection.Append("driver=");
+            stringConnection.Append(driver);
+            stringConnection.Append(";server=");
+            stringConnection.Append(server);
+            
+
+            return new OdbcConnection(stringConnection.ToString());
+        }
     }
 }
