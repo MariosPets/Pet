@@ -111,15 +111,10 @@
             this.comboBoxTipo.Items.AddRange(new object[] {
             "Clientes",
             "Animais",
-            "Laboratórios",
-            "Medicamentos",
-            "Solicitação de Exames",
-            "Prontuário",
-            "Produtos",
-            "Serviços",
+            "Funcionários",
             "Fornecedores",
-            "Vendas",
-            "Funcionários"});
+            "Produtos",
+            "Medicamentos"});
             this.comboBoxTipo.Location = new System.Drawing.Point(90, 47);
             this.comboBoxTipo.Name = "comboBoxTipo";
             this.comboBoxTipo.Size = new System.Drawing.Size(268, 26);
