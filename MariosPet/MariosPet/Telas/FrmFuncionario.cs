@@ -15,7 +15,7 @@ namespace MariosPet.Telas
         {
             InitializeComponent();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CopiarParaFormulario();
             }
@@ -107,6 +107,7 @@ namespace MariosPet.Telas
 
             if (veterinario.Rows.Count > 0)
             {
+                txtLogin.Text = "Teste";
                 //Dados Veterinario
                 classeVete.id = Estatica.id;
 

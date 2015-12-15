@@ -21,7 +21,7 @@ namespace MariosPet.Telas
         {
             InitializeComponent();
 
-            if (Estatica.id != 0)
+            if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CopiarParaFormulario();
             }
