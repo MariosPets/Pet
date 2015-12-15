@@ -60,6 +60,7 @@
     <Compile Include="Classes\Cliente.cs" />
     <Compile Include="Classes\ConexaoPadrao.cs" />
     <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\EntradaProduto.cs" />
     <Compile Include="Classes\Estatica.cs" />
     <Compile Include="Classes\Exame.cs" />
     <Compile Include="Classes\FichaClinica.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Classes\Servico.cs" />
     <Compile Include="Classes\Vacina.cs" />
     <Compile Include="Classes\Validacao.cs" />
+    <Compile Include="Classes\Vendas.cs" />
     <Compile Include="Classes\Vermifugo.cs" />
     <Compile Include="Classes\Veterinario.cs" />
     <Compile Include="Crud\CrudAgendamento.cs" />
