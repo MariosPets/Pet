@@ -86,6 +86,8 @@
     <Compile Include="Crud\CrudAutorizacao.cs" />
     <Compile Include="Crud\CrudCliente.cs" />
     <Compile Include="Crud\CrudEndereco.cs" />
+    <Compile Include="Crud\CrudEntradaProdutoProduto.cs" />
+    <Compile Include="Crud\CrudEntradaProduto.cs" />
     <Compile Include="Crud\CrudExame.cs" />
     <Compile Include="Crud\CrudFichaClinica.cs" />
     <Compile Include="Crud\CrudFornecedor.cs" />
@@ -99,6 +101,8 @@
     <Compile Include="Crud\CrudProduto.cs" />
     <Compile Include="Crud\CrudServico.cs" />
     <Compile Include="Crud\CrudVacina.cs" />
+    <Compile Include="Crud\CrudVendas.cs" />
+    <Compile Include="Crud\CrudVendasProduto.cs" />
     <Compile Include="Crud\CrudVermifugo.cs" />
     <Compile Include="Crud\CrudVeterinario.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

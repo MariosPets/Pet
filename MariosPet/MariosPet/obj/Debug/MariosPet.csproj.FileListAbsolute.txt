@@ -678,3 +678,9 @@ C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\Mario
 C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmVendas.resources
 C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\RdlCompile.cache
 C:\Users\Leonardo Fernando\Source\Repos\Pet2\MariosPet\MariosPet\obj\Debug\RdlCompile.compiled
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmCredito.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmEntraProdutos.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmFinanceiro.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmOrcamento.resources
+C:\Users\Leonardo Fernando\Source\Repos\Pet3\MariosPet\MariosPet\obj\Debug\MariosPet.Telas.FrmVendas.resources
