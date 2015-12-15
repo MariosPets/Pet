@@ -174,6 +174,8 @@ namespace MariosPet.Telas
 
             if (Estatica.tipoAcao == TipoAcao.alterar)
             {
+                CrudEnd.alteraEndereco(classeEnd);
+
                 if (!txtCrmv.Enabled)
                 {
                     CrudFunc.alteraFuncionario(classeFunc);
