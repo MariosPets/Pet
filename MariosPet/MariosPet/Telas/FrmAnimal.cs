@@ -64,7 +64,7 @@ namespace MariosPet.Telas
         {
             CrudAnimal CrudAni = new CrudAnimal();
 
-            string sql = "select * from animal where id_animal = " + Estatica.id.ToString();
+            string sql = "select * from animal inner join foto on foto.id_animal = animal.id_animal where animal.id_animal = " + Estatica.id.ToString();
             DataTable animal = CrudAni.consultaAnimal(sql);
 
             //Dados Animal
@@ -75,6 +75,8 @@ namespace MariosPet.Telas
             txtRacaPorte.Text = animal.Rows[0][4].ToString();
             txtPelagemCor.Text = animal.Rows[0][6].ToString();
             maskedTxtNascimentoAnimal.Text = animal.Rows[0][7].ToString();
+
+            pictureBoxAnimal.Image = Image.FromFile(animal.Rows[0][10].ToString());
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
