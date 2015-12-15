@@ -42,7 +42,8 @@ namespace MariosPet.Telas
 
         public void CopiarParaClasseAnimal()
         {
-            classeAni.idCliente = Estatica.id;
+            if(Estatica.tipoAcao != TipoAcao.alterar)
+                classeAni.idCliente = Estatica.id;
             classeAni.nome = txtNomeAnimal.Text;
             classeAni.racaPorte = txtRacaPorte.Text;
             classeAni.pelagemCor = txtPelagemCor.Text;
@@ -62,12 +63,14 @@ namespace MariosPet.Telas
 
         public void CopiarParaFormulario()
         {
+            
             CrudAnimal CrudAni = new CrudAnimal();
 
             string sql = "select * from animal inner join foto on foto.id_animal = animal.id_animal where animal.id_animal = " + Estatica.id.ToString();
             DataTable animal = CrudAni.consultaAnimal(sql);
 
             //Dados Animal
+            
             classeAni.id = Convert.ToInt32(animal.Rows[0][0].ToString());
             classeAni.carteirinha = Convert.ToInt32(animal.Rows[0][1].ToString());
             txtNomeAnimal.Text = animal.Rows[0][2].ToString();
@@ -99,7 +102,8 @@ namespace MariosPet.Telas
             if (Estatica.tipoAcao == TipoAcao.alterar)
             {
                 CrudAni.alteraAnimal(classeAni);
-
+                classeFot.idAnimal = Estatica.id;
+                CrudFoto.inserirFoto(classeFot);
                 Estatica.id = 0;
                 MessageBox.Show("Animal Cadastrado com Sucesso", "Animal", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
